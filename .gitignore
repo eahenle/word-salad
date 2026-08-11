@@ -12,3 +12,6 @@ __pycache__/
 
 # Reproduction output
 multiplex-experiment/run-output/
+
+# Atomic Experiment 1B scratch files
+experiment-1b/**/*.tmp
