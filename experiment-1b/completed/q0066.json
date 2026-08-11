@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0066",
+  "neutral_id": "q0066",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 6,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "ca485bdbc874ab7e55f4af6ea30de21f00de32f2b09722c53639f86edf368b2d",
+  "prompt_file": "prompts/original/q0066.txt",
+  "trace_file": "traces/q0066.jsonl",
+  "stderr_file": "stderr/q0066.txt",
+  "response": "Cannot determine uniquely: the word-level shuffle destroys the operation order and object-to-box relationships.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T19:18:30.814651+00:00",
+    "finished_at": "2026-08-11T19:23:58.064123+00:00",
+    "thread_id": "019ff243-16dc-7542-b934-0c48b2af308f",
+    "aggregate_usage": {
+      "input_tokens": 155024,
+      "cached_input_tokens": 132352,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 13496,
+      "reasoning_output_tokens": 8120
+    },
+    "elapsed_seconds": 327.246,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1275,
+    "trace_sha256": "3c1b3983ae75dc27d9951bfb9f5ef0b0d398391c23adaaca85f7aa7258e34ab2",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

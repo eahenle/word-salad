@@ -1,0 +1,102 @@
+{
+  "experiment": "Experiment 1A-R and 1B surface-normalization matrix",
+  "baseline_commit": "395c9c615fe4bf8900b31b73c1071bab805682e6",
+  "baseline_tag": "experiment-1a-original",
+  "baseline_tag_target": "395c9c615fe4bf8900b31b73c1071bab805682e6",
+  "git_commit_at_execution": "ff733af995fa5117266c8ebcca0d2774e57cfbe1",
+  "git_worktree_status_at_finalization": "?? experiment-1b/attempts/\n?? experiment-1b/completed/\n?? experiment-1b/results/metadata.jsonl\n?? experiment-1b/results/trials-unscored.jsonl\n?? experiment-1b/stderr/\n?? experiment-1b/traces/",
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "codex_cli_version": "0.147.0",
+  "python_version": "3.10.11",
+  "platform": "macOS-26.6.1-arm64-arm-64bit",
+  "generator_version": "q781-v1",
+  "experiment_generator_version": "q1b-generator-v1",
+  "normalization_version": "q1b-norm-v1",
+  "payload_sha256": "7b84bcfb898d21aa26355879f1a369059b0c7963981217505e568588cf3fcfba",
+  "variants": [
+    "original",
+    "lower",
+    "nopunct",
+    "lower_nopunct"
+  ],
+  "conditions": [
+    "signal",
+    "all_shuffled"
+  ],
+  "lane_counts": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "scheduled_trials": 320,
+  "completed_trials": 80,
+  "completed_by_variant": {
+    "original": 80
+  },
+  "errored_or_nonresponse_trials": 13,
+  "workers": 4,
+  "timeout_seconds": 900.0,
+  "command_template": [
+    "codex",
+    "-m",
+    "gpt-5.6-sol",
+    "-c",
+    "model_reasoning_effort=\"xhigh\"",
+    "-s",
+    "read-only",
+    "-a",
+    "never",
+    "-C",
+    "EMPTY_NEUTRAL_TEMP_DIR",
+    "exec",
+    "--json",
+    "--ephemeral",
+    "--ignore-user-config",
+    "--ignore-rules",
+    "--strict-config",
+    "--skip-git-repo-check",
+    "-"
+  ],
+  "full_stdout_jsonl_preserved": true,
+  "stderr_preserved": true,
+  "answer_key_stored_in_source": false,
+  "run_invocations": [
+    {
+      "started_at": "2026-08-11T17:33:55.105367+00:00",
+      "finished_at": "2026-08-11T19:41:42.843216+00:00",
+      "argv": [
+        "experiment-1b/run_experiment.py",
+        "--variants",
+        "original",
+        "--model",
+        "gpt-5.6-sol",
+        "--reasoning",
+        "xhigh",
+        "--workers",
+        "4",
+        "--timeout",
+        "900"
+      ],
+      "variants": [
+        "original"
+      ],
+      "tasks_requested": 80,
+      "workers": 4,
+      "timeout_seconds": 900.0
+    }
+  ]
+}

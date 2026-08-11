@@ -1,0 +1,55 @@
+{
+  "trial_id": "q0053",
+  "neutral_id": "q0053",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 3,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "00984897dc65f5490f544d3c3b7ba16dd86ca8c2284cc6e72b9d56f34aafff1b",
+  "prompt_file": "prompts/original/q0053.txt",
+  "trace_file": "traces/q0053.jsonl",
+  "stderr_file": "stderr/q0053.txt",
+  "response": "I’m untangling the duplicated, interleaved instructions first, then I’ll track the box contents and return the requested three-line format.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T18:37:41.051766+00:00",
+    "finished_at": "2026-08-11T18:52:41.066140+00:00",
+    "thread_id": "019ff21d-b555-7152-b24f-4da313546b58",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.01,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 105543,
+    "trace_sha256": "41b738f9be10f62e2e9c332fe1d51f4334d7591927a9e558289adb4c6cbe7331",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 45,
+    "event_type_counts": {
+      "item.completed": 22,
+      "item.started": 21,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 21
+    },
+    "non_json_line_count": 0
+  }
+}

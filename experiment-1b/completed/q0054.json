@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0054",
+  "neutral_id": "q0054",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "f7349019013aac1168e23cdf870b8809e7808c705bad6269b15c775dd5273924",
+  "prompt_file": "prompts/original/q0054.txt",
+  "trace_file": "traces/q0054.jsonl",
+  "stderr_file": "stderr/q0054.txt",
+  "response": "The final box labels are indeterminate: shuffling the words destroyed the operation order and the associations between objects, source boxes, and destination boxes. Multiple valid reconstructions produce different results.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T18:41:09.646453+00:00",
+    "finished_at": "2026-08-11T18:49:41.612459+00:00",
+    "thread_id": "019ff220-e43d-73f3-a270-6b40ffd2f8ac",
+    "aggregate_usage": {
+      "input_tokens": 346109,
+      "cached_input_tokens": 294400,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 24637,
+      "reasoning_output_tokens": 16652
+    },
+    "elapsed_seconds": 511.963,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 783,
+    "trace_sha256": "6db1d0ad6a3312e30c5e6d50a972b8b9dcb71af86cb32876b8bd5aaa3cf82ac9",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

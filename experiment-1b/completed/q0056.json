@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0056",
+  "neutral_id": "q0056",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 6,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "3938ac0a7c7a7e9af318b70be2e6255c643b136721405e46e0a13d81b796bbf9",
+  "prompt_file": "prompts/original/q0056.txt",
+  "trace_file": "traces/q0056.jsonl",
+  "stderr_file": "stderr/q0056.txt",
+  "response": "I’m untangling this as a state-tracking puzzle: first recovering the initial box contents and ordered moves, then I’ll return only the requested three result lines.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T18:48:48.365102+00:00",
+    "finished_at": "2026-08-11T19:03:48.399122+00:00",
+    "thread_id": "019ff227-e411-7a43-9c4b-8ca9d58bc395",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.029,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 67572,
+    "trace_sha256": "09eca170205e123a6588f1f613696fd634d1100815860346c0fbc5f5f61aad7d",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 29,
+    "event_type_counts": {
+      "item.completed": 14,
+      "item.started": 13,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 12,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"019ff1f0-2e41-73e0-9cdc-2a552b16a98a"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"red = glass marble"}}
+{"type":"turn.completed","usage":{"input_tokens":15035,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":3543,"reasoning_output_tokens":3533}}

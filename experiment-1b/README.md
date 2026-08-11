@@ -69,13 +69,13 @@ For every trial, the runner preserves:
 - exit status and timeout state;
 - elapsed wall time;
 - thread ID and aggregate usage;
-- final agent response;
+- the last observable `agent_message` (which is final only when the turn completes);
 - event/item counts without discarding unknown event types;
 - atomic attempt and completion records.
 
 An existing attempt without a completion record is never retried implicitly. This avoids converting controller interruption into selective subject retries.
 
-The trace archive contains only what the runtime emits. It does not expose private chain-of-thought or hidden system/developer context.
+The scorer records any-message, `turn.completed`, completed-response, timeout, and no-message states separately. The trace archive contains only what the runtime emits. It does not expose private chain-of-thought or hidden system/developer context.
 
 ## Execution gates
 

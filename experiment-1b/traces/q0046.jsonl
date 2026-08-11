@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"019ff214-8efa-7f42-9722-fb84a057430c"}
+{"type":"turn.started"}
+{"type":"error","message":"Reconnecting... 2/5 (stream disconnected before completion: WebSocket protocol error: Connection reset without closing handshake)"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"brass key = blue; silver coin = blue; glass marble = green."}}
+{"type":"turn.completed","usage":{"input_tokens":42459,"cached_input_tokens":39680,"cache_write_input_tokens":0,"output_tokens":9396,"reasoning_output_tokens":9374}}

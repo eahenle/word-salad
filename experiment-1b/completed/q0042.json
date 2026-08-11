@@ -1,0 +1,53 @@
+{
+  "trial_id": "q0042",
+  "neutral_id": "q0042",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "19b0932d40458bf05d3527edbd859224a9412d602a54e38bcdde751aa87fb0cc",
+  "prompt_file": "prompts/original/q0042.txt",
+  "trace_file": "traces/q0042.jsonl",
+  "stderr_file": "stderr/q0042.txt",
+  "response": "I’m treating this as a transposed instruction block; the 196-word count forms a 14×14 grid, so I’m checking the corresponding matrix reorder before applying the moves.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T18:00:22.875892+00:00",
+    "finished_at": "2026-08-11T18:31:03.305657+00:00",
+    "thread_id": "019ff1fb-8e73-7bb3-a41f-9fac7920a8ce",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.01,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 355,
+    "trace_sha256": "9c6bdf2b9f64e15fce4eb2e65e358fa53c9872be6937f79ac922841c8228713c",
+    "stderr_bytes": 143,
+    "stderr_sha256": "616570a77ee32710f29a9c84af919a2f7e23b80245c66524fad41aab20e8b4bf",
+    "event_count": 3,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

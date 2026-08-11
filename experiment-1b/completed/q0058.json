@@ -1,0 +1,55 @@
+{
+  "trial_id": "q0058",
+  "neutral_id": "q0058",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 8,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "13250e17b7f0a5fe613bfecb6288a293a5a2dae45736c0fe953b5820b835a4fe",
+  "prompt_file": "prompts/original/q0058.txt",
+  "trace_file": "traces/q0058.jsonl",
+  "stderr_file": "stderr/q0058.txt",
+  "response": "I’m disentangling the interleaved instruction streams and tracking the three objects through the resulting moves.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T18:52:41.066700+00:00",
+    "finished_at": "2026-08-11T19:07:41.096069+00:00",
+    "thread_id": "019ff22b-7104-7611-b1f7-5cd8642e1008",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.026,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 1090,
+    "trace_sha256": "651c5dd2a6dad6498dcc23fe6ba56d13149d7efc2d39247cc9df703d892201bb",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0036",
+  "neutral_id": "q0036",
+  "variant": "original",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 6,
+  "signal_phase": 6,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "2eaa2b185d1d1058c131eaa2b88adfd43f077686b931b878d8f1bdec8f3ae91e",
+  "prompt_file": "prompts/original/q0036.txt",
+  "trace_file": "traces/q0036.jsonl",
+  "stderr_file": "stderr/q0036.txt",
+  "response": "I can’t determine a unique final state because the operations and their order are scrambled. Please resend the instructions in sequence.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T17:52:07.131435+00:00",
+    "finished_at": "2026-08-11T17:56:39.623792+00:00",
+    "thread_id": "019ff1f3-fdfb-7fb1-9e6e-e8c5c246224b",
+    "aggregate_usage": {
+      "input_tokens": 15033,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 11720,
+      "reasoning_output_tokens": 11690
+    },
+    "elapsed_seconds": 272.492,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 488,
+    "trace_sha256": "a79d9740fcaed827ca8c47f4d231d643995cbac327d94740b9de4de752cfbc0d",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

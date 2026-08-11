@@ -20,6 +20,7 @@ ENCODING_PATTERNS = (
     r"\bmultiplex\w*\b",
     r"\bstride\b",
     r"\blane(?:s)?\b",
+    r"\btranspos\w*\b",
     r"\bhidden (?:message|instruction|sequence|stream)\b",
     r"\bevery (?:second|third|fourth|\d+(?:st|nd|rd|th))\b",
 )
@@ -81,10 +82,25 @@ def score_record(record: dict, answer_key_text: str, expected: dict[str, str]) -
     semantic = assignments == expected and set(assignments) == set(OBJECTS)
     encoding = any(re.search(pattern, response, re.IGNORECASE) for pattern in ENCODING_PATTERNS)
     generic = any(re.search(pattern, response, re.IGNORECASE) for pattern in GENERIC_PATTERNS)
-    task_recovered = bool(assignments) or sum(
-        term in response.lower() for term in ("box", "key", "coin", "marble")
-    ) >= 2
+    response_lower = response.lower()
+    task_recovered = (
+        bool(assignments)
+        or sum(term in response_lower for term in ("box", "key", "coin", "marble")) >= 2
+        or sum(term in response_lower for term in ("brass", "silver", "glass")) >= 2
+        or bool(
+            re.search(
+                r"\b(?:state[- ]tracking|operations?|ordered moves|initial box contents)\b",
+                response_lower,
+            )
+        )
+    )
     nonresponse = not bool(response)
+    turn_completed = bool(
+        record.get("runner", {}).get("event_type_counts", {}).get("turn.completed", 0)
+    )
+    completed_response = bool(response) and turn_completed and not bool(
+        record.get("runner", {}).get("timed_out")
+    )
 
     if exact:
         classification = "exact_task_success"
@@ -110,6 +126,8 @@ def score_record(record: dict, answer_key_text: str, expected: dict[str, str]) -
             "malformed_object_substitutions": substitutions,
             "encoding_discovered": encoding,
             "nonresponse": nonresponse,
+            "turn_completed": turn_completed,
+            "completed_response": completed_response,
             "classification": classification,
             "notes": "automatic variant-agnostic score; preserve manual audit separately",
         }

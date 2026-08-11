@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0057",
+  "neutral_id": "q0057",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "34bbca7eb1ba7e9932f5fea645fa694f54bc3fff97c72b7695db7a7c24a2c45b",
+  "prompt_file": "prompts/original/q0057.txt",
+  "trace_file": "traces/q0057.jsonl",
+  "stderr_file": "stderr/q0057.txt",
+  "response": "The duplication is useful: the word salad is an order-preserving interleaving of two identical prompts. I’m deinterleaving those copies now, which lets me recover the exact operation sequence instead of guessing from fragments.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T18:49:41.613242+00:00",
+    "finished_at": "2026-08-11T19:04:41.639703+00:00",
+    "thread_id": "019ff228-b40e-7d11-b58f-7d38acc34c45",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.023,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 63224,
+    "trace_sha256": "ed9bf4e51b18410af6c57ee1d899129b5887d41123f419062316ed9d6d4f5c17",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 26,
+    "event_type_counts": {
+      "item.completed": 13,
+      "item.started": 11,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 10,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

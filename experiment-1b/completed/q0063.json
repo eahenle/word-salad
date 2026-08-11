@@ -1,0 +1,53 @@
+{
+  "trial_id": "q0063",
+  "neutral_id": "q0063",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 3,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "0fb63c86f3a95b7bfce4194f3d1aa6dac0263be7ca4c427a8eff4f74a2eab796",
+  "prompt_file": "prompts/original/q0063.txt",
+  "trace_file": "traces/q0063.jsonl",
+  "stderr_file": "stderr/q0063.txt",
+  "response": "I’m untangling the text as four interleaved copies of the same box puzzle. The repeated control phrases and `COLOR` placeholders line up that way, so I’m reconstructing the single underlying instruction sequence before giving the strict one-line answer.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T19:07:41.097547+00:00",
+    "finished_at": "2026-08-11T19:22:41.134916+00:00",
+    "thread_id": "019ff239-2cde-7ee2-875f-87a193ded760",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.032,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 440,
+    "trace_sha256": "19f9da60bb2b32092a72f4ffad6d775eac88779e6674731885ab5dba043ff709",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 3,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

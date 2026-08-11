@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0067",
+  "neutral_id": "q0067",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "f9c6d26706b014247cdb6d3ccd10cf082a5823cd4dd03922e3fbc2476f05df10",
+  "prompt_file": "prompts/original/q0067.txt",
+  "trace_file": "traces/q0067.jsonl",
+  "stderr_file": "stderr/q0067.txt",
+  "response": "Cannot determine uniquely: the shuffled text loses the operation order and object-to-box pairings, so multiple final color assignments are possible.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T19:19:32.495829+00:00",
+    "finished_at": "2026-08-11T19:29:36.153979+00:00",
+    "thread_id": "019ff244-07c3-76c3-9e9e-143b412e0e59",
+    "aggregate_usage": {
+      "input_tokens": 217473,
+      "cached_input_tokens": 181248,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 27687,
+      "reasoning_output_tokens": 23552
+    },
+    "elapsed_seconds": 603.655,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1154,
+    "trace_sha256": "08b74d2ee6584754f03eda560090814626b48a89bf1c3361ec0bc9333370a079",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "trial_id": "q0070",
+  "neutral_id": "q0070",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 10,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "ce28ffb0bbc5e851bc167e164f3a2e3fc5a7b006d61edd2690848c9e4d721655",
+  "prompt_file": "prompts/original/q0070.txt",
+  "trace_file": "traces/q0070.jsonl",
+  "stderr_file": "stderr/q0070.txt",
+  "response": "I’m untangling the repeated, interleaved instructions and tracking the label swaps separately from the physical box contents.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T19:24:47.503560+00:00",
+    "finished_at": "2026-08-11T19:39:47.532187+00:00",
+    "thread_id": "019ff248-d62f-7632-98df-ef02b67d5722",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.025,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 1071,
+    "trace_sha256": "228a793fc8eb1aea2837f4e39c374f493d79c0ad9ed7405987be09eac5ad030d",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

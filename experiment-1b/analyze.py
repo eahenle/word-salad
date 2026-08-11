@@ -63,7 +63,12 @@ def write_csv(path: Path, rows: list[dict]) -> None:
 def summarize(records: list[dict], completed_only: bool = False) -> list[dict]:
     groups = defaultdict(list)
     for record in records:
-        if completed_only and record.get("nonresponse", not bool(record.get("response"))):
+        completed_response = record.get(
+            "completed_response",
+            bool(record.get("response"))
+            and not bool(record.get("runner", {}).get("timed_out")),
+        )
+        if completed_only and not completed_response:
             continue
         groups[(record["variant"], record["condition"], int(record["lanes"]))].append(record)
     rows = []
@@ -78,6 +83,16 @@ def summarize(records: list[dict], completed_only: bool = False) -> list[dict]:
                 semantic = sum(bool(record["semantic_success"]) for record in group)
                 encoding = sum(bool(record["encoding_discovered"]) for record in group)
                 nonresponses = sum(not bool(record.get("response")) for record in group)
+                completed_responses = sum(
+                    bool(
+                        record.get(
+                            "completed_response",
+                            bool(record.get("response"))
+                            and not bool(record.get("runner", {}).get("timed_out")),
+                        )
+                    )
+                    for record in group
+                )
                 semantic_ci = wilson(semantic, trials)
                 rows.append(
                     {
@@ -85,7 +100,8 @@ def summarize(records: list[dict], completed_only: bool = False) -> list[dict]:
                         "condition": condition,
                         "lanes": lanes,
                         "trials": trials,
-                        "completed_responses": trials - nonresponses,
+                        "completed_responses": completed_responses,
+                        "incomplete_turns": trials - completed_responses,
                         "nonresponses": nonresponses,
                         "exact_success": exact,
                         "exact_rate": exact / trials,
