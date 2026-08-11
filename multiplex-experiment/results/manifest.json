@@ -1,0 +1,43 @@
+{
+  "trials": 80,
+  "errors": 12,
+  "completed_responses": 68,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "codex_cli": "0.147.0",
+  "conditions": [
+    "signal",
+    "all_shuffled"
+  ],
+  "lane_counts_run": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "lane_counts_deferred": [
+    16,
+    32
+  ],
+  "payload_words": 196,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "workers": 4,
+  "timeout_seconds": 900,
+  "generator_version": "q781-v1",
+  "answer_key_stored_in_source": false,
+  "notes": [
+    "N=16 and N=32 were deferred by user request.",
+    "Four control trials crossed an overnight machine/session pause and are retained as timeout nonresponses."
+  ]
+}
