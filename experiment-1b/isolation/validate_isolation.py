@@ -108,6 +108,8 @@ def main() -> None:
             "-c",
             f'model_reasoning_effort="{args.reasoning}"',
             "--dangerously-bypass-approvals-and-sandbox",
+            "--disable",
+            "shell_snapshot",
             "exec",
             "--json",
             "--ephemeral",

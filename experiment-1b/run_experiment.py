@@ -9,6 +9,7 @@ import hashlib
 import json
 import os
 import platform
+import secrets
 import signal
 import subprocess
 import sys
@@ -36,6 +37,15 @@ def utc_now() -> str:
 
 def sha256_bytes(value: bytes) -> str:
     return hashlib.sha256(value).hexdigest()
+
+
+def _manifest_argv(argv: Sequence[str]) -> list[str]:
+    """Preserve invocation shape without persisting the host credential path."""
+    redacted = list(argv)
+    for index, argument in enumerate(redacted[:-1]):
+        if argument == "--auth":
+            redacted[index + 1] = "AUTH_JSON"
+    return redacted
 
 
 def _atomic_write_bytes(path: Path, value: bytes) -> None:
@@ -66,10 +76,22 @@ def _git_value(root: Path, *arguments: str) -> str | None:
     return completed.stdout.strip() if completed.returncode == 0 else None
 
 
-def _codex_version(executable: str) -> str | None:
+def _codex_version(args: argparse.Namespace) -> str | None:
+    if args.runtime == "container":
+        command = [
+            args.docker,
+            "run",
+            "--rm",
+            "--entrypoint",
+            "codex",
+            args.image,
+            "--version",
+        ]
+    else:
+        command = [args.codex, "--version"]
     try:
         completed = subprocess.run(
-            [executable, "--version"],
+            command,
             text=True,
             capture_output=True,
             timeout=10,
@@ -122,7 +144,59 @@ def _parse_events(raw_stdout: bytes) -> dict:
     }
 
 
-def _command(args: argparse.Namespace, cwd: Path) -> list[str]:
+def _command(
+    args: argparse.Namespace, cwd: Path, container_name: str = "NEUTRAL_CONTAINER"
+) -> list[str]:
+    if args.runtime == "container":
+        return [
+            args.docker,
+            "run",
+            "--rm",
+            "--interactive",
+            "--name",
+            container_name,
+            "--hostname",
+            "subject",
+            "--read-only",
+            "--tmpfs",
+            "/subject:rw,nosuid,nodev,size=256m,uid=0,gid=101,mode=770",
+            "--tmpfs",
+            "/tmp:rw,nosuid,nodev,size=256m,uid=0,gid=101,mode=1770",
+            "--tmpfs",
+            "/codex-home:rw,nosuid,nodev,size=128m,uid=0,gid=0,mode=700",
+            "--cap-drop",
+            "ALL",
+            "--cap-add",
+            "SETUID",
+            "--cap-add",
+            "SETGID",
+            "--security-opt",
+            "no-new-privileges:true",
+            "--pids-limit",
+            "256",
+            "--memory",
+            "2g",
+            "--user",
+            "root",
+            args.image,
+            "-m",
+            args.model,
+            "-c",
+            f'model_reasoning_effort="{args.reasoning}"',
+            "--dangerously-bypass-approvals-and-sandbox",
+            "--disable",
+            "shell_snapshot",
+            "-C",
+            "/subject",
+            "exec",
+            "--json",
+            "--ephemeral",
+            "--ignore-user-config",
+            "--ignore-rules",
+            "--strict-config",
+            "--skip-git-repo-check",
+            "-",
+        ]
     return [
         args.codex,
         "-m",
@@ -166,11 +240,24 @@ def _run_subject(
     started_monotonic = time.monotonic()
     with tempfile.TemporaryDirectory(prefix="q.") as subject_cwd_name:
         subject_cwd = Path(subject_cwd_name)
-        command = _command(args, subject_cwd)
+        container_name = f"word-salad-{task.neutral_id}-{secrets.token_hex(6)}"
+        command = _command(args, subject_cwd, container_name)
+        if args.runtime == "container":
+            auth_bytes = args.auth.read_bytes()
+            process_input = (
+                str(len(auth_bytes)).encode("ascii")
+                + b"\n"
+                + auth_bytes
+                + task.prompt.encode("utf-8")
+            )
+        else:
+            process_input = task.prompt.encode("utf-8")
         attempt = {
             "neutral_id": task.neutral_id,
             "started_at": started_wall,
             "command": command,
+            "runtime": args.runtime,
+            "container_image": args.image if args.runtime == "container" else None,
             "subject_cwd_basename": subject_cwd.name,
             "inherited_environment_variable_names": sorted(os.environ),
             "prompt_sha256": task.metadata["prompt_sha256"],
@@ -195,10 +282,18 @@ def _run_subject(
             )
             try:
                 raw_stdout, raw_stderr = process.communicate(
-                    task.prompt.encode("utf-8"), timeout=args.timeout
+                    process_input, timeout=args.timeout
                 )
             except subprocess.TimeoutExpired:
                 timed_out = True
+                if args.runtime == "container":
+                    subprocess.run(
+                        [args.docker, "kill", container_name],
+                        text=True,
+                        capture_output=True,
+                        timeout=30,
+                        check=False,
+                    )
                 try:
                     os.killpg(process.pid, signal.SIGKILL)
                 except ProcessLookupError:
@@ -208,6 +303,14 @@ def _run_subject(
         except Exception as exc:  # preserve unexpected runner failures as data
             infrastructure_exception = repr(exc)
             if process is not None and process.poll() is None:
+                if args.runtime == "container":
+                    subprocess.run(
+                        [args.docker, "kill", container_name],
+                        text=True,
+                        capture_output=True,
+                        timeout=30,
+                        check=False,
+                    )
                 try:
                     os.killpg(process.pid, signal.SIGKILL)
                 except ProcessLookupError:
@@ -257,7 +360,13 @@ def _run_subject(
         "strategy": None,
         "notes": "",
         "runner": {
-            "method": "codex_exec_ephemeral_full_trace",
+            "method": (
+                "codex_exec_ephemeral_container_full_trace"
+                if args.runtime == "container"
+                else "codex_exec_ephemeral_full_trace"
+            ),
+            "runtime": args.runtime,
+            "container_image": args.image if args.runtime == "container" else None,
             "started_at": started_wall,
             "finished_at": utc_now(),
             "thread_id": parsed["thread_id"],
@@ -321,11 +430,13 @@ def _manifest(
         {
             "started_at": invocation_started,
             "finished_at": invocation_finished,
-            "argv": sys.argv,
+            "argv": _manifest_argv(sys.argv),
             "variants": args.variants,
             "tasks_requested": len(requested),
             "workers": args.workers,
             "timeout_seconds": args.timeout,
+            "runtime": args.runtime,
+            "container_image": args.image if args.runtime == "container" else None,
         }
     )
     completed = _load_completed(root)
@@ -341,7 +452,7 @@ def _manifest(
         "git_worktree_status_at_finalization": _git_value(repo_root, "status", "--short"),
         "model": args.model,
         "reasoning": args.reasoning,
-        "codex_cli_version": _codex_version(args.codex),
+        "codex_cli_version": _codex_version(args),
         "python_version": platform.python_version(),
         "platform": platform.platform(),
         "generator_version": GENERATOR_VERSION,
@@ -358,6 +469,16 @@ def _manifest(
         "errored_or_nonresponse_trials": errors,
         "workers": args.workers,
         "timeout_seconds": args.timeout,
+        "runtime": args.runtime,
+        "container_image": args.image if args.runtime == "container" else None,
+        "isolation_validation_file": (
+            str(args.isolation_validation) if args.runtime == "container" else None
+        ),
+        "authentication_delivery": (
+            "length_prefixed_stdin_to_root_only_tmpfs"
+            if args.runtime == "container"
+            else "host_profile"
+        ),
         "command_template": _command(args, Path("EMPTY_NEUTRAL_TEMP_DIR")),
         "full_stdout_jsonl_preserved": True,
         "stderr_preserved": True,
@@ -397,6 +518,15 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--workers", type=int, default=4)
     parser.add_argument("--timeout", type=float, default=900.0)
     parser.add_argument("--codex", default="codex")
+    parser.add_argument("--runtime", choices=("local", "container"), default="local")
+    parser.add_argument("--docker", default="docker")
+    parser.add_argument(
+        "--image",
+        default="sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    )
+    parser.add_argument("--auth", type=Path)
+    parser.add_argument("--isolation-validation", type=Path)
+    parser.add_argument("--trial-ids", nargs="+")
     return parser
 
 
@@ -406,6 +536,20 @@ def main() -> None:
         raise ValueError("workers must be positive")
     root = args.root.resolve()
     repo_root = root.parent
+    if args.runtime == "container":
+        if args.auth is None or not args.auth.is_file():
+            raise FileNotFoundError("container runtime requires --auth pointing to auth.json")
+        if args.isolation_validation is None or not args.isolation_validation.is_file():
+            raise FileNotFoundError(
+                "container runtime requires --isolation-validation from a passed probe"
+            )
+        isolation = json.loads(args.isolation_validation.read_text(encoding="utf-8"))
+        if not isolation.get("passed"):
+            raise RuntimeError("isolation validation did not pass")
+        if isolation.get("image") != args.image:
+            raise RuntimeError(
+                "isolation validation image does not match requested container image"
+            )
     payload = args.payload.read_text(encoding="utf-8").strip()
     tag_target = _git_value(repo_root, "rev-list", "-n", "1", BASELINE_TAG)
     if tag_target != BASELINE_SHA:
@@ -420,6 +564,15 @@ def main() -> None:
     )
     all_tasks = build_tasks(payload, VARIANT_ORDER)
     requested = [task for task in all_tasks if task.variant in args.variants]
+    if args.trial_ids:
+        requested_ids = set(args.trial_ids)
+        all_ids = {task.neutral_id for task in all_tasks}
+        unknown_ids = requested_ids - all_ids
+        if unknown_ids:
+            raise ValueError(f"unknown trial IDs: {sorted(unknown_ids)}")
+        requested = [task for task in requested if task.neutral_id in requested_ids]
+        if len(requested) != len(requested_ids):
+            raise ValueError("--trial-ids includes IDs outside the requested variants")
     pending = _check_state(root, requested)
     invocation_started = utc_now()
     if not pending:

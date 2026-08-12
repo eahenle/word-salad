@@ -50,6 +50,12 @@ Desktop's already restricted container. This is the CLI's explicit mode for an
 externally sandboxed environment. It does not bypass the container or the
 privilege-dropping shell wrapper.
 
+The stable `shell_snapshot` feature is disabled. Snapshot setup otherwise asks
+the root coordinator to source a file through the deliberately unprivileged
+shell wrapper, producing a spurious permission-denied tool event before the
+real command. Disabling it removes that instrumentation artifact without
+removing the shell tool.
+
 Network access remains enabled because inference requires it. Before any
 experimental rerun, `validate_isolation.py` sends an adversarial nonexperimental
 probe and requires all host sentinel reads to fail while a normal model turn
