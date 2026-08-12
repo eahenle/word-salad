@@ -40,3 +40,30 @@ The exact default system/developer context is platform-managed and not fully enu
 ## Residual risk
 
 Same-host sandboxing is not cryptographic isolation. A subject that independently guesses absolute host paths could potentially discover readable repository content, generated prompts, metadata, or already completed neutral artifacts. Neutral naming and the lack of any supplied repository path reduce this risk but do not eliminate it. Stronger replication should use a separate container/account/filesystem image that contains only the single stimulus and runtime prerequisites.
+
+## Post-run addendum: residual risk materialized
+
+This warning became an observed methodological failure. The complete trace
+archive was audited only after all 320 trials were sealed, in accordance with
+the trace embargo. The audit found:
+
+- 28 traces with a filesystem/environment probe or access indicator;
+- 14 traces with evidence of access outside the intended neutral directory;
+- 8 traces whose outputs contained clean experiment material;
+- 5 traces whose outputs contained the coordinator answer key.
+
+Observed sources included historical `/tmp/q781*` artifacts, the current
+repository, and persistent Codex session logs under the host profile. The
+dataset is therefore globally invalidated rather than repaired by excluding
+the visibly contaminated rows: every subject shared the opportunity, and
+selection into explicit host searching was behavior-dependent.
+
+The forensic audit is reproducible with:
+
+```bash
+python3 leakage_trace_audit.py
+```
+
+Machine-readable results are in `results/leakage-trace-audit.jsonl` and
+`results/leakage-trace-audit-summary.json`. A hardened rerun must make these
+host paths physically unavailable, not merely undisclosed.

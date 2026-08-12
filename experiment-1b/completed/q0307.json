@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0307",
+  "neutral_id": "q0307",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "3791fe1f9a5ade2534eb288b73e11389ea7116ed94aa3155f299c90155b969dd",
+  "prompt_file": "prompts/lower_nopunct/q0307.txt",
+  "trace_file": "traces/q0307.jsonl",
+  "stderr_file": "stderr/q0307.txt",
+  "response": "I can’t determine a unique result: the words are globally shuffled and each appears four times, so the operation order is lost. Please resend the box instructions in their original order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-12T00:25:57.627302+00:00",
+    "finished_at": "2026-08-12T00:37:49.433750+00:00",
+    "thread_id": "019ff35c-90b0-7e81-8add-3572f1173e43",
+    "aggregate_usage": {
+      "input_tokens": 711799,
+      "cached_input_tokens": 659456,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 36393,
+      "reasoning_output_tokens": 27420
+    },
+    "elapsed_seconds": 711.806,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 2908,
+    "trace_sha256": "11590a3c158e213b5b27a5141e43fa2c031e2be3892145006474235478c24c4a",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 10,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 2
+    },
+    "non_json_line_count": 0
+  }
+}

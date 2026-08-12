@@ -1,0 +1,53 @@
+{
+  "trial_id": "q0207",
+  "neutral_id": "q0207",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "310e1bd207b56bb1f0e38c5035f19afd9a5a327afe8e37a079aaa814da046d04",
+  "prompt_file": "prompts/nopunct/q0207.txt",
+  "trace_file": "traces/q0207.jsonl",
+  "stderr_file": "stderr/q0207.txt",
+  "response": "I’m reconstructing the shuffled instructions first, then I’ll apply the box operations in the specified order and return only the requested final format.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T21:44:22.374662+00:00",
+    "finished_at": "2026-08-11T21:59:22.407319+00:00",
+    "thread_id": "019ff2c8-a0a3-70c1-986b-b791877e8561",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.03,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 340,
+    "trace_sha256": "942f546b6f92b6c0ab72d16b70de27f4f3db39c1db547e74246bd6768563a79e",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 3,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

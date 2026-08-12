@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0154",
+  "neutral_id": "q0154",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "270a5989d43f57db94c9a40a6eebd601d12e248451a121b51e21b9a87644900e",
+  "prompt_file": "prompts/lower/q0154.txt",
+  "trace_file": "traces/q0154.jsonl",
+  "stderr_file": "stderr/q0154.txt",
+  "response": "The scramble is highly regular: it contains eight copies of the same 196-word prompt, globally permuted. The initial state and answer schema are now clear; I’m resolving the remaining move sequence from the exact word counts.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T20:54:06.332747+00:00",
+    "finished_at": "2026-08-11T21:09:06.362269+00:00",
+    "thread_id": "019ff29a-9b34-7183-a04e-705fd82d588c",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.027,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 1744,
+    "trace_sha256": "c175f86ce078cae224f571974e1a4756a748bb478b4884c31b9db98e31a8bb53",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 8,
+    "event_type_counts": {
+      "item.completed": 4,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

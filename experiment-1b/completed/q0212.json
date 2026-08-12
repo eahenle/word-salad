@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0212",
+  "neutral_id": "q0212",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "de8d37476f4d261f0924e3217a7103c63f8830589822019ddd96b2e34266d452",
+  "prompt_file": "prompts/nopunct/q0212.txt",
+  "trace_file": "traces/q0212.jsonl",
+  "stderr_file": "stderr/q0212.txt",
+  "response": "I can’t determine a unique result because the instructions’ word order is scrambled. Please resend them in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T21:59:05.904973+00:00",
+    "finished_at": "2026-08-11T22:08:38.675634+00:00",
+    "thread_id": "019ff2d6-1be6-7df2-a6d8-b77de8fb3d8e",
+    "aggregate_usage": {
+      "input_tokens": 199138,
+      "cached_input_tokens": 161792,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 18699,
+      "reasoning_output_tokens": 14484
+    },
+    "elapsed_seconds": 572.769,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 46441,
+    "trace_sha256": "d79921924271813d35b5c19f633bdb94f3be4aed65af6786bc844b7d837d9e83",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 17,
+    "event_type_counts": {
+      "item.completed": 8,
+      "item.started": 6,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 6
+    },
+    "non_json_line_count": 0
+  }
+}

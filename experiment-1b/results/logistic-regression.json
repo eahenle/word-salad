@@ -1,0 +1,107 @@
+{
+  "outcome": "semantic_success",
+  "observations": 320,
+  "ridge_penalty": 0.001,
+  "converged": true,
+  "iterations": 12,
+  "lane_predictor": "log2(lanes)",
+  "coefficients": [
+    {
+      "term": "intercept",
+      "coefficient": -7.06281457207995,
+      "odds_ratio": 0.000856364399480134,
+      "standard_error": 2.7224372526369485,
+      "wald_ci_low": -12.398693537418541,
+      "wald_ci_high": -1.7269356067413586
+    },
+    {
+      "term": "signal_presence",
+      "coefficient": 10.744803480761341,
+      "odds_ratio": 46388.34311868102,
+      "standard_error": 2.802526886849175,
+      "wald_ci_low": 5.251951716831799,
+      "wald_ci_high": 16.237655244690885
+    },
+    {
+      "term": "lowercase",
+      "coefficient": 0.433939591969793,
+      "odds_ratio": 1.5433256360388912,
+      "standard_error": 1.7947508294593144,
+      "wald_ci_low": -3.0837073949938523,
+      "wald_ci_high": 3.951586578933438
+    },
+    {
+      "term": "punctuation_removed",
+      "coefficient": -2.4179679224189012,
+      "odds_ratio": 0.08910249680288732,
+      "standard_error": 1.8811818383182908,
+      "wald_ci_low": -6.105016573893602,
+      "wald_ci_high": 1.2690807290557995
+    },
+    {
+      "term": "log2_lanes",
+      "coefficient": 1.9896764761299717,
+      "odds_ratio": 7.313167395324204,
+      "standard_error": 0.9583616933459786,
+      "wald_ci_low": 0.11132207300903385,
+      "wald_ci_high": 3.8680308792509095
+    },
+    {
+      "term": "signal_x_lowercase",
+      "coefficient": -1.530052798092024,
+      "odds_ratio": 0.2165242349477239,
+      "standard_error": 1.5206191101725128,
+      "wald_ci_low": -4.510411488233494,
+      "wald_ci_high": 1.4503058920494456
+    },
+    {
+      "term": "signal_x_punctuation_removed",
+      "coefficient": 0.727253216921096,
+      "odds_ratio": 2.069388632263216,
+      "standard_error": 1.4408529302536606,
+      "wald_ci_low": -2.0967666333950814,
+      "wald_ci_high": 3.551273067237273
+    },
+    {
+      "term": "lowercase_x_punctuation_removed",
+      "coefficient": -3.520136387859831,
+      "odds_ratio": 0.029595398439563877,
+      "standard_error": 9.96972254593624,
+      "wald_ci_low": -23.060433513751835,
+      "wald_ci_high": 16.02016073803217
+    },
+    {
+      "term": "signal_x_log2_lanes",
+      "coefficient": -3.5291610137710245,
+      "odds_ratio": 0.029329512604613736,
+      "standard_error": 1.004523548767437,
+      "wald_ci_low": -5.497990990977566,
+      "wald_ci_high": -1.5603310365644831
+    },
+    {
+      "term": "lowercase_x_log2_lanes",
+      "coefficient": -0.62818655376172,
+      "odds_ratio": 0.5335585038718851,
+      "standard_error": 0.4900392471846562,
+      "wald_ci_low": -1.5886458292547672,
+      "wald_ci_high": 0.33227272173132727
+    },
+    {
+      "term": "punctuation_removed_x_log2_lanes",
+      "coefficient": 0.3978331045336059,
+      "odds_ratio": 1.4885955693225674,
+      "standard_error": 0.49621385628070164,
+      "wald_ci_low": -0.5747281824063039,
+      "wald_ci_high": 1.3703943914735155
+    },
+    {
+      "term": "signal_x_lowercase_x_punctuation_removed",
+      "coefficient": 4.718256865986018,
+      "odds_ratio": 111.9728986848468,
+      "standard_error": 10.00410251783791,
+      "wald_ci_low": -14.889423766622762,
+      "wald_ci_high": 24.325937498594797
+    }
+  ],
+  "caution": "Repeated stochastic runs of one model/runtime; coefficients describe repeatability and effect magnitude, not a population sample."
+}

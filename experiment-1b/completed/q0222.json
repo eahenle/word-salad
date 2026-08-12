@@ -1,0 +1,55 @@
+{
+  "trial_id": "q0222",
+  "neutral_id": "q0222",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "2585462920e6610e533ce0a271f473ca22b18db37ba790626ef5ea40b880d286",
+  "prompt_file": "prompts/nopunct/q0222.txt",
+  "trace_file": "traces/q0222.jsonl",
+  "stderr_file": "stderr/q0222.txt",
+  "response": "I’m untangling this as a state-tracking puzzle: three colored boxes, three objects, and a sequence that mixes moving contents with swapping labels. I’ll reconstruct the operative instructions first, then report only the final state in the requested format.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T22:18:22.957922+00:00",
+    "finished_at": "2026-08-11T22:58:08.008715+00:00",
+    "thread_id": "019ff2e7-c39d-7ff2-8391-f3120d84f8ec",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.01,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 1545,
+    "trace_sha256": "57819ecd675561f475e0def408a413bcfc05f209b15f0eacb8ad046c0ba85688",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "web_search": 2
+    },
+    "non_json_line_count": 0
+  }
+}

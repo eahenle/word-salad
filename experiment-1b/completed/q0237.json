@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0237",
+  "neutral_id": "q0237",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "29ed9ab7c6a3efa1469a9f51bd84b1a3aa132244a4835d6cc734190005560f6a",
+  "prompt_file": "prompts/nopunct/q0237.txt",
+  "trace_file": "traces/q0237.jsonl",
+  "stderr_file": "stderr/q0237.txt",
+  "response": "I can’t determine a unique answer because the word order—and therefore the direction and sequence of the box operations—has been lost. Please resend the instructions in their original order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T23:16:39.500888+00:00",
+    "finished_at": "2026-08-11T23:17:18.031481+00:00",
+    "thread_id": "019ff31d-1de9-7c41-9c37-46e2818b3536",
+    "aggregate_usage": {
+      "input_tokens": 14797,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1948,
+      "reasoning_output_tokens": 1907
+    },
+    "elapsed_seconds": 38.53,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 544,
+    "trace_sha256": "0edb1095903c6b748da384456cbaad1c53a28046a1ad7b2569ad79e8f0e7abcb",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

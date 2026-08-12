@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0158",
+  "neutral_id": "q0158",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 8,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "2702233f235c2510fb2ca11d4867136ea418ac0642ed9eecf78bc0d435d57acd",
+  "prompt_file": "prompts/lower/q0158.txt",
+  "trace_file": "traces/q0158.jsonl",
+  "stderr_file": "stderr/q0158.txt",
+  "response": "The text’s word order is too scrambled to recover the starting contents and operation sequence uniquely. I can identify three boxes—red, blue, green—and three objects—a brass key, silver coin, and glass marble—but not their exact moves.\n\nPlease resend the ordered or numbered instructions.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T20:59:26.304410+00:00",
+    "finished_at": "2026-08-11T21:02:03.196037+00:00",
+    "thread_id": "019ff29f-7d18-76a1-8628-3b6b77076221",
+    "aggregate_usage": {
+      "input_tokens": 15033,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7320,
+      "reasoning_output_tokens": 7199
+    },
+    "elapsed_seconds": 156.889,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 992,
+    "trace_sha256": "4ba94471e0fe3e13b2fc1559d09f6db1c78c9d6622905cb1e3405f7cc44d6f25",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

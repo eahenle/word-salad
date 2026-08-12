@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0301",
+  "neutral_id": "q0301",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 1,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "44108deb81891e828a7c534c5c60573f4eaae56f3be5832a7be4803801ef0126",
+  "prompt_file": "prompts/lower_nopunct/q0301.txt",
+  "trace_file": "traces/q0301.jsonl",
+  "stderr_file": "stderr/q0301.txt",
+  "response": "The final contents cannot be determined uniquely because the word order has been destroyed.\n\nThe 784-word block contains exactly four copies of the same 196-word multiset. That preserves word counts, but not crucial relationships such as:\n\n- Which object initially belongs to each colored box.\n- The order of the moves and swaps.\n- Each move’s source and destination.\n\nFor example, both “red contains the brass key” and “red contains the silver coin” fit the same words. Please resend the initial contents and numbered operations in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-12T00:15:58.648064+00:00",
+    "finished_at": "2026-08-12T00:24:10.389021+00:00",
+    "thread_id": "019ff353-6cdc-7871-b207-6ea1e279e217",
+    "aggregate_usage": {
+      "input_tokens": 202802,
+      "cached_input_tokens": 160768,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 21880,
+      "reasoning_output_tokens": 19053
+    },
+    "elapsed_seconds": 491.739,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 2682,
+    "trace_sha256": "006f64b16d6da6f2324c9bed712a8ec494698ad554c0bd1ef9945524e13e40ad",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 10,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 2
+    },
+    "non_json_line_count": 0
+  }
+}

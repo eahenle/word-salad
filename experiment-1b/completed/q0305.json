@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0305",
+  "neutral_id": "q0305",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 5,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "189b0e3b4b00f7dabff2df8aa08f170e31b164254b3bf99ed32b52cdc1243fe9",
+  "prompt_file": "prompts/lower_nopunct/q0305.txt",
+  "trace_file": "traces/q0305.jsonl",
+  "stderr_file": "stderr/q0305.txt",
+  "response": "I can’t determine a unique result: the instructions are word-shuffled and duplicated, so the initial contents and operation order are ambiguous. Please resend the box setup and steps in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-12T00:24:10.390755+00:00",
+    "finished_at": "2026-08-12T00:31:43.028121+00:00",
+    "thread_id": "019ff35a-edc7-7ae3-8401-f8ce97a4d01d",
+    "aggregate_usage": {
+      "input_tokens": 58966,
+      "cached_input_tokens": 48384,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 20696,
+      "reasoning_output_tokens": 18676
+    },
+    "elapsed_seconds": 452.636,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 776,
+    "trace_sha256": "b61c07921a40646011fe86beadb7ac3cdd86ba661f82b929c6e8f2cb6a354c32",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

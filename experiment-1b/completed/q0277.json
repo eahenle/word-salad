@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0277",
+  "neutral_id": "q0277",
+  "variant": "lower_nopunct",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 7,
+  "signal_phase": 7,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "8651c76975b00afbed868deac80c1802eb7861cec8a0730b0219f55481546aab",
+  "prompt_file": "prompts/lower_nopunct/q0277.txt",
+  "trace_file": "traces/q0277.jsonl",
+  "stderr_file": "stderr/q0277.txt",
+  "response": "I can’t determine a unique final state. The text contains eight word-shuffled copies of a 196-word instruction, with one “the” missing; the operation order and associations are lost. Please send one unscrambled copy.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T23:34:55.914916+00:00",
+    "finished_at": "2026-08-11T23:46:13.531794+00:00",
+    "thread_id": "019ff32d-d8cd-7991-9816-956071906b33",
+    "aggregate_usage": {
+      "input_tokens": 461348,
+      "cached_input_tokens": 416000,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 34327,
+      "reasoning_output_tokens": 27758
+    },
+    "elapsed_seconds": 677.615,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 14238,
+    "trace_sha256": "bb2a8fc399f44418bf7577a01f9a71854fb519e6f7095db5b2e9ec566277ae12",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 10,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 2
+    },
+    "non_json_line_count": 0
+  }
+}

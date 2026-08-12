@@ -1,0 +1,60 @@
+{
+  "trial_id": "q0235",
+  "neutral_id": "q0235",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 5,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "8f58a05f3bdf4ebd0512497be0cc794bec4d3e1e706d29b9830d0f44450bb91a",
+  "prompt_file": "prompts/nopunct/q0235.txt",
+  "trace_file": "traces/q0235.jsonl",
+  "stderr_file": "stderr/q0235.txt",
+  "response": "I can’t determine a unique final state. The message contains eight globally shuffled copies of the same 196-word prompt, so the initial box assignments and operation order have been lost. Please resend the instructions in their original order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T23:10:15.394433+00:00",
+    "finished_at": "2026-08-11T23:22:19.859328+00:00",
+    "thread_id": "019ff317-417a-77d0-a710-7e4048116c62",
+    "aggregate_usage": {
+      "input_tokens": 252779,
+      "cached_input_tokens": 213760,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 19800,
+      "reasoning_output_tokens": 14038
+    },
+    "elapsed_seconds": 724.462,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 2141,
+    "trace_sha256": "562f9ac8b7e35ceaddbac32ea02155efd307dbd6c1dc99f96c7ff8a73027805a",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 10,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 1,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

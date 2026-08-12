@@ -1,0 +1,58 @@
+{
+  "trial_id": "q0236",
+  "neutral_id": "q0236",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 6,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "762ed46820f36ff7896bd6ee2cd385bb8e16da952687da315afa24186934cccc",
+  "prompt_file": "prompts/nopunct/q0236.txt",
+  "trace_file": "traces/q0236.jsonl",
+  "stderr_file": "stderr/q0236.txt",
+  "response": "I can’t determine a unique color because the instructions are scrambled and contain conflicting operation orders. Please resend them with sentence breaks and numbered steps.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T23:11:13.026176+00:00",
+    "finished_at": "2026-08-11T23:17:44.619557+00:00",
+    "thread_id": "019ff318-229d-75e3-a54c-0f9d78565e31",
+    "aggregate_usage": {
+      "input_tokens": 16868,
+      "cached_input_tokens": 14080,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2622,
+      "reasoning_output_tokens": 2588
+    },
+    "elapsed_seconds": 391.591,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 632,
+    "trace_sha256": "22780f63d556f9d923df34fbf8c9539da315fad307937514fbdc941c67b98080",
+    "stderr_bytes": 188,
+    "stderr_sha256": "681e89a5a17a64afed24c7bcf500f41dfd9bbc0b8be71cb1621738ea2592b04c",
+    "event_count": 5,
+    "event_type_counts": {
+      "error": 1,
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

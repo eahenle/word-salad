@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0302",
+  "neutral_id": "q0302",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "3ada47f3f3fa02eefb2a393ade39be2974e12d3f1b260e8c2b9f648494fdfbf3",
+  "prompt_file": "prompts/lower_nopunct/q0302.txt",
+  "trace_file": "traces/q0302.jsonl",
+  "stderr_file": "stderr/q0302.txt",
+  "response": "I can’t determine a unique result because the word order is corrupted, especially around the move sequence and label swaps.\n\nPlease resend:\n\n1. Initial contents: `Red = …, Green = …, Blue = …`\n2. Operations in exact order\n3. Whether labels move independently of the physical boxes\n4. Required reply format",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-12T00:21:14.611687+00:00",
+    "finished_at": "2026-08-12T00:22:29.360947+00:00",
+    "thread_id": "019ff358-3f28-7412-83dd-709bd7330615",
+    "aggregate_usage": {
+      "input_tokens": 14011,
+      "cached_input_tokens": 12032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3756,
+      "reasoning_output_tokens": 3624
+    },
+    "elapsed_seconds": 74.746,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1000,
+    "trace_sha256": "7607a403cf061c618d3c27819b9362e4386e992127c3c06965861d6d1881cffc",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

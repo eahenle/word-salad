@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0229",
+  "neutral_id": "q0229",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 9,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "9f99840103f3fcdcc29d4735eee58a9e0c28bf94acab2706c2489e6f8d795e1a",
+  "prompt_file": "prompts/nopunct/q0229.txt",
+  "trace_file": "traces/q0229.jsonl",
+  "stderr_file": "stderr/q0229.txt",
+  "response": "I’m untangling this as a state-tracking puzzle: three labeled boxes, three movable objects, plus color-replacement operations. I’ll normalize the repeated clauses first, then execute them in order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T23:01:39.539469+00:00",
+    "finished_at": "2026-08-11T23:16:39.499801+00:00",
+    "thread_id": "019ff30f-626b-7093-a4eb-3f9f99674d50",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.012,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 38685,
+    "trace_sha256": "3bef79c344c84747c337d86a3488963c0b0fee7771d5bce5a3cca6d3a44510fb",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 19,
+    "event_type_counts": {
+      "item.completed": 9,
+      "item.started": 8,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 7,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

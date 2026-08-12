@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0309",
+  "neutral_id": "q0309",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 9,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "8eb4fbd45051eae7edb526a2f6c271046a65fe820d94fd365b7164b13d20d7b7",
+  "prompt_file": "prompts/lower_nopunct/q0309.txt",
+  "trace_file": "traces/q0309.jsonl",
+  "stderr_file": "stderr/q0309.txt",
+  "response": "A unique final state can’t be determined because word order—and therefore move direction and step order—has been lost. Please resend the ordered instructions.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-12T00:27:52.231282+00:00",
+    "finished_at": "2026-08-12T00:31:33.839395+00:00",
+    "thread_id": "019ff35e-5045-7ba2-8c91-2e6301f964dc",
+    "aggregate_usage": {
+      "input_tokens": 94772,
+      "cached_input_tokens": 73472,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 11482,
+      "reasoning_output_tokens": 8681
+    },
+    "elapsed_seconds": 221.606,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 785,
+    "trace_sha256": "6b1e514fb1cb7246a814a5584273315edb9cf15012f80fdbbfbe5613f5179b63",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

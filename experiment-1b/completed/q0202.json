@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0202",
+  "neutral_id": "q0202",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "9c4d33ff3031c22e9b0b3ec2bb5696fe1e9b5ab0efa8eb98d97dbd4d64874821",
+  "prompt_file": "prompts/nopunct/q0202.txt",
+  "trace_file": "traces/q0202.jsonl",
+  "stderr_file": "stderr/q0202.txt",
+  "response": "The instruction set is deliberately transposed enough that I’m checking the rare phrase combination for an exact source before committing to the final state.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T21:37:18.856339+00:00",
+    "finished_at": "2026-08-11T21:52:18.887208+00:00",
+    "thread_id": "019ff2c2-2a3d-7392-b196-0c9a9cb73b6b",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.027,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 89955,
+    "trace_sha256": "afc00deaea5494536abf0f90da345fcb85986b145c9cce9b97ad6335afbd669d",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 56,
+    "event_type_counts": {
+      "item.completed": 28,
+      "item.started": 26,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 24,
+      "web_search": 2
+    },
+    "non_json_line_count": 0
+  }
+}

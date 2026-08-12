@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"019ff293-3f11-7783-bb4d-d3564394e229"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"red = glass marble; blue = empty; green = brass key, silver coin"}}
+{"type":"turn.completed","usage":{"input_tokens":14129,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":447,"reasoning_output_tokens":425}}

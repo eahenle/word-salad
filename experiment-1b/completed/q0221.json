@@ -1,0 +1,55 @@
+{
+  "trial_id": "q0221",
+  "neutral_id": "q0221",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 1,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "5074418d4b037c233f9b4e5342c3cf44aeb124da08ef0f348a45d4a47a2f1794",
+  "prompt_file": "prompts/nopunct/q0221.txt",
+  "trace_file": "traces/q0221.jsonl",
+  "stderr_file": "stderr/q0221.txt",
+  "response": "The structure is now clear: the 784-word stream is an order-preserving interleave of four identical 196-word instructions. I’m deinterleaving those copies so the wording and operation order are exact.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T22:14:22.125245+00:00",
+    "finished_at": "2026-08-11T22:54:07.178043+00:00",
+    "thread_id": "019ff2e4-16d9-7c90-b194-dc331d7effb3",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.012,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 1117,
+    "trace_sha256": "00ba8c01ad7cedc8f0d78506a9360573bc726f918a2bb134298a9a56e468ab01",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 6,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

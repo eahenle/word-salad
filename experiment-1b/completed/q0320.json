@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0320",
+  "neutral_id": "q0320",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 10,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "99bb366de60bcf4d4adb629d09c620d254a3bec126b14eab54197ba984206ca0",
+  "prompt_file": "prompts/lower_nopunct/q0320.txt",
+  "trace_file": "traces/q0320.jsonl",
+  "stderr_file": "stderr/q0320.txt",
+  "response": "I can identify three boxes (brass, silver, glass), three objects (coin, key, marble), and three colors (red, green, blue), but the randomized word order removes the initial arrangement and operation sequence. Please resend the instructions as numbered steps and state each box’s starting contents and label.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-12T00:36:40.177590+00:00",
+    "finished_at": "2026-08-12T00:36:59.218570+00:00",
+    "thread_id": "019ff366-5ea8-7953-830c-9d17648a0e5f",
+    "aggregate_usage": {
+      "input_tokens": 14795,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 330,
+      "reasoning_output_tokens": 262
+    },
+    "elapsed_seconds": 19.039,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 655,
+    "trace_sha256": "c3a35d7af66c4169490d0c572593b03bd6ee9a8a511826f98ad3798946cf2bf3",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

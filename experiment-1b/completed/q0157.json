@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0157",
+  "neutral_id": "q0157",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "475a0bb201615fb9dfdc2aeac87da1fe2ba7a4e7e59d370a5dbbfeb99e698806",
+  "prompt_file": "prompts/lower/q0157.txt",
+  "trace_file": "traces/q0157.jsonl",
+  "stderr_file": "stderr/q0157.txt",
+  "response": "I can identify three boxes (red, green, blue) and three objects (silver coin, brass key, glass marble), but the operation order is too scrambled to determine reliably. Please resend the instructions in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T20:57:09.927550+00:00",
+    "finished_at": "2026-08-11T20:59:26.302032+00:00",
+    "thread_id": "019ff29d-685e-7131-b6e6-520416b8d91a",
+    "aggregate_usage": {
+      "input_tokens": 15033,
+      "cached_input_tokens": 12032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6783,
+      "reasoning_output_tokens": 6732
+    },
+    "elapsed_seconds": 136.371,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 572,
+    "trace_sha256": "6074efde20fc319937e3cc8de57dddb098eb46eafe838691cac2430abd944b67",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

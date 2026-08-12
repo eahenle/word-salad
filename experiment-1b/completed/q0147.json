@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0147",
+  "neutral_id": "q0147",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "b9b2713b00e1e9d7159719a9a53be1b145b62b5e2604d40f439ff2bc8c88c710",
+  "prompt_file": "prompts/lower/q0147.txt",
+  "trace_file": "traces/q0147.jsonl",
+  "stderr_file": "stderr/q0147.txt",
+  "response": "The final box contents can’t be uniquely determined. The text is a shuffled bag of four copies of the same 196-token instruction set, so operation order and color/object pairings were lost. Please provide the ordered instructions or the decryption rule.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T20:47:36.355842+00:00",
+    "finished_at": "2026-08-11T20:53:28.790366+00:00",
+    "thread_id": "019ff294-a7d0-7b11-b109-d6d5251faa46",
+    "aggregate_usage": {
+      "input_tokens": 507516,
+      "cached_input_tokens": 464128,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 15307,
+      "reasoning_output_tokens": 10702
+    },
+    "elapsed_seconds": 352.432,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 3105,
+    "trace_sha256": "93af74d249a9fbbb12a8a1107dfe79b92953be1e3dafa57652310214447c4a79",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 11,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 3
+    },
+    "non_json_line_count": 0
+  }
+}

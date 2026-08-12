@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0317",
+  "neutral_id": "q0317",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "23ca62cc840df8539ee3e605b7b7dc9a2e0281ecd4a24239104d523354b5d654",
+  "prompt_file": "prompts/lower_nopunct/q0317.txt",
+  "trace_file": "traces/q0317.jsonl",
+  "stderr_file": "stderr/q0317.txt",
+  "response": "I can infer a red/green/blue box puzzle, but the move and swap instructions have been scrambled beyond a unique ordering. Multiple final states are possible. Please resend the operations as an ordered list.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-12T00:34:40.843218+00:00",
+    "finished_at": "2026-08-12T00:36:52.032718+00:00",
+    "thread_id": "019ff364-8c74-7a60-a78e-6dd68b25dade",
+    "aggregate_usage": {
+      "input_tokens": 14793,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6819,
+      "reasoning_output_tokens": 6721
+    },
+    "elapsed_seconds": 131.188,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 854,
+    "trace_sha256": "34f6471ff98c284d1f8a4c79522bf59072c236d13e7fefaf6d9d07bb3ddb560a",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

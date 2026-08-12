@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0239",
+  "neutral_id": "q0239",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 9,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "eaa7c98e70e99043a98bff546f64c6c3d4bb40c3983b221ba9c10bb4243c2d0c",
+  "prompt_file": "prompts/nopunct/q0239.txt",
+  "trace_file": "traces/q0239.jsonl",
+  "stderr_file": "stderr/q0239.txt",
+  "response": "Cannot determine uniquely. The text is a word-level shuffle of eight identical 196-word prompts, which erases the relationships and operation order. Please resend one copy in its original word order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T23:17:44.620266+00:00",
+    "finished_at": "2026-08-11T23:20:59.839697+00:00",
+    "thread_id": "019ff31e-1c4c-7ac2-911b-c08ea4b7b82b",
+    "aggregate_usage": {
+      "input_tokens": 35569,
+      "cached_input_tokens": 24064,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 10379,
+      "reasoning_output_tokens": 8639
+    },
+    "elapsed_seconds": 195.218,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 784,
+    "trace_sha256": "48159f6e6d2328a54d9469f3dd322a038c6e27434b1a26923a95b3cd9369b58b",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

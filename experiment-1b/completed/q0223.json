@@ -1,0 +1,60 @@
+{
+  "trial_id": "q0223",
+  "neutral_id": "q0223",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 3,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "b3c098cc0ecbe7ba22b45e998881c9f8122c956c7bb234dc92e0ca2deeb20e41",
+  "prompt_file": "prompts/nopunct/q0223.txt",
+  "trace_file": "traces/q0223.jsonl",
+  "stderr_file": "stderr/q0223.txt",
+  "response": "I can’t determine the final box contents uniquely because the instructions and operation order are word-shuffled; please provide the unshuffled text.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T22:20:51.021473+00:00",
+    "finished_at": "2026-08-11T22:59:29.564954+00:00",
+    "thread_id": "019ff2ea-05f2-7040-9d02-049e5a26f2eb",
+    "aggregate_usage": {
+      "input_tokens": 480502,
+      "cached_input_tokens": 399104,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 25457,
+      "reasoning_output_tokens": 18797
+    },
+    "elapsed_seconds": 833.448,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 2178,
+    "trace_sha256": "20610266ccd7d1c75eefb4d4ebd13c6fc51762540d62f9a17026427d630e4211",
+    "stderr_bytes": 240,
+    "stderr_sha256": "46a9f497f6dda49062c90a896fef623db1b1cdb811d9e060b47672b2f0ce19f3",
+    "event_count": 10,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 1,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

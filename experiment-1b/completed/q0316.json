@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0316",
+  "neutral_id": "q0316",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 6,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "c100f64f5440aaf2d13c1269741292c2e2978dd1966fbf538ba4c0144bbf19c9",
+  "prompt_file": "prompts/lower_nopunct/q0316.txt",
+  "trace_file": "traces/q0316.jsonl",
+  "stderr_file": "stderr/q0316.txt",
+  "response": "I can’t determine a unique final state because the word order is scrambled and produces contradictory box contents and operations. Please resend the initial contents, visible labels, and numbered moves in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-12T00:34:26.403369+00:00",
+    "finished_at": "2026-08-12T00:35:47.861617+00:00",
+    "thread_id": "019ff364-5414-7f90-b0f5-a34ac033e408",
+    "aggregate_usage": {
+      "input_tokens": 14794,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4083,
+      "reasoning_output_tokens": 3991
+    },
+    "elapsed_seconds": 81.457,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 851,
+    "trace_sha256": "d4ed9c9cd96ade9c04303a30bc8feeb3633119a8a75eaa8a1a7cff10b9c5c9c0",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0137",
+  "neutral_id": "q0137",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "d7692567b437aefc5323e6f7d9e06f67bd65d5ebaa703b0b4fb8d99d84ebbc57",
+  "prompt_file": "prompts/lower/q0137.txt",
+  "trace_file": "traces/q0137.jsonl",
+  "stderr_file": "stderr/q0137.txt",
+  "response": "I can’t determine a unique mapping: the shuffle destroys the operation order and source/destination pairings.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T20:33:49.119870+00:00",
+    "finished_at": "2026-08-11T20:47:36.354543+00:00",
+    "thread_id": "019ff288-0876-7e52-be5b-397631aebaf0",
+    "aggregate_usage": {
+      "input_tokens": 527030,
+      "cached_input_tokens": 462336,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 40412,
+      "reasoning_output_tokens": 33400
+    },
+    "elapsed_seconds": 827.232,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1598,
+    "trace_sha256": "0e53ca088575d1e85dc8203371caf3ef37d8407aabef9f1254707410dc8fee27",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 8,
+    "event_type_counts": {
+      "item.completed": 4,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

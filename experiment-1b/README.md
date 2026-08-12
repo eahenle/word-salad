@@ -2,6 +2,16 @@
 
 This directory is independent of the frozen historical experiment in `../multiplex-experiment/`. It contains an instrumented replication of the original multiplexing slate and a paired 2 × 2 case/punctuation matrix.
 
+> **Invalidated same-host run:** The completed 320-trial dataset in this
+> directory is preserved for forensic study but is not valid confirmatory
+> evidence. Post-slate trace audit found that the inner `read-only` sandbox
+> allowed reads outside the neutral working directory. Fourteen subjects left
+> the intended filesystem boundary, eight obtained clean experiment material,
+> and five surfaced the answer key from historical artifacts or prior Codex
+> session logs. See `results/invalidation-report.md` and
+> `results/leakage-trace-audit-summary.json`. Do not pool these results with a
+> hardened rerun.
+
 ## Frozen baseline
 
 The original Experiment 1A dataset is preserved at:
@@ -140,9 +150,9 @@ Positive interaction means normalization reduced all-shuffled success more than 
 
 Regression and interval summaries characterize repeatability and effect magnitude for one model/runtime. They are not classical population inference.
 
-## Isolation boundary
+## Intended isolation boundary and observed failure
 
-See `leakage-audit.md` for the predeclared audit. Empty working directories, neutral IDs, stdin-only prompts, ignored user/project rules, read-only sandboxes, ephemeral sessions, and separate post-hoc scoring reduce leakage. Same-host process isolation is not cryptographic isolation: an agent that independently guessed an absolute repository path might be able to inspect host-readable files. No such path or experiment metadata is provided to subjects.
+See `leakage-audit.md` for the predeclared audit and post-run addendum. Empty working directories, neutral IDs, stdin-only prompts, ignored user/project rules, read-only sandboxes, ephemeral sessions, and separate post-hoc scoring reduced direct metadata exposure but did not create a read allowlist. The warned residual risk materialized: agents independently searched absolute host paths, repository files, historical temporary artifacts, and prior Codex session logs. A valid rerun requires an external filesystem boundary such as a container that mounts only a neutral work directory and minimal runtime credentials.
 
 ## Artifact layout
 
@@ -158,6 +168,8 @@ experiment-1b/
 ├── score.py
 ├── trace_analysis.py
 ├── analyze.py
+├── audit.py
+├── leakage_trace_audit.py
 ├── prompts/{original,lower,nopunct,lower_nopunct}/
 ├── metadata/{original,lower,nopunct,lower_nopunct}/
 ├── traces/

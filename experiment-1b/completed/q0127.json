@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0127",
+  "neutral_id": "q0127",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "e2ef0df94fbbeabac212f79ac6e1ff396bfa167f4a8500c24db3c5f1ef05b0aa",
+  "prompt_file": "prompts/lower/q0127.txt",
+  "trace_file": "traces/q0127.jsonl",
+  "stderr_file": "stderr/q0127.txt",
+  "response": "The instructions are underdetermined because their word order is scrambled and no reconstruction rule is given. For example, “move the coin from red into green” and its reverse use the same words but produce different results. Please provide the ordering key or the instructions in sequence.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T20:10:24.516264+00:00",
+    "finished_at": "2026-08-11T20:22:48.307800+00:00",
+    "thread_id": "019ff272-99b8-7683-8f78-4f2c37242c82",
+    "aggregate_usage": {
+      "input_tokens": 392903,
+      "cached_input_tokens": 346368,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 29310,
+      "reasoning_output_tokens": 23388
+    },
+    "elapsed_seconds": 743.787,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 866,
+    "trace_sha256": "02e800386ce68af7b9e42b10ced168c5678349763e051ebe7113fcb66afb91a6",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

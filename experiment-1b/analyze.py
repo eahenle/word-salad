@@ -328,6 +328,38 @@ def effort_summary(records: list[dict], trace_metrics: list[dict]) -> list[dict]
     return rows
 
 
+def effort_rollup(records: list[dict], trace_metrics: list[dict]) -> list[dict]:
+    trace_by_id = {record["neutral_id"]: record for record in trace_metrics}
+    groups = defaultdict(list)
+    for record in records:
+        groups[(record["variant"], record["condition"])].append(
+            (record, trace_by_id[record["neutral_id"]])
+        )
+    rows = []
+    for variant in VARIANT_ORDER:
+        for condition in CONDITION_ORDER:
+            group = groups[(variant, condition)]
+            rows.append(
+                {
+                    "variant": variant,
+                    "condition": condition,
+                    "trials": len(group),
+                    "semantic_success": sum(bool(record["semantic_success"]) for record, _ in group),
+                    "completed_responses": sum(bool(record["completed_response"]) for record, _ in group),
+                    "timeouts": sum(bool(record["runner"]["timed_out"]) for record, _ in group),
+                    "trials_with_tools": sum(trace["tool_calls"] > 0 for _, trace in group),
+                    "trials_with_shell": sum(trace["shell_invocations"] > 0 for _, trace in group),
+                    "median_elapsed_seconds": median([record["runner"]["elapsed_seconds"] for record, _ in group]),
+                    "median_input_tokens": median([trace.get("input_tokens") for _, trace in group]),
+                    "median_cached_input_tokens": median([trace.get("cached_input_tokens") for _, trace in group]),
+                    "median_output_tokens": median([trace.get("output_tokens") for _, trace in group]),
+                    "median_reasoning_tokens": median([trace.get("reasoning_tokens") for _, trace in group]),
+                    "median_trace_bytes": median([trace.get("trace_bytes") for _, trace in group]),
+                }
+            )
+    return rows
+
+
 def strategy_summary(trace_metrics: list[dict]) -> list[dict]:
     groups = defaultdict(Counter)
     for record in trace_metrics:
@@ -345,6 +377,30 @@ def strategy_summary(trace_metrics: list[dict]) -> list[dict]:
                     "trials": count,
                 }
             )
+    return rows
+
+
+def strategy_outcome_summary(records: list[dict], trace_metrics: list[dict]) -> list[dict]:
+    success_by_id = {
+        record["neutral_id"]: bool(record["semantic_success"]) for record in records
+    }
+    groups = defaultdict(Counter)
+    for trace in trace_metrics:
+        groups[(trace["condition"], success_by_id[trace["neutral_id"]])][
+            trace["strategy"]
+        ] += 1
+    rows = []
+    for condition in CONDITION_ORDER:
+        for success in (True, False):
+            for strategy, count in sorted(groups[(condition, success)].items()):
+                rows.append(
+                    {
+                        "condition": condition,
+                        "semantic_success": success,
+                        "strategy": strategy,
+                        "trials": count,
+                    }
+                )
     return rows
 
 
@@ -503,14 +559,20 @@ def write_report(
     *,
     records: list[dict],
     summary_rows: list[dict],
+    completed_rows: list[dict],
     interaction_rows: list[dict],
     effort_rows: list[dict],
+    effort_rollup_rows: list[dict],
     strategy_rows: list[dict],
+    strategy_outcome_rows: list[dict],
+    trace_metrics: list[dict],
     historical: dict,
 ) -> None:
     lookup = {(row["variant"], row["condition"], row["lanes"]): row for row in summary_rows}
     lines = [
         "# Experiment 1A-R and 1B analysis",
+        "",
+        "> **INVALIDATED DATASET — FORENSIC USE ONLY.** Post-slate trace review found behavior-dependent host filesystem leakage. See `invalidation-report.md` and `leakage-trace-audit-summary.json`. These results must not be used for confirmatory inference or pooled with a hardened rerun.",
         "",
         "Rates use all scheduled trials unless explicitly labeled completed-response-only. Intervals are 95% Wilson score intervals. Interaction intervals use a deterministic paired-seed bootstrap.",
         "",
@@ -546,6 +608,31 @@ def write_report(
             f"{row['semantic_success']} | {row['semantic_rate']:.0%} | "
             f"{row['semantic_ci_low']:.0%}–{row['semantic_ci_high']:.0%} | {row['nonresponses']} |"
         )
+    completed_lookup = {
+        (row["variant"], row["condition"], row["lanes"]): row
+        for row in completed_rows
+    }
+    affected = [
+        row for row in summary_rows if row["completed_responses"] < row["trials"]
+    ]
+    lines.extend(
+        [
+            "",
+            "## Completed-response sensitivity",
+            "",
+            "Only cells containing an incomplete turn are shown. The scheduled denominator remains primary.",
+            "",
+            "| variant | condition | N | scheduled semantic | completed-response semantic |",
+            "| :-- | :-- | --: | --: | --: |",
+        ]
+    )
+    for row in affected:
+        completed = completed_lookup[(row["variant"], row["condition"], row["lanes"])]
+        lines.append(
+            f"| {row['variant']} | {row['condition']} | {row['lanes']} | "
+            f"{row['semantic_success']}/{row['trials']} | "
+            f"{completed['semantic_success']}/{completed['trials']} |"
+        )
     lines.extend(
         [
             "",
@@ -568,11 +655,64 @@ def write_report(
             "",
             "## Computational effort",
             "",
-            "Full cell-level metrics are in `effort-summary.csv`. Medians exclude missing token values; timeouts remain in timeout counts and elapsed-time medians.",
+            "Medians exclude missing usage from incomplete turns. Timeouts remain in timeout counts and elapsed-time medians. Full N-level metrics are in `effort-summary.csv`.",
+            "",
+            "| variant | condition | semantic | timeouts | tool trials | shell trials | median elapsed (s) | median input tokens | median reasoning tokens |",
+            "| :-- | :-- | --: | --: | --: | --: | --: | --: | --: |",
+        ]
+    )
+    for row in effort_rollup_rows:
+        lines.append(
+            f"| {row['variant']} | {row['condition']} | {row['semantic_success']}/{row['trials']} | "
+            f"{row['timeouts']} | {row['trials_with_tools']} | {row['trials_with_shell']} | "
+            f"{row['median_elapsed_seconds']:.1f} | {row['median_input_tokens']:.0f} | "
+            f"{row['median_reasoning_tokens']:.0f} |"
+        )
+    signal_timeouts = sum(
+        row["timeouts"] for row in effort_rollup_rows if row["condition"] == "signal"
+    )
+    shuffled_timeouts = sum(
+        row["timeouts"]
+        for row in effort_rollup_rows
+        if row["condition"] == "all_shuffled"
+    )
+    signal_tool_trials = sum(
+        row["trials_with_tools"]
+        for row in effort_rollup_rows
+        if row["condition"] == "signal"
+    )
+    shuffled_tool_trials = sum(
+        row["trials_with_tools"]
+        for row in effort_rollup_rows
+        if row["condition"] == "all_shuffled"
+    )
+    max_context = max(
+        (row for row in effort_rows if row["median_input_tokens"] is not None),
+        key=lambda row: row["median_input_tokens"],
+    )
+    lines.extend(
+        [
+            "",
+            f"Across variants, all-shuffled trials produced {shuffled_timeouts}/160 timeouts and tool use in {shuffled_tool_trials}/160 trials, versus {signal_timeouts}/160 timeouts and tool use in {signal_tool_trials}/160 signal trials.",
+            f"The largest cell median input context was {max_context['median_input_tokens']:.0f} tokens for {max_context['variant']} / {max_context['condition']} / N={max_context['lanes']}.",
             "",
             "## Trace-derived strategies",
             "",
             "Strategy labels describe only observable JSONL events. They do not expose private chain-of-thought.",
+            "",
+            "| condition | semantic success | observable primary strategy | trials |",
+            "| :-- | :-- | :-- | --: |",
+        ]
+    )
+    for row in strategy_outcome_rows:
+        lines.append(
+            f"| {row['condition']} | {'yes' if row['semantic_success'] else 'no'} | "
+            f"{row['strategy']} | {row['trials']} |"
+        )
+    lines.extend(
+        [
+            "",
+            "The finer variant-by-condition strategy table is in `strategy-summary.csv`.",
             "",
             "| variant | condition | strategy | trials |",
             "| :-- | :-- | :-- | --: |",
@@ -585,6 +725,27 @@ def write_report(
     substitutions = sum(bool(record["malformed_object_substitutions"]) for record in records)
     encoding = sum(bool(record["encoding_discovered"]) for record in records)
     timeouts = sum(bool(record["runner"]["timed_out"]) for record in records)
+    trace_by_id = {trace["neutral_id"]: trace for trace in trace_metrics}
+    correct_signal = [
+        record
+        for record in records
+        if record["condition"] == "signal" and record["semantic_success"]
+    ]
+    correct_control = [
+        record
+        for record in records
+        if record["condition"] == "all_shuffled" and record["semantic_success"]
+    ]
+    correct_signal_direct = sum(
+        trace_by_id[record["neutral_id"]]["strategy"] == "direct_one_pass_response"
+        for record in correct_signal
+    )
+    correct_signal_tools = sum(
+        trace_by_id[record["neutral_id"]]["tool_calls"] > 0 for record in correct_signal
+    )
+    correct_control_tools = sum(
+        trace_by_id[record["neutral_id"]]["tool_calls"] > 0 for record in correct_control
+    )
     lines.extend(
         [
             "",
@@ -593,6 +754,19 @@ def write_report(
             f"- Timeout/nonresponse runner events: {timeouts}",
             f"- Final responses explicitly mentioning shuffle/encoding: {encoding}",
             f"- Responses with malformed object substitutions: {substitutions}",
+            f"- Correct signal trials with a direct/no-tool/no-explicit-reconstruction primary trace label: {correct_signal_direct}/{len(correct_signal)}",
+            f"- Correct signal trials with any observable tool call: {correct_signal_tools}/{len(correct_signal)}",
+            f"- Correct all-shuffled trials with any observable tool call: {correct_control_tools}/{len(correct_control)}",
+            "- Some timed-out traces ended on progress messages after recognizing the task or scrambling; those are not final task successes.",
+            "- Several failures substituted material/object pairs such as `brass coin` or `silver key`, consistent with lexical recombination rather than reliable relational recovery.",
+            "",
+            "## Conclusion and next step",
+            "",
+            "The preregistered directional hypothesis was not supported. Normalization did eliminate or reduce the original N=8 all-shuffled successes, but it generally damaged intact-signal recovery as much or more; the paired interaction estimates were zero or negative in most cells. The result therefore does not isolate punctuation/capitalization as a cue used disproportionately for unordered reconstruction.",
+            "",
+            "The fully instrumented replication did reproduce robust blind task recovery and substantial run-to-run variability. Observable traces separate many cheap direct responses from expensive tool-assisted reconstruction, but a direct final response cannot establish implicit decoding because the payload itself suppresses explanation.",
+            "",
+            "Proceed to the preregistered equal-multiset A/B Experiment 2 without changing its central design. Its answer-identity endpoint is more discriminating than another success-rate comparison. Retain full traces, the explanation-permitted arm, and the tool-less regime so that ordered-channel sensitivity can be separated from explicit agentic reconstruction.",
             "",
             "## Interpretation boundary",
             "",
@@ -622,22 +796,30 @@ def main() -> None:
     completed = summarize(records, completed_only=True)
     interaction_rows = interactions(records)
     effort_rows = effort_summary(records, traces)
+    effort_rollup_rows = effort_rollup(records, traces)
     strategy_rows = strategy_summary(traces)
+    strategy_outcome_rows = strategy_outcome_summary(records, traces)
     regression = logistic_regression(records)
     write_csv(results / "summary.csv", scheduled)
     write_csv(results / "summary-completed-responses.csv", completed)
     write_csv(results / "interaction.csv", interaction_rows)
     write_csv(results / "effort-summary.csv", effort_rows)
+    write_csv(results / "effort-rollup.csv", effort_rollup_rows)
     write_csv(results / "strategy-summary.csv", strategy_rows)
+    write_csv(results / "strategy-outcome-summary.csv", strategy_outcome_rows)
     (results / "logistic-regression.json").write_text(json.dumps(regression, indent=2) + "\n", encoding="utf-8")
     make_figures(scheduled, interaction_rows, results / "figures")
     write_report(
         results / "analysis.md",
         records=records,
         summary_rows=scheduled,
+        completed_rows=completed,
         interaction_rows=interaction_rows,
         effort_rows=effort_rows,
+        effort_rollup_rows=effort_rollup_rows,
         strategy_rows=strategy_rows,
+        strategy_outcome_rows=strategy_outcome_rows,
+        trace_metrics=traces,
         historical=historical_counts(args.historical_summary),
     )
     print(f"analyzed {len(records)} scored trials and {len(traces)} traces")

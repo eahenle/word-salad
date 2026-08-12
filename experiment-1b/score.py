@@ -14,7 +14,7 @@ OBJECTS = ("brass key", "silver coin", "glass marble")
 COLORS = ("red", "blue", "green")
 ENCODING_PATTERNS = (
     r"\bshuffl\w*\b",
-    r"\bscrambl\w*\b",
+    r"\b(?:un)?scrambl\w*\b",
     r"\binterleav\w*\b",
     r"\bperiodic\w*\b",
     r"\bmultiplex\w*\b",
@@ -23,6 +23,10 @@ ENCODING_PATTERNS = (
     r"\btranspos\w*\b",
     r"\bhidden (?:message|instruction|sequence|stream)\b",
     r"\bevery (?:second|third|fourth|\d+(?:st|nd|rd|th))\b",
+    r"\brandomi[sz]\w* word order\b",
+    r"\bword order (?:is |was |has been )?(?:corrupt\w*|destroy\w*|lost|randomi[sz]\w*)\b",
+    r"\bword order\b.{0,80}\b(?:corrupt\w*|destroy\w*|lost|randomi[sz]\w*)\b",
+    r"\b(?:duplicated|repeated) (?:word|instruction|fragment|vocabular|inventory|stream|clause)\w*\b",
 )
 GENERIC_PATTERNS = (
     r"\bincoherent\b",

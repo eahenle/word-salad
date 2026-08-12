@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0138",
+  "neutral_id": "q0138",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 8,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "09b04cf67277abaf3c17f0b1cf23c4288af843b2b8a5279ad4f687e820113266",
+  "prompt_file": "prompts/lower/q0138.txt",
+  "trace_file": "traces/q0138.jsonl",
+  "stderr_file": "stderr/q0138.txt",
+  "response": "Cannot determine uniquely: the text contains two globally shuffled copies of the same word multiset, but no key for restoring word order. Different valid orderings produce different box contents.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T20:37:48.339460+00:00",
+    "finished_at": "2026-08-11T20:48:59.596561+00:00",
+    "thread_id": "019ff28b-aeea-78f3-95c0-ea948fb26069",
+    "aggregate_usage": {
+      "input_tokens": 211368,
+      "cached_input_tokens": 162816,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 34592,
+      "reasoning_output_tokens": 29967
+    },
+    "elapsed_seconds": 671.254,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 34349,
+    "trace_sha256": "4ce8d7e16eca51a75b6dead267742b0104a6c3697480c0aaf7a5f7c18e06f794",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 17,
+    "event_type_counts": {
+      "item.completed": 8,
+      "item.started": 6,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 6
+    },
+    "non_json_line_count": 0
+  }
+}

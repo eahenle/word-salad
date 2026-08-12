@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0294",
+  "neutral_id": "q0294",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "12ff6372bd2de3c96cd5c393a0cc3ac01552260da179c9385d84edb3039df81f",
+  "prompt_file": "prompts/lower_nopunct/q0294.txt",
+  "trace_file": "traces/q0294.jsonl",
+  "stderr_file": "stderr/q0294.txt",
+  "response": "I can’t determine the final contents reliably because the operation order and box destinations are scrambled. Please resend the instructions in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-12T00:00:40.592684+00:00",
+    "finished_at": "2026-08-12T00:02:27.751936+00:00",
+    "thread_id": "019ff345-6abe-7033-8f1b-35138a8ad31c",
+    "aggregate_usage": {
+      "input_tokens": 13617,
+      "cached_input_tokens": 12032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5692,
+      "reasoning_output_tokens": 5659
+    },
+    "elapsed_seconds": 107.158,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 516,
+    "trace_sha256": "02b87b65199bb8929dcd2e9c0aae0e5615ca79c7995deb867b531cbc743ca65b",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

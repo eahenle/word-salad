@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0273",
+  "neutral_id": "q0273",
+  "variant": "lower_nopunct",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 3,
+  "signal_phase": 4,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "04783f7b1c6fdd57130bbf1c53ece53a9de4f358d71dbf03b0307e9e46bdec6b",
+  "prompt_file": "prompts/lower_nopunct/q0273.txt",
+  "trace_file": "traces/q0273.jsonl",
+  "stderr_file": "stderr/q0273.txt",
+  "response": "I can identify three boxes (red, green, blue) and four objects (brass key, silver coin, glass marble, red marble), but the initial contents and operation order are scrambled ambiguously. Please resend the setup and moves as ordered lines; otherwise the final contents cannot be determined uniquely.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T23:31:05.516473+00:00",
+    "finished_at": "2026-08-11T23:33:31.616313+00:00",
+    "thread_id": "019ff32a-54cd-7cb0-9fa3-3de297a1ced3",
+    "aggregate_usage": {
+      "input_tokens": 36258,
+      "cached_input_tokens": 24064,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7572,
+      "reasoning_output_tokens": 7374
+    },
+    "elapsed_seconds": 146.099,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1364,
+    "trace_sha256": "94d6ae635f9a1c962c7b1a44b5732187b63cdc331003132ac56cfd80ffd223f2",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0282",
+  "neutral_id": "q0282",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "a76d6ad91e2a176a5a1687a1988465967fc1bb6e592b8bbffc88fe652e8124b5",
+  "prompt_file": "prompts/lower_nopunct/q0282.txt",
+  "trace_file": "traces/q0282.jsonl",
+  "stderr_file": "stderr/q0282.txt",
+  "response": "The word order is scrambled without a decoding rule, so the operations and final box contents aren’t uniquely determinable. Please provide the original order or the method used to shuffle the words.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T23:39:27.139223+00:00",
+    "finished_at": "2026-08-11T23:44:30.182991+00:00",
+    "thread_id": "019ff331-fec9-7351-9b58-68db00d664a7",
+    "aggregate_usage": {
+      "input_tokens": 49182,
+      "cached_input_tokens": 25088,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 15950,
+      "reasoning_output_tokens": 15752
+    },
+    "elapsed_seconds": 303.043,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1474,
+    "trace_sha256": "dca832230de4dae4c202396e0c99fc28dd210dc303355ed3a4da114422978de5",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

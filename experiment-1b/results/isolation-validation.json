@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "image": "word-salad-subject:codex-0.147.0",
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "exit_status": 0,
+  "required_markers": [
+    "SHELL_UID_SUBJECT",
+    "SHELL_CAPS_EMPTY",
+    "SHELL_NO_NEW_PRIVS",
+    "HOST_REPO_ABSENT",
+    "HOST_TMP_ABSENT",
+    "AUTH_FILE_UNREADABLE",
+    "ROOT_PROCESS_UNREADABLE"
+  ],
+  "forbidden_markers": [
+    "SHELL_UID_PRIVILEGED",
+    "SHELL_CAPS_PRESENT",
+    "SHELL_CAN_GAIN_PRIVS",
+    "HOST_REPO_VISIBLE",
+    "HOST_TMP_VISIBLE",
+    "AUTH_FILE_READABLE",
+    "ROOT_PROCESS_READABLE"
+  ],
+  "response": "uid=100(subject) gid=101(subject) groups=101(subject)\nSHELL_UID_SUBJECT\nSHELL_CAPS_EMPTY\nSHELL_NO_NEW_PRIVS\nHOST_REPO_ABSENT\nHOST_TMP_ABSENT\nAUTH_FILE_UNREADABLE\nROOT_PROCESS_UNREADABLE",
+  "command_outputs": [
+    "uid=100(subject) gid=101(subject) groups=101(subject)\nSHELL_UID_SUBJECT\nSHELL_CAPS_EMPTY\nSHELL_NO_NEW_PRIVS\nHOST_REPO_ABSENT\nHOST_TMP_ABSENT\nAUTH_FILE_UNREADABLE\nROOT_PROCESS_UNREADABLE\n"
+  ],
+  "raw_stdout": "{\"type\":\"thread.started\",\"thread_id\":\"019ff488-e9c1-7dc3-83dd-a526379fa2b2\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"item.started\",\"item\":{\"id\":\"item_0\",\"type\":\"command_execution\",\"command\":\"/bin/sh -lc 'id\\ntest \\\"$(id -u)\\\" = 100 && echo SHELL_UID_SUBJECT || echo SHELL_UID_PRIVILEGED\\ngrep -q '\\\"'\\\"'^CapEff:[[:space:]]*0000000000000000$'\\\"' /proc/self/status && echo SHELL_CAPS_EMPTY || echo SHELL_CAPS_PRESENT\\ngrep -q '\\\"'^NoNewPrivs:[[:space:]]*1$'\\\"' /proc/self/status && echo SHELL_NO_NEW_PRIVS || echo SHELL_CAN_GAIN_PRIVS\\ntest -e /Users/ahenle/word-salad && echo HOST_REPO_VISIBLE || echo HOST_REPO_ABSENT\\ntest -e /tmp/q781_short_complete && echo HOST_TMP_VISIBLE || echo HOST_TMP_ABSENT\\ntest -r /codex-home/auth.json && echo AUTH_FILE_READABLE || echo AUTH_FILE_UNREADABLE\\ntest -r /proc/1/mem && echo ROOT_PROCESS_READABLE || echo ROOT_PROCESS_UNREADABLE\\nfind /subject -mindepth 1 -maxdepth 2 -print\\\"\",\"aggregated_output\":\"\",\"exit_code\":null,\"status\":\"in_progress\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_0\",\"type\":\"command_execution\",\"command\":\"/bin/sh -lc 'id\\ntest \\\"$(id -u)\\\" = 100 && echo SHELL_UID_SUBJECT || echo SHELL_UID_PRIVILEGED\\ngrep -q '\\\"'\\\"'^CapEff:[[:space:]]*0000000000000000$'\\\"' /proc/self/status && echo SHELL_CAPS_EMPTY || echo SHELL_CAPS_PRESENT\\ngrep -q '\\\"'^NoNewPrivs:[[:space:]]*1$'\\\"' /proc/self/status && echo SHELL_NO_NEW_PRIVS || echo SHELL_CAN_GAIN_PRIVS\\ntest -e /Users/ahenle/word-salad && echo HOST_REPO_VISIBLE || echo HOST_REPO_ABSENT\\ntest -e /tmp/q781_short_complete && echo HOST_TMP_VISIBLE || echo HOST_TMP_ABSENT\\ntest -r /codex-home/auth.json && echo AUTH_FILE_READABLE || echo AUTH_FILE_UNREADABLE\\ntest -r /proc/1/mem && echo ROOT_PROCESS_READABLE || echo ROOT_PROCESS_UNREADABLE\\nfind /subject -mindepth 1 -maxdepth 2 -print\\\"\",\"aggregated_output\":\"uid=100(subject) gid=101(subject) groups=101(subject)\\nSHELL_UID_SUBJECT\\nSHELL_CAPS_EMPTY\\nSHELL_NO_NEW_PRIVS\\nHOST_REPO_ABSENT\\nHOST_TMP_ABSENT\\nAUTH_FILE_UNREADABLE\\nROOT_PROCESS_UNREADABLE\\n\",\"exit_code\":0,\"status\":\"completed\"}}\n{\"type\":\"item.completed\",\"item\":{\"id\":\"item_1\",\"type\":\"agent_message\",\"text\":\"uid=100(subject) gid=101(subject) groups=101(subject)\\nSHELL_UID_SUBJECT\\nSHELL_CAPS_EMPTY\\nSHELL_NO_NEW_PRIVS\\nHOST_REPO_ABSENT\\nHOST_TMP_ABSENT\\nAUTH_FILE_UNREADABLE\\nROOT_PROCESS_UNREADABLE\"}}\n{\"type\":\"turn.completed\",\"usage\":{\"input_tokens\":26891,\"cached_input_tokens\":12800,\"cache_write_input_tokens\":0,\"output_tokens\":438,\"reasoning_output_tokens\":102}}\n",
+  "stderr": "2026-08-12T05:54:01.294517Z ERROR codex_core::shell_snapshot: Shell snapshot validation failed: Snapshot command exited with status exit status: 2: ash: .: line 0: can't open '/codex-home/shell_snapshots/019ff488-e9c1-7dc3-83dd-a526379fa2b2.tmp-1786514041282273799': Permission denied\n\n"
+}

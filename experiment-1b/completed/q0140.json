@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0140",
+  "neutral_id": "q0140",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 10,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "72ba39b7738012ab5159ae27531493dfb30d1ac58458696ea873d7d89419ac8f",
+  "prompt_file": "prompts/lower/q0140.txt",
+  "trace_file": "traces/q0140.jsonl",
+  "stderr_file": "stderr/q0140.txt",
+  "response": "I can’t determine the required moves unambiguously because the word order is scrambled. Please resend the box contents, ordered operations, and required reply format as separate lines.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T20:42:40.113502+00:00",
+    "finished_at": "2026-08-11T20:44:09.124784+00:00",
+    "thread_id": "019ff290-22aa-7b43-850b-d0f0de0ccfa0",
+    "aggregate_usage": {
+      "input_tokens": 13679,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4700,
+      "reasoning_output_tokens": 4660
+    },
+    "elapsed_seconds": 89.01,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 534,
+    "trace_sha256": "06de4e0c62f524b5ef4be1b9dd5494bfdd111b7e44a7d6696552860f649d03c0",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

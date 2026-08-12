@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0192",
+  "neutral_id": "q0192",
+  "variant": "nopunct",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 2,
+  "signal_phase": 1,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "9efd3e65676d6403ee09fc5a128610b718e550b17308365b37e960ade50cf09b",
+  "prompt_file": "prompts/nopunct/q0192.txt",
+  "trace_file": "traces/q0192.jsonl",
+  "stderr_file": "stderr/q0192.txt",
+  "response": "I’m untangling the repeated/interleaved wording into the underlying box setup and operation sequence, then I’ll return only the requested final line.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T21:25:10.858215+00:00",
+    "finished_at": "2026-08-11T21:40:10.892246+00:00",
+    "thread_id": "019ff2b7-0e72-7ac1-9595-678a1288bf75",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.031,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 2543,
+    "trace_sha256": "23e5d406a1fe81a025d0df2086531f47e6d327acf3b579e7afc9e28285edd092",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 11,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 4,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 3,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

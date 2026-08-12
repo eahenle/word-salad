@@ -1,0 +1,21 @@
+{
+  "records": 320,
+  "neutral_ids_complete": true,
+  "prompt_hashes_valid": true,
+  "trace_hashes_valid": true,
+  "stderr_hashes_valid": true,
+  "event_counts_valid": true,
+  "completion_records_match": true,
+  "attempt_prompt_hashes_valid": true,
+  "metadata_coverage_valid": true,
+  "artifact_counts_valid": true,
+  "status_counts": {
+    "error": 25,
+    "ok": 295
+  },
+  "error_types": {
+    "timeout": 25
+  },
+  "total_trace_bytes": 2680811,
+  "total_stderr_bytes": 954
+}

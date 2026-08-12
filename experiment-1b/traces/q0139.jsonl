@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"019ff28c-9a59-7810-8f7f-f158ba05d974"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"green box contains key; visible label = brass\nblue box contains marble; visible label = glass\ngreen box contains coin; visible label = silver"}}
+{"type":"turn.completed","usage":{"input_tokens":13677,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":12465,"reasoning_output_tokens":12430}}

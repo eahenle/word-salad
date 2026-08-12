@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"019ff26f-2aaf-7b53-9820-4b5b3ed3e3e5"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"key = red; coin = blue; marble = silver"}}
+{"type":"turn.completed","usage":{"input_tokens":13453,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":3856,"reasoning_output_tokens":3839}}

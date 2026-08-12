@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0191",
+  "neutral_id": "q0191",
+  "variant": "nopunct",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 1,
+  "signal_phase": 2,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "ef8640a119291b975a0d3e25d47be2ba184ef5900834d6e416dd20ef0fee5971",
+  "prompt_file": "prompts/nopunct/q0191.txt",
+  "trace_file": "traces/q0191.jsonl",
+  "stderr_file": "stderr/q0191.txt",
+  "response": "I can’t determine a unique final state: the operation words, box labels, and objects are interleaved and repeated, so several incompatible move sequences fit the text. Please resend the initial contents, `COLOR` rule, and numbered operations in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_full_trace",
+    "started_at": "2026-08-11T21:23:35.359786+00:00",
+    "finished_at": "2026-08-11T21:26:52.990607+00:00",
+    "thread_id": "019ff2b5-9968-73b3-b889-a158f3c22728",
+    "aggregate_usage": {
+      "input_tokens": 37528,
+      "cached_input_tokens": 29184,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4613,
+      "reasoning_output_tokens": 4422
+    },
+    "elapsed_seconds": 197.628,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1233,
+    "trace_sha256": "1a21a1480caeb767b2c59830c0f2dc5ddc8cc7973cae0e2f3404d0f6ce82c749",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}
