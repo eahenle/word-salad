@@ -93,6 +93,37 @@ Positive difference-in-differences means normalization reduced all-shuffled succ
 | lower_nopunct | 4 | +30% | +0% | +30% | -10%–+70% |
 | lower_nopunct | 8 | -10% | +0% | -10% | -40%–+20% |
 
+## Paired seed-level normalization contrasts
+
+Each row compares the same latent prompt geometry and seed against original. The exact p-value is a two-sided McNemar/sign test over discordant pairs; it is descriptive, not population inference.
+
+| variant | condition | N | original | normalized | delta | bootstrap 95% CI | discordant old/new | exact p |
+| :-- | :-- | --: | --: | --: | --: | :-- | :-- | --: |
+| lower | signal | 1 | 10/10 | 10/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| lower | signal | 2 | 8/10 | 5/10 | -30% | -60%–+0% | 3/0 | 0.250 |
+| lower | signal | 4 | 1/10 | 1/10 | +0% | -30%–+30% | 1/1 | 1.000 |
+| lower | signal | 8 | 2/10 | 2/10 | +0% | -30%–+30% | 1/1 | 1.000 |
+| lower | all_shuffled | 1 | 0/10 | 1/10 | +10% | +0%–+30% | 0/1 | 1.000 |
+| lower | all_shuffled | 2 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| lower | all_shuffled | 4 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| lower | all_shuffled | 8 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| nopunct | signal | 1 | 10/10 | 10/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| nopunct | signal | 2 | 8/10 | 6/10 | -20% | -70%–+30% | 4/2 | 0.688 |
+| nopunct | signal | 4 | 1/10 | 4/10 | +30% | +0%–+60% | 0/3 | 0.250 |
+| nopunct | signal | 8 | 2/10 | 2/10 | +0% | -40%–+40% | 2/2 | 1.000 |
+| nopunct | all_shuffled | 1 | 0/10 | 1/10 | +10% | +0%–+30% | 0/1 | 1.000 |
+| nopunct | all_shuffled | 2 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| nopunct | all_shuffled | 4 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| nopunct | all_shuffled | 8 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| lower_nopunct | signal | 1 | 10/10 | 10/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| lower_nopunct | signal | 2 | 8/10 | 3/10 | -50% | -80%–-20% | 5/0 | 0.062 |
+| lower_nopunct | signal | 4 | 1/10 | 4/10 | +30% | -10%–+70% | 1/4 | 0.375 |
+| lower_nopunct | signal | 8 | 2/10 | 1/10 | -10% | -40%–+20% | 2/1 | 1.000 |
+| lower_nopunct | all_shuffled | 1 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| lower_nopunct | all_shuffled | 2 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| lower_nopunct | all_shuffled | 4 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+| lower_nopunct | all_shuffled | 8 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
+
 ## Computational effort
 
 Medians exclude missing usage from incomplete turns. Timeouts remain in timeout counts and elapsed-time medians. Full N-level metrics are in `effort-summary.csv`.

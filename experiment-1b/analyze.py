@@ -294,6 +294,67 @@ def logistic_regression(records: list[dict], ridge: float = 1e-3) -> dict:
     }
 
 
+def paired_variant_contrasts(
+    records: list[dict], bootstrap_samples: int = 5000
+) -> list[dict]:
+    """Paired seed-level normalization contrasts within condition and lane."""
+    indexed = {
+        (
+            record["variant"],
+            record["condition"],
+            int(record["lanes"]),
+            int(record["seed"]),
+        ): int(bool(record["semantic_success"]))
+        for record in records
+    }
+    rng = random.Random(314159265)
+    rows = []
+    for variant in VARIANT_ORDER[1:]:
+        for condition in CONDITION_ORDER:
+            for lanes in (1, 2, 4, 8):
+                pairs = [
+                    (
+                        indexed[("original", condition, lanes, seed)],
+                        indexed[(variant, condition, lanes, seed)],
+                    )
+                    for seed in range(1, 11)
+                ]
+                original_only = sum(old == 1 and new == 0 for old, new in pairs)
+                normalized_only = sum(old == 0 and new == 1 for old, new in pairs)
+                delta = statistics.mean(new - old for old, new in pairs)
+                boots = []
+                for _ in range(bootstrap_samples):
+                    sample = [rng.choice(pairs) for _ in pairs]
+                    boots.append(statistics.mean(new - old for old, new in sample))
+                discordant = original_only + normalized_only
+                # Exact two-sided McNemar/sign test on discordant pairs.
+                if discordant:
+                    tail = sum(
+                        math.comb(discordant, value)
+                        for value in range(0, min(original_only, normalized_only) + 1)
+                    ) / (2**discordant)
+                    exact_p = min(1.0, 2 * tail)
+                else:
+                    exact_p = 1.0
+                rows.append(
+                    {
+                        "variant": variant,
+                        "condition": condition,
+                        "lanes": lanes,
+                        "paired_seeds": len(pairs),
+                        "original_success": sum(old for old, _ in pairs),
+                        "normalized_success": sum(new for _, new in pairs),
+                        "delta": delta,
+                        "bootstrap_ci_low": percentile(boots, 0.025),
+                        "bootstrap_ci_high": percentile(boots, 0.975),
+                        "original_only_pairs": original_only,
+                        "normalized_only_pairs": normalized_only,
+                        "mcnemar_exact_p": exact_p,
+                    }
+                )
+    return rows
+
+
 def effort_summary(records: list[dict], trace_metrics: list[dict]) -> list[dict]:
     trace_by_id = {record["neutral_id"]: record for record in trace_metrics}
     groups = defaultdict(list)
@@ -567,6 +628,7 @@ def write_report(
     effort_rollup_rows: list[dict],
     strategy_rows: list[dict],
     strategy_outcome_rows: list[dict],
+    paired_contrast_rows: list[dict],
     trace_metrics: list[dict],
     historical: dict,
 ) -> None:
@@ -654,6 +716,25 @@ def write_report(
             f"| {row['variant']} | {row['lanes']} | {row['delta_signal']:+.0%} | "
             f"{row['delta_all_shuffled']:+.0%} | {row['difference_in_differences']:+.0%} | "
             f"{row['bootstrap_ci_low']:+.0%}–{row['bootstrap_ci_high']:+.0%} |"
+        )
+    lines.extend(
+        [
+            "",
+            "## Paired seed-level normalization contrasts",
+            "",
+            "Each row compares the same latent prompt geometry and seed against original. The exact p-value is a two-sided McNemar/sign test over discordant pairs; it is descriptive, not population inference.",
+            "",
+            "| variant | condition | N | original | normalized | delta | bootstrap 95% CI | discordant old/new | exact p |",
+            "| :-- | :-- | --: | --: | --: | --: | :-- | :-- | --: |",
+        ]
+    )
+    for row in paired_contrast_rows:
+        lines.append(
+            f"| {row['variant']} | {row['condition']} | {row['lanes']} | "
+            f"{row['original_success']}/10 | {row['normalized_success']}/10 | "
+            f"{row['delta']:+.0%} | {row['bootstrap_ci_low']:+.0%}–{row['bootstrap_ci_high']:+.0%} | "
+            f"{row['original_only_pairs']}/{row['normalized_only_pairs']} | "
+            f"{row['mcnemar_exact_p']:.3f} |"
         )
     lines.extend(
         [
@@ -809,6 +890,7 @@ def main() -> None:
     scheduled = summarize(records, completed_only=False)
     completed = summarize(records, completed_only=True)
     interaction_rows = interactions(records)
+    paired_contrast_rows = paired_variant_contrasts(records)
     effort_rows = effort_summary(records, traces)
     effort_rollup_rows = effort_rollup(records, traces)
     strategy_rows = strategy_summary(traces)
@@ -817,6 +899,7 @@ def main() -> None:
     write_csv(results / "summary.csv", scheduled)
     write_csv(results / "summary-completed-responses.csv", completed)
     write_csv(results / "interaction.csv", interaction_rows)
+    write_csv(results / "paired-contrasts.csv", paired_contrast_rows)
     write_csv(results / "effort-summary.csv", effort_rows)
     write_csv(results / "effort-rollup.csv", effort_rollup_rows)
     write_csv(results / "strategy-summary.csv", strategy_rows)
@@ -835,6 +918,7 @@ def main() -> None:
         effort_rollup_rows=effort_rollup_rows,
         strategy_rows=strategy_rows,
         strategy_outcome_rows=strategy_outcome_rows,
+        paired_contrast_rows=paired_contrast_rows,
         trace_metrics=traces,
         historical=historical_counts(args.historical_summary),
     )
