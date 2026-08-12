@@ -28,3 +28,10 @@ python3 -B experiment-2/simulate.py
 
 Answer keys exist only in coordinator-side simulation output/results and must
 never be mounted or sent into subject containers.
+
+## Pilot freeze
+
+The seed-1 pilot completed clean A/B, N=2 signal A/B, and N=2 all-shuffled
+trials in both arms. Its artifact audit passed and no host or experiment-context
+leakage was observed. See `results/pilot-report.md`. The protocol was frozen
+without modification before launching the remaining 20-seed N=2/N=4 slate.

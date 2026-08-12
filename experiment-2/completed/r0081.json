@@ -1,0 +1,55 @@
+{
+  "trial_id": "r0081",
+  "neutral_id": "r0081",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 1,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "5a758e19c0716c14fda48161da7b6b048eada2401177635d389a4fb861872e39",
+  "prompt_file": "prompts/constrained/r0081.txt",
+  "trace_file": "traces/r0081.jsonl",
+  "stderr_file": "stderr/r0081.txt",
+  "response": "Cannot determine uniquely: the scrambled text does not preserve the order needed to identify the initial contents and six operations.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T20:05:57.513270+00:00",
+    "finished_at": "2026-08-12T20:16:35.474226+00:00",
+    "thread_id": "019ff794-e649-73b0-be35-8e1e759a5b17",
+    "aggregate_usage": {
+      "input_tokens": 407652,
+      "cached_input_tokens": 354048,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 28875,
+      "reasoning_output_tokens": 23277
+    },
+    "elapsed_seconds": 637.96,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 49209,
+    "trace_sha256": "3b994ce146f48fe2f83d0c8e9e371760e0ed7b1b2805686e3a624dda2a422f27",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 30,
+    "event_type_counts": {
+      "item.completed": 15,
+      "item.started": 12,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 11,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

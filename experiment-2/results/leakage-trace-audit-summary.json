@@ -1,0 +1,16 @@
+{
+  "trials_audited": 10,
+  "trials_with_host_access_attempts": 0,
+  "trials_with_host_access_evidence": 0,
+  "trials_with_direct_experiment_leakage": 0,
+  "trials_with_reconstructed_payload_in_tool_output": 1,
+  "flag_counts": {
+    "reconstructed_payload_output": 1
+  },
+  "host_access_attempt_trial_ids": [],
+  "host_access_trial_ids": [],
+  "reconstructed_payload_trial_ids": [
+    "r0201"
+  ],
+  "dataset_validity": "no_observed_host_leakage"
+}

@@ -1,0 +1,28 @@
+{
+  "experiment": "Experiment 2 paired equal-multiset A/B",
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+  "worker_count": 4,
+  "timeout_seconds": 900.0,
+  "scheduled_trials": 320,
+  "completed_trials": 10,
+  "completed_by_arm": {
+    "constrained": 5,
+    "explanation": 5
+  },
+  "completed_by_condition": {
+    "all_shuffled": 2,
+    "clean": 4,
+    "signal": 4
+  },
+  "errored_or_nonresponse_trials": 0,
+  "full_stdout_jsonl_preserved": true,
+  "answer_keys_stored_in_subject_metadata": false,
+  "run_invocations": [
+    {
+      "finished_at": "2026-08-12T20:16:35.477828+00:00",
+      "requested_trial_ids": null
+    }
+  ]
+}

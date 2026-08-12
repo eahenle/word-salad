@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "completed_records": 10,
+  "unique_completed_ids": 10,
+  "conditions": {
+    "all_shuffled": 2,
+    "clean": 4,
+    "signal": 4
+  },
+  "arms": {
+    "constrained": 5,
+    "explanation": 5
+  },
+  "runner_errors": {
+    "none": 10
+  },
+  "nonempty_stderr": 0,
+  "prompt_validation": {
+    "trials_validated": 320,
+    "arms": [
+      "constrained",
+      "explanation"
+    ],
+    "paired_signal_stimulus_pairs": 80,
+    "payload_word_multiset_equal": true,
+    "aggregate_word_multiset_equal_within_pairs": true,
+    "paired_distractor_lanes_byte_equal": true,
+    "signal_extraction_valid": true,
+    "all_shuffled_contains_no_a_or_b_lane": true,
+    "stored_prompt_hashes_valid": true
+  },
+  "failures": []
+}
