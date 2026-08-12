@@ -1,7 +1,7 @@
 variant,condition,lanes,trials,semantic_success,timeouts,median_elapsed_seconds,median_input_tokens,median_cached_input_tokens,median_output_tokens,median_reasoning_tokens,median_model_turns,median_tool_calls,median_shell_invocations,median_trace_bytes
 original,signal,1,10,10,0,12.737,13112.0,9984.0,182.5,160.5,1.0,0.0,0.0,403.0
 original,signal,2,10,8,0,36.0035,13338.0,9984.0,1091.5,1018.0,1.0,0.0,0.0,404.5
-original,signal,4,10,1,5,839.816,13790.0,9984.0,14320.0,14301.0,1.0,0.0,0.0,391.0
+original,signal,4,10,2,5,839.816,13790.0,9984.0,14320.0,14301.0,1.0,0.0,0.0,391.0
 original,signal,8,10,2,4,460.54,48707.0,34688.0,8033.5,7166.0,1.0,2.0,1.5,1915.0
 original,all_shuffled,1,10,0,5,675.231,119175.0,95744.0,15559.0,14689.0,1.0,9.5,9.0,40035.0
 original,all_shuffled,2,10,0,5,826.706,13546.0,9984.0,21074.0,20710.0,1.0,0.5,0.0,678.5

@@ -5,6 +5,11 @@ Experiment 1C is a clean replacement for the invalidated same-host run in
 external container boundary. The invalidated dataset remains immutable at tag
 `experiment-1b-invalidated-same-host` and is never pooled with these results.
 
+The frozen historical baseline is commit
+`395c9c615fe4bf8900b31b73c1071bab805682e6`, tagged
+`experiment-1a-original`. The completed hardened dataset is frozen at tag
+`experiment-1c-hardened-normalization`.
+
 ## Fixed stimulus slate
 
 The generator, normalization, scoring, and analysis code is versioned in
@@ -120,3 +125,17 @@ All prompts, indexed metadata, attempts, completions, raw stdout JSONL traces,
 stderr streams, manifests, scores, audits, analyses, and figures live under
 this directory. Nothing under the frozen historical experiment or the tagged
 invalidated run is overwritten.
+
+## Completed slate
+
+All 320 trials completed under the pinned boundary: 279 turns completed and 41
+reached the fixed 900-second subject timeout. No controller, transport, TLS,
+Docker, broken-pipe, nonzero-exit, or missing-final-message failure was eligible
+for rerun. The full integrity audit passed.
+
+An independent variant-blind scorer audited every response. Final scoring and
+analysis are in `results/trials.jsonl` and `results/analysis.md`; automatic
+pre-audit scores and per-record blinded decisions remain preserved. The
+post-slate trace audit found no observable host access or direct experiment
+leakage. Probe attempts and the isolation boundary are documented in
+`results/isolation-audit.md`.

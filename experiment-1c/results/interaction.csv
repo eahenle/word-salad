@@ -1,13 +1,13 @@
 variant,lanes,paired_seeds,delta_signal,delta_all_shuffled,difference_in_differences,bootstrap_ci_low,bootstrap_ci_high
 lower,1,10,0,0.1,-0.1,-0.3,0.0
 lower,2,10,-0.3,0,-0.3,-0.6,-0.1
-lower,4,10,0,0,0,-0.3,0.3
+lower,4,10,-0.1,0,-0.1,-0.4,0.2
 lower,8,10,0,0,0,-0.3,0.3
 nopunct,1,10,0,0.1,-0.1,-0.3,0.0
 nopunct,2,10,-0.2,0,-0.2,-0.6,0.3
-nopunct,4,10,0.3,0,0.3,0.0,0.6
+nopunct,4,10,0.2,0,0.2,-0.2,0.6
 nopunct,8,10,0,0,0,-0.4,0.4
 lower_nopunct,1,10,0,0,0,0.0,0.0
 lower_nopunct,2,10,-0.5,0,-0.5,-0.8,-0.2
-lower_nopunct,4,10,0.3,0,0.3,-0.1,0.7
+lower_nopunct,4,10,0.2,0,0.2,-0.3,0.6
 lower_nopunct,8,10,-0.1,0,-0.1,-0.4,0.2

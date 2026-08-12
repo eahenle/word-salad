@@ -1,11 +1,11 @@
 condition,semantic_success,strategy,trials
 signal,True,apparent_lexical_reconstruction,1
-signal,True,direct_one_pass_response,57
+signal,True,direct_one_pass_response,58
 signal,True,explicit_fixed_stride_hypothesis,8
 signal,True,explicit_testing_of_candidate_strides,12
 signal,True,shell_or_tool_assisted_reconstruction,1
 signal,False,apparent_lexical_reconstruction,3
-signal,False,direct_one_pass_response,37
+signal,False,direct_one_pass_response,36
 signal,False,explicit_fixed_stride_hypothesis,25
 signal,False,explicit_recognition_of_shuffled_text,8
 signal,False,shell_or_tool_assisted_reconstruction,8

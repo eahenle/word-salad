@@ -848,7 +848,7 @@ def write_report(
             "",
             "## Conclusion and next step",
             "",
-            "The preregistered directional hypothesis was not supported. Normalization did eliminate or reduce the original N=8 all-shuffled successes, but it generally damaged intact-signal recovery as much or more; the paired interaction estimates were zero or negative in most cells. The result therefore does not isolate punctuation/capitalization as a cue used disproportionately for unordered reconstruction.",
+            "The preregistered directional hypothesis was not supported. Hardened all-shuffled performance was already at floor in the original-surface replication (0/40), leaving little room for the predicted disproportionate control decline. Normalization generally damaged intact-signal recovery as much or more, while the only normalized all-shuffled successes were isolated N=1 outcomes. The result is therefore inconclusive about whether punctuation/capitalization specifically supports unordered reconstruction and provides no affirmative interaction evidence for that mechanism.",
             "",
             "The fully instrumented replication did reproduce robust blind task recovery and substantial run-to-run variability. Observable traces separate many cheap direct responses from expensive tool-assisted reconstruction, but a direct final response cannot establish implicit decoding because the payload itself suppresses explanation.",
             "",
@@ -857,6 +857,12 @@ def write_report(
             "## Interpretation boundary",
             "",
             "Correct all-shuffled answers are not periodic-lane recovery. Final-answer silence about encoding is not evidence that encoding was not consciously discovered, especially because the payload suppresses explanation. Statistical summaries describe repeatability for this model/runtime rather than classical population inference.",
+            "",
+            "## Audit references",
+            "",
+            "All 320 responses received an independent variant-blind review. Reviewed fields in `trials.jsonl` are authoritative; automatic pre-audit scores are preserved in `pre-blind-audit-trials.jsonl`, and the full discrepancy accounting is in `blind-audit-summary.md` and `blind-audit-decisions.jsonl`.",
+            "",
+            "The post-slate isolation review found 0/320 observable host-access cases and 0/320 direct experiment-context leaks. See `isolation-audit.md` and `leakage-trace-audit-summary.json` for the boundary and probe-attempt details.",
             "",
         ]
     )

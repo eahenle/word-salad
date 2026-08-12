@@ -8,7 +8,7 @@ Rates use all scheduled trials unless explicitly labeled completed-response-only
 | :-- | --: | --: | --: |
 | signal | 1 | 10/10 | 10/10 |
 | signal | 2 | 7/10 | 8/10 |
-| signal | 4 | 1/10 | 1/10 |
+| signal | 4 | 1/10 | 2/10 |
 | signal | 8 | 2/10 | 2/10 |
 | all_shuffled | 1 | 0/10 | 0/10 |
 | all_shuffled | 2 | 0/10 | 0/10 |
@@ -21,7 +21,7 @@ Rates use all scheduled trials unless explicitly labeled completed-response-only
 | :-- | :-- | --: | --: | --: | --: | :-- | --: |
 | original | signal | 1 | 10 | 10 | 100% | 72%–100% | 0 |
 | original | signal | 2 | 10 | 8 | 80% | 49%–94% | 0 |
-| original | signal | 4 | 10 | 1 | 10% | 2%–40% | 0 |
+| original | signal | 4 | 10 | 2 | 20% | 6%–51% | 0 |
 | original | signal | 8 | 10 | 2 | 20% | 6%–51% | 0 |
 | original | all_shuffled | 1 | 10 | 0 | 0% | 0%–28% | 1 |
 | original | all_shuffled | 2 | 10 | 0 | 0% | 0%–28% | 0 |
@@ -58,7 +58,7 @@ Only cells containing an incomplete turn are shown. The scheduled denominator re
 
 | variant | condition | N | scheduled semantic | completed-response semantic |
 | :-- | :-- | --: | --: | --: |
-| original | signal | 4 | 1/10 | 1/5 |
+| original | signal | 4 | 2/10 | 2/5 |
 | original | signal | 8 | 2/10 | 2/6 |
 | original | all_shuffled | 1 | 0/10 | 0/5 |
 | original | all_shuffled | 2 | 0/10 | 0/5 |
@@ -82,15 +82,15 @@ Positive difference-in-differences means normalization reduced all-shuffled succ
 | :-- | --: | --: | --: | --: | :-- |
 | lower | 1 | +0% | +10% | -10% | -30%–+0% |
 | lower | 2 | -30% | +0% | -30% | -60%–-10% |
-| lower | 4 | +0% | +0% | +0% | -30%–+30% |
+| lower | 4 | -10% | +0% | -10% | -40%–+20% |
 | lower | 8 | +0% | +0% | +0% | -30%–+30% |
 | nopunct | 1 | +0% | +10% | -10% | -30%–+0% |
 | nopunct | 2 | -20% | +0% | -20% | -60%–+30% |
-| nopunct | 4 | +30% | +0% | +30% | +0%–+60% |
+| nopunct | 4 | +20% | +0% | +20% | -20%–+60% |
 | nopunct | 8 | +0% | +0% | +0% | -40%–+40% |
 | lower_nopunct | 1 | +0% | +0% | +0% | +0%–+0% |
 | lower_nopunct | 2 | -50% | +0% | -50% | -80%–-20% |
-| lower_nopunct | 4 | +30% | +0% | +30% | -10%–+70% |
+| lower_nopunct | 4 | +20% | +0% | +20% | -30%–+60% |
 | lower_nopunct | 8 | -10% | +0% | -10% | -40%–+20% |
 
 ## Paired seed-level normalization contrasts
@@ -101,7 +101,7 @@ Each row compares the same latent prompt geometry and seed against original. The
 | :-- | :-- | --: | --: | --: | --: | :-- | :-- | --: |
 | lower | signal | 1 | 10/10 | 10/10 | +0% | +0%–+0% | 0/0 | 1.000 |
 | lower | signal | 2 | 8/10 | 5/10 | -30% | -60%–+0% | 3/0 | 0.250 |
-| lower | signal | 4 | 1/10 | 1/10 | +0% | -30%–+30% | 1/1 | 1.000 |
+| lower | signal | 4 | 2/10 | 1/10 | -10% | -40%–+20% | 2/1 | 1.000 |
 | lower | signal | 8 | 2/10 | 2/10 | +0% | -30%–+30% | 1/1 | 1.000 |
 | lower | all_shuffled | 1 | 0/10 | 1/10 | +10% | +0%–+30% | 0/1 | 1.000 |
 | lower | all_shuffled | 2 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
@@ -109,7 +109,7 @@ Each row compares the same latent prompt geometry and seed against original. The
 | lower | all_shuffled | 8 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
 | nopunct | signal | 1 | 10/10 | 10/10 | +0% | +0%–+0% | 0/0 | 1.000 |
 | nopunct | signal | 2 | 8/10 | 6/10 | -20% | -70%–+30% | 4/2 | 0.688 |
-| nopunct | signal | 4 | 1/10 | 4/10 | +30% | +0%–+60% | 0/3 | 0.250 |
+| nopunct | signal | 4 | 2/10 | 4/10 | +20% | -20%–+60% | 1/3 | 0.625 |
 | nopunct | signal | 8 | 2/10 | 2/10 | +0% | -40%–+40% | 2/2 | 1.000 |
 | nopunct | all_shuffled | 1 | 0/10 | 1/10 | +10% | +0%–+30% | 0/1 | 1.000 |
 | nopunct | all_shuffled | 2 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
@@ -117,7 +117,7 @@ Each row compares the same latent prompt geometry and seed against original. The
 | nopunct | all_shuffled | 8 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
 | lower_nopunct | signal | 1 | 10/10 | 10/10 | +0% | +0%–+0% | 0/0 | 1.000 |
 | lower_nopunct | signal | 2 | 8/10 | 3/10 | -50% | -80%–-20% | 5/0 | 0.062 |
-| lower_nopunct | signal | 4 | 1/10 | 4/10 | +30% | -10%–+70% | 1/4 | 0.375 |
+| lower_nopunct | signal | 4 | 2/10 | 4/10 | +20% | -30%–+70% | 2/4 | 0.688 |
 | lower_nopunct | signal | 8 | 2/10 | 1/10 | -10% | -40%–+20% | 2/1 | 1.000 |
 | lower_nopunct | all_shuffled | 1 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
 | lower_nopunct | all_shuffled | 2 | 0/10 | 0/10 | +0% | +0%–+0% | 0/0 | 1.000 |
@@ -130,7 +130,7 @@ Medians exclude missing usage from incomplete turns. Timeouts remain in timeout 
 
 | variant | condition | semantic | timeouts | tool trials | shell trials | median elapsed (s) | median input tokens | median reasoning tokens |
 | :-- | :-- | --: | --: | --: | --: | --: | --: | --: |
-| original | signal | 21/40 | 9 | 11 | 11 | 40.5 | 13338 | 811 |
+| original | signal | 22/40 | 9 | 11 | 11 | 40.5 | 13338 | 811 |
 | original | all_shuffled | 0/40 | 15 | 23 | 22 | 640.4 | 34407 | 14689 |
 | lower | signal | 18/40 | 0 | 11 | 11 | 72.6 | 13790 | 2976 |
 | lower | all_shuffled | 1/40 | 7 | 22 | 21 | 246.7 | 14694 | 7592 |
@@ -149,12 +149,12 @@ Strategy labels describe only observable JSONL events. They do not expose privat
 | condition | semantic success | observable primary strategy | trials |
 | :-- | :-- | :-- | --: |
 | signal | yes | apparent_lexical_reconstruction | 1 |
-| signal | yes | direct_one_pass_response | 57 |
+| signal | yes | direct_one_pass_response | 58 |
 | signal | yes | explicit_fixed_stride_hypothesis | 8 |
 | signal | yes | explicit_testing_of_candidate_strides | 12 |
 | signal | yes | shell_or_tool_assisted_reconstruction | 1 |
 | signal | no | apparent_lexical_reconstruction | 3 |
-| signal | no | direct_one_pass_response | 37 |
+| signal | no | direct_one_pass_response | 36 |
 | signal | no | explicit_fixed_stride_hypothesis | 25 |
 | signal | no | explicit_recognition_of_shuffled_text | 8 |
 | signal | no | shell_or_tool_assisted_reconstruction | 8 |
@@ -217,17 +217,17 @@ The finer variant-by-condition strategy table is in `strategy-summary.csv`.
 ## Observable unusual behavior counts
 
 - Timeout/nonresponse runner events: 41
-- Final responses explicitly mentioning shuffle/encoding: 93
+- Final responses explicitly mentioning shuffle/encoding: 94
 - Responses with malformed object substitutions: 22
-- Correct signal trials with a direct/no-tool/no-explicit-reconstruction primary trace label: 57/79
-- Correct signal trials with any observable tool call: 20/79
+- Correct signal trials with a direct/no-tool/no-explicit-reconstruction primary trace label: 58/80
+- Correct signal trials with any observable tool call: 20/80
 - Correct all-shuffled trials with any observable tool call: 2/2
 - Some timed-out traces ended on progress messages after recognizing the task or scrambling; those are not final task successes.
 - Several failures substituted material/object pairs such as `brass coin` or `silver key`, consistent with lexical recombination rather than reliable relational recovery.
 
 ## Conclusion and next step
 
-The preregistered directional hypothesis was not supported. Normalization did eliminate or reduce the original N=8 all-shuffled successes, but it generally damaged intact-signal recovery as much or more; the paired interaction estimates were zero or negative in most cells. The result therefore does not isolate punctuation/capitalization as a cue used disproportionately for unordered reconstruction.
+The preregistered directional hypothesis was not supported. Hardened all-shuffled performance was already at floor in the original-surface replication (0/40), leaving little room for the predicted disproportionate control decline. Normalization generally damaged intact-signal recovery as much or more, while the only normalized all-shuffled successes were isolated N=1 outcomes. The result is therefore inconclusive about whether punctuation/capitalization specifically supports unordered reconstruction and provides no affirmative interaction evidence for that mechanism.
 
 The fully instrumented replication did reproduce robust blind task recovery and substantial run-to-run variability. Observable traces separate many cheap direct responses from expensive tool-assisted reconstruction, but a direct final response cannot establish implicit decoding because the payload itself suppresses explanation.
 
@@ -236,3 +236,9 @@ Proceed to the preregistered equal-multiset A/B Experiment 2 without changing it
 ## Interpretation boundary
 
 Correct all-shuffled answers are not periodic-lane recovery. Final-answer silence about encoding is not evidence that encoding was not consciously discovered, especially because the payload suppresses explanation. Statistical summaries describe repeatability for this model/runtime rather than classical population inference.
+
+## Audit references
+
+All 320 responses received an independent variant-blind review. Reviewed fields in `trials.jsonl` are authoritative; automatic pre-audit scores are preserved in `pre-blind-audit-trials.jsonl`, and the full discrepancy accounting is in `blind-audit-summary.md` and `blind-audit-decisions.jsonl`.
+
+The post-slate isolation review found 0/320 observable host-access cases and 0/320 direct experiment-context leaks. See `isolation-audit.md` and `leakage-trace-audit-summary.json` for the boundary and probe-attempt details.
