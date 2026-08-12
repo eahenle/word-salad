@@ -1,0 +1,18 @@
+{
+  "word_multisets_equal": true,
+  "word_count": 161,
+  "payloads_distinct": true,
+  "answers_distinct": true,
+  "answers": {
+    "A": {
+      "brass key": "green",
+      "silver coin": "blue",
+      "glass marble": "green"
+    },
+    "B": {
+      "brass key": "green",
+      "silver coin": "red",
+      "glass marble": "green"
+    }
+  }
+}

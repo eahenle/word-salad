@@ -1,0 +1,26 @@
+{
+  "O1": {
+    "sentence": "Move the brass key into the box containing the silver coin.",
+    "operation": ["move_to_object", "brass key", "silver coin"]
+  },
+  "O2": {
+    "sentence": "Swap the entire contents of the red and green boxes.",
+    "operation": ["swap_contents", "red", "green"]
+  },
+  "O3": {
+    "sentence": "Move the glass marble into the box containing the brass key.",
+    "operation": ["move_to_object", "glass marble", "brass key"]
+  },
+  "O4": {
+    "sentence": "Swap the labels on the blue and green boxes without moving objects.",
+    "operation": ["swap_labels", "blue", "green"]
+  },
+  "O5": {
+    "sentence": "Move the silver coin into the box currently labeled red.",
+    "operation": ["move_to_label", "silver coin", "red"]
+  },
+  "O6": {
+    "sentence": "Swap the entire contents of the red and blue boxes.",
+    "operation": ["swap_contents", "red", "blue"]
+  }
+}
