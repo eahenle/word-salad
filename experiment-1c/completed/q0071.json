@@ -1,0 +1,58 @@
+{
+  "trial_id": "q0071",
+  "neutral_id": "q0071",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 1,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "992908949aa6fcc702a7ab905e072113a6391e333bc38736053dc359e6918032",
+  "prompt_file": "prompts/original/q0071.txt",
+  "trace_file": "traces/q0071.jsonl",
+  "stderr_file": "stderr/q0071.txt",
+  "response": "I’m disentangling the repeated word stream into its underlying box operations, then I’ll return only the requested color mapping.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T08:15:52.985801+00:00",
+    "finished_at": "2026-08-12T08:30:53.136863+00:00",
+    "thread_id": "019ff50a-cd97-7e50-8c36-62b520c3ede1",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.148,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 37597,
+    "trace_sha256": "df517344d05f14e31cfd67af979fcaf34bce877493f1252b689dd64b648de1a7",
+    "stderr_bytes": 150,
+    "stderr_sha256": "a222e05c21d5f824520077f25435704dc8895700b73ad6b3576be8e2631b28f4",
+    "event_count": 49,
+    "event_type_counts": {
+      "item.completed": 24,
+      "item.started": 23,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 18,
+      "file_change": 5
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0010",
+  "neutral_id": "q0010",
+  "variant": "original",
+  "condition": "signal",
+  "lanes": 1,
+  "seed": 10,
+  "signal_phase": 0,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "7b84bcfb898d21aa26355879f1a369059b0c7963981217505e568588cf3fcfba",
+  "prompt_file": "prompts/original/q0010.txt",
+  "trace_file": "traces/q0010.jsonl",
+  "stderr_file": "stderr/q0010.txt",
+  "response": "brass key = red; silver coin = blue; glass marble = blue.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T06:14:20.055977+00:00",
+    "finished_at": "2026-08-12T06:14:29.611142+00:00",
+    "thread_id": "019ff49b-8683-7c32-a4b6-18d5501b1ca9",
+    "aggregate_usage": {
+      "input_tokens": 13179,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 182,
+      "reasoning_output_tokens": 160
+    },
+    "elapsed_seconds": 9.555,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 403,
+    "trace_sha256": "5059abf3fde8fc4855e6c40d98df6288f8626890828b6c3175c2dfff01b09c14",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

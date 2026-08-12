@@ -1,0 +1,55 @@
+{
+  "trial_id": "q0058",
+  "neutral_id": "q0058",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 8,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "13250e17b7f0a5fe613bfecb6288a293a5a2dae45736c0fe953b5820b835a4fe",
+  "prompt_file": "prompts/original/q0058.txt",
+  "trace_file": "traces/q0058.jsonl",
+  "stderr_file": "stderr/q0058.txt",
+  "response": "I’m treating this as an interleaving puzzle: the text appears to contain two identical copies of one instruction sequence, shuffled together while preserving each copy’s order. I’ll reconstruct that sequence, then execute the box moves.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T07:42:42.635335+00:00",
+    "finished_at": "2026-08-12T07:57:42.798046+00:00",
+    "thread_id": "019ff4ec-6eb3-72b2-9e81-2ecba1fbc51f",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.159,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 425,
+    "trace_sha256": "e8a846a383c34e7ef632cb7d064c21799863e33d1c396a6c91412175f9e8626b",
+    "stderr_bytes": 286,
+    "stderr_sha256": "b8254ca3ad0858ed7cbb5e3b61ce8392c8ed32cd3cb0947549f403191ac2d792",
+    "event_count": 3,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

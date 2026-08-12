@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0054",
+  "neutral_id": "q0054",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "f7349019013aac1168e23cdf870b8809e7808c705bad6269b15c775dd5273924",
+  "prompt_file": "prompts/original/q0054.txt",
+  "trace_file": "traces/q0054.jsonl",
+  "stderr_file": "stderr/q0054.txt",
+  "response": "I’m untangling the interleaved instructions first; the key is to recover the exact move order and the word-label substitutions before calculating the three final box contents.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T07:30:53.739934+00:00",
+    "finished_at": "2026-08-12T07:45:53.910641+00:00",
+    "thread_id": "019ff4e1-9e0e-78e2-9233-9e88ac4fbd2c",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.167,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 932,
+    "trace_sha256": "1276dec4e833a4c6d2cca2bd975a84580dbc325a44970f25e013484562b30820",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

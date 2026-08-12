@@ -1,0 +1,58 @@
+{
+  "trial_id": "q0077",
+  "neutral_id": "q0077",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "3bfdc833feb2b7b0d469160916183210a0d0639417f0253adeed89b7bef0837b",
+  "prompt_file": "prompts/original/q0077.txt",
+  "trace_file": "traces/q0077.jsonl",
+  "stderr_file": "stderr/q0077.txt",
+  "response": "The hidden prompt appears to be repeated copies of the same instruction with their words shuffled together. I’m using the repetitions as redundancy: token frequencies and sentence markers should let me recover the original operations instead of guessing from isolated fragments.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T08:26:04.629097+00:00",
+    "finished_at": "2026-08-12T08:41:04.767013+00:00",
+    "thread_id": "019ff514-227c-7f02-9c54-f592c29077ed",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.135,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 10621,
+    "trace_sha256": "bd2d3068226ce990830c3d642fb760f7d822f72a9afe2922fab672e0dc4890ce",
+    "stderr_bytes": 321,
+    "stderr_sha256": "f07019d660746f4902d303682fa38d13553519a43ef9ef4cfa73b2eab5de03cd",
+    "event_count": 36,
+    "event_type_counts": {
+      "item.completed": 18,
+      "item.started": 16,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 14,
+      "file_change": 2
+    },
+    "non_json_line_count": 0
+  }
+}

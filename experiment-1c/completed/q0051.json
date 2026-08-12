@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0051",
+  "neutral_id": "q0051",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 1,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "2bdb3b4703d052ae9ec8b7e35fb0914059d0d3d2812afba5e223db9401dadd44",
+  "prompt_file": "prompts/original/q0051.txt",
+  "trace_file": "traces/q0051.jsonl",
+  "stderr_file": "stderr/q0051.txt",
+  "response": "I’m resolving the shuffled instruction sequence and will return only the required final line.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T07:27:20.788761+00:00",
+    "finished_at": "2026-08-12T07:42:20.949408+00:00",
+    "thread_id": "019ff4de-5e39-7c41-98d6-613a216621ea",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.158,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 41668,
+    "trace_sha256": "b2f7304d5fd0b69ccbc98b714a0f2c622ced7da482b29fe764ad8a100202119f",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 15,
+    "event_type_counts": {
+      "item.completed": 7,
+      "item.started": 6,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 6
+    },
+    "non_json_line_count": 0
+  }
+}

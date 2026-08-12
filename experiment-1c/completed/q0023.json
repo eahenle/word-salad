@@ -1,0 +1,55 @@
+{
+  "trial_id": "q0023",
+  "neutral_id": "q0023",
+  "variant": "original",
+  "condition": "signal",
+  "lanes": 4,
+  "seed": 3,
+  "signal_phase": 1,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "d1a5abe853ea1382aae55f0b27e8678bb585091f06572903902cdadb79f0b1ee",
+  "prompt_file": "prompts/original/q0023.txt",
+  "trace_file": "traces/q0023.jsonl",
+  "stderr_file": "stderr/q0023.txt",
+  "response": "I’m treating the text as several interleaved copies of one instruction set. I’ll reconstruct the repeated sequence, then return only the requested filled-in line.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T06:15:53.037596+00:00",
+    "finished_at": "2026-08-12T06:30:53.171918+00:00",
+    "thread_id": "019ff49c-f589-7ce0-b71e-fc05c2b9266a",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.134,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 349,
+    "trace_sha256": "b7a53fd36f396b9777a3a58a57e2e38fcb2cf54756e220ce6f5a9e85b4e8d1b3",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 3,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

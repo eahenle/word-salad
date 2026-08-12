@@ -1,0 +1,58 @@
+{
+  "trial_id": "q0036",
+  "neutral_id": "q0036",
+  "variant": "original",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 6,
+  "signal_phase": 6,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "2eaa2b185d1d1058c131eaa2b88adfd43f077686b931b878d8f1bdec8f3ae91e",
+  "prompt_file": "prompts/original/q0036.txt",
+  "trace_file": "traces/q0036.jsonl",
+  "stderr_file": "stderr/q0036.txt",
+  "response": "I’m untangling the repeated, interleaved instructions into the underlying box operations, then I’ll return only the requested label.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T06:45:53.305278+00:00",
+    "finished_at": "2026-08-12T07:00:53.438319+00:00",
+    "thread_id": "019ff4b8-6970-7901-9157-0bd1d443ac3b",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.132,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 27131,
+    "trace_sha256": "4c0f6209461bb49d0f827479788926580886797f04b107b603aa0e71a81843e7",
+    "stderr_bytes": 294,
+    "stderr_sha256": "3bbb67991848484e21619f658e9300655eb2460528220d13cdf1b245bc2dd3fa",
+    "event_count": 35,
+    "event_type_counts": {
+      "item.completed": 17,
+      "item.started": 16,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 13,
+      "file_change": 3
+    },
+    "non_json_line_count": 0
+  }
+}

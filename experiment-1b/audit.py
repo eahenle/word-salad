@@ -10,6 +10,14 @@ from collections import Counter
 from pathlib import Path
 
 
+VARIANT_ID_RANGES = {
+    "original": range(1, 81),
+    "lower": range(81, 161),
+    "nopunct": range(161, 241),
+    "lower_nopunct": range(241, 321),
+}
+
+
 def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
@@ -22,12 +30,20 @@ def read_jsonl(path: Path) -> list[dict]:
     ]
 
 
-def audit(root: Path) -> dict:
+def audit(root: Path, variants: list[str]) -> dict:
     results = root / "results"
     records = read_jsonl(results / "trials-unscored.jsonl")
-    expected_ids = {f"q{index:04d}" for index in range(1, 321)}
+    expected_ids = {
+        f"q{index:04d}"
+        for variant in variants
+        for index in VARIANT_ID_RANGES[variant]
+    }
     ids = [record["neutral_id"] for record in records]
-    if len(records) != 320 or set(ids) != expected_ids or len(set(ids)) != len(ids):
+    if (
+        len(records) != len(expected_ids)
+        or set(ids) != expected_ids
+        or len(set(ids)) != len(ids)
+    ):
         raise AssertionError("unscored record cardinality or neutral-ID coverage mismatch")
 
     error_types: Counter[str] = Counter()
@@ -91,15 +107,19 @@ def audit(root: Path) -> dict:
             status_counts["ok"] += 1
 
     metadata = read_jsonl(results / "metadata.jsonl")
-    if len(metadata) != 320 or {item["neutral_id"] for item in metadata} != expected_ids:
+    if (
+        len(metadata) != len(expected_ids)
+        or {item["neutral_id"] for item in metadata} != expected_ids
+    ):
         raise AssertionError("aggregate metadata coverage mismatch")
 
     for directory in ("attempts", "completed", "traces", "stderr"):
-        if len(list((root / directory).iterdir())) != 320:
+        if len(list((root / directory).iterdir())) != len(expected_ids):
             raise AssertionError(f"unexpected file count in {directory}")
 
     return {
         "records": len(records),
+        "variants": variants,
         "neutral_ids_complete": True,
         "prompt_hashes_valid": True,
         "trace_hashes_valid": True,
@@ -123,8 +143,14 @@ def main() -> None:
     parser.add_argument(
         "--output", type=Path, default=root / "results" / "integrity-audit.json"
     )
+    parser.add_argument(
+        "--variants",
+        nargs="+",
+        choices=tuple(VARIANT_ID_RANGES),
+        default=list(VARIANT_ID_RANGES),
+    )
     args = parser.parse_args()
-    report = audit(args.root)
+    report = audit(args.root, args.variants)
     args.output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(
         f"integrity passed: records={report['records']} "

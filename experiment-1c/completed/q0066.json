@@ -1,0 +1,62 @@
+{
+  "trial_id": "q0066",
+  "neutral_id": "q0066",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 6,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "ca485bdbc874ab7e55f4af6ea30de21f00de32f2b09722c53639f86edf368b2d",
+  "prompt_file": "prompts/original/q0066.txt",
+  "trace_file": "traces/q0066.jsonl",
+  "stderr_file": "stderr/q0066.txt",
+  "response": "No unique mapping can be determined: the word-level scrambling destroys the order and pairings of the box operations.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T08:06:35.848484+00:00",
+    "finished_at": "2026-08-12T08:19:18.814471+00:00",
+    "thread_id": "019ff502-4d78-7ff1-b5fb-12649e4776d8",
+    "aggregate_usage": {
+      "input_tokens": 1102691,
+      "cached_input_tokens": 1029376,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 32498,
+      "reasoning_output_tokens": 24256
+    },
+    "elapsed_seconds": 762.964,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 6746,
+    "trace_sha256": "88f9f884b33b3b45b971a142ab046cbd961195ee8af2ed80340c6ed56ecc734a",
+    "stderr_bytes": 507,
+    "stderr_sha256": "83e893113073260dcd87a924bae5630039af5a4a41e510d9c07775c6250ae8cf",
+    "event_count": 31,
+    "event_type_counts": {
+      "item.completed": 15,
+      "item.started": 13,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 9,
+      "file_change": 4
+    },
+    "non_json_line_count": 0
+  }
+}

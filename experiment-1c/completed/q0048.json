@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0048",
+  "neutral_id": "q0048",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 8,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "08c8f906ffe64fead5e91d9729269f21448d6cdbbbad1f07ed14c92f15508d69",
+  "prompt_file": "prompts/original/q0048.txt",
+  "trace_file": "traces/q0048.jsonl",
+  "stderr_file": "stderr/q0048.txt",
+  "response": "The output template is now clear; I’m resolving the last label-sensitive moves, where “red/blue/green” refer to the labels after they have been swapped.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T07:15:53.588073+00:00",
+    "finished_at": "2026-08-12T07:30:53.739177+00:00",
+    "thread_id": "019ff4d3-e1cb-7b70-a869-4315a44fdcd7",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.148,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 94936,
+    "trace_sha256": "a3be3b0051ac819d867d89da8730a2f595deb98925ae5deabdd0a4203a154822",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 48,
+    "event_type_counts": {
+      "item.completed": 24,
+      "item.started": 22,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 22
+    },
+    "non_json_line_count": 0
+  }
+}

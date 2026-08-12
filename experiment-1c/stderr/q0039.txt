@@ -1,0 +1,9 @@
+2026-08-12T06:55:03.075517Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find expected lines in /tmp/interleaved.txt:
+You label
+2026-08-12T06:55:35.432039Z ERROR codex_core::tools::router: error=Exit code: 1
+Wall time: 0 seconds
+Output:
+Failed to write file /subject/testperm.txt
+
+2026-08-12T06:56:00.678656Z ERROR codex_core::tools::router: error=apply_patch verification failed: invalid hunk at line 2, Update file hunk for path '/tmp/interleaved.txt' is empty
+2026-08-12T06:56:08.360948Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find context '-1,0 +2 @@' in /tmp/interleaved.txt

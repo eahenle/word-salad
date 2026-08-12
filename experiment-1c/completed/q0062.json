@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0062",
+  "neutral_id": "q0062",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "cf0fd37c9d0f6c4e3802e689cad69a8ef0b8692a8eb44c0ac72c5e42124b8d53",
+  "prompt_file": "prompts/original/q0062.txt",
+  "trace_file": "traces/q0062.jsonl",
+  "stderr_file": "stderr/q0062.txt",
+  "response": "The text is threefold and scrambled, but its vocabulary still exposes a consistent six-step box-tracking puzzle. I’ve recovered the initial state and am resolving the exact order of the moves now.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T07:57:21.122024+00:00",
+    "finished_at": "2026-08-12T08:12:21.289127+00:00",
+    "thread_id": "019ff4f9-e7ba-7aa3-8969-b34446f96722",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.165,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 44405,
+    "trace_sha256": "97f95c22f182b1817d84dc52ee6bc33f431b06d5eed504f286e3219f6a08e784",
+    "stderr_bytes": 924,
+    "stderr_sha256": "63207ab840b4436dfbcf7c9df7b1807ab3f91533d5d794a088a7489614292bbe",
+    "event_count": 56,
+    "event_type_counts": {
+      "error": 4,
+      "item.completed": 26,
+      "item.started": 24,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 20,
+      "file_change": 4
+    },
+    "non_json_line_count": 0
+  }
+}

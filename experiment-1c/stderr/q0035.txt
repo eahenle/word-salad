@@ -1,0 +1,6 @@
+2026-08-12T06:49:12.676891Z ERROR codex_core::tools::router: error=Exit code: 1
+Wall time: 0 seconds
+Output:
+Failed to write file /subject/patch-test.txt
+
+2026-08-12T06:49:34.735669Z ERROR codex_core::tools::router: error=apply_patch verification failed: invalid hunk at line 2, Update file hunk for path 'interleaved.txt' is empty

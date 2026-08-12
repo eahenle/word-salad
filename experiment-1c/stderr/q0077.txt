@@ -1,0 +1,6 @@
+2026-08-12T08:29:48.975912Z ERROR codex_core::tools::router: error=apply_patch verification failed: invalid hunk at line 2, Update file hunk for path 'prompt.txt' is empty
+2026-08-12T08:30:09.357330Z ERROR codex_core::tools::router: error=Exit code: 1
+Wall time: 0 seconds
+Output:
+Failed to write file /subject/test.txt
+

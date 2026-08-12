@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"019ff4aa-ea68-75b3-8556-9d4a3f428693"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"brass = green; silver = red; glass = blue."}}
+{"type":"turn.completed","usage":{"input_tokens":13790,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":14320,"reasoning_output_tokens":14301}}

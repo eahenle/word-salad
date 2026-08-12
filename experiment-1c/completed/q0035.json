@@ -1,0 +1,58 @@
+{
+  "trial_id": "q0035",
+  "neutral_id": "q0035",
+  "variant": "original",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 5,
+  "signal_phase": 7,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "81e1b0f1aae83ac3c488dd56e636178478c13f5f640717b79889128c464b06bb",
+  "prompt_file": "prompts/original/q0035.txt",
+  "trace_file": "traces/q0035.jsonl",
+  "stderr_file": "stderr/q0035.txt",
+  "response": "I’m untangling this as an interleaved instruction set, then I’ll simulate the box contents and label swaps before returning only the requested one-line format.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T06:44:51.827965+00:00",
+    "finished_at": "2026-08-12T06:59:51.980797+00:00",
+    "thread_id": "019ff4b7-78c7-7912-b83f-f349230ba1dc",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.152,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 97355,
+    "trace_sha256": "bc5c37100850bfd4d9fb82aa8a873e8c2776b9ce246791a39be0baf14349191c",
+    "stderr_bytes": 332,
+    "stderr_sha256": "c029679ad308b7dadb7cc6529454d323f22bd63ea6e1d712e2b57e446e7b702b",
+    "event_count": 71,
+    "event_type_counts": {
+      "item.completed": 35,
+      "item.started": 34,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 26,
+      "file_change": 8
+    },
+    "non_json_line_count": 0
+  }
+}

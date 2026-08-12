@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0043",
+  "neutral_id": "q0043",
+  "variant": "original",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 3,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "78f733e3cb3927980f42fc9d40ebfb643a0ea7c07edc8412501c6e3f99fa39d7",
+  "prompt_file": "prompts/original/q0043.txt",
+  "trace_file": "traces/q0043.jsonl",
+  "stderr_file": "stderr/q0043.txt",
+  "response": "I’m untangling the shuffled wording into the initial box state, the move sequence, and the exact one-line response format.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T07:05:02.484920+00:00",
+    "finished_at": "2026-08-12T07:20:02.638738+00:00",
+    "thread_id": "019ff4c9-f23d-7063-8912-59f3a77166a2",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.153,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 67875,
+    "trace_sha256": "124e839650de6c0940b44eacfd83cd65bee16aa902c58976a54b056270bb49bd",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 33,
+    "event_type_counts": {
+      "item.completed": 16,
+      "item.started": 15,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 15
+    },
+    "non_json_line_count": 0
+  }
+}
