@@ -101,6 +101,19 @@ a missing turn caused by the runner are audited separately. Affected examples
 are rerun individually with a fresh subject, while the failed attempt remains
 preserved in an invalidated-attempt archive.
 
+The audit-only retry selector is:
+
+```bash
+python3 -B experiment-1b/archive_infrastructure_failures.py \
+  --root experiment-1c
+```
+
+Only `runner_exception`, `nonzero_exit`, and `missing_final_agent_message` are
+eligible. Applying the archival step moves all four original artifacts and a
+hash-bearing decision record under `invalidated-attempts/qNNNN/attempt-K/`.
+The trial can then be named explicitly with the runner's `--trial-ids` option.
+No correctness, response text, or trace strategy is used in that decision.
+
 ## Artifact separation
 
 All prompts, indexed metadata, attempts, completions, raw stdout JSONL traces,

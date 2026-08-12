@@ -557,6 +557,8 @@ def historical_counts(path: Path) -> dict[tuple[str, int], tuple[int, int]]:
 def write_report(
     path: Path,
     *,
+    dataset_label: str,
+    invalidated: bool,
     records: list[dict],
     summary_rows: list[dict],
     completed_rows: list[dict],
@@ -570,9 +572,7 @@ def write_report(
 ) -> None:
     lookup = {(row["variant"], row["condition"], row["lanes"]): row for row in summary_rows}
     lines = [
-        "# Experiment 1A-R and 1B analysis",
-        "",
-        "> **INVALIDATED DATASET — FORENSIC USE ONLY.** Post-slate trace review found behavior-dependent host filesystem leakage. See `invalidation-report.md` and `leakage-trace-audit-summary.json`. These results must not be used for confirmatory inference or pooled with a hardened rerun.",
+        f"# {dataset_label} analysis",
         "",
         "Rates use all scheduled trials unless explicitly labeled completed-response-only. Intervals are 95% Wilson score intervals. Interaction intervals use a deterministic paired-seed bootstrap.",
         "",
@@ -581,6 +581,11 @@ def write_report(
         "| condition | lanes | historical semantic | replication semantic |",
         "| :-- | --: | --: | --: |",
     ]
+    if invalidated:
+        lines[2:2] = [
+            "> **INVALIDATED DATASET — FORENSIC USE ONLY.** Post-slate trace review found behavior-dependent host filesystem leakage. See `invalidation-report.md` and `leakage-trace-audit-summary.json`. These results must not be used for confirmatory inference or pooled with a hardened rerun.",
+            "",
+        ]
     for condition in CONDITION_ORDER:
         for lane in (1, 2, 4, 8):
             old = historical.get((condition, lane))
@@ -784,6 +789,15 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--trials", type=Path, default=root / "results" / "trials.jsonl")
     parser.add_argument("--trace-metrics", type=Path, default=root / "results" / "trace-metrics.jsonl")
     parser.add_argument("--historical-summary", type=Path, default=root.parent / "multiplex-experiment" / "results" / "summary.csv")
+    parser.add_argument(
+        "--dataset-label",
+        help="report title; defaults to the experiment directory name",
+    )
+    parser.add_argument(
+        "--invalidated",
+        action="store_true",
+        help="emit the forensic-only invalidation warning",
+    )
     return parser
 
 
@@ -811,6 +825,8 @@ def main() -> None:
     make_figures(scheduled, interaction_rows, results / "figures")
     write_report(
         results / "analysis.md",
+        dataset_label=args.dataset_label or args.root.name,
+        invalidated=args.invalidated,
         records=records,
         summary_rows=scheduled,
         completed_rows=completed,
