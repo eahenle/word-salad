@@ -1,0 +1,58 @@
+{
+  "trial_id": "q0220",
+  "neutral_id": "q0220",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 10,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "cee4f13848d78e880871523c32f98196ea25e973a42c956fc39b98ee6be7d2a7",
+  "prompt_file": "prompts/nopunct/q0220.txt",
+  "trace_file": "traces/q0220.jsonl",
+  "stderr_file": "stderr/q0220.txt",
+  "response": "The structure is now clear enough to track: the text is two shuffled copies of one 196-word puzzle. I’ve recovered the initial contents, the label swap, and the object moves; I’m checking the last ambiguities against the word counts so the color labels aren’t guessed.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:07:17.262568+00:00",
+    "finished_at": "2026-08-12T17:22:17.415845+00:00",
+    "thread_id": "019ff6f1-5613-7ae0-84c2-203820c94bcb",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.151,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 114233,
+    "trace_sha256": "f6039bf7d67cf82be2a45144d8988062eef958f2edeb9b76c2d2bcbdb40911d1",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 48,
+    "event_type_counts": {
+      "item.completed": 24,
+      "item.started": 22,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 21,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

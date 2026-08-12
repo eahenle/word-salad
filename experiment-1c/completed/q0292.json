@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0292",
+  "neutral_id": "q0292",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "1de011d0537275ed3adc820d0507aef72ef7fc492148b0c8cf748b283018aab5",
+  "prompt_file": "prompts/lower_nopunct/q0292.txt",
+  "trace_file": "traces/q0292.jsonl",
+  "stderr_file": "stderr/q0292.txt",
+  "response": "The instructions are not uniquely recoverable: the text is two shuffled copies of the same 196-word multiset, with no ordering key. Because move and swap order changes the result, no definite box contents can be derived. Please provide the original order or the permutation rule.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:14:19.938809+00:00",
+    "finished_at": "2026-08-12T18:21:52.201273+00:00",
+    "thread_id": "019ff72e-b35f-7113-a4da-2f4ef3959dc6",
+    "aggregate_usage": {
+      "input_tokens": 355373,
+      "cached_input_tokens": 317952,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 19014,
+      "reasoning_output_tokens": 11886
+    },
+    "elapsed_seconds": 452.26,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 89979,
+    "trace_sha256": "d452253b4a4bdc2cedbe95994da2e97561f67d72484b29867d2157153ca94d7e",
+    "stderr_bytes": 143,
+    "stderr_sha256": "cbaa171f101507e1eaae552dfbee389d1ec8b4638d11da8c53dbe85c2e093044",
+    "event_count": 32,
+    "event_type_counts": {
+      "item.completed": 16,
+      "item.started": 13,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 13
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0311",
+  "neutral_id": "q0311",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 1,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "b066a31bea6b5d237ab9ec6d893542621e2af64409c7445101525f17f99760e6",
+  "prompt_file": "prompts/lower_nopunct/q0311.txt",
+  "trace_file": "traces/q0311.jsonl",
+  "stderr_file": "stderr/q0311.txt",
+  "response": "The vocabulary counts reveal that the text is eight shuffled copies of one 196-word instruction set. I’ve isolated that underlying word inventory; I’m now reconstructing the unique box operations from it.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:41:34.698396+00:00",
+    "finished_at": "2026-08-12T18:56:34.850392+00:00",
+    "thread_id": "019ff747-a4c5-7b93-a8bf-3c3e059cada8",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.15,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 41859,
+    "trace_sha256": "8f27af0fc399432355ec861cd5bc0bafa893181ef20a1c6c551f05ece52dd775",
+    "stderr_bytes": 150,
+    "stderr_sha256": "dfa1d3f43c14593bcaa8fd4da1837ec5987145d1164bb631dcf4b90e89f6d6e2",
+    "event_count": 40,
+    "event_type_counts": {
+      "item.completed": 20,
+      "item.started": 18,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 13,
+      "file_change": 3,
+      "web_search": 2
+    },
+    "non_json_line_count": 0
+  }
+}

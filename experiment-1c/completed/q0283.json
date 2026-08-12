@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0283",
+  "neutral_id": "q0283",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 3,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "c4b88d9687c914712232645bb0553470fb80d6de4b575be23eebca9454bac632",
+  "prompt_file": "prompts/lower_nopunct/q0283.txt",
+  "trace_file": "traces/q0283.jsonl",
+  "stderr_file": "stderr/q0283.txt",
+  "response": "The final box contents can’t be determined uniquely because the instruction order is scrambled. Please resend the ordered instructions.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:59:50.073147+00:00",
+    "finished_at": "2026-08-12T18:06:41.003647+00:00",
+    "thread_id": "019ff721-6d65-7ea0-8a75-5961d9c48228",
+    "aggregate_usage": {
+      "input_tokens": 182315,
+      "cached_input_tokens": 150272,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 21150,
+      "reasoning_output_tokens": 17851
+    },
+    "elapsed_seconds": 410.93,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 34789,
+    "trace_sha256": "35f40b412a05deb366c745c7339365862fb1e971500bcf3407b7778565ec71de",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 21,
+    "event_type_counts": {
+      "item.completed": 10,
+      "item.started": 8,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 8
+    },
+    "non_json_line_count": 0
+  }
+}

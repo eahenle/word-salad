@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0293",
+  "neutral_id": "q0293",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 3,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "443cac469a8c3a9e6f5ab39e325b612093cbe75d6093056c30a239971d3a9800",
+  "prompt_file": "prompts/lower_nopunct/q0293.txt",
+  "trace_file": "traces/q0293.jsonl",
+  "stderr_file": "stderr/q0293.txt",
+  "response": "The hidden state is now internally consistent: the color substitution is a cycle, and the later label swap deliberately makes one “move” refer back to the box already holding the target object. I’m checking the remaining wording for whether it adds another operation or only defines move/swap semantics.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:20:08.149404+00:00",
+    "finished_at": "2026-08-12T18:35:08.321697+00:00",
+    "thread_id": "019ff734-14a9-7391-b4f2-e57f55ae65f5",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.171,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 1343,
+    "trace_sha256": "5ce77d8482eaf4e205ee1e5e97687fcb6e157d9b485657ec8ea19ed1190448cf",
+    "stderr_bytes": 286,
+    "stderr_sha256": "057f8abb635b0d92a860d559778ba5f0aead55dc2aa41319b0bac0c3aed0c6a0",
+    "event_count": 6,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

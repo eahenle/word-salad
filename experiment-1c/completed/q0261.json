@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0261",
+  "neutral_id": "q0261",
+  "variant": "lower_nopunct",
+  "condition": "signal",
+  "lanes": 4,
+  "seed": 1,
+  "signal_phase": 1,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "d93e8d570896193cd1a5833331e0cf4a594ee585ca1a6f58ee287aaadc400e20",
+  "prompt_file": "prompts/lower_nopunct/q0261.txt",
+  "trace_file": "traces/q0261.jsonl",
+  "stderr_file": "stderr/q0261.txt",
+  "response": "Interpreting the scrambled instructions as the three-object box puzzle:\n\n1. Move the brass key from green to red.\n2. Move the glass marble from blue to green.\n3. Move the silver coin from red to blue.\n4. Swap the entire contents of the red and blue boxes.\n\nRed = silver coin  \nBlue = brass key  \nGreen = glass marble",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:48:03.677249+00:00",
+    "finished_at": "2026-08-12T17:49:22.066875+00:00",
+    "thread_id": "019ff716-a590-7481-a11b-d2f800af683a",
+    "aggregate_usage": {
+      "input_tokens": 13670,
+      "cached_input_tokens": 12032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4033,
+      "reasoning_output_tokens": 3954
+    },
+    "elapsed_seconds": 78.388,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 674,
+    "trace_sha256": "8d46825e2c8e9279491ecab8e4f7f8326bdb4cbc5fd8410eadf5dc8b5aae2270",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

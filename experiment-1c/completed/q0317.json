@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0317",
+  "neutral_id": "q0317",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "23ca62cc840df8539ee3e605b7b7dc9a2e0281ecd4a24239104d523354b5d654",
+  "prompt_file": "prompts/lower_nopunct/q0317.txt",
+  "trace_file": "traces/q0317.jsonl",
+  "stderr_file": "stderr/q0317.txt",
+  "response": "I can’t determine a unique result: the words are scrambled, and the box operations have no unambiguous order. Please resend the initial box contents and numbered operations in their intended sequence.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:53:20.886772+00:00",
+    "finished_at": "2026-08-12T18:54:45.854976+00:00",
+    "thread_id": "019ff752-6b6a-7e21-bb10-52559bde9714",
+    "aggregate_usage": {
+      "input_tokens": 33044,
+      "cached_input_tokens": 24064,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4129,
+      "reasoning_output_tokens": 3938
+    },
+    "elapsed_seconds": 84.967,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1521,
+    "trace_sha256": "dff2e7040f37cab5a4a2cb83e58196ad74a0453a9f944e71aa8619379ba993e4",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

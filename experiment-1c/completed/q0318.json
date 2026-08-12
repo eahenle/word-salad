@@ -1,0 +1,62 @@
+{
+  "trial_id": "q0318",
+  "neutral_id": "q0318",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 8,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "d5eb33bd5c187c80fcff8ab5409070ae5695545dd62263fba93ae816431c2a29",
+  "prompt_file": "prompts/lower_nopunct/q0318.txt",
+  "trace_file": "traces/q0318.jsonl",
+  "stderr_file": "stderr/q0318.txt",
+  "response": "I can identify red/green/blue boxes and a brass key, silver coin, and glass marble, but the shuffled text does not uniquely specify their starting locations or operation order.\n\nPlease resend either the unshuffled instructions or the decoding rule (such as “read every nth word” or how to use the `=` markers).",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:53:32.571635+00:00",
+    "finished_at": "2026-08-12T18:56:58.528916+00:00",
+    "thread_id": "019ff752-98d4-7963-8fcb-d9023f7236aa",
+    "aggregate_usage": {
+      "input_tokens": 92355,
+      "cached_input_tokens": 69376,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6175,
+      "reasoning_output_tokens": 5709
+    },
+    "elapsed_seconds": 205.956,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 4328,
+    "trace_sha256": "7638ae4c227e121fe19780a9041d4c5758ef1a40733b9d6ae9304c96711e00bf",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 13,
+    "event_type_counts": {
+      "item.completed": 6,
+      "item.started": 4,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 3,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

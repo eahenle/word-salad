@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0113",
+  "neutral_id": "q0113",
+  "variant": "lower",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 3,
+  "signal_phase": 4,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "0679831365830c81d9f55a8947da7c6fbe6c5a33b6c780139cc01736d3ead80c",
+  "prompt_file": "prompts/lower/q0113.txt",
+  "trace_file": "traces/q0113.jsonl",
+  "stderr_file": "stderr/q0113.txt",
+  "response": "Start: red has the brass key, green the silver coin, and blue the glass marble.\n\nAfter moving the marble to red, then the key to the empty blue box: red has the marble, green the coin, blue the key. Swapping red and blue gives red the key, green the coin, blue the marble. Moving the coin to the marble puts both in blue. Finally, swapping the green and blue labels makes that box green.\n\nbrass key = red; silver coin = green; glass marble = green",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T14:41:02.518851+00:00",
+    "finished_at": "2026-08-12T14:44:23.336287+00:00",
+    "thread_id": "019ff66b-6d60-7f31-9196-1d2d261c39d8",
+    "aggregate_usage": {
+      "input_tokens": 34319,
+      "cached_input_tokens": 24064,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9902,
+      "reasoning_output_tokens": 9661
+    },
+    "elapsed_seconds": 200.816,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1717,
+    "trace_sha256": "c9c9f787b9cbc490b56ae5005d53de930342cf086d5f551449c094fd0abd9061",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,2 @@
+2026-08-12T17:20:40.740830Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find expected lines in /tmp/box_words.txt:
+whichever Reply

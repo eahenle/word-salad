@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0219",
+  "neutral_id": "q0219",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 9,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "cdbd90bb1888f2634f5d83744a4387bd9517dac9c62c598c5e628e8df307b9ac",
+  "prompt_file": "prompts/nopunct/q0219.txt",
+  "trace_file": "traces/q0219.jsonl",
+  "stderr_file": "stderr/q0219.txt",
+  "response": "I’m treating this as an interleaved object-tracking instruction: first I’m separating the two word streams, then I’ll apply the moves and honor the requested one-line output.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:01:15.786685+00:00",
+    "finished_at": "2026-08-12T17:16:15.976627+00:00",
+    "thread_id": "019ff6eb-cd6e-7402-8a5c-27eb36dd8b27",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.188,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 1697,
+    "trace_sha256": "aa58409c9b47449b5f488011c9293e86e422f9f006d32d882d066a7c132cd0cc",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 2
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0217",
+  "neutral_id": "q0217",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "1cfd8f4925657167fa3514d7c321f90b4348ca330bed1ab82282f6475e3ee6b7",
+  "prompt_file": "prompts/nopunct/q0217.txt",
+  "trace_file": "traces/q0217.jsonl",
+  "stderr_file": "stderr/q0217.txt",
+  "response": "The words are globally shuffled, so the initial box contents and operation order cannot be determined uniquely. Please resend the instructions in their original ordered form.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T16:59:22.272607+00:00",
+    "finished_at": "2026-08-12T17:00:17.812546+00:00",
+    "thread_id": "019ff6ea-1288-7b83-9f51-9a854d30e099",
+    "aggregate_usage": {
+      "input_tokens": 13486,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2623,
+      "reasoning_output_tokens": 2588
+    },
+    "elapsed_seconds": 55.538,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 522,
+    "trace_sha256": "8947dea0f0e42923600b288a436cd3fbd784e43e03376b37f4eec38f450a7c88",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

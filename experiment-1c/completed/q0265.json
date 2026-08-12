@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0265",
+  "neutral_id": "q0265",
+  "variant": "lower_nopunct",
+  "condition": "signal",
+  "lanes": 4,
+  "seed": 5,
+  "signal_phase": 3,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "28ef9e3be1ec8855ff7f1cdf2abaa4f98747082463dd3f25afc5f9b7e4e8147f",
+  "prompt_file": "prompts/lower_nopunct/q0265.txt",
+  "trace_file": "traces/q0265.jsonl",
+  "stderr_file": "stderr/q0265.txt",
+  "response": "The word order is too scrambled to determine a unique starting state or operation sequence. Please resend it as:\n\n- Initial contents of Red, Green, and Blue\n- Numbered move/swap operations in order\n- Required output format",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:50:10.252342+00:00",
+    "finished_at": "2026-08-12T17:50:47.040111+00:00",
+    "thread_id": "019ff718-945c-7c03-a950-da35a8280729",
+    "aggregate_usage": {
+      "input_tokens": 13670,
+      "cached_input_tokens": 12032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1572,
+      "reasoning_output_tokens": 1520
+    },
+    "elapsed_seconds": 36.787,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 575,
+    "trace_sha256": "f947474327f7b4bbbf314f59c9373bdd42e9b29ce60ffb6e95f0ee9076a3f699",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

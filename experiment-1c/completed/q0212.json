@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0212",
+  "neutral_id": "q0212",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "de8d37476f4d261f0924e3217a7103c63f8830589822019ddd96b2e34266d452",
+  "prompt_file": "prompts/nopunct/q0212.txt",
+  "trace_file": "traces/q0212.jsonl",
+  "stderr_file": "stderr/q0212.txt",
+  "response": "I can’t determine a unique result: the box states, move order, and label swaps have been scrambled. Please resend the instructions in their original order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T16:45:14.293933+00:00",
+    "finished_at": "2026-08-12T16:54:04.403805+00:00",
+    "thread_id": "019ff6dd-2191-7070-92f9-5a65071ca69c",
+    "aggregate_usage": {
+      "input_tokens": 447804,
+      "cached_input_tokens": 403712,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 26515,
+      "reasoning_output_tokens": 18632
+    },
+    "elapsed_seconds": 530.108,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 96072,
+    "trace_sha256": "69451fbdebeb1a5d7d4f97d1fee0ad58486236ba9b920478599e2dbdaa7c81b7",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 33,
+    "event_type_counts": {
+      "item.completed": 16,
+      "item.started": 14,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 14
+    },
+    "non_json_line_count": 0
+  }
+}

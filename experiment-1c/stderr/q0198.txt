@@ -1,0 +1,5 @@
+2026-08-12T16:17:39.158292Z ERROR codex_core::tools::router: error=Exit code: 1
+Wall time: 0 seconds
+Output:
+Failed to write file /subject/shuffled.txt
+

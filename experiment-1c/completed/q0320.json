@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0320",
+  "neutral_id": "q0320",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 10,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "99bb366de60bcf4d4adb629d09c620d254a3bec126b14eab54197ba984206ca0",
+  "prompt_file": "prompts/lower_nopunct/q0320.txt",
+  "trace_file": "traces/q0320.jsonl",
+  "stderr_file": "stderr/q0320.txt",
+  "response": "I can’t determine a unique answer because the word order is scrambled, so the initial box contents and move sequence are ambiguous.\n\nPlease resend in this structure:\n\n```text\nInitial:\nRed / glass = key\nGreen / brass = coin\nBlue / silver = marble\n\nMoves:\n1. ...\n2. ...\n3. ...\n\nClarify whether “swap” exchanges contents, labels, or whole boxes.\n```\n\nThen I’ll return the final three mappings with brief reasoning.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:56:34.851090+00:00",
+    "finished_at": "2026-08-12T18:57:10.817423+00:00",
+    "thread_id": "019ff755-60fe-7c20-8efe-9e6111adbef1",
+    "aggregate_usage": {
+      "input_tokens": 14454,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1532,
+      "reasoning_output_tokens": 1432
+    },
+    "elapsed_seconds": 35.965,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 785,
+    "trace_sha256": "0ce133f3bbc7d2a426bd4f753b4c0855731b5d50567c496ef85579fdbab53531",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

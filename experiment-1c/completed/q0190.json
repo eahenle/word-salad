@@ -1,0 +1,58 @@
+{
+  "trial_id": "q0190",
+  "neutral_id": "q0190",
+  "variant": "nopunct",
+  "condition": "signal",
+  "lanes": 4,
+  "seed": 10,
+  "signal_phase": 2,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "791bec569ac5824b3158823351aec6a10ea59edfbceb58c6f88843094c0841cc",
+  "prompt_file": "prompts/nopunct/q0190.txt",
+  "trace_file": "traces/q0190.jsonl",
+  "stderr_file": "stderr/q0190.txt",
+  "response": "I’m untangling this as a repeated, shuffled box puzzle. I’ll reconstruct the shared instruction set, track label swaps separately from contents, and return only the requested three-line result.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T16:01:55.281735+00:00",
+    "finished_at": "2026-08-12T16:16:55.413366+00:00",
+    "thread_id": "019ff6b5-79a5-7440-b685-c5799190d815",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.13,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 19020,
+    "trace_sha256": "d2069621e0f407b3156e01949b0c9d32f283e40742570cf3c8e9d15788e260ed",
+    "stderr_bytes": 161,
+    "stderr_sha256": "7616fc351000bb8740f05d75d3c08b1ca661754b0ee9bdcbe2e9bb2333f271ce",
+    "event_count": 35,
+    "event_type_counts": {
+      "item.completed": 17,
+      "item.started": 16,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 12,
+      "file_change": 4
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0145",
+  "neutral_id": "q0145",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 5,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "4007f938f7f83efec3bf5d1db2c4fbc3163a394bd1af4a179e44c447dad85354",
+  "prompt_file": "prompts/lower/q0145.txt",
+  "trace_file": "traces/q0145.jsonl",
+  "stderr_file": "stderr/q0145.txt",
+  "response": "The structure is now clear: every original word was duplicated four times and globally shuffled. I’ve reduced it to a 198-word source vocabulary and am resolving the few move clauses whose order matters.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T15:24:15.126824+00:00",
+    "finished_at": "2026-08-12T15:39:15.289345+00:00",
+    "thread_id": "019ff692-fcaf-7381-85c1-7fe90ff75234",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.161,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 5517,
+    "trace_sha256": "6f3e6f5e02900b921e4966d7f9215541d34dec1e075484a69643bf8d3cbc0d23",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 22,
+    "event_type_counts": {
+      "item.completed": 11,
+      "item.started": 9,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 6,
+      "file_change": 2,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

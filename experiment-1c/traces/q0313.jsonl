@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"019ff74d-9ea8-72f0-b6de-4d23c934a898"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"red = silver coin  \ngreen = brass key  \nblue = glass marble  \n\nThe key moves from red to green, leaving red empty. The coin moves from green into the box with the marble. Swapping the red and blue labels makes that box red and the empty box blue. Finally, the marble moves into the empty blue box."}}
+{"type":"turn.completed","usage":{"input_tokens":14454,"cached_input_tokens":12032,"cache_write_input_tokens":0,"output_tokens":1321,"reasoning_output_tokens":1248}}

@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0298",
+  "neutral_id": "q0298",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 8,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "446d405cb4ebbe2c575eea4439bac2695a9f8f3c80699e16dc26e781ad4a329d",
+  "prompt_file": "prompts/lower_nopunct/q0298.txt",
+  "trace_file": "traces/q0298.jsonl",
+  "stderr_file": "stderr/q0298.txt",
+  "response": "The final contents cannot be determined uniquely. The 392-word message consists of two shuffled copies of the same 196-word multiset, so the order of the `move` and `swap` operations has been destroyed—and those operations are order-dependent.\n\nPlease resend the instructions in their original order or as numbered steps.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:26:50.596026+00:00",
+    "finished_at": "2026-08-12T18:34:31.607870+00:00",
+    "thread_id": "019ff73a-27aa-7b90-a530-bc8df23518fc",
+    "aggregate_usage": {
+      "input_tokens": 454358,
+      "cached_input_tokens": 386048,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 22857,
+      "reasoning_output_tokens": 15301
+    },
+    "elapsed_seconds": 461.01,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1882,
+    "trace_sha256": "268f0f0af34554e7c4cd7d76dd9bd41f83c04e633cbc39e3c802e56c22f8052b",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 8,
+    "event_type_counts": {
+      "item.completed": 4,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

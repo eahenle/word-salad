@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0139",
+  "neutral_id": "q0139",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 9,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "7a999fe89e63abef119545725f906d73ec698a63fb9aea64f29eb23dae090533",
+  "prompt_file": "prompts/lower/q0139.txt",
+  "trace_file": "traces/q0139.jsonl",
+  "stderr_file": "stderr/q0139.txt",
+  "response": "After the moves, red holds the glass marble, green holds the brass coin, and blue holds the silver key.\n\nsilver key = blue; brass coin = green; glass marble = red.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T15:18:54.347079+00:00",
+    "finished_at": "2026-08-12T15:31:00.494145+00:00",
+    "thread_id": "019ff68e-1808-7f50-9101-b3bd56e43cc6",
+    "aggregate_usage": {
+      "input_tokens": 706066,
+      "cached_input_tokens": 649472,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 35772,
+      "reasoning_output_tokens": 24670
+    },
+    "elapsed_seconds": 726.145,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 120032,
+    "trace_sha256": "39c58e4aaf27f84b8e209778ae23045903e157d5bf3a2d1b07d23f3fcd2df996",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 41,
+    "event_type_counts": {
+      "item.completed": 20,
+      "item.started": 18,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 18
+    },
+    "non_json_line_count": 0
+  }
+}

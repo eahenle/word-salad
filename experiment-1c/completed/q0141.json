@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0141",
+  "neutral_id": "q0141",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 1,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "eaa0fa9236492c8fdd46ea5dfb319a012465dca5896b99b32215ce9d993ced11",
+  "prompt_file": "prompts/lower/q0141.txt",
+  "trace_file": "traces/q0141.jsonl",
+  "stderr_file": "stderr/q0141.txt",
+  "response": "The final contents cannot be determined uniquely.\n\nEvery token—including punctuation—appears a multiple of four times, consistent with four copies of a 226-token prompt being shuffled together. That destroys which move/swap clause belongs to “first,” “next,” “then,” and “finally.” Different valid reorderings produce different results.\n\nPlease provide the ordered instructions or the rule/seed used to shuffle them.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T15:19:32.010462+00:00",
+    "finished_at": "2026-08-12T15:27:17.157555+00:00",
+    "thread_id": "019ff68e-aabc-7d62-a7c6-8d26320455e2",
+    "aggregate_usage": {
+      "input_tokens": 207979,
+      "cached_input_tokens": 177920,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 22542,
+      "reasoning_output_tokens": 17132
+    },
+    "elapsed_seconds": 465.145,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 49103,
+    "trace_sha256": "dae171c968a738ef46dfc18001418f4d5ebbb5c1b3c1a9dcffa5a002eba99017",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 21,
+    "event_type_counts": {
+      "item.completed": 10,
+      "item.started": 8,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 8
+    },
+    "non_json_line_count": 0
+  }
+}

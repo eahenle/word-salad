@@ -1,0 +1,58 @@
+{
+  "trial_id": "q0135",
+  "neutral_id": "q0135",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 5,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "69810b551a0ac61c51065fc72ed031d921e6d132469b20562b34ff3783a9dd3f",
+  "prompt_file": "prompts/lower/q0135.txt",
+  "trace_file": "traces/q0135.jsonl",
+  "stderr_file": "stderr/q0135.txt",
+  "response": "The text is exactly two shuffled copies of the same 196-word instruction set. I’ve recovered the fixed setup and output constraint; I’m resolving the remaining label/content sequence now.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T15:04:37.744189+00:00",
+    "finished_at": "2026-08-12T15:19:37.894587+00:00",
+    "thread_id": "019ff681-06a0-7f10-a3fa-4ae7d8e9398e",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.148,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 145241,
+    "trace_sha256": "2623fb57586f2ede7554b0270302d15c45fcde267ba487c605fca0d5fb7a4476",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 72,
+    "event_type_counts": {
+      "item.completed": 36,
+      "item.started": 34,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 33,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

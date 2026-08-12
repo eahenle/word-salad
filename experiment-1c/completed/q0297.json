@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0297",
+  "neutral_id": "q0297",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 7,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "11c0fe02d5af766719fc3d8f9b304b5b7fa0c81d9e735e4ad9324cd415a146ed",
+  "prompt_file": "prompts/lower_nopunct/q0297.txt",
+  "trace_file": "traces/q0297.jsonl",
+  "stderr_file": "stderr/q0297.txt",
+  "response": "I can’t determine the box contents uniquely because the words—and therefore the operation order and source/destination pairings—are scrambled. Please resend the initial contents and numbered operations in their original order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:25:23.005770+00:00",
+    "finished_at": "2026-08-12T18:32:58.873785+00:00",
+    "thread_id": "019ff738-e286-7672-a579-f8aa9bcd452d",
+    "aggregate_usage": {
+      "input_tokens": 393447,
+      "cached_input_tokens": 340992,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 21315,
+      "reasoning_output_tokens": 13245
+    },
+    "elapsed_seconds": 455.866,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 66595,
+    "trace_sha256": "0079ce4208e9185c16d60c724cecb80d27828206aed16b0f5760d159d29a9c2f",
+    "stderr_bytes": 143,
+    "stderr_sha256": "9a880b6ecfbdfde3d99977bc9d3fa6e086e9135bb87be1d54cd25df98389ef78",
+    "event_count": 35,
+    "event_type_counts": {
+      "item.completed": 17,
+      "item.started": 15,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 15
+    },
+    "non_json_line_count": 0
+  }
+}

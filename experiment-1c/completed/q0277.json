@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0277",
+  "neutral_id": "q0277",
+  "variant": "lower_nopunct",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 7,
+  "signal_phase": 7,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "8651c76975b00afbed868deac80c1802eb7861cec8a0730b0219f55481546aab",
+  "prompt_file": "prompts/lower_nopunct/q0277.txt",
+  "trace_file": "traces/q0277.jsonl",
+  "stderr_file": "stderr/q0277.txt",
+  "response": "The instructions have been word-shuffled, destroying the operation order and object–box pairings. Several different final states fit the same words, so the result isn’t uniquely determinable. Please resend the ordered operations.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:55:41.519238+00:00",
+    "finished_at": "2026-08-12T17:59:09.608896+00:00",
+    "thread_id": "019ff71d-a1e5-7f52-8398-7dcb8d7acef2",
+    "aggregate_usage": {
+      "input_tokens": 36302,
+      "cached_input_tokens": 24064,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 11135,
+      "reasoning_output_tokens": 10949
+    },
+    "elapsed_seconds": 208.089,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1447,
+    "trace_sha256": "c44b4ba41e189a1e1f7f002a5188d8ecf7d4b95aa862a9240dfc1c84258f68cc",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

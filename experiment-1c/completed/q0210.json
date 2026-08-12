@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0210",
+  "neutral_id": "q0210",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 10,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "17a4c1e5d91991ba27c7a223594d0e0e5c881d7901c0e2d83a9de82d40c4cfda",
+  "prompt_file": "prompts/nopunct/q0210.txt",
+  "trace_file": "traces/q0210.jsonl",
+  "stderr_file": "stderr/q0210.txt",
+  "response": "I’m untangling the shuffled instruction text first so I can preserve its exact box/label semantics and requested output format.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T16:43:28.339633+00:00",
+    "finished_at": "2026-08-12T16:58:28.524588+00:00",
+    "thread_id": "019ff6db-83c1-7ab1-bd28-29918c7b3d61",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.184,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 58407,
+    "trace_sha256": "05e1da1d4bc4557374b8b231df88652d122c7282e03fe8b259a54d1ac20787b1",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 31,
+    "event_type_counts": {
+      "item.completed": 15,
+      "item.started": 14,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 14
+    },
+    "non_json_line_count": 0
+  }
+}

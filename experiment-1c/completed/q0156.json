@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0156",
+  "neutral_id": "q0156",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 6,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "0b73e0d6a86cf980bde63023ece4817f26ceb1132c6687f6a8fd0413949270be",
+  "prompt_file": "prompts/lower/q0156.txt",
+  "trace_file": "traces/q0156.jsonl",
+  "stderr_file": "stderr/q0156.txt",
+  "response": "I’m reconstructing the repeated, interleaved instructions first; the visible wording strongly suggests several copies of one box puzzle were woven together.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T15:44:06.513511+00:00",
+    "finished_at": "2026-08-12T15:59:06.664409+00:00",
+    "thread_id": "019ff6a5-2a3b-7871-b32d-c968baa14a46",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.149,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 15399,
+    "trace_sha256": "3d6056558810073e2286a79d27732ae58795fc8261a19ba52eb497f1bfed0325",
+    "stderr_bytes": 154,
+    "stderr_sha256": "3533eef8761d689eadedd86a02872be9d2980ce7ae0ad08f35d627317b56a16e",
+    "event_count": 39,
+    "event_type_counts": {
+      "item.completed": 19,
+      "item.started": 18,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 13,
+      "file_change": 4,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

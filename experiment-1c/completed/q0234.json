@@ -1,0 +1,63 @@
+{
+  "trial_id": "q0234",
+  "neutral_id": "q0234",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "d9512bd5a05135b809fc9ca3d96bc91bb4fd59e205fde7257f546dfc190c7ef8",
+  "prompt_file": "prompts/nopunct/q0234.txt",
+  "trace_file": "traces/q0234.jsonl",
+  "stderr_file": "stderr/q0234.txt",
+  "response": "The final box contents cannot be uniquely determined. The message is a word-level shuffle of repeated instruction text, so it preserves word counts but destroys which actions follow “First,” “Then,” and so on. Because moves and label swaps are order-dependent, multiple valid reconstructions produce different answers.\n\nPlease provide the original ordered instructions or the permutation/decryption rule.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:33:58.121558+00:00",
+    "finished_at": "2026-08-12T17:41:33.938770+00:00",
+    "thread_id": "019ff709-bf37-7920-8475-e9f1ccf51915",
+    "aggregate_usage": {
+      "input_tokens": 527775,
+      "cached_input_tokens": 477696,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 22055,
+      "reasoning_output_tokens": 14923
+    },
+    "elapsed_seconds": 455.815,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 60645,
+    "trace_sha256": "f4ca97f38d3298f3c9ba4bd96269d79679a3feeb0157f792d940202eedfb504c",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 40,
+    "event_type_counts": {
+      "item.completed": 20,
+      "item.started": 17,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 14,
+      "file_change": 2,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

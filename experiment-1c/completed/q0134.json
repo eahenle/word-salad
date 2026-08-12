@@ -1,0 +1,58 @@
+{
+  "trial_id": "q0134",
+  "neutral_id": "q0134",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "7ac4f885d353943113aa388a123bad91706c0554eecb55d99b590dd8484bcca2",
+  "prompt_file": "prompts/lower/q0134.txt",
+  "trace_file": "traces/q0134.jsonl",
+  "stderr_file": "stderr/q0134.txt",
+  "response": "I’m treating this as an interleaved-word puzzle: I’ll reconstruct the hidden instructions first, then execute the box moves and return only the requested final format.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T15:04:16.531821+00:00",
+    "finished_at": "2026-08-12T15:19:16.692638+00:00",
+    "thread_id": "019ff680-b39a-7131-9558-b289284a4618",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.16,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 2485,
+    "trace_sha256": "b0a57093d4d54df8bd62b7511fd3bf48df8dec2e5c4d900931815c4faf96bdda",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 11,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 4,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 3,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "trial_id": "q0319",
+  "neutral_id": "q0319",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 9,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "0e67ddca98f6b52952befc0d6eefe05825b56573485a5e8371b7788a0e59ca07",
+  "prompt_file": "prompts/lower_nopunct/q0319.txt",
+  "trace_file": "traces/q0319.jsonl",
+  "stderr_file": "stderr/q0319.txt",
+  "response": "The final box contents can’t be determined uniquely because the words have been shuffled without a decoding rule. Please resend the instructions in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:54:45.856056+00:00",
+    "finished_at": "2026-08-12T18:59:41.429106+00:00",
+    "thread_id": "019ff753-b703-7fa1-b429-e7b8dadc0488",
+    "aggregate_usage": {
+      "input_tokens": 344730,
+      "cached_input_tokens": 306176,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 14272,
+      "reasoning_output_tokens": 10900
+    },
+    "elapsed_seconds": 295.573,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 4432,
+    "trace_sha256": "c32f562b34b04c504731b03ec9e4c8ae47618d9f5827fbda594b6c12185e472e",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 16,
+    "event_type_counts": {
+      "item.completed": 8,
+      "item.started": 5,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 4,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

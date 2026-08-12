@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0272",
+  "neutral_id": "q0272",
+  "variant": "lower_nopunct",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 2,
+  "signal_phase": 1,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "2d5925888354e672484ffe4fe210bb135d6ff419e1920aec90e0615c03a73bb5",
+  "prompt_file": "prompts/lower_nopunct/q0272.txt",
+  "trace_file": "traces/q0272.jsonl",
+  "stderr_file": "stderr/q0272.txt",
+  "response": "The words are scrambled, so the initial contents and ordered operations aren’t uniquely recoverable. Please resend the three starting box contents and the three numbered steps in order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:52:31.408305+00:00",
+    "finished_at": "2026-08-12T17:57:35.311342+00:00",
+    "thread_id": "019ff71a-bb96-74f3-8f6f-0b8fa22b4d60",
+    "aggregate_usage": {
+      "input_tokens": 184545,
+      "cached_input_tokens": 139264,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 12309,
+      "reasoning_output_tokens": 11570
+    },
+    "elapsed_seconds": 303.902,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 7637,
+    "trace_sha256": "d362b8bcdb2fd86961a07b9a1b780a3d9faeef0716e8284f80c378a24873023d",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 18,
+    "event_type_counts": {
+      "item.completed": 9,
+      "item.started": 6,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 6
+    },
+    "non_json_line_count": 0
+  }
+}

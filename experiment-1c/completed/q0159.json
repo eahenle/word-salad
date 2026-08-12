@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0159",
+  "neutral_id": "q0159",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 9,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "036dcdc54f83f6180a9e70a34593aa3033c54de30401b209a58e12409a9164bd",
+  "prompt_file": "prompts/lower/q0159.txt",
+  "trace_file": "traces/q0159.jsonl",
+  "stderr_file": "stderr/q0159.txt",
+  "response": "blue = brass key, green marble, red box containing red key, blue glass, silver marble, blue key\nred = red key, blue glass, silver marble, blue key\ngreen = green glass, brass marble, silver coin",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T15:47:11.543399+00:00",
+    "finished_at": "2026-08-12T15:52:16.494719+00:00",
+    "thread_id": "019ff6a7-fddd-7df3-a19e-fe8082805c6b",
+    "aggregate_usage": {
+      "input_tokens": 14694,
+      "cached_input_tokens": 12032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 16109,
+      "reasoning_output_tokens": 16056
+    },
+    "elapsed_seconds": 304.95,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 546,
+    "trace_sha256": "a3842ead88b28f86bff013d7b12ba4e36c75346f2e423535d749ca668b4637a9",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

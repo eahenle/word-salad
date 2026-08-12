@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0215",
+  "neutral_id": "q0215",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 5,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "f92ea93031c4d14e71a343289d0ea5ba09ae89edf3b34d6bb837a1568c4663df",
+  "prompt_file": "prompts/nopunct/q0215.txt",
+  "trace_file": "traces/q0215.jsonl",
+  "stderr_file": "stderr/q0215.txt",
+  "response": "I can’t reliably reconstruct the intended box puzzle because its words are scrambled. Please resend the instructions in their original order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T16:58:28.525568+00:00",
+    "finished_at": "2026-08-12T16:58:46.971709+00:00",
+    "thread_id": "019ff6e9-40c6-7aa3-96c8-56533f7fee30",
+    "aggregate_usage": {
+      "input_tokens": 13278,
+      "cached_input_tokens": 12032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 441,
+      "reasoning_output_tokens": 411
+    },
+    "elapsed_seconds": 18.445,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 490,
+    "trace_sha256": "28a0ecf21efd0135cbea28a47589165ac405f322d25552841c51f691bd1d21c7",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

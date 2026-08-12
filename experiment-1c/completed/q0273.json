@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0273",
+  "neutral_id": "q0273",
+  "variant": "lower_nopunct",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 3,
+  "signal_phase": 4,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "04783f7b1c6fdd57130bbf1c53ece53a9de4f358d71dbf03b0307e9e46bdec6b",
+  "prompt_file": "prompts/lower_nopunct/q0273.txt",
+  "trace_file": "traces/q0273.jsonl",
+  "stderr_file": "stderr/q0273.txt",
+  "response": "I can’t reliably reconstruct the puzzle because the words are globally scrambled and contain conflicting output instructions. Please resend the box labels, initial contents, move rules, and desired reply format in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:52:40.089476+00:00",
+    "finished_at": "2026-08-12T17:52:58.425990+00:00",
+    "thread_id": "019ff71a-dda4-7dd2-8c6f-e748c1e89378",
+    "aggregate_usage": {
+      "input_tokens": 14454,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 562,
+      "reasoning_output_tokens": 516
+    },
+    "elapsed_seconds": 18.335,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 583,
+    "trace_sha256": "184a4c81111249f7a877d6ed5b7458c7e8a927fd43fdb4475f3b381b8865ec56",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

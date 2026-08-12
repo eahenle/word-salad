@@ -1,0 +1,6 @@
+2026-08-12T18:51:52.709432Z ERROR codex_core::tools::router: error=Exit code: 1
+Wall time: 0 seconds
+Output:
+Failed to write file /subject/test.txt
+
+2026-08-12T18:56:48.398619Z ERROR codex_core::tools::router: error=exec_command failed for `/bin/sh -lc 'rm -f /subject/test.txt /subject/words.txt && ls -la /subject'`: CreateProcess { message: "Rejected(\"`/bin/sh -lc 'rm -f /subject/test.txt /subject/words.txt && ls -la /subject'` rejected: rm -f style commands are not permitted. Use a safer approach\")" }

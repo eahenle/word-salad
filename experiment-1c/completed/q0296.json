@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0296",
+  "neutral_id": "q0296",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 6,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "c4a4868c223dfebb06bd9536dd02ae97776f2022c8bed89fbc45328f9b866fe1",
+  "prompt_file": "prompts/lower_nopunct/q0296.txt",
+  "trace_file": "traces/q0296.jsonl",
+  "stderr_file": "stderr/q0296.txt",
+  "response": "The text is too thoroughly shuffled to determine a unique answer: associations such as “from red into blue” versus “from blue into red,” and the order of moves and label swaps, have been lost.\n\nPlease resend the initial box contents and numbered operations in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:22:15.895775+00:00",
+    "finished_at": "2026-08-12T18:25:23.004603+00:00",
+    "thread_id": "019ff735-f606-7f22-b002-ba0c94c33882",
+    "aggregate_usage": {
+      "input_tokens": 70063,
+      "cached_input_tokens": 60416,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8106,
+      "reasoning_output_tokens": 6463
+    },
+    "elapsed_seconds": 187.107,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 26489,
+    "trace_sha256": "61c9f1193e3b4d7fb68741288e94e74a9beb53f4ef1afe27c299ab814646a3c0",
+    "stderr_bytes": 143,
+    "stderr_sha256": "3ff5e63b845edfd2244c6eef94cad81bdcb7ac508341c0964b0a38e66219dc02",
+    "event_count": 11,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 3
+    },
+    "non_json_line_count": 0
+  }
+}

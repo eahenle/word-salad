@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0230",
+  "neutral_id": "q0230",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 10,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "ed2f32b30cf3c5311446b6a2dc857fd2214e66e339350827609e88b30272f33a",
+  "prompt_file": "prompts/nopunct/q0230.txt",
+  "trace_file": "traces/q0230.jsonl",
+  "stderr_file": "stderr/q0230.txt",
+  "response": "Indeterminate — the shuffle erased both the initial object-to-box pairings and the ordered operations, so no unique final mapping can be recovered.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:27:02.830737+00:00",
+    "finished_at": "2026-08-12T17:40:16.723687+00:00",
+    "thread_id": "019ff703-68d2-71f0-b61a-716ab26353d3",
+    "aggregate_usage": {
+      "input_tokens": 234178,
+      "cached_input_tokens": 198656,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 29734,
+      "reasoning_output_tokens": 26049
+    },
+    "elapsed_seconds": 793.891,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 34118,
+    "trace_sha256": "3cdb9766b4daa9304204dbd3741987810e926036295adb1ecd4c6ee56b7053a2",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 19,
+    "event_type_counts": {
+      "item.completed": 9,
+      "item.started": 7,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 7
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0294",
+  "neutral_id": "q0294",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "12ff6372bd2de3c96cd5c393a0cc3ac01552260da179c9385d84edb3039df81f",
+  "prompt_file": "prompts/lower_nopunct/q0294.txt",
+  "trace_file": "traces/q0294.jsonl",
+  "stderr_file": "stderr/q0294.txt",
+  "response": "Cannot determine uniquely: the word order—and therefore the ordered moves—has been lost. Please provide the original instructions or the shuffle key.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:20:24.809910+00:00",
+    "finished_at": "2026-08-12T18:28:57.685848+00:00",
+    "thread_id": "019ff734-55b4-7ed3-8c1d-451a02eb5bd7",
+    "aggregate_usage": {
+      "input_tokens": 317536,
+      "cached_input_tokens": 266240,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 24957,
+      "reasoning_output_tokens": 19052
+    },
+    "elapsed_seconds": 512.875,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 2094,
+    "trace_sha256": "7e4eb672ef2b1e8338a3152a0448569dfa57c2abc46595790dd476a2ce57675b",
+    "stderr_bytes": 429,
+    "stderr_sha256": "2325f7a9f1fb8d097f70cd6bb5de5014e8c2ee8b8e24564b57b2ceb300e54b5d",
+    "event_count": 9,
+    "event_type_counts": {
+      "item.completed": 4,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 2
+    },
+    "non_json_line_count": 0
+  }
+}

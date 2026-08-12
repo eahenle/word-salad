@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0302",
+  "neutral_id": "q0302",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "3ada47f3f3fa02eefb2a393ade39be2974e12d3f1b260e8c2b9f648494fdfbf3",
+  "prompt_file": "prompts/lower_nopunct/q0302.txt",
+  "trace_file": "traces/q0302.jsonl",
+  "stderr_file": "stderr/q0302.txt",
+  "response": "The puzzle is underdetermined because the words—and crucially the operation order—are scrambled. Even assuming:\n\n`Red = brass key; Green = silver coin; Blue = glass marble`\n\nthe text supports conflicting moves and label swaps that produce different final states. Please resend the operations as an ordered numbered list so I can determine the unique result.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:34:43.071869+00:00",
+    "finished_at": "2026-08-12T18:36:36.239146+00:00",
+    "thread_id": "019ff741-5eb7-79a3-84ed-d6048aa7a2fe",
+    "aggregate_usage": {
+      "input_tokens": 13670,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5962,
+      "reasoning_output_tokens": 5853
+    },
+    "elapsed_seconds": 113.166,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 921,
+    "trace_sha256": "aaca10abb29885c5fcf55233fb4f8e102e3f0c267b683e2ad32f9e3cd2e0932b",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

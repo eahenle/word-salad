@@ -1,0 +1,62 @@
+{
+  "trial_id": "q0314",
+  "neutral_id": "q0314",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 8,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "e4c8effd0978f6f9bc1704bec797a6152d1bcb09ca2fb733642b6cca030ab47e",
+  "prompt_file": "prompts/lower_nopunct/q0314.txt",
+  "trace_file": "traces/q0314.jsonl",
+  "stderr_file": "stderr/q0314.txt",
+  "response": "A unique result cannot be determined. The 1,568 words appear to be eight copies of a 196-word instruction set globally shuffled, destroying source–destination and object–box relationships.\n\nPlease provide the original word order or the shuffle key/seed.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T18:48:41.986848+00:00",
+    "finished_at": "2026-08-12T18:57:01.585689+00:00",
+    "thread_id": "019ff74e-29be-7283-a297-ba3927040d53",
+    "aggregate_usage": {
+      "input_tokens": 761395,
+      "cached_input_tokens": 713984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 20061,
+      "reasoning_output_tokens": 13598
+    },
+    "elapsed_seconds": 499.597,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 29240,
+    "trace_sha256": "894c339c89d7d433a4385b9f84527cad74d1fe3167df0da8c2d435dc9869d477",
+    "stderr_bytes": 511,
+    "stderr_sha256": "51ef26f17a8b00a9382eaaed1ef633110b2f745db71a3d9271510fe8264feba2",
+    "event_count": 41,
+    "event_type_counts": {
+      "item.completed": 20,
+      "item.started": 18,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 16,
+      "file_change": 2
+    },
+    "non_json_line_count": 0
+  }
+}

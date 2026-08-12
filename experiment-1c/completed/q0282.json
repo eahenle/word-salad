@@ -1,0 +1,62 @@
+{
+  "trial_id": "q0282",
+  "neutral_id": "q0282",
+  "variant": "lower_nopunct",
+  "condition": "all_shuffled",
+  "lanes": 1,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 196,
+  "prompt_sha256": "a76d6ad91e2a176a5a1687a1988465967fc1bb6e592b8bbffc88fe652e8124b5",
+  "prompt_file": "prompts/lower_nopunct/q0282.txt",
+  "trace_file": "traces/q0282.jsonl",
+  "stderr_file": "stderr/q0282.txt",
+  "response": "The final contents are indeterminate: shuffling all words destroyed the operation order and source–destination relationships. Please resend the instructions in their original order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:59:26.984622+00:00",
+    "finished_at": "2026-08-12T18:06:51.461084+00:00",
+    "thread_id": "019ff721-12e2-7f41-b36d-60a4525211a0",
+    "aggregate_usage": {
+      "input_tokens": 402133,
+      "cached_input_tokens": 346368,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 21985,
+      "reasoning_output_tokens": 16251
+    },
+    "elapsed_seconds": 444.475,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 57548,
+    "trace_sha256": "e7f74ac65c597c572b7006a071da91b4b64cb84bc78e63c48e903dcaae1eb299",
+    "stderr_bytes": 143,
+    "stderr_sha256": "a56c376229b73ba1734ff788cc64afdf5376ce367197e9de230eff7ea0ffbb7a",
+    "event_count": 33,
+    "event_type_counts": {
+      "item.completed": 16,
+      "item.started": 14,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 13,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0196",
+  "neutral_id": "q0196",
+  "variant": "nopunct",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 6,
+  "signal_phase": 6,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "f055c5232401de9b839b27aa1d5b9e69b9bdccd68ff15fd6d93588a367d01667",
+  "prompt_file": "prompts/nopunct/q0196.txt",
+  "trace_file": "traces/q0196.jsonl",
+  "stderr_file": "stderr/q0196.txt",
+  "response": "The contents can’t be determined uniquely because the initial assignments and operation order are scrambled. Please resend the unshuffled starting contents and ordered steps.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T16:13:30.228767+00:00",
+    "finished_at": "2026-08-12T16:15:59.999880+00:00",
+    "thread_id": "019ff6c0-13fd-7763-ba1f-f5a0cc564d6e",
+    "aggregate_usage": {
+      "input_tokens": 14454,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6173,
+      "reasoning_output_tokens": 6077
+    },
+    "elapsed_seconds": 149.77,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 830,
+    "trace_sha256": "24242b5685a20a13f5995723f47853efcdb1fac4deed862b93352015e1e5f40f",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

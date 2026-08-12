@@ -1,0 +1,61 @@
+{
+  "trial_id": "q0199",
+  "neutral_id": "q0199",
+  "variant": "nopunct",
+  "condition": "signal",
+  "lanes": 8,
+  "seed": 9,
+  "signal_phase": 0,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 1568,
+  "prompt_sha256": "bb92d81e8f21164c78a1d8ec8786e2b4e251ca52fb3b62d48857ddc6af7c4c92",
+  "prompt_file": "prompts/nopunct/q0199.txt",
+  "trace_file": "traces/q0199.jsonl",
+  "stderr_file": "stderr/q0199.txt",
+  "response": "I can’t determine a unique result: the word order is scrambled, so the sequence of moves and label swaps is ambiguous. Please resend the instructions as numbered steps.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T16:16:00.001112+00:00",
+    "finished_at": "2026-08-12T16:23:06.022175+00:00",
+    "thread_id": "019ff6c2-5d2b-7ce0-803a-c21c869d93aa",
+    "aggregate_usage": {
+      "input_tokens": 55340,
+      "cached_input_tokens": 41216,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 16254,
+      "reasoning_output_tokens": 14388
+    },
+    "elapsed_seconds": 426.02,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 20191,
+    "trace_sha256": "fd61fe5083deddb0301f75332bbbb2ffef30c8d27aaaf2bd7e888b77c509a471",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 9,
+    "event_type_counts": {
+      "item.completed": 4,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 2
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0222",
+  "neutral_id": "q0222",
+  "variant": "nopunct",
+  "condition": "all_shuffled",
+  "lanes": 4,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 784,
+  "prompt_sha256": "2585462920e6610e533ce0a271f473ca22b18db37ba790626ef5ea40b880d286",
+  "prompt_file": "prompts/nopunct/q0222.txt",
+  "trace_file": "traces/q0222.jsonl",
+  "stderr_file": "stderr/q0222.txt",
+  "response": "The final arrangement cannot be uniquely determined. The message contains 784 shuffled tokens—apparently four copies of a 196-word instruction set—with the original word order lost. That makes initial assignments, move directions, and operation order ambiguous.\n\nPlease resend one unshuffled copy with the initial box contents and numbered operations.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T17:08:06.757215+00:00",
+    "finished_at": "2026-08-12T17:17:23.404976+00:00",
+    "thread_id": "019ff6f2-130d-7ea1-bfab-1d9f2c7f137a",
+    "aggregate_usage": {
+      "input_tokens": 461167,
+      "cached_input_tokens": 404480,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 26548,
+      "reasoning_output_tokens": 21709
+    },
+    "elapsed_seconds": 556.647,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 931,
+    "trace_sha256": "8a0d1ef32f9566bae77b9852424c69f825b67384427f4e70edbefec86d24f056",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

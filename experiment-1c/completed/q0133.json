@@ -1,0 +1,59 @@
+{
+  "trial_id": "q0133",
+  "neutral_id": "q0133",
+  "variant": "lower",
+  "condition": "all_shuffled",
+  "lanes": 2,
+  "seed": 3,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 392,
+  "prompt_sha256": "bfb6c1782ebf7e7711b249ee3c5731a0b8af78290aec1e0b6fee726a365d7d4c",
+  "prompt_file": "prompts/lower/q0133.txt",
+  "trace_file": "traces/q0133.jsonl",
+  "stderr_file": "stderr/q0133.txt",
+  "response": "The instructions are too scrambled to determine a unique operation order or final box contents. Please resend them in their intended order.",
+  "exact_success": null,
+  "semantic_success": null,
+  "correct_assignment_count": null,
+  "malformed_object_substitutions": null,
+  "encoding_discovered": null,
+  "classification": null,
+  "strategy": null,
+  "notes": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "runtime": "container",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T15:04:14.274458+00:00",
+    "finished_at": "2026-08-12T15:07:15.231668+00:00",
+    "thread_id": "019ff680-aa29-7f62-80c9-2cae15d709b2",
+    "aggregate_usage": {
+      "input_tokens": 13338,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7484,
+      "reasoning_output_tokens": 7454
+    },
+    "elapsed_seconds": 180.956,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 487,
+    "trace_sha256": "8d6a9e7d63db7850b93da261e259a065100aad85463e3cb328922e74c2270a45",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}
