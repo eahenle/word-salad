@@ -69,7 +69,7 @@
   "independent_condition_blind_review_complete": true,
   "analysis_status": "complete",
   "freeze_tag": "experiment-2-toolless-cost-truncated-pilot",
-  "dataset_commit": null,
+  "dataset_commit": "f8e7ca76194fde460b29948a524f9173bb184998",
   "planned_but_deferred": [
     "remaining all-shuffled N=2 seeds",
     "constrained N=4",
