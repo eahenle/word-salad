@@ -1,0 +1,29 @@
+{
+  "neutral_id": "r0317",
+  "decision": "retry_exact_stimulus_after_capacity_returns",
+  "decision_basis": "observable service usage-cap rejection before subject response",
+  "archived_at": "2026-08-13T15:25:39.675039+00:00",
+  "prompt_sha256": "df91f31e1279ed650788d46ec68f1d70a37d3098da0f6230fa0ea1b6b92c50a9",
+  "original_artifacts": {
+    "attempt.json": {
+      "relative_path": "attempts/r0317.json",
+      "bytes": 1336,
+      "sha256": "0836124fdf66cdcb733661e2523468c6ac65f3f8456c1b4d6d858d9629b42df9"
+    },
+    "completed.json": {
+      "relative_path": "completed/r0317.json",
+      "bytes": 1467,
+      "sha256": "381c44b392c287515b153512b326ef34e6431b0df1b877d8ebfb7938c72fd46a"
+    },
+    "trace.jsonl": {
+      "relative_path": "traces/r0317.jsonl",
+      "bytes": 457,
+      "sha256": "83508167ed38c75b1eb77362510bd9bf86e1a05c2ddab2280c9d47ba69e9b117"
+    },
+    "stderr.txt": {
+      "relative_path": "stderr/r0317.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

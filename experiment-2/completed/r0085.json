@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0085",
+  "neutral_id": "r0085",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 5,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "bda3fbd3a46ab93c04de25d6adc8e217c5f48a0a3364a69ac8c275f8d2ca264f",
+  "prompt_file": "prompts/constrained/r0085.txt",
+  "trace_file": "traces/r0085.jsonl",
+  "stderr_file": "stderr/r0085.txt",
+  "response": "The final contents cannot be determined: the words are globally shuffled, so operations 1–6 cannot be uniquely reconstructed or ordered. Please resend the six operations unshuffled.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T20:49:53.115669+00:00",
+    "finished_at": "2026-08-12T21:02:59.532558+00:00",
+    "thread_id": "019ff7bd-1d20-70f1-9759-6169bd45f6f3",
+    "aggregate_usage": {
+      "input_tokens": 401311,
+      "cached_input_tokens": 326656,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 39190,
+      "reasoning_output_tokens": 32671
+    },
+    "elapsed_seconds": 786.414,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 60497,
+    "trace_sha256": "591541d5cfd9b5244f0e71ca496a0d1dc04e7d1f67a9f4bce486ffac167b4758",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 28,
+    "event_type_counts": {
+      "item.completed": 14,
+      "item.started": 11,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 11
+    },
+    "non_json_line_count": 0
+  }
+}

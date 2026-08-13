@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0294",
+  "neutral_id": "r0294",
+  "arm": "explanation",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 4,
+  "seed": 14,
+  "signal_phase": 0,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "28b88565a5c51dd092e8e466b638270780bf5e36e9901c4822ed855cd5608f2e",
+  "prompt_file": "prompts/explanation/r0294.txt",
+  "trace_file": "traces/r0294.jsonl",
+  "stderr_file": "stderr/r0294.txt",
+  "response": "The setup is recoverable: red has the brass key, green the silver coin, and blue the glass marble. However, the shuffle detached every operation from its number, so the ordered six-step result is not uniquely determined. Please resend operations 1–6 unshuffled.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T01:21:03.372027+00:00",
+    "finished_at": "2026-08-13T01:28:59.527766+00:00",
+    "thread_id": "019ff8b5-6113-7883-8060-94fce84f9113",
+    "aggregate_usage": {
+      "input_tokens": 184580,
+      "cached_input_tokens": 129280,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 21000,
+      "reasoning_output_tokens": 17674
+    },
+    "elapsed_seconds": 476.155,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 27035,
+    "trace_sha256": "618a8a1b23ca8abf17127456f843b967833e79fc97f0f8ebd0596a66886e1421",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 20,
+    "event_type_counts": {
+      "item.completed": 10,
+      "item.started": 7,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 7
+    },
+    "non_json_line_count": 0
+  }
+}

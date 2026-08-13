@@ -1,0 +1,47 @@
+{
+  "trial_id": "r0313",
+  "neutral_id": "r0313",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 13,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "a25288c428c66124bc7d669e80542283da5e0eb6e3041593ec256433dcabd6f2",
+  "prompt_file": "prompts/explanation/r0313.txt",
+  "trace_file": "traces/r0313.jsonl",
+  "stderr_file": "stderr/r0313.txt",
+  "response": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T02:09:03.925932+00:00",
+    "finished_at": "2026-08-13T02:09:08.081634+00:00",
+    "thread_id": "019ff8e1-548d-7501-a503-aeb1948f1c45",
+    "aggregate_usage": null,
+    "elapsed_seconds": 4.154,
+    "exit_status": 1,
+    "timed_out": false,
+    "error": {
+      "type": "nonzero_exit",
+      "exit_status": 1
+    },
+    "trace_bytes": 457,
+    "trace_sha256": "d4e595b22384e5b5a883fbdf7d44503c044bba4d601eac38a211dee6a8e232f2",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "error": 1,
+      "thread.started": 1,
+      "turn.failed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {},
+    "non_json_line_count": 0
+  }
+}

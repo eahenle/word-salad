@@ -1,0 +1,50 @@
+{
+  "trial_id": "r0097",
+  "neutral_id": "r0097",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 17,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "fb1981ebd2b619b66766a6e95988101959066bc04d437be7b4eb49dadb719061",
+  "prompt_file": "prompts/constrained/r0097.txt",
+  "trace_file": "traces/r0097.jsonl",
+  "stderr_file": "stderr/r0097.txt",
+  "response": "I’m untangling the duplicated word order and tracking labels separately from the contents; the label swaps are the key distinction here.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T21:24:53.445777+00:00",
+    "finished_at": "2026-08-12T21:39:53.598426+00:00",
+    "thread_id": "019ff7dd-29b3-73b0-83f7-0ed0f88c3596",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.15,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 125356,
+    "trace_sha256": "fed285158b305154fb0d9a3c2571089eeb2db7bc88251f1d2882a6aefd7346a4",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 55,
+    "event_type_counts": {
+      "item.completed": 27,
+      "item.started": 26,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 26
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "trial_id": "r0304",
+  "neutral_id": "r0304",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "0ac4ab6d0c142d21da02d554022448a0663668659622639a0e93e1c3f5669880",
+  "prompt_file": "prompts/explanation/r0304.txt",
+  "trace_file": "traces/r0304.jsonl",
+  "stderr_file": "stderr/r0304.txt",
+  "response": "I’m untangling the repeated, interleaved wording first. The underlying setup appears to be three labeled boxes, three objects, and six operations; I’m resolving the exact operation order before reporting the final contents.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T01:50:23.538436+00:00",
+    "finished_at": "2026-08-13T02:05:23.691511+00:00",
+    "thread_id": "019ff8d0-3c5b-7801-ad6c-88c27bba4222",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.151,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 75397,
+    "trace_sha256": "15729791cd1532731aa6625745a7db69fcb6287ee9d8dbcf71368526fe14ca7d",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 77,
+    "event_type_counts": {
+      "item.completed": 38,
+      "item.started": 37,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 37
+    },
+    "non_json_line_count": 0
+  }
+}

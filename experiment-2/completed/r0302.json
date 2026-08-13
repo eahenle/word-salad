@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0302",
+  "neutral_id": "r0302",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "62f2ff48a5209020db6e8abcbbe8dd335ad7fc4ac31dcc9527965bd6d3a0a0e7",
+  "prompt_file": "prompts/explanation/r0302.txt",
+  "trace_file": "traces/r0302.jsonl",
+  "stderr_file": "stderr/r0302.txt",
+  "response": "The result cannot be uniquely determined because the words—and crucially the associations between operations 1–6—are shuffled.\n\nFor example, one valid ordering puts all three objects in the green-labeled box; another equally valid ordering puts them all in the blue-labeled box. Please resend the six operations as ordered lines.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T01:43:10.128223+00:00",
+    "finished_at": "2026-08-13T01:52:04.841718+00:00",
+    "thread_id": "019ff8c9-9f31-7910-8c0b-852b3c13924f",
+    "aggregate_usage": {
+      "input_tokens": 33327,
+      "cached_input_tokens": 23040,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 23363,
+      "reasoning_output_tokens": 22432
+    },
+    "elapsed_seconds": 534.712,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 10163,
+    "trace_sha256": "06e1d8c9635f37d42437325ab1b82b9396010547f4dacff5f677441015474618",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

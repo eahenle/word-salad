@@ -6,23 +6,30 @@
   "worker_count": 4,
   "timeout_seconds": 900.0,
   "scheduled_trials": 320,
-  "completed_trials": 10,
+  "completed_trials": 311,
   "completed_by_arm": {
-    "constrained": 5,
-    "explanation": 5
+    "constrained": 160,
+    "explanation": 151
   },
   "completed_by_condition": {
-    "all_shuffled": 2,
-    "clean": 4,
-    "signal": 4
+    "all_shuffled": 71,
+    "clean": 80,
+    "signal": 160
   },
-  "errored_or_nonresponse_trials": 0,
+  "errored_or_nonresponse_trials": 26,
   "full_stdout_jsonl_preserved": true,
   "answer_keys_stored_in_subject_metadata": false,
   "run_invocations": [
     {
       "finished_at": "2026-08-12T20:16:35.477828+00:00",
       "requested_trial_ids": null
+    },
+    {
+      "started_at": "2026-08-12T20:40:23.263459+00:00",
+      "controller_interrupted_at": "2026-08-13T02:09:42.287817+00:00",
+      "last_inflight_subject_finished_at": "2026-08-13T02:13:44.348358+00:00",
+      "requested_trial_ids": null,
+      "outcome": "usage_cap_after_311_valid_outcomes_and_9_archived_rejections"
     }
   ]
 }

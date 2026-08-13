@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0103",
+  "neutral_id": "r0103",
+  "arm": "constrained",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 4,
+  "seed": 3,
+  "signal_phase": 3,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "f228300ec03c436078cac951e4fa4f55d14302a902acd69abba77bce9bbdf277",
+  "prompt_file": "prompts/constrained/r0103.txt",
+  "trace_file": "traces/r0103.jsonl",
+  "stderr_file": "stderr/r0103.txt",
+  "response": "I’m untangling the repeated word-scramble into its initial six-box state and the three ordered operations. I’ll return only the six requested lines once the transformations are resolved.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T21:41:55.247204+00:00",
+    "finished_at": "2026-08-12T21:56:55.447668+00:00",
+    "thread_id": "019ff7ec-c0f0-71d3-8929-04e1ebf967f3",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.197,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 3973,
+    "trace_sha256": "7dd48892ede417e6d847930c23ed63928cfa4bd3c04e72437e2d3f77287a2725",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 17,
+    "event_type_counts": {
+      "item.completed": 8,
+      "item.started": 7,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 4,
+      "file_change": 2,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

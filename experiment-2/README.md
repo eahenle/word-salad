@@ -35,3 +35,12 @@ The seed-1 pilot completed clean A/B, N=2 signal A/B, and N=2 all-shuffled
 trials in both arms. Its artifact audit passed and no host or experiment-context
 leakage was observed. See `results/pilot-report.md`. The protocol was frozen
 without modification before launching the remaining 20-seed N=2/N=4 slate.
+
+## Partial-slate checkpoint
+
+The full Codex-agent run is temporarily incomplete because the account usage
+cap rejected the final nine subjects before inference. The 311 active outcomes
+pass a partial integrity audit; the rejected attempts are archived and excluded
+from scoring. See `results/partial-slate-status.md` and
+`results/pending-quota-reruns.json`. Do not score or freeze the full dataset
+until those exact IDs have been rerun.

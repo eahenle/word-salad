@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0115",
+  "neutral_id": "r0115",
+  "arm": "constrained",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 4,
+  "seed": 15,
+  "signal_phase": 3,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "54528fdc8ee84d79724adc97246ad425b0eb6ec424286f1b519e9e8c85796048",
+  "prompt_file": "prompts/constrained/r0115.txt",
+  "trace_file": "traces/r0115.jsonl",
+  "stderr_file": "stderr/r0115.txt",
+  "response": "The fourfold repetition is exact: every source token appears four times. That lets me recover the clean instruction vocabulary; I’m now resolving the six command sentences from that token inventory.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T22:07:07.468279+00:00",
+    "finished_at": "2026-08-12T22:22:07.598982+00:00",
+    "thread_id": "019ff803-d3f7-7ae1-ad1c-4b909a70e115",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.128,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 56104,
+    "trace_sha256": "bfdcc74067bcccdefa64261324d4ceae2ab00cc70f17c55bd7b9b7bd2c439446",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 34,
+    "event_type_counts": {
+      "item.completed": 15,
+      "item.started": 17,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 11,
+      "file_change": 1,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "trial_id": "r0158",
+  "neutral_id": "r0158",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 18,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "231c64fe026a8ee28aa81163651f5b15f55d91308895831c6a12e779606657b4",
+  "prompt_file": "prompts/constrained/r0158.txt",
+  "trace_file": "traces/r0158.jsonl",
+  "stderr_file": "stderr/r0158.txt",
+  "response": "The repeated text resolves to four copies of one prompt. I’ve recovered the initial state; the remaining ambiguity is the exact label-changing sequence, so I’m checking the distinctive wording before simulating it.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:34:15.170104+00:00",
+    "finished_at": "2026-08-12T23:49:15.291908+00:00",
+    "thread_id": "019ff853-991a-7e13-8b69-085ebb897b34",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.168,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 99859,
+    "trace_sha256": "723498aaae57d074bb5ef12416003aa39403f199efd330a558e59e6bc39f38a7",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 40,
+    "event_type_counts": {
+      "item.completed": 20,
+      "item.started": 18,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 16,
+      "web_search": 2
+    },
+    "non_json_line_count": 0
+  }
+}

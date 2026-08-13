@@ -1,0 +1,55 @@
+{
+  "trial_id": "r0256",
+  "neutral_id": "r0256",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 16,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 286,
+  "prompt_sha256": "765ac61e3ec25e62f9e52d95dd730f1ea060f0ba798eb4947c15faa916a7bb2f",
+  "prompt_file": "prompts/explanation/r0256.txt",
+  "trace_file": "traces/r0256.jsonl",
+  "stderr_file": "stderr/r0256.txt",
+  "response": "I can’t determine a unique result: the words are shuffled and duplicated, erasing which objects start in which boxes and which Move/Swap corresponds to steps 1–6.\n\nPlease resend the initial contents and six operations in order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T00:17:13.563227+00:00",
+    "finished_at": "2026-08-13T00:21:36.800499+00:00",
+    "thread_id": "019ff87a-f121-75d2-8e61-ddcc3af52205",
+    "aggregate_usage": {
+      "input_tokens": 118141,
+      "cached_input_tokens": 100864,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 13053,
+      "reasoning_output_tokens": 11220
+    },
+    "elapsed_seconds": 263.233,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 16906,
+    "trace_sha256": "ad1d5c8899b25ad9406f0ef82d3866cdaf3fbf096f46e869e053d9baa226a604",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 15,
+    "event_type_counts": {
+      "item.completed": 7,
+      "item.started": 5,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 4,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -256,7 +256,13 @@ def run_one(task: Task, args: argparse.Namespace, root: Path) -> tuple[int, dict
     return numeric_id, record
 
 
-def finalize(root: Path, tasks: Sequence[Task], args: argparse.Namespace) -> None:
+def finalize(
+    root: Path,
+    tasks: Sequence[Task],
+    args: argparse.Namespace,
+    *,
+    record_invocation: bool = True,
+) -> None:
     records = [
         json.loads(path.read_text(encoding="utf-8"))
         for path in sorted((root / "completed").glob("r*.json"))
@@ -274,6 +280,11 @@ def finalize(root: Path, tasks: Sequence[Task], args: argparse.Namespace) -> Non
         "".join(json.dumps(record) + "\n" for record in metadata).encode(),
     )
     previous = json.loads((results / "manifest.json").read_text()) if (results / "manifest.json").exists() else {}
+    invocations = previous.get("run_invocations", [])
+    if record_invocation:
+        invocations = invocations + [
+            {"finished_at": utc_now(), "requested_trial_ids": args.trial_ids}
+        ]
     manifest = {
         "experiment": "Experiment 2 paired equal-multiset A/B",
         "model": args.model,
@@ -288,8 +299,7 @@ def finalize(root: Path, tasks: Sequence[Task], args: argparse.Namespace) -> Non
         "errored_or_nonresponse_trials": sum(r["runner"]["error"] is not None for r in records),
         "full_stdout_jsonl_preserved": True,
         "answer_keys_stored_in_subject_metadata": False,
-        "run_invocations": previous.get("run_invocations", [])
-        + [{"finished_at": utc_now(), "requested_trial_ids": args.trial_ids}],
+        "run_invocations": invocations,
     }
     atomic_json(results / "manifest.json", manifest)
 
@@ -337,6 +347,11 @@ def main() -> None:
     parser.add_argument("--lanes", nargs="+", type=int, choices=(1, 2, 4))
     parser.add_argument("--seeds", nargs="+", type=int, choices=range(1, 21))
     parser.add_argument("--trial-ids", nargs="+")
+    parser.add_argument(
+        "--finalize-only",
+        action="store_true",
+        help="rebuild aggregate result files from completed records without running subjects",
+    )
     args = parser.parse_args()
     root = args.root.resolve()
     if not args.auth.is_file():
@@ -346,6 +361,10 @@ def main() -> None:
         raise RuntimeError("isolation validation missing, failed, or image-mismatched")
     validate(root)
     tasks = build_tasks(root)
+    if args.finalize_only:
+        finalize(root, tasks, args, record_invocation=False)
+        print(f"finalized {len(list((root / 'completed').glob('r*.json')))}/{len(tasks)} Experiment 2 records")
+        return
     requested = select(tasks, args)
     pending = []
     for task in requested:

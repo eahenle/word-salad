@@ -1,0 +1,1 @@
+2026-08-13T01:22:07.542093Z ERROR codex_core::tools::router: error=code-mode host exited with status signal: 5 (SIGTRAP)

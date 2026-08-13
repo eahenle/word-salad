@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0100",
+  "neutral_id": "r0100",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 20,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "39461f53b873526353fb4906a7fb633adaf306400b9091a9c50eed65501b64e3",
+  "prompt_file": "prompts/constrained/r0100.txt",
+  "trace_file": "traces/r0100.jsonl",
+  "stderr_file": "stderr/r0100.txt",
+  "response": "I can’t determine a unique result: the words—including the six operation numbers—have been globally shuffled and duplicated, so their order and associations are lost. Please resend the unshuffled operations 1–6.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T21:36:21.984477+00:00",
+    "finished_at": "2026-08-12T21:42:33.383674+00:00",
+    "thread_id": "019ff7e7-aba8-7a92-9d05-679e391799aa",
+    "aggregate_usage": {
+      "input_tokens": 212464,
+      "cached_input_tokens": 176896,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 18656,
+      "reasoning_output_tokens": 14246
+    },
+    "elapsed_seconds": 371.396,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 40581,
+    "trace_sha256": "cb9a4f2be4265c0ca2dc47301a1def045b6c910c2a153206e86fc19330a657ea",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 21,
+    "event_type_counts": {
+      "item.completed": 10,
+      "item.started": 8,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 8
+    },
+    "non_json_line_count": 0
+  }
+}

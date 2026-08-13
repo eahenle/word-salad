@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0258",
+  "neutral_id": "r0258",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 18,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 286,
+  "prompt_sha256": "45e34d2def03f95e38ea039664846a17696a1c8046cd14331503c6b0d58aa690",
+  "prompt_file": "prompts/explanation/r0258.txt",
+  "trace_file": "traces/r0258.jsonl",
+  "stderr_file": "stderr/r0258.txt",
+  "response": "The result is not uniquely determinable: the words—including `1.` through `6.`—have been shuffled, so the operations are no longer associated with their step numbers. Because order changes the outcome, please resend the six operations on separate numbered lines.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T00:21:36.805442+00:00",
+    "finished_at": "2026-08-13T00:33:39.226494+00:00",
+    "thread_id": "019ff87e-f54d-7f12-b486-1719c6f21513",
+    "aggregate_usage": {
+      "input_tokens": 344653,
+      "cached_input_tokens": 303104,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 29023,
+      "reasoning_output_tokens": 23902
+    },
+    "elapsed_seconds": 722.419,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1435,
+    "trace_sha256": "7e50b22efaf7201f001b7be0a9c1de735c64ce3e08e7e4e77f03b3ba0a2d2ad3",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "reason": "GPT-5.6-Sol usage cap reached during full slate",
+  "retry_not_before_reported_by_runtime": "2026-08-19T07:10:00-07:00",
+  "trial_count": 9,
+  "trials": [
+    {
+      "neutral_id": "r0312",
+      "prompt_sha256": "bcfc6f52d47ad1e83e3fdfb3ea334554c361fc30abebd8adb0e96ed4055db07f",
+      "archive": "invalidated-attempts/r0312/attempt-1"
+    },
+    {
+      "neutral_id": "r0313",
+      "prompt_sha256": "a25288c428c66124bc7d669e80542283da5e0eb6e3041593ec256433dcabd6f2",
+      "archive": "invalidated-attempts/r0313/attempt-1"
+    },
+    {
+      "neutral_id": "r0314",
+      "prompt_sha256": "22df68882ca0d3ddc514095e235f7017a49c585a533b7b335d9e2daec8398cd7",
+      "archive": "invalidated-attempts/r0314/attempt-1"
+    },
+    {
+      "neutral_id": "r0315",
+      "prompt_sha256": "4a42cf3b5616b46174b175dd4595591ab69bce033842853ce6a438207c80e182",
+      "archive": "invalidated-attempts/r0315/attempt-1"
+    },
+    {
+      "neutral_id": "r0316",
+      "prompt_sha256": "df7037466061b1b156500f2c100a3e7df4a2c7c2bd21432df1aef5fe2381c546",
+      "archive": "invalidated-attempts/r0316/attempt-1"
+    },
+    {
+      "neutral_id": "r0317",
+      "prompt_sha256": "df91f31e1279ed650788d46ec68f1d70a37d3098da0f6230fa0ea1b6b92c50a9",
+      "archive": "invalidated-attempts/r0317/attempt-1"
+    },
+    {
+      "neutral_id": "r0318",
+      "prompt_sha256": "23c7cd67823cda3dfdff2f63e895f2eef0338631dad7d54b529be16ed16e085e",
+      "archive": "invalidated-attempts/r0318/attempt-1"
+    },
+    {
+      "neutral_id": "r0319",
+      "prompt_sha256": "34d296305a9fba778e787d17641722512a5282fbbf81e4380f3c5aa29b5832f2",
+      "archive": "invalidated-attempts/r0319/attempt-1"
+    },
+    {
+      "neutral_id": "r0320",
+      "prompt_sha256": "e0b643d72221501d757ce6c55cb79d9b3ed1dab30f0c89dfcf1450727a525b5f",
+      "archive": "invalidated-attempts/r0320/attempt-1"
+    }
+  ]
+}

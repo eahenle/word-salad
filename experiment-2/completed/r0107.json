@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0107",
+  "neutral_id": "r0107",
+  "arm": "constrained",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 4,
+  "seed": 7,
+  "signal_phase": 0,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "62712e353f67d2ef9501b2dd6ba8fea7a2e48565cfc264de3e06792853de4e45",
+  "prompt_file": "prompts/constrained/r0107.txt",
+  "trace_file": "traces/r0107.jsonl",
+  "stderr_file": "stderr/r0107.txt",
+  "response": "The structure is now clear: three objects start in labeled boxes, and the six steps distinguish moving contents, moving whole boxes, and swapping labels. I’m resolving the exact operation order before computing the final labels.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T21:52:07.284419+00:00",
+    "finished_at": "2026-08-12T22:07:07.466752+00:00",
+    "thread_id": "019ff7f6-1c1f-7c32-927e-6360f970f09d",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.18,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 76962,
+    "trace_sha256": "8395612c23680a4b6e1179b6beb8a822515daf4f566b14ebd03afd2ff24ecdc2",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 50,
+    "event_type_counts": {
+      "item.completed": 25,
+      "item.started": 23,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 21,
+      "file_change": 1,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

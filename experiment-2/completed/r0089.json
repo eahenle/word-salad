@@ -1,0 +1,51 @@
+{
+  "trial_id": "r0089",
+  "neutral_id": "r0089",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 9,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "8a3efd2925331080b27cfd8c25a3eefaa58da222658db61a4eb7c6e5799d1d28",
+  "prompt_file": "prompts/constrained/r0089.txt",
+  "trace_file": "traces/r0089.jsonl",
+  "stderr_file": "stderr/r0089.txt",
+  "response": "The duplicated word set is consistent, but the shuffle erased obvious sentence boundaries. I’ve recovered the requested one-line schema and am resolving the operations by their exact vocabulary rather than guessing from proximity.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T21:02:59.535836+00:00",
+    "finished_at": "2026-08-12T21:17:59.670653+00:00",
+    "thread_id": "019ff7c9-1d70-7472-ab2e-8fd2f574deaf",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.133,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 106803,
+    "trace_sha256": "0c51dfe41e15a353cbb85b9154f93ae4cddd49ed0ce03d21fc20416a8230b093",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 70,
+    "event_type_counts": {
+      "item.completed": 34,
+      "item.started": 34,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 31,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

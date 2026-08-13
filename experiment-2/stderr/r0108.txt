@@ -1,0 +1,2 @@
+2026-08-12T21:56:53.631743Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find expected lines in /subject/prompt_words.txt:
+brass the You each

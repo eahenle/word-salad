@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0267",
+  "neutral_id": "r0267",
+  "arm": "explanation",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 4,
+  "seed": 7,
+  "signal_phase": 0,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "1e62800b5aae7a9077142cae92b6576f56023f0f123df4604e24edd339158ea7",
+  "prompt_file": "prompts/explanation/r0267.txt",
+  "trace_file": "traces/r0267.jsonl",
+  "stderr_file": "stderr/r0267.txt",
+  "response": "The final contents cannot be determined uniquely. The words—including the numbered operations—have been globally shuffled, so there is no recoverable association between steps 1–6 and their actions. Please resend the six operations in order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T00:39:02.132507+00:00",
+    "finished_at": "2026-08-13T00:44:39.008035+00:00",
+    "thread_id": "019ff88e-e8bb-7e31-a260-e93d9a508be2",
+    "aggregate_usage": {
+      "input_tokens": 174514,
+      "cached_input_tokens": 151552,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 16218,
+      "reasoning_output_tokens": 12201
+    },
+    "elapsed_seconds": 336.873,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 34590,
+    "trace_sha256": "a0fab4d34615f13b85cc43e1e052c801d4332dca545dd38e32d3fd92f3fa1c9e",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 19,
+    "event_type_counts": {
+      "item.completed": 9,
+      "item.started": 7,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 7
+    },
+    "non_json_line_count": 0
+  }
+}

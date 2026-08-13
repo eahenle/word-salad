@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0150",
+  "neutral_id": "r0150",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 10,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "c74bfb6ebc228830b1803f14846d949981cd3ea786b9aec4cfbf15054a23470a",
+  "prompt_file": "prompts/constrained/r0150.txt",
+  "trace_file": "traces/r0150.jsonl",
+  "stderr_file": "stderr/r0150.txt",
+  "response": "The final box contents cannot be determined uniquely: shuffling erased which words belong to each numbered operation and which boxes initially contain each object. Multiple valid reconstructions produce different results.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:11:34.497386+00:00",
+    "finished_at": "2026-08-12T23:20:51.442873+00:00",
+    "thread_id": "019ff83e-d5e6-7e22-8e2f-f062a72494d4",
+    "aggregate_usage": {
+      "input_tokens": 384459,
+      "cached_input_tokens": 339712,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 27382,
+      "reasoning_output_tokens": 18210
+    },
+    "elapsed_seconds": 556.944,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 850,
+    "trace_sha256": "4410f0ffc461d723a90cbd78a8eee19d8ef85d1e3762030a7036c1be64378b79",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0
+  }
+}

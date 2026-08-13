@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0182",
+  "neutral_id": "r0182",
+  "arm": "explanation",
+  "condition": "clean",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 1,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 143,
+  "prompt_sha256": "faed77e41797b80b419680de73a54e1d177bee7e0161a388fab62a65b413fdcf",
+  "prompt_file": "prompts/explanation/r0182.txt",
+  "trace_file": "traces/r0182.jsonl",
+  "stderr_file": "stderr/r0182.txt",
+  "response": "- Brass key: **green**\n- Silver coin: **red**\n- Glass marble: **green**\n\nAfter steps 1–3, all three objects are together in the blue box. Swapping the blue and green labels makes that box labeled green. The later content swap involves two empty boxes, and the final step moves only the silver coin into the red-labeled box.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:43:29.303403+00:00",
+    "finished_at": "2026-08-12T23:43:50.331204+00:00",
+    "thread_id": "019ff85c-0da0-7e43-aa75-c663a8fb8bf1",
+    "aggregate_usage": {
+      "input_tokens": 13059,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 285,
+      "reasoning_output_tokens": 203
+    },
+    "elapsed_seconds": 21.026,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 675,
+    "trace_sha256": "5f611204dc3266a7b637a5dea1e039761efa386d16ba3537b28b4a5fad3ae007",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0285",
+  "neutral_id": "r0285",
+  "arm": "explanation",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 4,
+  "seed": 5,
+  "signal_phase": 3,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "06c773cd60234b03ab5ad9290a18989ab61647da22b0c4823ec9dd0be763ffc3",
+  "prompt_file": "prompts/explanation/r0285.txt",
+  "trace_file": "traces/r0285.jsonl",
+  "stderr_file": "stderr/r0285.txt",
+  "response": "1. **Red box:** brass key, glass marble  \n2. **Green box:** silver coin  \n3. **Blue box:** empty  \n\nTracking the moves, content swaps, and label swap leaves the key and marble in the red-labeled box, the coin in the green-labeled box, and nothing in the blue-labeled box.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T01:10:22.620017+00:00",
+    "finished_at": "2026-08-13T01:10:50.934213+00:00",
+    "thread_id": "019ff8ab-9996-7573-a2eb-81a25591c0c5",
+    "aggregate_usage": {
+      "input_tokens": 13579,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 820,
+      "reasoning_output_tokens": 745
+    },
+    "elapsed_seconds": 28.312,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 621,
+    "trace_sha256": "2c5b33299b4c3a237902aa9b28f4b13059523195ab8d6e405d3d32f9060c7baf",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

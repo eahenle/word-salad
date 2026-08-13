@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0086",
+  "neutral_id": "r0086",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 6,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "ff70e8dcee9ccbd15d03a6f23d0203aa13140c818ab3c08930d57d91e066a278",
+  "prompt_file": "prompts/constrained/r0086.txt",
+  "trace_file": "traces/r0086.jsonl",
+  "stderr_file": "stderr/r0086.txt",
+  "response": "The words are globally shuffled—twice—so the initial box contents and numbered operations cannot be uniquely recovered. Please resend the puzzle with its original word order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T20:52:10.557210+00:00",
+    "finished_at": "2026-08-12T20:56:58.162056+00:00",
+    "thread_id": "019ff7bf-3651-7c21-b092-925f68120768",
+    "aggregate_usage": {
+      "input_tokens": 52350,
+      "cached_input_tokens": 40192,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 13672,
+      "reasoning_output_tokens": 12502
+    },
+    "elapsed_seconds": 287.602,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 11810,
+    "trace_sha256": "11af45916f8bee5f18be4cb8de5f31083457c6fb862483f2a0d56c9444a5e0f7",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 9,
+    "event_type_counts": {
+      "item.completed": 4,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 2
+    },
+    "non_json_line_count": 0
+  }
+}

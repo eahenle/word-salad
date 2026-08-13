@@ -1,0 +1,50 @@
+{
+  "trial_id": "r0104",
+  "neutral_id": "r0104",
+  "arm": "constrained",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 4,
+  "seed": 4,
+  "signal_phase": 1,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "bb26a8e176e311450155d3929401da637959871ed77832d325341acfcbb034ed",
+  "prompt_file": "prompts/constrained/r0104.txt",
+  "trace_file": "traces/r0104.jsonl",
+  "stderr_file": "stderr/r0104.txt",
+  "response": "I’m untangling the interleaved instructions first; the text appears to contain several copies of one box-tracking puzzle woven together, so I’m reconstructing the canonical operation list before calculating the result.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T21:41:57.009911+00:00",
+    "finished_at": "2026-08-12T21:56:57.183519+00:00",
+    "thread_id": "019ff7ec-c805-7a81-a705-c961002afb60",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.172,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 941,
+    "trace_sha256": "f29468fe69b254f2c2e73ad8e2acc543fccd4e79067d6e3e87d02c1adb875ef0",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

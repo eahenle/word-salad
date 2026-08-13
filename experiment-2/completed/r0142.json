@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0142",
+  "neutral_id": "r0142",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "6703bd65d866283e13fb1dc014864602434157ff15893f17339d6c46dc57e035",
+  "prompt_file": "prompts/constrained/r0142.txt",
+  "trace_file": "traces/r0142.jsonl",
+  "stderr_file": "stderr/r0142.txt",
+  "response": "I’m reconstructing the repeated, interleaved instructions and tracking box identity separately from its label before calculating the six final lines.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T22:55:49.112867+00:00",
+    "finished_at": "2026-08-12T23:10:49.253113+00:00",
+    "thread_id": "019ff830-689d-74e3-9fe2-0b235c3ca708",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.137,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 50215,
+    "trace_sha256": "fe8aa0811fe464e1eb7c0345f003527d540c4e229f56a1492c76b37a39fa0d93",
+    "stderr_bytes": 153,
+    "stderr_sha256": "9adbfc56fa0784c7be180311eb58c1ba7f13342f8b8f7335ea2166a62466f887",
+    "event_count": 61,
+    "event_type_counts": {
+      "item.completed": 30,
+      "item.started": 29,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 24,
+      "file_change": 4,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

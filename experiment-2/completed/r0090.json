@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0090",
+  "neutral_id": "r0090",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 10,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "7180861fc007d573d98a679a1c693624676a986ab523a0b8ae06e7cf62065a08",
+  "prompt_file": "prompts/constrained/r0090.txt",
+  "trace_file": "traces/r0090.jsonl",
+  "stderr_file": "stderr/r0090.txt",
+  "response": "The prompt’s words—including the operation numbers—are globally scrambled, so the six operation order and final box contents cannot be determined uniquely. Please resend the instructions in their original order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T21:03:54.823754+00:00",
+    "finished_at": "2026-08-12T21:10:25.936343+00:00",
+    "thread_id": "019ff7c9-f5c0-7260-84c2-a3b89cfedf37",
+    "aggregate_usage": {
+      "input_tokens": 246740,
+      "cached_input_tokens": 200960,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 18863,
+      "reasoning_output_tokens": 13055
+    },
+    "elapsed_seconds": 391.11,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 68486,
+    "trace_sha256": "91b4b97fe01823d4339d7e5529bd7dbba96a12000ea6485f135e7e8e0a523fcd",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 25,
+    "event_type_counts": {
+      "item.completed": 12,
+      "item.started": 10,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 10
+    },
+    "non_json_line_count": 0
+  }
+}

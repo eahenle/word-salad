@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0157",
+  "neutral_id": "r0157",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 17,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "7d4311816548c9ca488b0542a38eee036c460f6fd088b4eca4bbb94ad239eb76",
+  "prompt_file": "prompts/constrained/r0157.txt",
+  "trace_file": "traces/r0157.jsonl",
+  "stderr_file": "stderr/r0157.txt",
+  "response": "I can’t determine a unique result because the words—and the associations between steps 1–6, objects, and colors—are shuffled. Please resend the six numbered operations unshuffled.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:31:45.995759+00:00",
+    "finished_at": "2026-08-12T23:38:00.752984+00:00",
+    "thread_id": "019ff851-5234-77b1-afea-70c6c1ba6510",
+    "aggregate_usage": {
+      "input_tokens": 160909,
+      "cached_input_tokens": 136448,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 18984,
+      "reasoning_output_tokens": 16947
+    },
+    "elapsed_seconds": 374.707,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 19572,
+    "trace_sha256": "064571eee157465613850439af37cc1a6b27586d680cae100748aa064a740c75",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 17,
+    "event_type_counts": {
+      "item.completed": 8,
+      "item.started": 6,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 6
+    },
+    "non_json_line_count": 0
+  }
+}

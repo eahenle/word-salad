@@ -1,0 +1,10 @@
+2026-08-12T22:21:50.524108Z ERROR codex_core::tools::router: error=Exit code: 1
+Wall time: 0 seconds
+Output:
+Failed to write file /subject/corpus.txt
+
+2026-08-12T22:22:00.498586Z ERROR codex_core::tools::router: error=Exit code: 1
+Wall time: 0 seconds
+Output:
+Failed to write file /subject/corpus.txt
+

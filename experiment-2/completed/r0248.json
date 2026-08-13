@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0248",
+  "neutral_id": "r0248",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 8,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 286,
+  "prompt_sha256": "9b93dfb7da83176836b037f577590af8044dd9352f33e27f393146738a93150f",
+  "prompt_file": "prompts/explanation/r0248.txt",
+  "trace_file": "traces/r0248.jsonl",
+  "stderr_file": "stderr/r0248.txt",
+  "response": "- Red box: contains the blue box, which contains the glass marble.\n- Blue box: contains the glass marble and is inside the red box.\n- Green box: contains the brass key and silver coin.\n\nThe label swap made the original blue box green and the original green box blue. Swapping the key’s and marble’s boxes changed their locations; step 5 changed nothing because the key and coin were already together. The final contents swap produced the arrangement above.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T00:06:40.726078+00:00",
+    "finished_at": "2026-08-13T00:09:18.613804+00:00",
+    "thread_id": "019ff871-49dd-7f72-a374-7c48a3100367",
+    "aggregate_usage": {
+      "input_tokens": 108122,
+      "cached_input_tokens": 90624,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7531,
+      "reasoning_output_tokens": 4719
+    },
+    "elapsed_seconds": 157.881,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 32633,
+    "trace_sha256": "82cadb9089116a31f0d1ae2750ce5ea1f41b10de53ee6da3937a43b665842c48",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 15,
+    "event_type_counts": {
+      "item.completed": 7,
+      "item.started": 5,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 5
+    },
+    "non_json_line_count": 0
+  }
+}

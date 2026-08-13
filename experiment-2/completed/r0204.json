@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0204",
+  "neutral_id": "r0204",
+  "arm": "explanation",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 2,
+  "seed": 4,
+  "signal_phase": 1,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 286,
+  "prompt_sha256": "adcf8e715b4c263953d43dc68b6f73696e9555f003b0fcb544cc46ead8ddb958",
+  "prompt_file": "prompts/explanation/r0204.txt",
+  "trace_file": "traces/r0204.jsonl",
+  "stderr_file": "stderr/r0204.txt",
+  "response": "- Brass key: green\n- Silver coin: blue\n- Glass marble: green\n\nAfter moving the key and marble together, the blue/green label swap makes their box green. The coin moves to red, then the red/blue contents swap moves it to blue.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:46:29.528300+00:00",
+    "finished_at": "2026-08-12T23:47:00.355345+00:00",
+    "thread_id": "019ff85e-cdd2-7070-ad30-8174403218ce",
+    "aggregate_usage": {
+      "input_tokens": 13232,
+      "cached_input_tokens": 12032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1353,
+      "reasoning_output_tokens": 1292
+    },
+    "elapsed_seconds": 30.826,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 578,
+    "trace_sha256": "3a5f3227f4b6405d0a9f57fa71cd93cc3fbc364553cd7227c875fc4fdd717e28",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0
+  }
+}

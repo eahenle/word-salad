@@ -1,0 +1,55 @@
+{
+  "trial_id": "r0160",
+  "neutral_id": "r0160",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 20,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "b0ed09787386d750e133bae6e0b198d496352e4c1bc27624c9eb1b3b33035311",
+  "prompt_file": "prompts/constrained/r0160.txt",
+  "trace_file": "traces/r0160.jsonl",
+  "stderr_file": "stderr/r0160.txt",
+  "response": "Cannot determine uniquely: the shuffle erased which operation belongs to steps 1–6, so multiple valid orderings produce different final labels.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:38:00.753816+00:00",
+    "finished_at": "2026-08-12T23:49:41.022602+00:00",
+    "thread_id": "019ff857-0a84-7aa0-9c36-584b775994eb",
+    "aggregate_usage": {
+      "input_tokens": 698737,
+      "cached_input_tokens": 585984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 32483,
+      "reasoning_output_tokens": 24509
+    },
+    "elapsed_seconds": 700.315,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 5732,
+    "trace_sha256": "b5fc3f9f0cf8c99b3e197f2c4d05dc68519b424cc442df5dc44f358ceefd9856",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 22,
+    "event_type_counts": {
+      "item.completed": 11,
+      "item.started": 8,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 5,
+      "file_change": 3
+    },
+    "non_json_line_count": 0
+  }
+}

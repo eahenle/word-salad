@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0095",
+  "neutral_id": "r0095",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 15,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "a62f932315c8b67792b7240ac6e3d69154664fbd9114f6183eef8c5bcd76f8f0",
+  "prompt_file": "prompts/constrained/r0095.txt",
+  "trace_file": "traces/r0095.jsonl",
+  "stderr_file": "stderr/r0095.txt",
+  "response": "The final colors cannot be determined uniquely: the shuffle erased which operations correspond to steps 1–6, and different valid orderings produce different results. Please resend the six numbered operations in order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T21:19:32.858172+00:00",
+    "finished_at": "2026-08-12T21:27:48.361700+00:00",
+    "thread_id": "019ff7d8-456a-7c11-b9f4-a7d22a5a3ea8",
+    "aggregate_usage": {
+      "input_tokens": 246540,
+      "cached_input_tokens": 200192,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 24422,
+      "reasoning_output_tokens": 19571
+    },
+    "elapsed_seconds": 495.502,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1232,
+    "trace_sha256": "872fca91030d2ab15320535948a68f4f50d4b7fcbbc916eebcbe0704f0db7796",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 6,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3
+    },
+    "non_json_line_count": 0
+  }
+}

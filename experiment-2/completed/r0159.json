@@ -1,0 +1,55 @@
+{
+  "trial_id": "r0159",
+  "neutral_id": "r0159",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 19,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "24c8997d9119b9ada8e95f620475ac3895a513a4ee1d59c2702ae71c018f19ee",
+  "prompt_file": "prompts/constrained/r0159.txt",
+  "trace_file": "traces/r0159.jsonl",
+  "stderr_file": "stderr/r0159.txt",
+  "response": "Cannot determine uniquely: the shuffled word order destroys the initial box assignments and the sequence of operations. Please resend the instructions in their original order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:35:02.791507+00:00",
+    "finished_at": "2026-08-12T23:39:32.806955+00:00",
+    "thread_id": "019ff854-52c5-7e41-98d5-d5a94163a996",
+    "aggregate_usage": {
+      "input_tokens": 72183,
+      "cached_input_tokens": 51456,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 13264,
+      "reasoning_output_tokens": 13018
+    },
+    "elapsed_seconds": 270.015,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1839,
+    "trace_sha256": "ef2bb36ab42d93976646dfb7758a553714230450b4828ab6b2d8f3bcbca2d7ab",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 9,
+    "event_type_counts": {
+      "item.completed": 4,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

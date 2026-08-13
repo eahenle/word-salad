@@ -1,0 +1,51 @@
+{
+  "trial_id": "r0153",
+  "neutral_id": "r0153",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 13,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "c7ddbe056e02f14301c68e5401bd051b1b15a62d608fb96297e6b82764a454a0",
+  "prompt_file": "prompts/constrained/r0153.txt",
+  "trace_file": "traces/r0153.jsonl",
+  "stderr_file": "stderr/r0153.txt",
+  "response": "I’m untangling the repeated, interleaved wording into the initial box state and the six numbered operations, then I’ll return only the requested one-line result.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:20:02.510849+00:00",
+    "finished_at": "2026-08-12T23:35:02.789752+00:00",
+    "thread_id": "019ff846-963b-7230-a9c2-0150bf6c8917",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.228,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 1910,
+    "trace_sha256": "e86aced0cae33f0b7117b8684662a4124fdc1171f7d2878ee643989c3f5d8a36",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 9,
+    "event_type_counts": {
+      "item.completed": 4,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 2,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

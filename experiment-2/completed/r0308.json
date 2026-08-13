@@ -1,0 +1,51 @@
+{
+  "trial_id": "r0308",
+  "neutral_id": "r0308",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 8,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "a249d78aedf2d03cc8b4ced42aedbd4efa04d3730f20cbae5aeae28474b354f7",
+  "prompt_file": "prompts/explanation/r0308.txt",
+  "trace_file": "traces/r0308.jsonl",
+  "stderr_file": "stderr/r0308.txt",
+  "response": "The object moves are now clear from the word counts. I’m checking the three “Swap” clauses carefully, because those determine whether labels travel with contents.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T01:58:46.391112+00:00",
+    "finished_at": "2026-08-13T02:13:46.542992+00:00",
+    "thread_id": "019ff8d7-e85a-7cc2-814c-3847d2f8b488",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.15,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 94833,
+    "trace_sha256": "7d2c89d556a11d49b326e5d1e0580ed371b23edf110b7de5d7d8c4f29844eea2",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 40,
+    "event_type_counts": {
+      "item.completed": 20,
+      "item.started": 18,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 17,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

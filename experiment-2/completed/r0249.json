@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0249",
+  "neutral_id": "r0249",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 9,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 286,
+  "prompt_sha256": "2eaa0ef0e75d06c68cee069dfe25028f70023496436941934dd9c53f42326b94",
+  "prompt_file": "prompts/explanation/r0249.txt",
+  "trace_file": "traces/r0249.jsonl",
+  "stderr_file": "stderr/r0249.txt",
+  "response": "**Blue.** After the red/blue contents swap, the coin is in the original blue box. Swapping the blue and silver labels makes the key’s box blue; moving the coin into the key’s box therefore leaves the coin in the box labeled blue.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T00:07:32.637224+00:00",
+    "finished_at": "2026-08-13T00:12:53.501867+00:00",
+    "thread_id": "019ff872-13b8-7c00-a1ca-46b4dd5036b0",
+    "aggregate_usage": {
+      "input_tokens": 278065,
+      "cached_input_tokens": 250880,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 15907,
+      "reasoning_output_tokens": 10837
+    },
+    "elapsed_seconds": 320.863,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 55222,
+    "trace_sha256": "7b8aab1f64b28392e8725a97991ee9ea0c0f7b4d17b303181d99abf54297294b",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 27,
+    "event_type_counts": {
+      "item.completed": 13,
+      "item.started": 11,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 11
+    },
+    "non_json_line_count": 0
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0242",
+  "neutral_id": "r0242",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 286,
+  "prompt_sha256": "3a6f71ba89ffd47232e68ec313bd102a0cbadda322ec0b5614b127b134ee76a6",
+  "prompt_file": "prompts/explanation/r0242.txt",
+  "trace_file": "traces/r0242.jsonl",
+  "stderr_file": "stderr/r0242.txt",
+  "response": "Silver coin — green  \nBrass key — green  \nGlass marble — green  \n\nThe moves consolidate all three objects in the red box. The final operation swaps the red and green labels without moving the objects, so their box’s visible label becomes green.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:54:21.397065+00:00",
+    "finished_at": "2026-08-13T00:06:40.724353+00:00",
+    "thread_id": "019ff866-00fb-7d12-8272-6800aace15c8",
+    "aggregate_usage": {
+      "input_tokens": 652681,
+      "cached_input_tokens": 573184,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 31458,
+      "reasoning_output_tokens": 23366
+    },
+    "elapsed_seconds": 739.324,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 74367,
+    "trace_sha256": "dfefdd4f796d486a829368b277ec7721a0dba1e4d643ddae40b13feba494d708",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 46,
+    "event_type_counts": {
+      "item.completed": 23,
+      "item.started": 20,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 20
+    },
+    "non_json_line_count": 0
+  }
+}

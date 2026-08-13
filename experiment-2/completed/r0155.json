@@ -1,0 +1,55 @@
+{
+  "trial_id": "r0155",
+  "neutral_id": "r0155",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 15,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "31b205753852a316e307d407d868a49ec836b27932e62cf45f3e0c6bdf173a68",
+  "prompt_file": "prompts/constrained/r0155.txt",
+  "trace_file": "traces/r0155.jsonl",
+  "stderr_file": "stderr/r0155.txt",
+  "response": "I can’t determine a unique final state: the prompt contains four independently shuffled copies of the same words, so the numbered operations and their order are no longer associated. Please resend one intact copy of the initial state and operations 1–6.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:20:56.302083+00:00",
+    "finished_at": "2026-08-12T23:29:57.282566+00:00",
+    "thread_id": "019ff847-67fe-7ea0-b831-0f0b6a91d502",
+    "aggregate_usage": {
+      "input_tokens": 173756,
+      "cached_input_tokens": 138752,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 22698,
+      "reasoning_output_tokens": 19988
+    },
+    "elapsed_seconds": 540.978,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 24503,
+    "trace_sha256": "5b7d3fa706fbbb1f4b230c34de6f6c622172ff4dc50bb0486773fd287baf64a4",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 16,
+    "event_type_counts": {
+      "item.completed": 8,
+      "item.started": 5,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 4,
+      "web_search": 1
+    },
+    "non_json_line_count": 0
+  }
+}

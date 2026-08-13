@@ -1,0 +1,55 @@
+{
+  "trial_id": "r0301",
+  "neutral_id": "r0301",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 1,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "42d988691cd49680071cd40e29583b365b543316f85487125e10c556710665ca",
+  "prompt_file": "prompts/explanation/r0301.txt",
+  "trace_file": "traces/r0301.jsonl",
+  "stderr_file": "stderr/r0301.txt",
+  "response": "The final box contents cannot be determined. The text repeats each token four times and globally shuffles them, separating operations 1–6 from their operands and order. Multiple valid reconstructions produce different results.\n\nPlease resend the six operations unshuffled, one per line.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T01:38:38.043842+00:00",
+    "finished_at": "2026-08-13T01:50:23.536659+00:00",
+    "thread_id": "019ff8c5-784d-7360-b219-3bb81dfbbbb8",
+    "aggregate_usage": {
+      "input_tokens": 517120,
+      "cached_input_tokens": 450560,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 24564,
+      "reasoning_output_tokens": 17487
+    },
+    "elapsed_seconds": 705.49,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 2457,
+    "trace_sha256": "80019d2fafe9c431fae79cf61c83ef51b378b98a3042420ddec186273dafbb71",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 11,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1,
+      "web_search": 2
+    },
+    "non_json_line_count": 0
+  }
+}

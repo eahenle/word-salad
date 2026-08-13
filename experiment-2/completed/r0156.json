@@ -1,0 +1,56 @@
+{
+  "trial_id": "r0156",
+  "neutral_id": "r0156",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 16,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "cd6e6084c010411dc949d78b25357bba512f1e84877f3373ce439f4b0d7a674f",
+  "prompt_file": "prompts/constrained/r0156.txt",
+  "trace_file": "traces/r0156.jsonl",
+  "stderr_file": "stderr/r0156.txt",
+  "response": "I can’t determine a unique result. The message contains four shuffled copies of a 161-word prompt, so the ordering of operations 1–6 has been erased. Please resend the operations in order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:29:57.283873+00:00",
+    "finished_at": "2026-08-12T23:44:33.134831+00:00",
+    "thread_id": "019ff84f-a9e4-7cc0-b368-3b04ff2297db",
+    "aggregate_usage": {
+      "input_tokens": 1074812,
+      "cached_input_tokens": 983552,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 41945,
+      "reasoning_output_tokens": 29306
+    },
+    "elapsed_seconds": 875.799,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 89848,
+    "trace_sha256": "047afc6fde10ce1cf4b6ba2979d0429ac505bc3095b6eb43de094d9fff93f8a2",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 64,
+    "event_type_counts": {
+      "item.completed": 32,
+      "item.started": 29,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 24,
+      "file_change": 3,
+      "web_search": 2
+    },
+    "non_json_line_count": 0
+  }
+}

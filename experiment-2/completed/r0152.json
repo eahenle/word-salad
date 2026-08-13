@@ -1,0 +1,52 @@
+{
+  "trial_id": "r0152",
+  "neutral_id": "r0152",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 12,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 644,
+  "prompt_sha256": "ef9354499951ac247915c4f28c91fae3e52158fd93332892262a2cca7bf4ab8b",
+  "prompt_file": "prompts/constrained/r0152.txt",
+  "trace_file": "traces/r0152.jsonl",
+  "stderr_file": "stderr/r0152.txt",
+  "response": "The text is four copies of the same 161-word puzzle interleaved into a 644-word stream. I’ve recovered the vocabulary exactly; I’m now using the repeated structure to resolve the nesting and operation order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T23:19:14.969369+00:00",
+    "finished_at": "2026-08-12T23:34:15.168567+00:00",
+    "thread_id": "019ff845-dc6b-7ff1-a520-ee0eff1a577c",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.148,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 5552,
+    "trace_sha256": "a9cee99d560de6f546256825c23076a26c8971882388dcd9b65e92804b8cc269",
+    "stderr_bytes": 174,
+    "stderr_sha256": "328b0270c3f79e33a0a33987b8fd01834506dac6a3c81ab647d9647838ee5540",
+    "event_count": 20,
+    "event_type_counts": {
+      "item.completed": 10,
+      "item.started": 8,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 5,
+      "file_change": 1,
+      "web_search": 2
+    },
+    "non_json_line_count": 0
+  }
+}

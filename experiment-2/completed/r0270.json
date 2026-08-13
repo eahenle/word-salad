@@ -1,0 +1,54 @@
+{
+  "trial_id": "r0270",
+  "neutral_id": "r0270",
+  "arm": "explanation",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 4,
+  "seed": 10,
+  "signal_phase": 0,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "dc8d6428d80193024676ad8a0e06ac300b25275a4e975afad40dca383a87540a",
+  "prompt_file": "prompts/explanation/r0270.txt",
+  "trace_file": "traces/r0270.jsonl",
+  "stderr_file": "stderr/r0270.txt",
+  "response": "- Brass key: **green**\n- Silver coin: **blue**\n- Glass marble: **green**\n\nThe key, coin, and marble collect in the original blue box. Its label is then swapped to green. The coin moves to the red box, whose contents are finally swapped with the box labeled blue, leaving the coin under blue while the key and marble remain under green.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T00:46:10.935223+00:00",
+    "finished_at": "2026-08-13T00:47:28.177638+00:00",
+    "thread_id": "019ff895-7417-74a1-ab2d-aec1c854397d",
+    "aggregate_usage": {
+      "input_tokens": 30962,
+      "cached_input_tokens": 25088,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3437,
+      "reasoning_output_tokens": 2523
+    },
+    "elapsed_seconds": 77.241,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 11207,
+    "trace_sha256": "abc2f0d3519a7ecbc1c07c25ab754ccb9242b1e45347e6164ad3ba22bbc1a97c",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1
+    },
+    "non_json_line_count": 0
+  }
+}

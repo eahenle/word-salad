@@ -1,0 +1,51 @@
+{
+  "trial_id": "r0283",
+  "neutral_id": "r0283",
+  "arm": "explanation",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 4,
+  "seed": 3,
+  "signal_phase": 3,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "9cb58cfb95c0113f1ded1008084688461a6b1dab00ad695da8460ea9d9d69911",
+  "prompt_file": "prompts/explanation/r0283.txt",
+  "trace_file": "traces/r0283.jsonl",
+  "stderr_file": "stderr/r0283.txt",
+  "response": "The text is four shuffled copies of one underlying puzzle—the word counts divide cleanly by four. I’ve recovered the setup and am now resolving the six move/swap clauses from the remaining exact word multiset.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T01:06:03.216060+00:00",
+    "finished_at": "2026-08-13T01:21:03.370862+00:00",
+    "thread_id": "019ff8a7-a4bb-72e2-baab-0b57f174c825",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.153,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 3828,
+    "trace_sha256": "dbb107ee5717f0372012281cfad893932b603ecb2170a4d7ee4379f341cbc067",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 14,
+    "event_type_counts": {
+      "item.completed": 7,
+      "item.started": 5,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 3,
+      "web_search": 2
+    },
+    "non_json_line_count": 0
+  }
+}

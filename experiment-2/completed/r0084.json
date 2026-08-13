@@ -1,0 +1,50 @@
+{
+  "trial_id": "r0084",
+  "neutral_id": "r0084",
+  "arm": "constrained",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 4,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "f4d5dd5e1c7b52b65ff1c781c5cf468057f42a0ea1965f2588316611178e7271",
+  "prompt_file": "prompts/constrained/r0084.txt",
+  "trace_file": "traces/r0084.jsonl",
+  "stderr_file": "stderr/r0084.txt",
+  "response": "I’m untangling the interleaved box instructions first, then I’ll apply the six operations and return only the requested final mapping.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-12T20:48:54.671544+00:00",
+    "finished_at": "2026-08-12T21:03:54.822746+00:00",
+    "thread_id": "019ff7bc-3977-7721-b2af-e3852f3b38c8",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.151,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 125372,
+    "trace_sha256": "ae04699cab980e631eaa3e4cd05ebe06c6e71e29d44bab7e0475423c20ad5057",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 59,
+    "event_type_counts": {
+      "item.completed": 29,
+      "item.started": 28,
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "command_execution": 28
+    },
+    "non_json_line_count": 0
+  }
+}
