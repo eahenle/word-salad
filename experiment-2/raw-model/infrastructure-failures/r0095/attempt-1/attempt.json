@@ -1,0 +1,24 @@
+{
+  "neutral_id": "r0095",
+  "started_at": "2026-08-13T19:01:54.408722+00:00",
+  "request_sha256": "55bb01e8f0368ca70210060cb897afa27a9a35eda935e1c781f076ec586b7c3b",
+  "prompt_sha256": "a62f932315c8b67792b7240ac6e3d69154664fbd9114f6183eef8c5bcd76f8f0",
+  "configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning": {
+      "effort": "xhigh"
+    },
+    "tools": [],
+    "store": false
+  },
+  "finished_at": "2026-08-13T19:01:55.706562+00:00",
+  "elapsed_seconds": 1.298,
+  "http_status": 429,
+  "exception": "HTTPError(429)",
+  "error_type": "insufficient_quota",
+  "error_code": "credit_balance_exhausted",
+  "response_sha256": "48d9f03c6f9b357bc078fb3eb43d1a51aaa9a2c3257727dc310158e50b086fa3",
+  "response_bytes": 262,
+  "eligible_for_exact_retry": true,
+  "inference_started": false
+}

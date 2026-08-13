@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "tools": [],
+  "store": false,
+  "scheduled_trials": 320,
+  "scheduled_outcomes": 94,
+  "completed_responses": 85,
+  "timeout_nonresponses": 9,
+  "untouched_trials": 226,
+  "archived_attempts": 10,
+  "unresolved_infrastructure_failures": 1,
+  "unresolved_trial_ids": [
+    "r0095"
+  ],
+  "response_statuses": {
+    "completed": 85
+  },
+  "terminal_ids_unique": 94,
+  "failures": []
+}

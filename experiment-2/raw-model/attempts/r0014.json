@@ -1,0 +1,15 @@
+{
+  "neutral_id": "r0014",
+  "started_at": "2026-08-13T18:25:16.480390+00:00",
+  "request_sha256": "05e3c4ef1c5159da8d74fca220daea0f9f896165e02e6e302eaeb84d5fdfd1f2",
+  "prompt_sha256": "4739dae79e79ceca9795ef783589ede2dc905248b7863f960210b0b8aa743337",
+  "configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning": {
+      "effort": "xhigh"
+    },
+    "tools": [],
+    "store": false
+  },
+  "finished_at": "2026-08-13T18:25:22.460555+00:00"
+}

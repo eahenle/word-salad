@@ -1,0 +1,72 @@
+{
+  "neutral_id": "r0061",
+  "method": "responses_api_single_request_no_tools",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "tools": [],
+  "store": false,
+  "prompt_sha256": "7b518edfacdabe1fecca9f3ae81a24cf425b7e86414d689099499a7ce8421e15",
+  "request_sha256": "da7949834c4c2d5d1e50452f92b7a833914ada85d584420103745f0bd05e1c07",
+  "response_file": "raw-model/responses/r0061.json",
+  "response_sha256": "529ceea3dc8d5407a001e706d10cbe8cee19fa5e1f74ccad31d05bdbfa130ede",
+  "response_bytes": 44845,
+  "http_status": 200,
+  "response_headers": {
+    "x-request-id": "req_d6ddd99dc5c84508b6115ee69b8a2342",
+    "openai-processing-ms": "81863",
+    "x-ratelimit-limit-requests": "500",
+    "x-ratelimit-limit-tokens": "500000",
+    "x-ratelimit-remaining-requests": "499",
+    "x-ratelimit-remaining-tokens": "494659",
+    "x-ratelimit-reset-requests": "120ms",
+    "x-ratelimit-reset-tokens": "640ms"
+  },
+  "started_at": "2026-08-13T18:27:58.514053+00:00",
+  "finished_at": "2026-08-13T18:29:20.750697+00:00",
+  "elapsed_seconds": 82.237,
+  "adopted_existing_response": false,
+  "summary": {
+    "response_id": "resp_0eb0ab791036e902016a7e0caea8e08198b4dd9e4cfdc7a7e3",
+    "object": "response",
+    "status": "completed",
+    "model": "gpt-5.6-sol",
+    "error": null,
+    "incomplete_details": null,
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "xhigh",
+      "mode": "standard",
+      "summary": null
+    },
+    "store": false,
+    "tools_count": 0,
+    "output_types": [
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "message"
+    ],
+    "created_at": 1786645678,
+    "completed_at": 1786645760,
+    "usage": {
+      "input_tokens": 396,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 5484,
+      "output_tokens_details": {
+        "reasoning_tokens": 5463
+      },
+      "total_tokens": 5880
+    }
+  }
+}

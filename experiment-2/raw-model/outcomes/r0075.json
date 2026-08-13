@@ -1,0 +1,77 @@
+{
+  "neutral_id": "r0075",
+  "method": "responses_api_single_request_no_tools",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "tools": [],
+  "store": false,
+  "prompt_sha256": "ae69816e93f95eeaeeb3fe01f1fe1f1ba3f0cfa393a1dd74d3697d82087cd6a3",
+  "request_sha256": "3be49d76bdec6a0f7af566abf89ef477e843c301e35cec4020b4cc5c10b0078f",
+  "response_file": "raw-model/responses/r0075.json",
+  "response_sha256": "691d2461cec24b5c92dcaabdd393625f25172851e84408bb7d79a6d3510c4ba3",
+  "response_bytes": 67275,
+  "http_status": 200,
+  "response_headers": {
+    "x-request-id": "req_d258fb0bee71428fa03857971d2231d1",
+    "openai-processing-ms": "118756",
+    "x-ratelimit-limit-requests": "500",
+    "x-ratelimit-limit-tokens": "500000",
+    "x-ratelimit-remaining-requests": "499",
+    "x-ratelimit-remaining-tokens": "491890",
+    "x-ratelimit-reset-requests": "120ms",
+    "x-ratelimit-reset-tokens": "973ms"
+  },
+  "started_at": "2026-08-13T18:30:34.052205+00:00",
+  "finished_at": "2026-08-13T18:32:33.173745+00:00",
+  "elapsed_seconds": 119.121,
+  "adopted_existing_response": false,
+  "summary": {
+    "response_id": "resp_04a191f3add02220016a7e0d4a37a8819ab478e5e72db23bd7",
+    "object": "response",
+    "status": "completed",
+    "model": "gpt-5.6-sol",
+    "error": null,
+    "incomplete_details": null,
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "xhigh",
+      "mode": "standard",
+      "summary": null
+    },
+    "store": false,
+    "tools_count": 0,
+    "output_types": [
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "message"
+    ],
+    "created_at": 1786645834,
+    "completed_at": 1786645952,
+    "usage": {
+      "input_tokens": 396,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 8253,
+      "output_tokens_details": {
+        "reasoning_tokens": 8231
+      },
+      "total_tokens": 8649
+    }
+  }
+}

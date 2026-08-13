@@ -1,0 +1,67 @@
+{
+  "neutral_id": "r0068",
+  "method": "responses_api_single_request_no_tools",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "tools": [],
+  "store": false,
+  "prompt_sha256": "932d3cd5c7492d96fd6d5f3f6651a197fa2ecf0c876c2973767b42de6b27a795",
+  "request_sha256": "ffa8c458e8fa0e1b14d52c19dd9cea52ff8cb4b2d62e69a1d261287139df5cb1",
+  "response_file": "raw-model/responses/r0068.json",
+  "response_sha256": "fadce12094af1c458d6ace9d0c788f730e7f4c32a9dfa5164b28a9dff61ca60c",
+  "response_bytes": 25648,
+  "http_status": 200,
+  "response_headers": {
+    "x-request-id": "req_8819ed1eaf824812b60b19193b849a66",
+    "openai-processing-ms": "39733",
+    "x-ratelimit-limit-requests": "500",
+    "x-ratelimit-limit-tokens": "500000",
+    "x-ratelimit-remaining-requests": "499",
+    "x-ratelimit-remaining-tokens": "497340",
+    "x-ratelimit-reset-requests": "120ms",
+    "x-ratelimit-reset-tokens": "319ms"
+  },
+  "started_at": "2026-08-13T18:29:42.019589+00:00",
+  "finished_at": "2026-08-13T18:30:22.065436+00:00",
+  "elapsed_seconds": 40.046,
+  "adopted_existing_response": false,
+  "summary": {
+    "response_id": "resp_0518de448c570bfd016a7e0d16286c819aa1efc3ebd684d77b",
+    "object": "response",
+    "status": "completed",
+    "model": "gpt-5.6-sol",
+    "error": null,
+    "incomplete_details": null,
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "xhigh",
+      "mode": "standard",
+      "summary": null
+    },
+    "store": false,
+    "tools_count": 0,
+    "output_types": [
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "reasoning",
+      "message"
+    ],
+    "created_at": 1786645782,
+    "completed_at": 1786645821,
+    "usage": {
+      "input_tokens": 396,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 2803,
+      "output_tokens_details": {
+        "reasoning_tokens": 2782
+      },
+      "total_tokens": 3199
+    }
+  }
+}

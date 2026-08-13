@@ -1,0 +1,101 @@
+{
+  "id": "resp_0fbe66b0ccefab62016a7e0bfe2a08819a9f0d41812a521910",
+  "object": "response",
+  "created_at": 1786645502,
+  "status": "completed",
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1786645508,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-5.6-sol",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0fbe66b0ccefab62016a7e0bffc4e0819ab6b9f008db12387d",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABqfgwEnq-dIidqR-LtHOE8ZtYdrCu2vynQMzeixjy6Fp21Kfw_duI8LMWMBRDgObycNEshGVI8gFdU5wCdAl9OjuM5JHRO2x3rcmBi11QRgv6Oy8kYSurPjemzn9pcqbryL68xJGIykh8-O4cCZbEtj1TNpSO7eidjNqUm-2vHUN412iAi_OYokRV-iiU2IjABuNSYNhsO3Tf-9rnkxC7smmhzihEhtUTeGrylTBSFCdYq0Od74xWuPKEPAPB-NCjX6kCyuS83RD5ottxouFbAVY4Rj0-js450Mtefp57CRnnT2dzz142VDROXLrMigaH2IQKjcRzzjqYxTp9hATDWCkrx4JgUIci8HIZX-edrBSZ2fX_Z11m0jP-KSHdorKGCI24Qv5Gce7gt6UkbSYHEdA3svGyCy8FtrRb0oe_DpfTUjo3-swW0-lm5UEu7XLVGbBfboYNVyVq8xSRbUt58s7xD1eTfDlB8H5mXlmEC1iOGTKITQCkeTUr0r1i5YRDkIO1qROCd85kwm8dV7JfTFcwn8Y0vFD_dJHhaRROX-PxXKu5bcwqUhrKZJuf0UG6TR5MgX6BhiXat5DZ0kThHtX63sIZHJpFCzdtiOhTxsZnzZRRA7MQM339oUtcliCbS7eB_LJyh77xgSOhnolFVirc3FW0hkrHztJZknmHWHCzwaDOF6R5lsnq5Z9RHSnO9qEQNb7XK2IQuKYAV5bPBsjPlErMTiZJ7QRlOC44-fk7nySqnilTY1vK2XDXk_uSMUYkeHGSp0H8sntjKapDv_mZA9ztzwJyXl-VwK8IAMqG7BnoyDvfI9ggVhJX5BifkgJvMocp8ttlRvCoHob5jF8o6XQMGU5y_BBrYlDBq-bRYcvWPphceLLkbz5VC4E6aMkSP9pCvdfTS-VuJeOPLtwZeRajbgZMbxUd-1QEFBUkTV_aLuqgu7zc_XMdyV_c3x2WsWg6ZzbBjJoichDjwxR4N58Zy_0_JIUo0RQoJZKUqJQn-YVAkth6SPCWRtJ4tq1AgHmPuNo6aVjsafasolhT9EZ64NLWHPLVP5c4LyjstqrLZCrLoUWs_n8MwFLnzbOzpY3IiojfPg6h8wb0ufVYLM4xS1sKKYlnZP4QtWpZv63l31Shi33F09eNQ7EAXtTA0m3kBUC2r7KQMzUoq7seM6s3cj2p9hqRwIGho2l1pHFiGZUz6HBdbXmDJOrUYBZH2gIEc9zi4A6wLE-DPPwX8Fi_6vtvOcqB_dCbWCYghMURQvC0am1I-CJ5aFoZCqniaJWcPxqWYNvIzV8eKU3w8EEzxwQSR_9dikkj5EiXyFC9rJsE663Q74kGwXOizQ8lTy-3Ee241aN-DDEFBKJWCsCPnMC7yRhtciKC5It9VDzd2XOOWBdmu6nYVRHrhSlVWq12leX11YrRDzZwYYD2PtzsagyXtJUdHBmNXGj8hINKvVHINr6DQPwyiopHpcOnCa0Cd91F7bYxS08DTxBH1Ll9AEfvc8TKejw1tuoItKLa3qegQeJs4wTmw5Eu_g1OeXV9-XPMrLyHOyjbhevJbkxLuFDql7-SK8EB4VZorFyekwtu7De7Yw4uiy5J-gFjIFM2yiSzBOqR8PGM0sKsQN5sn2Y6wFtbZQIorpkFwfkx97a_BgClQPv5DMVYvx63Bnkb65TYwqRVaW3GOxf15PPTvDC-qZqPSA_QeoA-eM_GxKPy5LmCiOo5kqi8nrt5cVJzqzbu1ZvSmBuwabBGdLaMQSd-YvwDvWeT3oX4c3bR3Xxn1SWkre00I7MbleYIUGwW17KYGmDuAwyq07alc7eJCog2QUSLQoLRbCDosgMSh_VQs9Yo2OyORr-YdQxKoq9tpZcQVve3KeT1nj2zSp940-Smd5Ay-k93SQ4_Ixhnqki2vZ7PV-yg7GBKi0oNgBrOE4xSvFZZb6TZQeQctIxwBGgFkZIWVDMQv2QFnWJEoR-xh5OYW1TfBH9eENpdQbQ67W86PmCt73kNT8Xmv2GC3aw4awp3HYJoXG_h9GkxrPqQMEWc6udv-27CzrMr-C9xUuqebkxG_51QhMf0s9tciGOUL_ue0T52gTnjHodqo_TOPYzQMYwhvq3z5NrIbovgJyBqXf_qM7pggKKkfwMaRyXBu-5CWV3LEYOMwOAiMIwjbuYd0x4BMMRuGg1HaS8IVxnWGH_mebc3uE3rcl23Hlhc68spzkTnk3m-bPy5TuJsYn1K_LI9rozaNhUgt",
+      "summary": []
+    },
+    {
+      "id": "msg_0fbe66b0ccefab62016a7e0c0435f4819aaf03501ba7a103db",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "brass key = green; silver coin = blue; glass marble = green"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "xhigh",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 201,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 253,
+    "output_tokens_details": {
+      "reasoning_tokens": 232
+    },
+    "total_tokens": 454
+  },
+  "user": null,
+  "metadata": {}
+}

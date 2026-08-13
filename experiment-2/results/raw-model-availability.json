@@ -1,12 +1,15 @@
 {
-  "available": false,
+  "available": true,
   "credential_configured": true,
   "authentication_reached_api": true,
-  "reason": "API returned insufficient_quota / credit_balance_exhausted before inference",
+  "reason": "exact API regime validated; current balance exhausted after 94 scheduled outcomes",
   "model": "gpt-5.6-sol",
   "reasoning_effort": "xhigh",
   "substitution_performed": false,
-  "valid_tool_less_subjects": 0,
-  "exact_retry_trial_id": "r0001",
-  "invalid_attempt_record": "raw-model/invalidated-attempts/r0001/attempt-1/attempt.json"
+  "scheduled_tool_less_outcomes": 94,
+  "completed_tool_less_responses": 85,
+  "timeout_nonresponses": 9,
+  "exact_retry_trial_id": "r0095",
+  "current_invalid_attempt_record": "raw-model/infrastructure-failures/r0095/attempt-1/attempt.json",
+  "initial_invalid_attempt_record": "raw-model/invalidated-attempts/r0001/attempt-1/attempt.json"
 }

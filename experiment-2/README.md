@@ -17,10 +17,11 @@ Two output arms were run: constrained final-answer only and explanation
 permitted. The latter requests a brief account without mentioning ciphers,
 interleaving, strides, or hidden messages. Codex-agent trials retain the pinned
 hardened container and full raw traces. A tool-less GPT-5.6-Sol-xhigh regime
-was attempted only as an availability check. A project-local ignored API key
-reached the Responses API, but the API returned `credit_balance_exhausted`
-before inference. No raw-model subjects have therefore run, and no model
-substitution was made.
+was then started with a project-local ignored API key. The partial tool-less
+slate contains 94 scheduled outcomes: 85 completed responses and nine accepted
+600-second timeout/nonresponses. The run paused when `credit_balance_exhausted`
+recurred before inference on r0095; no model substitution was made and scoring
+remains deferred until the slate is complete.
 
 Generate and validate payloads with:
 
@@ -124,9 +125,11 @@ word bag is held constant. It does not by itself distinguish transformer-level
 source separation from unobserved or explicit agentic decoding. Same-host
 Docker is an audited practical isolation boundary, not cryptographic isolation.
 
-The next discriminating step is to add API credits and invoke the exact frozen
-prompts through the tool-less GPT-5.6-Sol-xhigh Responses API runner. The first
-pre-inference rejection is preserved under `raw-model/invalidated-attempts/`
-and r0001 remains eligible for an exact retry. After that matched comparison,
+The next discriminating step is to add API credits and resume the exact frozen
+tool-less GPT-5.6-Sol-xhigh Responses API slate at r0095. The invalid
+pre-inference attempt is preserved and r0095 remains eligible for an exact
+retry. The nine zero-byte server disconnects at approximately 600 seconds are
+scheduled timeout/nonresponse outcomes and will not be retried. After that
+matched comparison,
 variable-stride prompts would test
 whether fixed periodic spacing is necessary. Larger N remains deferred.

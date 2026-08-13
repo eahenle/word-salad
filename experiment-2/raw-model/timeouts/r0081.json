@@ -1,0 +1,12 @@
+{
+  "neutral_id": "r0081",
+  "outcome": "timeout_nonresponse",
+  "protocol_seconds": 600,
+  "observed_elapsed_seconds": 600.351,
+  "prompt_sha256": "5a758e19c0716c14fda48161da7b6b048eada2401177635d389a4fb861872e39",
+  "source_attempt": "raw-model/infrastructure-failures/r0081/attempt-1/attempt.json",
+  "source_attempt_sha256": "56d6faabf4822c56b52dcf0c92eb0f5a3ece263409854521432c47af3e1a1382",
+  "response_bytes": 0,
+  "retry": false,
+  "decision": "accepted as a scheduled data point by coordinator instruction"
+}

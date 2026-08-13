@@ -1,0 +1,24 @@
+{
+  "neutral_id": "r0087",
+  "started_at": "2026-08-13T18:42:33.461899+00:00",
+  "request_sha256": "0afae09da65e8b379aba581d10b5fa8c65b94483c51eeeaf3f06732f14ed9615",
+  "prompt_sha256": "683e5990699f7a8a0b385dee98c9fd75486dfb4cace5836430f37fd6af1b98ba",
+  "configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning": {
+      "effort": "xhigh"
+    },
+    "tools": [],
+    "store": false
+  },
+  "finished_at": "2026-08-13T18:52:33.841243+00:00",
+  "elapsed_seconds": 600.379,
+  "http_status": null,
+  "exception": "RemoteDisconnected('Remote end closed connection without response')",
+  "error_type": null,
+  "error_code": null,
+  "response_sha256": null,
+  "response_bytes": 0,
+  "eligible_for_exact_retry": true,
+  "inference_started": false
+}
