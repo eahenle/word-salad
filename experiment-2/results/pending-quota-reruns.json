@@ -1,7 +1,10 @@
 {
+  "status": "resolved",
   "reason": "GPT-5.6-Sol usage cap reached during full slate",
   "retry_not_before_reported_by_runtime": "2026-08-19T07:10:00-07:00",
   "trial_count": 9,
+  "resolved_at": "2026-08-13T16:00:31.399373+00:00",
+  "resolution": "all nine exact stimuli reran with active prompt hashes matching archived attempts",
   "trials": [
     {
       "neutral_id": "r0312",

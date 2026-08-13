@@ -1,0 +1,53 @@
+{
+  "trial_id": "r0318",
+  "neutral_id": "r0318",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 18,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "23c7cd67823cda3dfdff2f63e895f2eef0338631dad7d54b529be16ed16e085e",
+  "prompt_file": "prompts/explanation/r0318.txt",
+  "trace_file": "traces/r0318.jsonl",
+  "stderr_file": "stderr/r0318.txt",
+  "response": "I can recover the initial setup—red: brass key, blue: silver coin, green: glass marble—but the six numbered operations have been word-shuffled, so their order and targets aren’t uniquely recoverable.\n\nPlease resend operations 1–6, one per line. Then I can report the final contents and visible labels.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T15:48:09.740842+00:00",
+    "finished_at": "2026-08-13T15:49:22.584203+00:00",
+    "thread_id": "019ffbcf-49e8-76a0-b173-221ad823ecb0",
+    "aggregate_usage": {
+      "input_tokens": 14046,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3534,
+      "reasoning_output_tokens": 3462
+    },
+    "elapsed_seconds": 72.843,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 659,
+    "trace_sha256": "39f1b6252bd617ba9e14244dd3efa0d816a99ac9ad579bcc38ed5b0988b29567",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

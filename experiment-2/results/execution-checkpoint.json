@@ -1,24 +1,16 @@
 {
-  "status": "incomplete_pending_exact_quota_reruns",
-  "valid_scheduled_outcomes": 311,
+  "status": "resolved_historical_checkpoint",
+  "valid_scheduled_outcomes": 320,
   "scheduled_outcomes": 320,
-  "normal_completed_turns": 285,
+  "normal_completed_turns": 294,
   "protocol_subject_timeouts": 26,
   "invalidated_quota_rejections": 9,
-  "pending_trial_ids": [
-    "r0312",
-    "r0313",
-    "r0314",
-    "r0315",
-    "r0316",
-    "r0317",
-    "r0318",
-    "r0319",
-    "r0320"
-  ],
+  "resolved_rerun_trial_ids": ["r0312", "r0313", "r0314", "r0315", "r0316", "r0317", "r0318", "r0319", "r0320"],
   "runtime_reported_retry_time": "2026-08-19T07:10:00-07:00",
   "full_run_command": "python3 -B experiment-2/run_codex.py --root experiment-2 --auth /Users/ahenle/MultiCliProfiles/codex/personal/auth.json --isolation-validation experiment-2/results/isolation-validation.json --image sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402 --workers 4 --timeout 900",
   "controller_interrupted_after_usage_cap": true,
-  "behavioral_scoring_deferred": true,
-  "trace_strategy_analysis_deferred": true
+  "exact_reruns_complete": true,
+  "prompt_hashes_match_archived_attempts": true,
+  "behavioral_scoring_complete": true,
+  "trace_strategy_analysis_complete": true
 }

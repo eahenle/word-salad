@@ -1,20 +1,34 @@
 {
   "passed": true,
-  "completed_records": 10,
-  "unique_completed_ids": 10,
+  "completed_records": 320,
+  "unique_completed_ids": 320,
   "conditions": {
-    "all_shuffled": 2,
-    "clean": 4,
-    "signal": 4
+    "all_shuffled": 80,
+    "clean": 80,
+    "signal": 160
   },
   "arms": {
-    "constrained": 5,
-    "explanation": 5
+    "constrained": 160,
+    "explanation": 160
   },
   "runner_errors": {
-    "none": 10
+    "none": 294,
+    "timeout": 26
   },
-  "nonempty_stderr": 0,
+  "nonempty_stderr": 8,
+  "archived_quota_attempts": 9,
+  "archived_quota_retry_ids": [
+    "r0312",
+    "r0313",
+    "r0314",
+    "r0315",
+    "r0316",
+    "r0317",
+    "r0318",
+    "r0319",
+    "r0320"
+  ],
+  "archived_retry_prompt_hashes_match_active": true,
   "prompt_validation": {
     "trials_validated": 320,
     "arms": [

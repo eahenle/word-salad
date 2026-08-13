@@ -1,9 +1,9 @@
 # Experiment 2 partial-slate checkpoint
 
 The Codex-agent slate reached the account usage cap after producing 311 valid
-scheduled outcomes out of 320. This checkpoint is not a frozen experimental
-dataset and has not been behaviorally or strategically scored. Scoring remains
-deferred until the exact missing trials are rerun.
+scheduled outcomes out of 320. This file preserves the historical checkpoint.
+The exact missing trials were subsequently rerun, and the active dataset now
+contains 320/320 outcomes.
 
 ## Current state
 
@@ -14,8 +14,7 @@ deferred until the exact missing trials are rerun.
 - Infrastructure-invalid usage-cap rejections: 9 (`r0312` through `r0320`).
   Their attempt, completed record, raw trace, and stderr were archived under
   `invalidated-attempts/`; they were removed from active aggregates.
-- Pending exact reruns: 9, enumerated with prompt hashes in
-  `pending-quota-reruns.json`.
+- Exact reruns: all 9 completed; see `quota-rerun-resolution.json`.
 - Runtime-reported capacity return: August 19, 2026 at 7:10 AM America/Los_Angeles.
 
 The partial integrity audit passes all stored prompt, trace, stderr, hash, and
@@ -33,7 +32,7 @@ Codex-agent invocation will be mislabeled as tool-less.
 
 ## Resume command
 
-After capacity returns, rerun exactly the pending IDs:
+The executed recovery command was:
 
 ```bash
 python3 -B experiment-2/run_codex.py \
@@ -44,5 +43,4 @@ python3 -B experiment-2/run_codex.py \
   --workers 4 --timeout 900
 ```
 
-Then run the full integrity audit, score the completed slate, analyze observable
-traces, perform the leakage audit, and freeze/tag Experiment 2.
+The full integrity and leakage audits subsequently passed.

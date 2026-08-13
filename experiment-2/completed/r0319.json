@@ -1,0 +1,57 @@
+{
+  "trial_id": "r0319",
+  "neutral_id": "r0319",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 19,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "34d296305a9fba778e787d17641722512a5282fbbf81e4380f3c5aa29b5832f2",
+  "prompt_file": "prompts/explanation/r0319.txt",
+  "trace_file": "traces/r0319.jsonl",
+  "stderr_file": "stderr/r0319.txt",
+  "response": "I can recover the setup:\n\n- Red box: silver coin\n- Blue box: brass key\n- Green box: glass marble\n\nBut the six numbered operations have been word-shuffled and repeated four times, so their order is irrecoverable and different reconstructions produce different results. Please resend only operations 1–6 in order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T15:48:19.357442+00:00",
+    "finished_at": "2026-08-13T16:00:31.326306+00:00",
+    "thread_id": "019ffbcf-62d8-7021-a81d-7d57476cf42d",
+    "aggregate_usage": {
+      "input_tokens": 927055,
+      "cached_input_tokens": 857344,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 33674,
+      "reasoning_output_tokens": 20836
+    },
+    "elapsed_seconds": 731.968,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 120151,
+    "trace_sha256": "89ecb8fdeece3a39224d6f714c3b4a95a11dc2b8887c96ead99b82f5f6647af4",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 56,
+    "event_type_counts": {
+      "item.completed": 28,
+      "item.started": 25,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 21,
+      "file_change": 3,
+      "web_search": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

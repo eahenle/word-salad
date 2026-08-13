@@ -1,0 +1,56 @@
+{
+  "trial_id": "r0315",
+  "neutral_id": "r0315",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 15,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "4a42cf3b5616b46174b175dd4595591ab69bce033842853ce6a438207c80e182",
+  "prompt_file": "prompts/explanation/r0315.txt",
+  "trace_file": "traces/r0315.jsonl",
+  "stderr_file": "stderr/r0315.txt",
+  "response": "I can’t determine a unique result from this text. It contains four word-level-shuffled copies of the same prompt, so the ordering and pairings—such as which object moves to which labeled box in operations 1–6—are lost. Different valid reconstructions produce different final box states.\n\nPlease resend the initial six box states and the six operations in their original order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T15:37:16.248201+00:00",
+    "finished_at": "2026-08-13T15:48:09.740158+00:00",
+    "thread_id": "019ffbc5-4c27-7802-97fe-8e67aa4016e1",
+    "aggregate_usage": {
+      "input_tokens": 438890,
+      "cached_input_tokens": 360192,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 30940,
+      "reasoning_output_tokens": 24846
+    },
+    "elapsed_seconds": 653.491,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 5995,
+    "trace_sha256": "cff388e81e85b53cb39cfc028a56553feb9b522c1e5a44c46179c0d7a251daad",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 26,
+    "event_type_counts": {
+      "item.completed": 13,
+      "item.started": 10,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "command_execution": 6,
+      "file_change": 4
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

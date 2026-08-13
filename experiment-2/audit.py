@@ -30,6 +30,7 @@ def main() -> None:
         json.loads(path.read_text()) for path in sorted((args.root / "completed").glob("r*.json"))
     ]
     failures = []
+    active_by_id = {record["neutral_id"]: record for record in records}
     for record in records:
         trial_id = record["neutral_id"]
         task = tasks.get(trial_id)
@@ -47,6 +48,25 @@ def main() -> None:
             "stderr_bytes": len(stderr) == runner["stderr_bytes"],
         }
         failures.extend(f"{trial_id}: {name}" for name, passed in checks.items() if not passed)
+    archived_quota_attempts = []
+    for decision_path in sorted(
+        (args.root / "invalidated-attempts").glob("r*/attempt-*/retry-decision.json")
+    ):
+        decision = json.loads(decision_path.read_text())
+        trial_id = decision["neutral_id"]
+        archived_quota_attempts.append(trial_id)
+        active = active_by_id.get(trial_id)
+        if active is None:
+            failures.append(f"{trial_id}: archived retry has no active outcome")
+        elif active["prompt_sha256"] != decision["prompt_sha256"]:
+            failures.append(f"{trial_id}: retry prompt hash differs from archived attempt")
+        archive = decision_path.parent
+        for name, expected in decision["original_artifacts"].items():
+            path = archive / name
+            if not path.is_file():
+                failures.append(f"{trial_id}: missing archived {name}")
+            elif digest(path.read_bytes()) != expected["sha256"]:
+                failures.append(f"{trial_id}: archived {name} hash mismatch")
     if args.expected is not None and len(records) != args.expected:
         failures.append(f"expected {args.expected} records, found {len(records)}")
     report = {
@@ -58,6 +78,11 @@ def main() -> None:
             (record["runner"].get("error") or {}).get("type", "none") for record in records
         ).items())),
         "nonempty_stderr": sum(record["runner"]["stderr_bytes"] > 0 for record in records),
+        "archived_quota_attempts": len(archived_quota_attempts),
+        "archived_quota_retry_ids": archived_quota_attempts,
+        "archived_retry_prompt_hashes_match_active": not any(
+            "retry prompt hash" in failure for failure in failures
+        ),
         "prompt_validation": prompt_report, "failures": failures,
     }
     output = args.output or args.root / "results" / "integrity-audit.json"

@@ -1,7 +1,12 @@
 {
   "available": false,
-  "reason": "OPENAI_API_KEY is not configured",
+  "credential_configured": true,
+  "authentication_reached_api": true,
+  "reason": "API returned insufficient_quota / credit_balance_exhausted before inference",
   "model": "gpt-5.6-sol",
   "reasoning_effort": "xhigh",
-  "substitution_performed": false
+  "substitution_performed": false,
+  "valid_tool_less_subjects": 0,
+  "exact_retry_trial_id": "r0001",
+  "invalid_attempt_record": "raw-model/invalidated-attempts/r0001/attempt-1/attempt.json"
 }

@@ -1,0 +1,67 @@
+{
+  "experiment": "Experiment 2 paired equal-multiset ordered payloads",
+  "dataset_status": "codex_agent_complete_toolless_blocked_pending_freeze_tag",
+  "protocol_commit": "4ed13addfb0540f9193295a7cf8031e5ee9799e2",
+  "protocol_tag": "experiment-2-pilot",
+  "parent_normalization_tag": "experiment-1c-hardened-normalization",
+  "historical_baseline_commit": "395c9c615fe4bf8900b31b73c1071bab805682e6",
+  "historical_baseline_tag": "experiment-1a-original",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "runtime": {
+    "codex_cli": "0.147.0",
+    "python": "3.10.11",
+    "platform": "macOS 26.6.1 (25G76), Darwin 25.6.0 arm64",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "workers": 4,
+    "timeout_seconds": 900,
+    "started_at": "2026-08-12T20:05:42.541792+00:00",
+    "finished_at": "2026-08-13T16:00:31.326306+00:00"
+  },
+  "generator": {
+    "version": "q2-equal-bag-v1",
+    "seed_range": [1, 20],
+    "lane_counts": [1, 2, 4],
+    "arms": ["constrained", "explanation"],
+    "conditions": ["clean", "signal", "all_shuffled"]
+  },
+  "slate": {
+    "scheduled_trials": 320,
+    "active_outcomes": 320,
+    "completed_turns": 294,
+    "subject_timeouts": 26,
+    "archived_usage_cap_attempts": 9,
+    "exact_quota_reruns": 9,
+    "raw_stdout_jsonl_preserved": true,
+    "stderr_preserved": true
+  },
+  "payload_hashes_from_generated_metadata": {
+    "constrained_A": "4739dae79e79ceca9795ef783589ede2dc905248b7863f960210b0b8aa743337",
+    "constrained_B": "6822eaee4145f35f7a4665104c865a7bb704c03569306fc7c94f0a5a59198ea1",
+    "constrained_word_bag": "6b491536dea7d61a16c78dbb3ee8584285daba2fdc9cf1fe0319a03e81d33668",
+    "explanation_A": "e68711b41d747844fba51bd25e91196e45cab2590f4b6ae128876fc29d51c70a",
+    "explanation_B": "faed77e41797b80b419680de73a54e1d177bee7e0161a388fab62a65b413fdcf",
+    "explanation_word_bag": "e1ef27fdfe1ec19fff34819bdb438e121cb0a167a6bf099a4bca964145fe4910"
+  },
+  "commands": {
+    "run": "python3 -B experiment-2/run_codex.py --root experiment-2 --auth AUTH_JSON --isolation-validation experiment-2/results/isolation-validation.json --image sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402 --workers 4 --timeout 900",
+    "exact_quota_rerun": "python3 -B experiment-2/run_codex.py --root experiment-2 --auth AUTH_JSON --isolation-validation experiment-2/results/isolation-validation.json --image sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402 --trial-ids r0312 r0313 r0314 r0315 r0316 r0317 r0318 r0319 r0320 --workers 4 --timeout 900",
+    "audit": "python3 -B experiment-2/audit.py --expected 320",
+    "analyze": "python3 -B experiment-2/analyze.py"
+  },
+  "aggregate_usage": {
+    "input_tokens": 40905718,
+    "cached_input_tokens": 35457536,
+    "output_tokens": 2735189,
+    "reasoning_tokens": 2133842
+  },
+  "direct_toolless_regime": {
+    "available": false,
+    "credential_configured": true,
+    "reason": "API returned insufficient_quota / credit_balance_exhausted before inference",
+    "valid_subjects": 0,
+    "substitution_performed": false
+  },
+  "freeze_commit": null,
+  "freeze_tag": "experiment-2-paired-order"
+}

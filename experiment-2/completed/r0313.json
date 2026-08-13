@@ -1,0 +1,53 @@
+{
+  "trial_id": "r0313",
+  "neutral_id": "r0313",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 13,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "a25288c428c66124bc7d669e80542283da5e0eb6e3041593ec256433dcabd6f2",
+  "prompt_file": "prompts/explanation/r0313.txt",
+  "trace_file": "traces/r0313.jsonl",
+  "stderr_file": "stderr/r0313.txt",
+  "response": "The prompt’s word order is too scrambled to recover the initial box assignments and operation sequence unambiguously. Please resend it in this structure:\n\n- Initial contents of boxes 1–6\n- Operations in numbered order\n- Desired output format\n\nI can then compute the final state exactly.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T15:37:16.248001+00:00",
+    "finished_at": "2026-08-13T15:39:20.181229+00:00",
+    "thread_id": "019ffbc5-4cad-7801-8b32-0b2d112c4bb6",
+    "aggregate_usage": {
+      "input_tokens": 13579,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4449,
+      "reasoning_output_tokens": 4385
+    },
+    "elapsed_seconds": 123.932,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 644,
+    "trace_sha256": "d0cd385737db8eb1cfa2dfc71a219ecdb6cbd4b101353b8ed2d1026132b4dc9f",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "neutral_id": "r0001",
+  "regime": "tool_less_responses_api",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "tools": [],
+  "store": false,
+  "prompt_sha256": "4739dae79e79ceca9795ef783589ede2dc905248b7863f960210b0b8aa743337",
+  "response_sha256": "48d9f03c6f9b357bc078fb3eb43d1a51aaa9a2c3257727dc310158e50b086fa3",
+  "http_status": 429,
+  "error_type": "insufficient_quota",
+  "error_code": "credit_balance_exhausted",
+  "inference_started": false,
+  "eligible_for_exact_retry": true,
+  "response_file": "response.json",
+  "notes": "Authenticated API request rejected before inference; raw error preserved. An earlier local TLS validation failure produced no HTTP response and no stored subject output."
+}

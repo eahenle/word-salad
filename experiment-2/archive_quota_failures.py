@@ -28,7 +28,7 @@ def eligible(root: Path) -> list[dict]:
     for path in sorted((root / "completed").glob("r*.json")):
         record = json.loads(path.read_text())
         error = record.get("runner", {}).get("error") or {}
-        if error.get("type") != "nonzero_exit":
+        if error.get("type") not in {"nonzero_exit", "usage_cap"}:
             continue
         trace = root / record["trace_file"]
         if MARKER in trace.read_text(encoding="utf-8").lower():

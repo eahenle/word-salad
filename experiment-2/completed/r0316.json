@@ -1,0 +1,53 @@
+{
+  "trial_id": "r0316",
+  "neutral_id": "r0316",
+  "arm": "explanation",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 4,
+  "seed": 16,
+  "signal_phase": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "xhigh",
+  "prompt_words": 572,
+  "prompt_sha256": "df7037466061b1b156500f2c100a3e7df4a2c7c2bd21432df1aef5fe2381c546",
+  "prompt_file": "prompts/explanation/r0316.txt",
+  "trace_file": "traces/r0316.jsonl",
+  "stderr_file": "stderr/r0316.txt",
+  "response": "The final state cannot be determined because the six operations’ word order is scrambled. Please resend steps 1–6 in order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-13T15:39:20.182131+00:00",
+    "finished_at": "2026-08-13T15:48:47.982905+00:00",
+    "thread_id": "019ffbc7-285a-7a33-a881-8235b35deb77",
+    "aggregate_usage": {
+      "input_tokens": 284874,
+      "cached_input_tokens": 240384,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 29996,
+      "reasoning_output_tokens": 23064
+    },
+    "elapsed_seconds": 567.8,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 732,
+    "trace_sha256": "69fe4f56ca50e65a9f54a5450802597e8098b66e0c6168a239c945554d970d5d",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

@@ -6,13 +6,13 @@
   "worker_count": 4,
   "timeout_seconds": 900.0,
   "scheduled_trials": 320,
-  "completed_trials": 311,
+  "completed_trials": 320,
   "completed_by_arm": {
     "constrained": 160,
-    "explanation": 151
+    "explanation": 160
   },
   "completed_by_condition": {
-    "all_shuffled": 71,
+    "all_shuffled": 80,
     "clean": 80,
     "signal": 160
   },
@@ -30,6 +30,20 @@
       "last_inflight_subject_finished_at": "2026-08-13T02:13:44.348358+00:00",
       "requested_trial_ids": null,
       "outcome": "usage_cap_after_311_valid_outcomes_and_9_archived_rejections"
+    },
+    {
+      "finished_at": "2026-08-13T16:00:31.399373+00:00",
+      "requested_trial_ids": [
+        "r0312",
+        "r0313",
+        "r0314",
+        "r0315",
+        "r0316",
+        "r0317",
+        "r0318",
+        "r0319",
+        "r0320"
+      ]
     }
   ]
 }

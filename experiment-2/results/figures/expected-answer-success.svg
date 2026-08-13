@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="600">Expected answer success by ordered stimulus</text>
+<line x1="90" y1="410.0" x2="870" y2="410.0" stroke="#e5e7eb"/>
+<text x="78" y="414.0" text-anchor="end" font-family="sans-serif" font-size="12">0.0</text>
+<line x1="90" y1="340.0" x2="870" y2="340.0" stroke="#e5e7eb"/>
+<text x="78" y="344.0" text-anchor="end" font-family="sans-serif" font-size="12">0.2</text>
+<line x1="90" y1="270.0" x2="870" y2="270.0" stroke="#e5e7eb"/>
+<text x="78" y="274.0" text-anchor="end" font-family="sans-serif" font-size="12">0.4</text>
+<line x1="90" y1="200.0" x2="870" y2="200.0" stroke="#e5e7eb"/>
+<text x="78" y="204.0" text-anchor="end" font-family="sans-serif" font-size="12">0.6</text>
+<line x1="90" y1="130.0" x2="870" y2="130.0" stroke="#e5e7eb"/>
+<text x="78" y="134.0" text-anchor="end" font-family="sans-serif" font-size="12">0.8</text>
+<line x1="90" y1="60.0" x2="870" y2="60.0" stroke="#e5e7eb"/>
+<text x="78" y="64.0" text-anchor="end" font-family="sans-serif" font-size="12">1.0</text>
+<text x="90.0" y="436" text-anchor="middle" font-family="sans-serif" font-size="12">clean</text>
+<text x="480.0" y="436" text-anchor="middle" font-family="sans-serif" font-size="12">signal N=2</text>
+<text x="870.0" y="436" text-anchor="middle" font-family="sans-serif" font-size="12">signal N=4</text>
+<circle cx="90.0" cy="60.0" r="5" fill="#2563eb"/>
+<circle cx="480.0" cy="147.5" r="5" fill="#2563eb"/>
+<circle cx="870.0" cy="252.5" r="5" fill="#2563eb"/>
+<polyline points="90.0,60.0 480.0,147.5 870.0,252.5" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<line x1="90" y1="465" x2="114" y2="465" stroke="#2563eb" stroke-width="3"/>
+<text x="120" y="469" font-family="sans-serif" font-size="11">constrained A</text>
+<circle cx="90.0" cy="60.0" r="5" fill="#dc2626"/>
+<circle cx="480.0" cy="165.0" r="5" fill="#dc2626"/>
+<circle cx="870.0" cy="200.0" r="5" fill="#dc2626"/>
+<polyline points="90.0,60.0 480.0,165.0 870.0,200.0" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<line x1="285" y1="465" x2="309" y2="465" stroke="#dc2626" stroke-width="3"/>
+<text x="315" y="469" font-family="sans-serif" font-size="11">constrained B</text>
+<circle cx="90.0" cy="60.0" r="5" fill="#059669"/>
+<circle cx="480.0" cy="130.0" r="5" fill="#059669"/>
+<circle cx="870.0" cy="270.0" r="5" fill="#059669"/>
+<polyline points="90.0,60.0 480.0,130.0 870.0,270.0" fill="none" stroke="#059669" stroke-width="2.5"/>
+<line x1="480" y1="465" x2="504" y2="465" stroke="#059669" stroke-width="3"/>
+<text x="510" y="469" font-family="sans-serif" font-size="11">explanation A</text>
+<circle cx="90.0" cy="60.0" r="5" fill="#7c3aed"/>
+<circle cx="480.0" cy="200.0" r="5" fill="#7c3aed"/>
+<circle cx="870.0" cy="340.0" r="5" fill="#7c3aed"/>
+<polyline points="90.0,60.0 480.0,200.0 870.0,340.0" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+<line x1="675" y1="465" x2="699" y2="465" stroke="#7c3aed" stroke-width="3"/>
+<text x="705" y="469" font-family="sans-serif" font-size="11">explanation B</text>
+</svg>

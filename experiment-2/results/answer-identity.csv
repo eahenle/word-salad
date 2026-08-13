@@ -1,0 +1,17 @@
+arm,condition,lanes,stimulus_identity,trials,completed_responses,answer_A,answer_B,other_or_no_answer,expected_success,expected_success_rate,success_ci_low,success_ci_high
+constrained,all_shuffled,2,none,20,15,0,0,20,0,0.0,0.0,0.16112515805281938
+constrained,all_shuffled,4,none,20,15,0,0,20,0,0.0,0.0,0.16112515805281938
+constrained,clean,1,A,20,20,20,0,0,20,1.0,0.8388748419471806,1.0
+constrained,clean,1,B,20,20,0,20,0,20,1.0,0.8388748419471806,1.0
+constrained,signal,2,A,20,20,15,0,5,15,0.75,0.531299122381256,0.8881382985923343
+constrained,signal,2,B,20,20,1,14,5,14,0.7,0.4810271816464765,0.8545227551323956
+constrained,signal,4,A,20,13,9,0,11,9,0.45,0.2581978582556243,0.6579146575496577
+constrained,signal,4,B,20,20,0,12,8,12,0.6,0.3865815007622531,0.781193467627183
+explanation,all_shuffled,2,none,20,19,0,0,20,0,0.0,0.0,0.16112515805281938
+explanation,all_shuffled,4,none,20,16,0,0,20,0,0.0,0.0,0.16112515805281938
+explanation,clean,1,A,20,20,20,0,0,20,1.0,0.8388748419471806,1.0
+explanation,clean,1,B,20,20,0,20,0,20,1.0,0.8388748419471806,1.0
+explanation,signal,2,A,20,20,16,0,4,16,0.8,0.5839825677481064,0.919342337420202
+explanation,signal,2,B,20,20,2,12,6,12,0.6,0.3865815007622531,0.781193467627183
+explanation,signal,4,A,20,18,8,0,12,8,0.4,0.21880653237281705,0.6134184992377469
+explanation,signal,4,B,20,18,0,4,16,4,0.2,0.08065766257979806,0.41601743225189364

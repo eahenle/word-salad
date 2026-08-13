@@ -47,6 +47,7 @@ def parse_events(raw: bytes) -> dict:
     events: Counter[str] = Counter()
     items: Counter[str] = Counter()
     non_json = 0
+    error_messages = []
     for line in raw.splitlines():
         if not line.strip():
             continue
@@ -57,6 +58,11 @@ def parse_events(raw: bytes) -> dict:
             continue
         kind = str(event.get("type", "unknown"))
         events[kind] += 1
+        if kind == "error" and event.get("message"):
+            error_messages.append(str(event["message"]))
+        elif kind == "turn.failed" and isinstance(event.get("error"), dict):
+            if event["error"].get("message"):
+                error_messages.append(str(event["error"]["message"]))
         if kind == "thread.started":
             thread_id = event.get("thread_id")
         elif kind == "item.completed":
@@ -75,6 +81,7 @@ def parse_events(raw: bytes) -> dict:
         "event_type_counts": dict(sorted(events.items())),
         "item_type_counts": dict(sorted(items.items())),
         "non_json_line_count": non_json,
+        "error_messages": error_messages,
     }
 
 
@@ -210,7 +217,12 @@ def run_one(task: Task, args: argparse.Namespace, root: Path) -> tuple[int, dict
     elif exception:
         error = {"type": "runner_exception", "message": exception}
     elif exit_status != 0:
-        error = {"type": "nonzero_exit", "exit_status": exit_status}
+        error_type = (
+            "usage_cap"
+            if any("usage limit" in message.lower() for message in parsed["error_messages"])
+            else "nonzero_exit"
+        )
+        error = {"type": error_type, "exit_status": exit_status}
     elif parsed["response"] is None:
         error = {"type": "missing_final_agent_message"}
     record = {
@@ -250,6 +262,7 @@ def run_one(task: Task, args: argparse.Namespace, root: Path) -> tuple[int, dict
             "event_type_counts": parsed["event_type_counts"],
             "item_type_counts": parsed["item_type_counts"],
             "non_json_line_count": parsed["non_json_line_count"],
+            "error_messages": parsed["error_messages"],
         },
     }
     atomic_json(paths["completed"], record)
@@ -381,6 +394,13 @@ def main() -> None:
             _, record = future.result()
             status = "ok" if record["runner"]["error"] is None else "error"
             print(f"{count}/{len(pending)} {record['neutral_id']} {status}", flush=True)
+            error = record["runner"].get("error") or {}
+            if error.get("type") == "usage_cap":
+                for queued in futures:
+                    queued.cancel()
+                raise RuntimeError(
+                    f"usage cap detected in {record['neutral_id']}; queue halted for explicit archival"
+                )
     finalize(root, tasks, args)
     print(f"finalized {len(list((root / 'completed').glob('r*.json')))}/{len(tasks)} Experiment 2 records")
 

@@ -1,0 +1,7 @@
+arm,condition,lanes,paired_seeds,ordered_lane_discriminating_pairs,discriminating_rate,discriminating_ci_low,discriminating_ci_high,both_expected,A_expected_B_not,B_expected_A_not,neither_expected,same_A_answer,same_B_answer
+constrained,clean,1,20,20,1.0,0.8388748419471806,1.0,20,0,0,0,0,0
+constrained,signal,2,20,11,0.55,0.34208534245034233,0.7418021417443759,11,4,3,2,0,0
+constrained,signal,4,20,5,0.25,0.11186170140766569,0.468700877618744,5,4,7,4,0,0
+explanation,clean,1,20,20,1.0,0.8388748419471806,1.0,20,0,0,0,0,0
+explanation,signal,2,20,8,0.4,0.21880653237281705,0.6134184992377469,8,8,4,0,2,0
+explanation,signal,4,20,3,0.15,0.052368745896216595,0.36041886474075696,3,5,1,11,0,0
