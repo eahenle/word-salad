@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -15,6 +16,11 @@ DISCOVERY_PATTERNS = (
     r"\bshuffl\w*\b", r"\bscrambl\w*\b", r"\binterleav\w*\b",
     r"\bmultiplex\w*\b", r"\bstride\b", r"\blane(?:s)?\b",
     r"\bglobally shuffled\b", r"\bword order\b",
+)
+INDETERMINATE_PATTERNS = (
+    r"\bcannot determine\b", r"\bcan't determine\b", r"\bcan’t determine\b",
+    r"\bnot (?:be )?determined uniquely\b", r"\bno unique (?:answer|result)\b",
+    r"\bunique result cannot\b", r"\bplease resend\b",
 )
 
 
@@ -41,9 +47,13 @@ def keys(root: Path) -> dict[str, dict[str, str]]:
 def score_record(record: dict, answer_keys: dict[str, dict[str, str]]) -> dict:
     response = record.get("response", "")
     assignments = extract_assignments(response)
-    identity = next(
+    raw_identity = next(
         (name for name, mapping in answer_keys.items() if assignments == mapping), None
     )
+    indeterminate = any(re.search(pattern, response, re.I) for pattern in INDETERMINATE_PATTERNS)
+    # Controls sometimes illustrate ambiguity with complete hypothetical examples.
+    # Those examples are not an asserted behavioral answer.
+    identity = None if record.get("condition") == "all_shuffled" and indeterminate else raw_identity
     expected_identity = record.get("answer_identity")
     expected = answer_keys.get(expected_identity)
     semantic = bool(expected and assignments == expected)
@@ -68,6 +78,8 @@ def score_record(record: dict, answer_keys: dict[str, dict[str, str]]) -> dict:
         classification = f"answer_{identity.lower()}"
     elif not response:
         classification = "nonresponse"
+    elif indeterminate:
+        classification = "indeterminate_or_refusal"
     elif discovery and not assignments:
         classification = "encoding_discovery_without_answer"
     elif assignments:
@@ -78,7 +90,9 @@ def score_record(record: dict, answer_keys: dict[str, dict[str, str]]) -> dict:
     scored.update(
         {
             "assignments": assignments,
+            "raw_assignment_identity": raw_identity,
             "observed_answer_identity": identity,
+            "indeterminate_claimed": indeterminate,
             "exact_success": exact,
             "semantic_success": semantic,
             "correct_assignment_count": correct_count,
@@ -91,12 +105,37 @@ def score_record(record: dict, answer_keys: dict[str, dict[str, str]]) -> dict:
     return scored
 
 
+def write_blind_packet(records: list[dict], path: Path) -> None:
+    packet = []
+    for record in records:
+        audit_id = hashlib.sha256(
+            ("q2-blind-audit|" + record["neutral_id"]).encode()
+        ).hexdigest()[:12]
+        packet.append({
+            "audit_id": audit_id,
+            "response": record.get("response", ""),
+            "assignments": record["assignments"],
+            "raw_assignment_identity": record["raw_assignment_identity"],
+            "observed_answer_identity": record["observed_answer_identity"],
+            "indeterminate_claimed": record["indeterminate_claimed"],
+            "encoding_discovered_in_final": record["encoding_discovered_in_final"],
+            "classification": record["classification"],
+            "auditor_notes": "",
+        })
+    packet.sort(key=lambda record: record["audit_id"])
+    path.write_text(
+        "".join(json.dumps(record, ensure_ascii=False) + "\n" for record in packet),
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     root = Path(__file__).resolve().parent
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=root)
     parser.add_argument("--input", type=Path)
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--audit-packet", type=Path)
     args = parser.parse_args()
     source = args.input or args.root / "results" / "trials-unscored.jsonl"
     destination = args.output or args.root / "results" / "trials.jsonl"
@@ -107,6 +146,8 @@ def main() -> None:
         "".join(json.dumps(record, ensure_ascii=False) + "\n" for record in scored),
         encoding="utf-8",
     )
+    audit_packet = args.audit_packet or args.root / "results" / "blind-audit-packet.jsonl"
+    write_blind_packet(scored, audit_packet)
     print(f"scored {len(scored)} records by observed A/B answer identity")
 
 
