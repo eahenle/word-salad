@@ -17,11 +17,12 @@ Two output arms were run: constrained final-answer only and explanation
 permitted. The latter requests a brief account without mentioning ciphers,
 interleaving, strides, or hidden messages. Codex-agent trials retain the pinned
 hardened container and full raw traces. A tool-less GPT-5.6-Sol-xhigh regime
-was then started with a project-local ignored API key. The partial tool-less
-slate contains 94 scheduled outcomes: 85 completed responses and nine accepted
-600-second timeout/nonresponses. The run paused when `credit_balance_exhausted`
-recurred before inference on r0095; no model substitution was made and scoring
-remains deferred until the slate is complete.
+was then run with a project-local ignored API key. It was frozen as a
+cost-truncated pilot at a boundary chosen before scoring: r0001--r0094,
+comprising 85 completed responses and nine accepted 600-second
+timeout/nonresponses. r0095 returned `credit_balance_exhausted` before inference
+and was excluded. No model substitution was made, no later prompt was run, and
+no further API spending is authorized.
 
 Generate and validate payloads with:
 
@@ -77,6 +78,26 @@ interpretation boundary are in `results/analysis.md`. Raw subject stdout JSONL,
 stderr, completed records, scoring decisions, audit decisions, prompt geometry,
 and figures are all preserved separately.
 
+## Cost-truncated tool-less pilot
+
+The frozen pilot produced the expected ordered answer in 35/40 N=2 signal
+trials. Both members of an equal-word-bag A/B pair were correct in 16/20 seeds.
+The exact same prompts produced 29/40 signal successes and 11/20 discriminating
+pairs under Codex. Both regimes were 40/40 on clean tasks. Neither produced a
+target A or B answer on the 14 matched all-shuffled controls.
+
+This establishes that Codex shell/filesystem tools and an agentic command loop
+are not required for the observed N=2 ordered-lane behavior. It does not expose
+private model reasoning or prove a unique internal mechanism. The nine
+all-shuffled API nonresponses and five completed controls also show a major
+effort increase without an intact stream.
+
+See `results/raw-model-pilot-analysis.md` for the matched comparison,
+scheduled- and completed-response analyses, effort measurements, cost caveat,
+and interpretation boundary. `results/raw-model-pilot-freeze.json` records the
+pre-scoring stopping rule, and `results/raw-model-pilot-audit.json` verifies
+prompt matching, blind-review coverage, raw hashes, and scores.
+
 ## Reproduction and audit commands
 
 Generate and mechanically validate the frozen prompt slate:
@@ -118,6 +139,24 @@ The independent blind decisions in `results/blind-audit-decisions.jsonl` and
 observable strategy decisions in `results/trace-strategy-audit.jsonl` are the
 human-reviewed records. Regenerating automatic scores does not replace them.
 
+Rebuild and audit the frozen tool-less pilot without making API calls:
+
+```bash
+python3 -B experiment-2/prepare_raw_pilot.py
+python3 -B experiment-2/score.py \
+  --input experiment-2/results/raw-model-pilot-unscored.jsonl \
+  --output experiment-2/results/raw-model-pilot-auto-scored.jsonl \
+  --audit-packet experiment-2/results/raw-model-pilot-blind-packet.jsonl
+python3 -B experiment-2/apply_blind_audit.py \
+  --root experiment-2 \
+  --trials experiment-2/results/raw-model-pilot-auto-scored.jsonl \
+  --decisions experiment-2/results/raw-model-pilot-blind-decisions.jsonl \
+  --output experiment-2/results/raw-model-pilot-trials.jsonl
+python3 -B experiment-2/analyze_raw_pilot.py
+python3 -B experiment-2/audit_raw_model.py
+python3 -B experiment-2/audit_raw_pilot.py
+```
+
 ## Limitations and next step
 
 The result establishes behavioral sensitivity to hidden word order while the
@@ -125,11 +164,9 @@ word bag is held constant. It does not by itself distinguish transformer-level
 source separation from unobserved or explicit agentic decoding. Same-host
 Docker is an audited practical isolation boundary, not cryptographic isolation.
 
-The next discriminating step is to add API credits and resume the exact frozen
-tool-less GPT-5.6-Sol-xhigh Responses API slate at r0095. The invalid
-pre-inference attempt is preserved and r0095 remains eligible for an exact
-retry. The nine zero-byte server disconnects at approximately 600 seconds are
-scheduled timeout/nonresponse outcomes and will not be retried. After that
-matched comparison,
-variable-stride prompts would test
-whether fixed periodic spacing is necessary. Larger N remains deferred.
+The original 320-call tool-less slate should not be resumed: the 94-call pilot
+already answers whether tools are required, and the remaining 226 calls have
+poor information-per-dollar value. If a later follow-up is funded, use a small,
+preregistered fixed-stride-versus-jittered-spacing paired test with a hard dollar
+cap. That directly tests whether periodic position is the exploitable cue.
+Larger N remains deferred.

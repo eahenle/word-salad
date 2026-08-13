@@ -1,6 +1,6 @@
 {
   "experiment": "Experiment 2 paired equal-multiset ordered payloads",
-  "dataset_status": "codex_agent_complete_toolless_blocked_pending_freeze_tag",
+  "dataset_status": "codex_agent_complete_toolless_cost_truncated_pilot_scored",
   "protocol_commit": "4ed13addfb0540f9193295a7cf8031e5ee9799e2",
   "protocol_tag": "experiment-2-pilot",
   "parent_normalization_tag": "experiment-1c-hardened-normalization",
@@ -58,13 +58,32 @@
   "direct_toolless_regime": {
     "available": true,
     "credential_configured": true,
-    "reason": "validated and partially run; paused after credit balance exhaustion",
+    "reason": "validated, cost-truncated before scoring, then frozen and independently reviewed",
     "scheduled_outcomes": 94,
     "completed_responses": 85,
     "timeout_nonresponses": 9,
     "invalid_pre_inference_attempts": 1,
+    "first_excluded_trial": "r0095",
+    "additional_api_calls_authorized": false,
+    "user_reported_cost_usd_approximate": 20,
+    "returned_usage_list_price_lower_bound_usd": 7.5069,
+    "semantic_signal_success": 35,
+    "semantic_signal_trials": 40,
+    "paired_discrimination_success": 16,
+    "paired_discrimination_pairs": 20,
+    "runtime": {
+      "method": "Responses API single independent request",
+      "workers": 4,
+      "configured_timeout_seconds": 900,
+      "observed_transport_limit_seconds_approximate": 600,
+      "started_at": "2026-08-13T18:25:01.295436+00:00",
+      "finished_at": "2026-08-13T18:58:33.183216+00:00",
+      "tools": [],
+      "store": false,
+      "prior_response_context_used": false
+    },
     "substitution_performed": false
   },
   "freeze_commit": null,
-  "freeze_tag": "experiment-2-paired-order"
+  "freeze_tag": "experiment-2-toolless-cost-truncated-pilot"
 }

@@ -1,0 +1,5 @@
+condition,endpoint,matched_trials,both,tool_less_only,codex_agent_only,neither
+clean,expected_answer_success,40,40,0,0,0
+signal,expected_answer_success,40,27,8,2,3
+all_shuffled,produced_A_or_B_target_answer,14,0,0,0,14
+signal_paired_A_B,both_ordered_answers_expected,20,10,6,1,3

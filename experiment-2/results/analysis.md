@@ -130,10 +130,18 @@ Post-slate trace review found 22 environment-probe attempts but zero observable
 host access and zero direct experiment-context leaks. Same-host container isolation
 is a strong audited practical boundary, not a cryptographic multi-host guarantee.
 
-The exact tool-less GPT-5.6-Sol-xhigh comparison could not run. A normal project
-API key reached the Responses API, but the API returned `credit_balance_exhausted`
-before inference. No alternate model or Codex credential was substituted. This
-leaves transformer-only versus agentic attribution unresolved.
+The exact tool-less GPT-5.6-Sol-xhigh comparison subsequently ran as a
+cost-truncated pilot. Its stopping boundary was frozen before scoring: 94
+scheduled prompts, 85 completed responses, and nine accepted approximately
+600-second timeout/nonresponses. r0095 returned `credit_balance_exhausted`
+before inference and was excluded; no later prompt was run and no alternate
+model or Codex credential was substituted.
+
+On the 40 N=2 signal prompts, tool-less invocations produced 35 expected answers
+and 16/20 paired A/B discriminations. The same Codex prompts produced 29/40 and
+11/20, respectively. This shows that shell/filesystem tools and an agentic
+command loop are not required for the ordered-lane behavior. See
+`raw-model-pilot-analysis.md` for the audited matched comparison and its limits.
 
 ## Conclusion and next experiment
 
@@ -143,11 +151,11 @@ changed the model's answer. Recovery was reliable but imperfect at N=2 and weake
 substantially at N=4. The zero-target all-shuffled result argues against unordered
 bag-of-words inference as the source of the paired effect.
 
-The strongest next discriminator is the already implemented exact tool-less run on
-the frozen prompts once API credits are available. After that matched
-comparison, variable-stride stimuli would test whether fixed periodic spacing is
-necessary. Do not interpret tool-free Codex traces alone as proof of transformer-level
-source separation.
+The full 320-call tool-less slate should not be resumed. The strongest next
+discriminator per dollar is a small preregistered paired experiment comparing
+fixed periodic spacing with jittered spacing. Do not interpret tool-less success
+as proof of a unique internal mechanism: system contexts differ, private
+reasoning remains unavailable, and this is one model/runtime.
 
 Behavioral correctness and observable trace strategy are separate outcomes. No claim
 about private internal reasoning is made.

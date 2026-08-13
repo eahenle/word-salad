@@ -1,0 +1,79 @@
+{
+  "experiment": "Experiment 2 cost-truncated tool-less pilot",
+  "status": "frozen_and_scored",
+  "freeze_parent_commit": "6d69ed8",
+  "stopping_reason": "user terminated further API spending after observing approximately $20 billed for fewer than one third of the planned slate",
+  "additional_api_calls_authorized": false,
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "xhigh",
+  "tools": [],
+  "store": false,
+  "planned_slate_trials": 320,
+  "frozen_pilot_trials": 94,
+  "included_trial_range": ["r0001", "r0094"],
+  "included_cells": [
+    {
+      "arm": "constrained",
+      "condition": "clean",
+      "lanes": 1,
+      "stimulus": "A",
+      "seeds": [1, 20],
+      "scheduled": 20
+    },
+    {
+      "arm": "constrained",
+      "condition": "clean",
+      "lanes": 1,
+      "stimulus": "B",
+      "seeds": [1, 20],
+      "scheduled": 20
+    },
+    {
+      "arm": "constrained",
+      "condition": "signal",
+      "lanes": 2,
+      "stimulus": "A",
+      "seeds": [1, 20],
+      "scheduled": 20
+    },
+    {
+      "arm": "constrained",
+      "condition": "signal",
+      "lanes": 2,
+      "stimulus": "B",
+      "seeds": [1, 20],
+      "scheduled": 20
+    },
+    {
+      "arm": "constrained",
+      "condition": "all_shuffled",
+      "lanes": 2,
+      "stimulus": null,
+      "seeds": [1, 14],
+      "scheduled": 14
+    }
+  ],
+  "completed_responses": 85,
+  "timeout_nonresponses": 9,
+  "timeout_trial_ids": ["r0081", "r0082", "r0083", "r0084", "r0087", "r0091", "r0092", "r0093", "r0094"],
+  "timeout_policy": "zero-byte RemoteDisconnected outcomes at approximately 600 seconds are retained as scheduled nonresponses and are not retried",
+  "first_excluded_trial": "r0095",
+  "first_excluded_reason": "credit_balance_exhausted before inference",
+  "excluded_invalid_attempt_preserved": true,
+  "user_reported_cost_usd_approximate": 20,
+  "retrieved_response_list_price_lower_bound_usd": 7.5069,
+  "cost_note": "The user-reported billing dashboard is authoritative. The lower bound covers only retrieved response usage and omits server work for calls that disconnected without a response.",
+  "scoring_had_started_at_freeze": false,
+  "response_text_had_been_inspected_at_freeze": false,
+  "scoring_started_after_freeze": true,
+  "independent_condition_blind_review_complete": true,
+  "analysis_status": "complete",
+  "freeze_tag": "experiment-2-toolless-cost-truncated-pilot",
+  "dataset_commit": null,
+  "planned_but_deferred": [
+    "remaining all-shuffled N=2 seeds",
+    "constrained N=4",
+    "explanation arm",
+    "all other tool-less cells"
+  ]
+}

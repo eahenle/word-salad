@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "frozen_trial_range": [
+    "r0001",
+    "r0094"
+  ],
+  "scheduled_trials": 94,
+  "completed_responses": 85,
+  "timeout_nonresponses": 9,
+  "blind_packet_records": 94,
+  "blind_decision_records": 94,
+  "prompt_hashes_match_codex_by_neutral_id": true,
+  "raw_response_hashes_verified": true,
+  "semantic_scores_recomputed": true,
+  "blind_packet_forbidden_metadata_absent": true,
+  "request_schema_verified": true,
+  "request_has_instructions_field": false,
+  "request_has_previous_response_id": false,
+  "request_tools": [],
+  "request_store": false,
+  "prompt_is_sole_input": true,
+  "first_excluded_trial": "r0095",
+  "additional_api_calls_authorized": false,
+  "failures": []
+}

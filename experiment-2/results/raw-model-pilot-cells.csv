@@ -1,0 +1,11 @@
+regime,condition,lanes,stimulus_identity,scheduled,completed_responses,timeout_nonresponses,answer_A,answer_B,target_answers,other_or_no_answer,exact_success,semantic_success,scheduled_success_rate,success_ci_low,success_ci_high,completed_success_rate,encoding_discovered_in_final
+codex_agent,clean,1,A,20,20,0,20,0,20,0,8,20,1.0,0.8388748419471806,1.0,1.0,0
+tool_less,clean,1,A,20,20,0,20,0,20,0,20,20,1.0,0.8388748419471806,1.0,1.0,0
+codex_agent,clean,1,B,20,20,0,0,20,20,0,8,20,1.0,0.8388748419471806,1.0,1.0,0
+tool_less,clean,1,B,20,20,0,0,20,20,0,20,20,1.0,0.8388748419471806,1.0,1.0,0
+codex_agent,signal,2,A,20,20,0,15,0,15,5,11,15,0.75,0.531299122381256,0.8881382985923343,0.75,0
+tool_less,signal,2,A,20,20,0,17,0,17,3,10,17,0.85,0.6395811352592431,0.9476312541037835,0.85,0
+codex_agent,signal,2,B,20,20,0,1,14,15,5,6,14,0.7,0.4810271816464765,0.8545227551323956,0.7,0
+tool_less,signal,2,B,20,20,0,0,18,18,2,12,18,0.9,0.6989663547715128,0.9721335187862319,0.9,0
+codex_agent,all_shuffled,2,none,14,11,3,0,0,0,14,0,0,0.0,1.3877787807814457e-17,0.2153108027376358,0.0,11
+tool_less,all_shuffled,2,none,14,5,9,0,0,0,14,0,0,0.0,1.3877787807814457e-17,0.2153108027376358,0.0,2

@@ -1,0 +1,7 @@
+regime,condition,lanes,scheduled,completed_responses,timeouts,tool_using_trials,median_elapsed_seconds_scheduled,median_input_tokens_returned,median_output_tokens_returned,median_reasoning_tokens_returned,median_emitted_reasoning_items_returned,median_model_turns,median_tool_calls,median_trace_or_response_bytes_returned
+tool_less,clean,1,40,40,0,0,5.085,201.0,236.0,215.0,1.0,1.0,0.0,4432.0
+tool_less,signal,2,40,40,0,0,22.441000000000003,396.0,1699.5,1678.0,4.0,1.0,0.0,17147.0
+tool_less,all_shuffled,2,14,5,9,0,600.2935,396.0,24215.0,24195.0,47.0,1.0,0.0,196137.0
+codex_agent,clean,1,40,40,0,0,12.8845,13081.0,199.0,177.5,0.0,1.0,0.0,405.0
+codex_agent,signal,2,40,40,0,3,28.833,13276.0,1125.0,1100.0,0.0,1.0,0.0,406.0
+codex_agent,all_shuffled,2,14,11,3,14,750.0830000000001,401311.0,30151.0,23413.0,0.0,1.0,11.5,63619.5

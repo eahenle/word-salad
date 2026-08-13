@@ -1,5 +1,5 @@
 {
-  "status": "paused_for_api_credits",
+  "status": "frozen_cost_truncated_pilot",
   "model": "gpt-5.6-sol",
   "reasoning_effort": "xhigh",
   "tools": [],
@@ -12,7 +12,7 @@
   "invalid_pre_inference_attempts": 1,
   "invalid_attempt_trial_ids": ["r0095"],
   "invalid_attempt_reason": "insufficient_quota / credit_balance_exhausted",
-  "next_exact_retry": "r0095",
+  "next_exact_retry": null,
   "timeout_policy": {
     "protocol_seconds": 600,
     "observed_event": "RemoteDisconnected with no HTTP status and zero response bytes",
@@ -28,7 +28,12 @@
     "estimated_cost_usd_at_recorded_model_rates": 7.5069
   },
   "orphaned_pending_requests": 0,
-  "resume_command": "python3 -B experiment-2/run_raw_experiment.py --root experiment-2 --ca-file /private/tmp/word-salad-cisco-secure-access.pem --workers 4 --timeout 900 --retry-trial-ids r0095",
-  "scoring_deferred": true,
-  "response_text_inspected_during_slate": false
+  "resume_command": null,
+  "additional_api_calls_authorized": false,
+  "scoring_deferred": false,
+  "scoring_complete": true,
+  "independent_blind_review_complete": true,
+  "response_text_inspected_during_slate": false,
+  "user_reported_cost_usd_approximate": 20,
+  "freeze_tag": "experiment-2-toolless-cost-truncated-pilot"
 }

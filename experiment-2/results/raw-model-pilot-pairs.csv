@@ -1,0 +1,3 @@
+regime,pairs,A_to_A_and_B_to_B,paired_discrimination_rate,ci_low,ci_high,A_expected_B_not,B_expected_A_not,neither_expected,same_A_answer,same_B_answer
+tool_less,20,16,0.8,0.5839825677481064,0.919342337420202,1,2,1,0,0
+codex_agent,20,11,0.55,0.34208534245034233,0.7418021417443759,4,3,2,0,0

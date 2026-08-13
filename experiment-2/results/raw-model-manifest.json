@@ -1,18 +1,30 @@
 {
-  "experiment": "Experiment 2 exact tool-less comparison",
+  "experiment": "Experiment 2 cost-truncated exact tool-less pilot",
+  "status": "frozen",
   "model": "gpt-5.6-sol",
   "reasoning_effort": "xhigh",
   "tools": [],
   "store": false,
   "scheduled_trials": 320,
-  "active_outcomes": 1,
+  "scheduled_outcomes": 94,
+  "completed_responses": 85,
+  "timeout_nonresponses": 9,
+  "first_excluded_trial": "r0095",
+  "unresolved_pre_inference_failure": "credit_balance_exhausted",
   "response_statuses": {
-    "completed": 1
+    "completed": 85
   },
-  "workers": 1,
+  "workers": 4,
   "timeout_seconds": 900.0,
   "raw_api_responses_preserved": true,
   "fresh_independent_request_per_trial": true,
   "prior_response_context_used": false,
-  "finalized_at": "2026-08-13T18:20:43.981771+00:00"
+  "started_at": "2026-08-13T18:25:01.295436+00:00",
+  "finished_at": "2026-08-13T18:58:33.183216+00:00",
+  "cost_truncation_frozen_at_parent_commit": "6d69ed8",
+  "additional_api_calls_authorized": false,
+  "user_reported_cost_usd_approximate": 20,
+  "returned_usage_list_price_lower_bound_usd": 7.5069,
+  "scored_and_independently_reviewed": true,
+  "freeze_tag": "experiment-2-toolless-cost-truncated-pilot"
 }
