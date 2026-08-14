@@ -1,0 +1,10 @@
+{
+  "neutral_id": "q0043",
+  "model": "gpt-5.6-terra",
+  "reasoning": "xhigh",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "seed": 3,
+  "prompt_sha256": "d5f0de13121e464503ea5393e29c0679b773eb9c5105fa0362541ae90edd44f5",
+  "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402"
+}

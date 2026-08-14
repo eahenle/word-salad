@@ -1,0 +1,26 @@
+{
+  "experiment": "experiment-4a-uniform-random-carrier",
+  "status": "frozen_after_scoring_and_analysis",
+  "frozen_at_utc": "2026-08-14T06:46:52.759465+00:00",
+  "protocol_base_commit": "b3bd850e3e03c87eb0b7ba6a2d97c3653472eca3",
+  "intended_immutable_git_tag": "experiment-4a-uniform-random",
+  "fresh_docker_trials": 90,
+  "direct_api_calls": 0,
+  "artifact_sha256": {
+    "prompt-manifest.json": "5d11a42a0ef917cc45571e26e83b9110233c35b4b96be7be4dd19c44df9667e0",
+    "prompt-validation.json": "f6e279d2ad76183057fc14d675e66072f5be6349c0038b500a19f88020b6ef86",
+    "prompt-freeze.json": "a580ee964c509215ed9e73e1b43abe97ba76ef357e64e833b38a76497d12d84d",
+    "isolation-validation.json": "85cec060d0f10575ceb7b3bebddd5f0df828455eca73b4a67c61b7f054a3f913",
+    "capability-probe.json": "562ae39de562939f5573f55d1fa263b41c957c2dd31f89033b0b37710b71326d",
+    "execution-freeze.json": "cba1bf2b231385d35dd1c307ebbd4a8803bf2c32c34ddf11cccffcce92d0ab27",
+    "integrity-audit.json": "e6182faef2ce45ac34eae2df7eb6ccd072f6447b98e83a1cd054d8bd074e5408",
+    "trials.jsonl": "c0d612d9b2303cc985cab3587aaa44a4fd544191a14150f384aa5b787cd34b2b",
+    "carrier-comparison.csv": "1676dad26b6450fb393aaa5bd55f16c31f574e44073645f500ee9b45a0d362a1",
+    "effort-summary.csv": "d7daa121f9a9c842fe9501e08681642d8a570845ece07450e8663c11bab1bc9c",
+    "mask-outcomes.csv": "a2c48c8c001018c199612ff6061e80fb32715299c6ff11502b00d1f07f5fd9d6",
+    "matched-tests.json": "6628b770bd2ce3c2805ec79b2d16ada3d93fe4d36298f24126d670d4913f380a",
+    "analysis.md": "b47000aaace919f85d3446638544141916655df70e8008805ff1061e24786051"
+  },
+  "trace_hash_manifest": "execution-freeze.json",
+  "note": "The immutable git tag records the final repository commit."
+}

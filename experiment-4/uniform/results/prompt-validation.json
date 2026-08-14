@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "generator_version": "q4-uniform-random-v1",
+  "stimuli_validated": 45,
+  "signal_prompts": 40,
+  "all_shuffled_controls": 5,
+  "frozen_payload_word_count": 161,
+  "handoff_word_count_196_inapplicable": true,
+  "total_positions": 322,
+  "signal_positions": 161,
+  "distractor_positions": 161,
+  "uniform_sample_without_replacement": true,
+  "mask_rejection_performed": false,
+  "paired_bags_equal": true,
+  "paired_masks_equal": true,
+  "paired_distractors_equal": true,
+  "matched_prior_carrier_bags_equal": true,
+  "signal_extraction_exact": true,
+  "controls_have_no_coherent_stream": true,
+  "failures": []
+}

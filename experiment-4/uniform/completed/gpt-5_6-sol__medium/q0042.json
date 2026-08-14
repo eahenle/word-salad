@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0042",
+  "neutral_id": "q0042",
+  "carrier": "uniform",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 2,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "prompt_words": 322,
+  "prompt_sha256": "992c4d7e92ac615d1340e713a9fb8f868101358d08bce1b58b432851e202fbbc",
+  "prompt_file": "uniform/prompts/q0042.txt",
+  "metadata_file": "uniform/metadata/q0042.json",
+  "trace_file": "uniform/traces/gpt-5_6-sol__medium/q0042.jsonl",
+  "stderr_file": "uniform/stderr/gpt-5_6-sol__medium/q0042.txt",
+  "execution_origin": "fresh_experiment_4a_docker_subject",
+  "response": "I can’t determine a unique final state because the instruction words are out of order, making the initial contents and six operations ambiguous. Please resend the puzzle with the original sentence and line order preserved.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T06:37:45.481303+00:00",
+    "finished_at": "2026-08-14T06:38:45.904052+00:00",
+    "thread_id": "019ffefd-af40-7770-9751-4338c4fc6d5f",
+    "aggregate_usage": {
+      "input_tokens": 13276,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2274,
+      "reasoning_output_tokens": 2229
+    },
+    "elapsed_seconds": 60.423,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 572,
+    "trace_sha256": "9ae1e5baac689d3dfb997860f2e70a23ddf935cfdf6c6b835b2ee385855a5d27",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

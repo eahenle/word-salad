@@ -1,0 +1,14 @@
+{
+  "experiment_3": {
+    "tag": "experiment-3-frequency-jitter-scaling",
+    "commit": "b3bd850e3e03c87eb0b7ba6a2d97c3653472eca3",
+    "experiment_freeze_sha256": "7b247eafd7d72eb087771a69d20289a69f602683984e699c00c57033742d8ac0",
+    "confirmation_trials_sha256": "170d11253aa0a0319ddfe5930d0565dabfa2c790fb479dd05358397d090691ef",
+    "integrity_audit_sha256": "df6ac793d20ddabde2a818cdddc19563bb5416b810ecf4a262f2582f8378759f"
+  },
+  "payload_a_sha256": "73bdc92d16b10f7093dfcccb1f49bf43b0f32e7f28f75dc4e6a629ae3b792dbb",
+  "payload_b_sha256": "7ce6324b1e3661703fa3cd762df0a3628070771b8459eeae9975732c69029ce0",
+  "payload_word_count": 161,
+  "prompt_word_count": 322,
+  "pinned_container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402"
+}

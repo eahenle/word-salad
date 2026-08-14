@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0045",
+  "neutral_id": "q0045",
+  "carrier": "uniform",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 5,
+  "model": "gpt-5.6-terra",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "f3d99819d602dddaf55d04aa377135622af832456260d42fbae26f0a8c44b213",
+  "prompt_file": "uniform/prompts/q0045.txt",
+  "metadata_file": "uniform/metadata/q0045.json",
+  "trace_file": "uniform/traces/gpt-5_6-terra__xhigh/q0045.jsonl",
+  "stderr_file": "uniform/stderr/gpt-5_6-terra__xhigh/q0045.txt",
+  "execution_origin": "fresh_experiment_4a_docker_subject",
+  "response": "I can’t determine a unique final state: the operation order and several `COLOR` values are scrambled/ambiguous. Please resend the six initial box contents and six operations in order, and I’ll return the six final lines exactly in the requested format.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T06:40:17.931721+00:00",
+    "finished_at": "2026-08-14T06:43:17.873168+00:00",
+    "thread_id": "019fff00-02b8-79a0-9356-016510895554",
+    "aggregate_usage": {
+      "input_tokens": 13276,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9698,
+      "reasoning_output_tokens": 9609
+    },
+    "elapsed_seconds": 179.942,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 822,
+    "trace_sha256": "ce8c48e32f5edb84c5ccfd79e2c136f7481f36afe54d1a2baeca32b43f32a2f0",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 5,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

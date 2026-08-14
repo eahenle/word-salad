@@ -1,0 +1,34 @@
+{
+  "fixed_individual": {
+    "prior_carrier": "fixed",
+    "comparisons": 80,
+    "prior_only_success": 11,
+    "uniform_only_success": 19,
+    "discordant": 30,
+    "two_sided_exact_mcnemar_p": 0.20048842206597328
+  },
+  "fixed_paired": {
+    "prior_carrier": "fixed",
+    "comparisons": 40,
+    "prior_only_success": 4,
+    "uniform_only_success": 10,
+    "discordant": 14,
+    "two_sided_exact_mcnemar_p": 0.1795654296875
+  },
+  "jitter_individual": {
+    "prior_carrier": "jitter",
+    "comparisons": 80,
+    "prior_only_success": 18,
+    "uniform_only_success": 15,
+    "discordant": 33,
+    "two_sided_exact_mcnemar_p": 0.7283324808813632
+  },
+  "jitter_paired": {
+    "prior_carrier": "jitter",
+    "comparisons": 40,
+    "prior_only_success": 9,
+    "uniform_only_success": 9,
+    "discordant": 18,
+    "two_sided_exact_mcnemar_p": 1.0
+  }
+}

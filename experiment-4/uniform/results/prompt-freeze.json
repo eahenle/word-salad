@@ -1,0 +1,23 @@
+{
+  "status": "frozen_before_subject_execution_and_scoring",
+  "generator_version": "q4-uniform-random-v1",
+  "prompt_count": 45,
+  "manifest_sha256": "5d11a42a0ef917cc45571e26e83b9110233c35b4b96be7be4dd19c44df9667e0",
+  "payload_word_count": 161,
+  "total_positions": 322,
+  "scheduled_models": [
+    {
+      "model": "gpt-5.6-sol",
+      "reasoning": "medium"
+    },
+    {
+      "model": "gpt-5.6-terra",
+      "reasoning": "xhigh"
+    }
+  ],
+  "scheduled_pairs_per_model": 20,
+  "controls_per_model": 5,
+  "common_minimum_stop_pairs": 10,
+  "direct_api_calls_authorized": false,
+  "hypotheses_and_stopping_rule_frozen_in_readme": true
+}

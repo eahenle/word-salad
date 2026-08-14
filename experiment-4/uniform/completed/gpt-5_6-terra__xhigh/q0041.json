@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0041",
+  "neutral_id": "q0041",
+  "carrier": "uniform",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 1,
+  "model": "gpt-5.6-terra",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "532b72e4ad3134bbd04b483a54ba851e7ee14366eafcf50e5d5a6852d04d06fc",
+  "prompt_file": "uniform/prompts/q0041.txt",
+  "metadata_file": "uniform/metadata/q0041.json",
+  "trace_file": "uniform/traces/gpt-5_6-terra__xhigh/q0041.jsonl",
+  "stderr_file": "uniform/stderr/gpt-5_6-terra__xhigh/q0041.txt",
+  "execution_origin": "fresh_experiment_4a_docker_subject",
+  "response": "I can’t determine a unique sequence of initial contents and operations from the scrambled text. Please resend the box setup and steps in their intended order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T06:39:52.728579+00:00",
+    "finished_at": "2026-08-14T06:42:21.174955+00:00",
+    "thread_id": "019ffeff-a143-76e0-bd47-e9e3714a1c56",
+    "aggregate_usage": {
+      "input_tokens": 70435,
+      "cached_input_tokens": 54272,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7180,
+      "reasoning_output_tokens": 5971
+    },
+    "elapsed_seconds": 148.446,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 13943,
+    "trace_sha256": "5f4ef566fc17a75bffca5b274f085f4812d5587dd5ec0ea40f9c3a98f1b9788d",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 11,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 3
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

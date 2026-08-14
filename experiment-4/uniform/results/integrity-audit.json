@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": {
+    "generator_validation_passed": true,
+    "experiment3_freeze_hash_matches": true,
+    "experiment3_confirmation_hash_matches": true,
+    "experiment3_integrity_hash_matches": true,
+    "fresh_isolation_validation_passed": true,
+    "exact_capability_cells_supported": true,
+    "fresh_trial_count_90": true,
+    "trace_hashes_match_freeze": true,
+    "prompt_hashes_match": true,
+    "no_retry_eligible_infrastructure_errors": true,
+    "no_broken_pipe_or_connection_reset": true,
+    "direct_api_calls_zero": true,
+    "frozen_prior_experiment_worktrees_unchanged": true,
+    "no_credentials_stored": true
+  },
+  "counts": {
+    "fresh_trials": 90
+  },
+  "trace_mismatches": [],
+  "prompt_mismatches": [],
+  "infrastructure_errors": [],
+  "broken_pipe_hits": [],
+  "forbidden_names": [],
+  "prior_experiment_dirty_paths": [],
+  "isolation_boundary": "audited practical same-host Docker boundary, not cryptographic multi-host isolation"
+}

@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0044",
+  "neutral_id": "q0044",
+  "carrier": "uniform",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 4,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "prompt_words": 322,
+  "prompt_sha256": "5ed0a4799ed6999f57afce4126284b831403727f39daac4002baad249f30225f",
+  "prompt_file": "uniform/prompts/q0044.txt",
+  "metadata_file": "uniform/metadata/q0044.json",
+  "trace_file": "uniform/traces/gpt-5_6-sol__medium/q0044.jsonl",
+  "stderr_file": "uniform/stderr/gpt-5_6-sol__medium/q0044.txt",
+  "execution_origin": "fresh_experiment_4a_docker_subject",
+  "response": "I can’t determine the result: the initial contents and six ordered operations are interleaved, so multiple conflicting sequences are possible. Please resend the instructions in their intended order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T06:38:14.755478+00:00",
+    "finished_at": "2026-08-14T06:41:20.957666+00:00",
+    "thread_id": "019ffefe-21ac-79d0-9f7c-735a601ccbeb",
+    "aggregate_usage": {
+      "input_tokens": 62793,
+      "cached_input_tokens": 46080,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5387,
+      "reasoning_output_tokens": 3729
+    },
+    "elapsed_seconds": 186.202,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 17142,
+    "trace_sha256": "ecbf051ecaef355888d4123623b36df5b17d7bb57d341bb22ca9b7cbc4a43b97",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 11,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 3
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

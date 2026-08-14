@@ -1,0 +1,5 @@
+model,reasoning,condition,trials,semantic_successes,target_answers,timeouts,tool_using_trials,median_elapsed_seconds,median_reasoning_tokens,median_tool_calls
+gpt-5.6-sol,medium,signal,40,30,31,0,0,17.5245,358.0,0.0
+gpt-5.6-sol,medium,all_shuffled,5,0,0,0,1,52.504,1472,0
+gpt-5.6-terra,xhigh,signal,40,16,17,0,0,24.3965,1034.0,0.0
+gpt-5.6-terra,xhigh,all_shuffled,5,0,0,0,1,43.744,2070,0

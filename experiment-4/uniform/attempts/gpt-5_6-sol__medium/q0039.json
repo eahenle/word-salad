@@ -1,0 +1,10 @@
+{
+  "neutral_id": "q0039",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "condition": "signal",
+  "payload_identity": "B",
+  "seed": 19,
+  "prompt_sha256": "4f7adafbf794b87b824ee88ddc49db290763b45fc75428432856ab03be07ab1d",
+  "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402"
+}
