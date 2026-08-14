@@ -1,0 +1,50 @@
+{
+  "trial_id": "garden_hidden_b",
+  "topic": "garden",
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Mira",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "35fa4ffd9adca85ea63810f8f926bae148bda68b1e53256df5d3bfe148430b9e",
+  "prompt_words": 267,
+  "response": "Please provide the question to answer—the passage alone doesn’t specify what information you’re seeking.",
+  "trace_file": "development/traces/garden_hidden_b.jsonl",
+  "stderr_file": "development/stderr/garden_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-14T22:59:38.135193+00:00",
+    "finished_at": "2026-08-14T22:59:46.650249+00:00",
+    "elapsed_seconds": 8.515,
+    "thread_id": "01a00280-9eb4-7bb2-8cfe-99aea2fec59d",
+    "aggregate_usage": {
+      "input_tokens": 10324,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 137,
+      "reasoning_output_tokens": 113
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "f9d1add747ff42719a19973858207f624bd86a7586eafb66d7736ce0d2c6f5ff",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 687,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

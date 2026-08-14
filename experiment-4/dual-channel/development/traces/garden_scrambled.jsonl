@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a00280-bff2-7011-9d67-3b2e6e7805ec"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"No specific question is included. What would you like identified—for example, who prepared the compost signs, what grew in the eastern plot, or where visitors gather?"}}
+{"type":"turn.completed","usage":{"input_tokens":10324,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":535,"reasoning_output_tokens":497}}

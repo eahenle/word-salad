@@ -1,0 +1,17 @@
+{
+  "trial_id": "harbor_cover_only",
+  "topic": "harbor",
+  "topic_title": "Harbor museum restoration",
+  "condition": "cover_only",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "signal_tokens": [],
+  "signal_positions": [],
+  "carrier": [],
+  "scramble_seed": null,
+  "document_sha256": "fdad663da9110a93d646da6fe6f3dcb29b8a0db7e6dd56103f95e9d89f1c2541",
+  "document_words": 167,
+  "prompt_sha256": "cd828e8920a52dce4864c0fea26b96a4ce8cd008e7bed12279f730bfd7063a27",
+  "prompt_words": 178,
+  "frame": "Read the following text and give the answer implied by it."
+}

@@ -1,0 +1,50 @@
+{
+  "trial_id": "ceramics_hidden_a",
+  "topic": "ceramics",
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Rowan",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "6d6c3e03de2c117b567d212e2754dcff4d4210d37625f8bddfa995aac2b643cd",
+  "prompt_words": 272,
+  "response": "The gallery celebrates everyday pottery—practical household vessels and the craft of making them.",
+  "trace_file": "development/traces/ceramics_hidden_a.jsonl",
+  "stderr_file": "development/stderr/ceramics_hidden_a.txt",
+  "runner": {
+    "started_at": "2026-08-14T22:59:23.160307+00:00",
+    "finished_at": "2026-08-14T23:00:34.550756+00:00",
+    "elapsed_seconds": 71.391,
+    "thread_id": "01a00280-6578-7a91-adec-f128739d5e8c",
+    "aggregate_usage": {
+      "input_tokens": 10327,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2693,
+      "reasoning_output_tokens": 2670
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "1bcf3a331023a3219755a5e782425d80d64ba4c4831fca0472c83c4d988c1fec",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 678,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

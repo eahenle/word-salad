@@ -1,0 +1,50 @@
+{
+  "trial_id": "ceramics_cover_only",
+  "topic": "ceramics",
+  "condition": "cover_only",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "993ea027c98685529ddb1697a70d476148ea827029a09326cbacb363dae990e2",
+  "prompt_words": 162,
+  "response": "The gallery highlights the history, craftsmanship, everyday uses, and community traditions of regional ceramics in a calm, accessible setting.",
+  "trace_file": "development/traces/ceramics_cover_only.jsonl",
+  "stderr_file": "development/stderr/ceramics_cover_only.txt",
+  "runner": {
+    "started_at": "2026-08-14T22:59:23.160120+00:00",
+    "finished_at": "2026-08-14T22:59:30.057445+00:00",
+    "elapsed_seconds": 6.897,
+    "thread_id": "01a00280-6598-7d92-a9cf-849f79ae5e9c",
+    "aggregate_usage": {
+      "input_tokens": 10203,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 77,
+      "reasoning_output_tokens": 47
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "c3ad7d2630c6d577e1d6f0e6655530f43b016247408145de0f62b1a06d9ca6ab",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 717,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

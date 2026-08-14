@@ -1,0 +1,9 @@
+{
+  "controls": 6,
+  "classification_counts": {
+    "both_target_names": 1,
+    "no_target_answer": 5
+  },
+  "target_answer_selections": 0,
+  "target_answer_trial_ids": []
+}

@@ -1,0 +1,17 @@
+{
+  "trial_id": "garden_cover_only",
+  "topic": "garden",
+  "topic_title": "Community garden seasonal notes",
+  "condition": "cover_only",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "signal_tokens": [],
+  "signal_positions": [],
+  "carrier": [],
+  "scramble_seed": null,
+  "document_sha256": "d0adbb0021eda80c230f8a0cc9e7850870f105a22cc549f5c028094d898f4e98",
+  "document_words": 160,
+  "prompt_sha256": "d06cd414c5c0e68b197e4d0b0e8c18d9cab0e8da1e3dd3e91d961028cffa4596",
+  "prompt_words": 171,
+  "frame": "Read the following text and give the answer implied by it."
+}

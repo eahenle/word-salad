@@ -1,0 +1,94 @@
+{
+  "audited_at_utc": "2026-08-14T23:04:14.338660+00:00",
+  "passed": true,
+  "checks": {
+    "mechanical_validation_passed": true,
+    "isolation_validation_passed": true,
+    "exact_clean_image": true,
+    "twelve_unique_manifest_trials": true,
+    "twelve_unscored_and_scored_trials": true,
+    "execution_complete": true,
+    "no_runner_errors_or_timeouts": true,
+    "gate_failed_and_heldout_forbidden": true,
+    "frozen_source_hashes_match": true,
+    "frozen_prompt_hashes_match": true,
+    "frozen_document_hashes_match": true,
+    "frozen_trace_hashes_match": true,
+    "unscored_records_match_completed_files": true,
+    "scored_records_preserve_frozen_responses": true,
+    "prompt_bytes_equal_frame_plus_document": true,
+    "no_observable_tool_invocation_items": true,
+    "runtime_error_item_present_in_every_trace": true
+  },
+  "failures": [],
+  "trace_item_type_counts": {
+    "ceramics_cover_only": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "ceramics_hidden_a": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "ceramics_hidden_b": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "ceramics_scrambled": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "garden_cover_only": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "garden_hidden_a": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "garden_hidden_b": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "garden_scrambled": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "harbor_cover_only": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "harbor_hidden_a": {
+      "error": 1,
+      "agent_message": 2
+    },
+    "harbor_hidden_b": {
+      "error": 1,
+      "agent_message": 1
+    },
+    "harbor_scrambled": {
+      "error": 1,
+      "agent_message": 1
+    }
+  },
+  "observable_tool_item_types": [],
+  "runtime_artifact": {
+    "item_type": "error",
+    "trials": 12,
+    "message": "Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`.",
+    "interpretation": "standardized fail-closed initialization item; not an observable tool invocation",
+    "trials_retried": 0
+  },
+  "result_hashes": {
+    "results/development-gate.json": "6c0d27b031c992c3279aaa6f426338c53dac245dc3ab486d9b4f326e7edc98f3",
+    "results/trials.jsonl": "dbf45a316036af8ca6781dc8e975eb4b71102b556978ec4b5bf8a7fa094a5c41",
+    "results/answer-identity.csv": "3d97d948c8cb2a1f4f15e9c04c736fe9b91c2f28cbde544dc5d38ff1210040ed",
+    "results/control-summary.json": "4e7a554618b3ce26d42dede68a0033f7a736356eac3ac73c303f5a256a992f84",
+    "results/analysis.md": "52ff99162ec11cc326a9471e22cf120181f4504aaaab5546045837d34ae17052",
+    "results/strategy-summary.json": "101bc170c698f7c21871a541b3f68971985ae993ceacdf7d99fb111e68105381",
+    "development/results/execution-freeze.json": "26c058100dd329fb66fa84947ded3b8c45fc4fd7a149cc93deb75e1f6ae02345",
+    "development/results/trials-unscored.jsonl": "2bcacaf6cb0665078172b1316386edf7a8445401e86a25bb2333d353f160bb8a"
+  },
+  "historical_datasets_modified": false,
+  "heldout_executed": false
+}

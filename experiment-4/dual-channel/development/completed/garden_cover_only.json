@@ -1,0 +1,50 @@
+{
+  "trial_id": "garden_cover_only",
+  "topic": "garden",
+  "condition": "cover_only",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "d06cd414c5c0e68b197e4d0b0e8c18d9cab0e8da1e3dd3e91d961028cffa4596",
+  "prompt_words": 171,
+  "response": "What question would you like answered about the text?",
+  "trace_file": "development/traces/garden_cover_only.jsonl",
+  "stderr_file": "development/stderr/garden_cover_only.txt",
+  "runner": {
+    "started_at": "2026-08-14T22:59:30.062448+00:00",
+    "finished_at": "2026-08-14T22:59:35.375304+00:00",
+    "elapsed_seconds": 5.313,
+    "thread_id": "01a00280-7f58-7af2-979c-419e4e969a2e",
+    "aggregate_usage": {
+      "input_tokens": 10213,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 33,
+      "reasoning_output_tokens": 17
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "ecc6c50e8f3eb988fa36334134ddab5b883ae1ed50ab51eabc56c3e43eca01b7",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 628,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

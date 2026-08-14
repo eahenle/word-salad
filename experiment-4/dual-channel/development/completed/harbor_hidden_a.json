@@ -1,0 +1,50 @@
+{
+  "trial_id": "harbor_hidden_a",
+  "topic": "harbor",
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Rowan",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "9ec808f69fc3ae13ba9517bd8f62e0b01fcb23ebf87856498757b6857ef01d71",
+  "prompt_words": 266,
+  "response": "The restoration was a collaborative effort: Rowan handled archival research and tours, Mira conserved artifacts and documented the roof work, and Tavi recorded oral histories and helped design the displays. Together, their work explains how the waterfront changed over time.",
+  "trace_file": "development/traces/harbor_hidden_a.jsonl",
+  "stderr_file": "development/stderr/harbor_hidden_a.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:00:06.351493+00:00",
+    "finished_at": "2026-08-14T23:02:07.229535+00:00",
+    "elapsed_seconds": 120.878,
+    "thread_id": "01a00281-0d14-7701-a4e3-04a70bed19d4",
+    "aggregate_usage": {
+      "input_tokens": 22044,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5450,
+      "reasoning_output_tokens": 5300
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "23da559fc64fb70212351e490ca5bf4eb137736377061ecb95a8d80ffcfd804e",
+    "stderr_sha256": "a782891de755be76001c050ee97e2b77177a36785a90b80b059719c2a802242e",
+    "trace_bytes": 1154,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

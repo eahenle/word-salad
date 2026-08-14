@@ -1,0 +1,23 @@
+{
+  "trials": 12,
+  "classification_counts": {
+    "both_target_names": 2,
+    "no_target_answer": 10
+  },
+  "explicit_hidden_structure_trial_ids": [],
+  "observable_non_message_item_trial_ids": [
+    "ceramics_cover_only",
+    "ceramics_hidden_a",
+    "ceramics_hidden_b",
+    "ceramics_scrambled",
+    "garden_cover_only",
+    "garden_hidden_a",
+    "garden_hidden_b",
+    "garden_scrambled",
+    "harbor_cover_only",
+    "harbor_hidden_a",
+    "harbor_hidden_b",
+    "harbor_scrambled"
+  ],
+  "private_chain_of_thought_claimed": false
+}

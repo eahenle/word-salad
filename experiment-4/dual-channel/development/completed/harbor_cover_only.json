@@ -1,0 +1,50 @@
+{
+  "trial_id": "harbor_cover_only",
+  "topic": "harbor",
+  "condition": "cover_only",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "cd828e8920a52dce4864c0fea26b96a4ce8cd008e7bed12279f730bfd7063a27",
+  "prompt_words": 178,
+  "response": "The exhibition connects the lives of harbor workers and travelers with the waterfront’s historical development.",
+  "trace_file": "development/traces/harbor_cover_only.jsonl",
+  "stderr_file": "development/stderr/harbor_cover_only.txt",
+  "runner": {
+    "started_at": "2026-08-14T22:59:57.543693+00:00",
+    "finished_at": "2026-08-14T23:00:06.998714+00:00",
+    "elapsed_seconds": 9.455,
+    "thread_id": "01a00280-ea5b-7671-a050-5a9fe30afe67",
+    "aggregate_usage": {
+      "input_tokens": 10226,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 75,
+      "reasoning_output_tokens": 52
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "f5fe8cb0e8173d6f2b97dbd43a398cda330a142339f697728bfe29b2235a96c1",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 688,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

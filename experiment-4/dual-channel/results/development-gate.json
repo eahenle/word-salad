@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "complete_ab_pairs": 0,
+  "complete_ab_pair_topics": [],
+  "required_complete_ab_pairs": 2,
+  "expected_hidden_answers": 0,
+  "hidden_signal_trials": 6,
+  "control_target_answer_selections": 0,
+  "control_target_trial_ids": [],
+  "required_control_target_answer_selections": 0,
+  "counterpart_errors": 0,
+  "heldout_authorized": false,
+  "decision": "stop_without_optimization"
+}

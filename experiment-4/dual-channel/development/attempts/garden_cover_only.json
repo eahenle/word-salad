@@ -1,0 +1,7 @@
+{
+  "trial_id": "garden_cover_only",
+  "prompt_sha256": "d06cd414c5c0e68b197e4d0b0e8c18d9cab0e8da1e3dd3e91d961028cffa4596",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da"
+}

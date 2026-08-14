@@ -1,0 +1,50 @@
+{
+  "trial_id": "harbor_scrambled",
+  "topic": "harbor",
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "429237b0e494ce2d33a854bb59a9aff320786262407aeea476043cf678b9aa2d",
+  "prompt_words": 266,
+  "response": "The museum’s restoration was a collaborative effort: Mira handled conservation and documentation, Rowan contributed tours and archival research, and Tavi recorded oral histories and advised on exhibit design.",
+  "trace_file": "development/traces/harbor_scrambled.jsonl",
+  "stderr_file": "development/stderr/harbor_scrambled.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:00:09.307822+00:00",
+    "finished_at": "2026-08-14T23:00:33.520941+00:00",
+    "elapsed_seconds": 24.213,
+    "thread_id": "01a00281-195c-7352-bf78-765292146e6e",
+    "aggregate_usage": {
+      "input_tokens": 10324,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 822,
+      "reasoning_output_tokens": 782
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "5f4518f9daf37528f75f911aa1eaf10314672088d7e830fa8c3e33a47d95cd26",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 787,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

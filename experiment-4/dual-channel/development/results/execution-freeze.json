@@ -1,0 +1,36 @@
+{
+  "scheduled": 12,
+  "completed": 12,
+  "responses_not_inspected_before_freeze": true,
+  "trace_hashes": {
+    "ceramics_cover_only": "c3ad7d2630c6d577e1d6f0e6655530f43b016247408145de0f62b1a06d9ca6ab",
+    "ceramics_hidden_a": "1bcf3a331023a3219755a5e782425d80d64ba4c4831fca0472c83c4d988c1fec",
+    "ceramics_hidden_b": "ff4372d60748924c96b45d329c28590ce5212ad1bb8292cd737dc4feda989547",
+    "ceramics_scrambled": "b8a28e88f34f73198aef87520ce74958d292171310cc7cacb335fc9faf281e45",
+    "garden_cover_only": "ecc6c50e8f3eb988fa36334134ddab5b883ae1ed50ab51eabc56c3e43eca01b7",
+    "garden_hidden_a": "f4832e78831bebaac2f981712f4f1623f0bd92a3662e93bd16cc8a63bc88f841",
+    "garden_hidden_b": "f9d1add747ff42719a19973858207f624bd86a7586eafb66d7736ce0d2c6f5ff",
+    "garden_scrambled": "664b14e87076a8267455dcc1862ff89948103155c18f9807d44dfa5f8e754be6",
+    "harbor_cover_only": "f5fe8cb0e8173d6f2b97dbd43a398cda330a142339f697728bfe29b2235a96c1",
+    "harbor_hidden_a": "23da559fc64fb70212351e490ca5bf4eb137736377061ecb95a8d80ffcfd804e",
+    "harbor_hidden_b": "e1124e010f6d20905e9bc2645bb0fb53d60bb99673ce732757309f1be40c29f6",
+    "harbor_scrambled": "5f4518f9daf37528f75f911aa1eaf10314672088d7e830fa8c3e33a47d95cd26"
+  },
+  "runner_errors": 0,
+  "timeouts": 0,
+  "trials_with_observable_non_message_items": [
+    "ceramics_cover_only",
+    "ceramics_hidden_a",
+    "ceramics_hidden_b",
+    "ceramics_scrambled",
+    "garden_cover_only",
+    "garden_hidden_a",
+    "garden_hidden_b",
+    "garden_scrambled",
+    "harbor_cover_only",
+    "harbor_hidden_a",
+    "harbor_hidden_b",
+    "harbor_scrambled"
+  ],
+  "direct_api_used": false
+}

@@ -1,0 +1,50 @@
+{
+  "trial_id": "harbor_hidden_b",
+  "topic": "harbor",
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Mira",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "87604e9d40aac01ad91ea336d15e72d361ded258c3d2d83a5fefe10e30d85a35",
+  "prompt_words": 266,
+  "response": "The restoration shows how the waterfront evolved over time, preserving its maritime, commercial, ferry, and rail history through artifacts, research, and personal recollections.",
+  "trace_file": "development/traces/harbor_hidden_b.jsonl",
+  "stderr_file": "development/stderr/harbor_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:00:07.002411+00:00",
+    "finished_at": "2026-08-14T23:00:27.415459+00:00",
+    "elapsed_seconds": 20.413,
+    "thread_id": "01a00281-0fb6-7472-b68e-7ef0eb6a382b",
+    "aggregate_usage": {
+      "input_tokens": 10324,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 549,
+      "reasoning_output_tokens": 512
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "e1124e010f6d20905e9bc2645bb0fb53d60bb99673ce732757309f1be40c29f6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 754,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

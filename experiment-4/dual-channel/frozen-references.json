@@ -1,0 +1,30 @@
+{
+  "recorded_from_commit": "92e59750a34edf739c1ae1bc1b820012ca0eeb8a",
+  "artifacts": {
+    "experiment_4a": {
+      "tag": "experiment-4a-uniform-random",
+      "commit": "6fdfae8b0fba10f4d7f3f6b3169e186f9c257da7",
+      "path": "experiment-4/uniform",
+      "tree": "1acb35a15f6b1d6ac5bca7900c16754c6482cc60"
+    },
+    "experiment_4b": {
+      "tag": "experiment-4b-harmless-canary-negative-pilot",
+      "commit": "c1aabeaca1e8c00cab2b333ac42158aa42eb3cfb",
+      "path": "experiment-4/stego-poc",
+      "tree": "bd1ad3fce9442a09ac2bf6317bb5a6e336350bec"
+    },
+    "experiment_4b1": {
+      "tag": "experiment-4b1-framing-ablation-raw-gate",
+      "commit": "025b5af90791fb0df2e0bef28deb3954730ffb1d",
+      "path": "experiment-4/stego-poc/framing-ablation",
+      "tree": "6416b43e78bed497751641cf705bf4b199bc2535"
+    },
+    "context_audit": {
+      "tag": "experiment-4-context-audit",
+      "commit": "92e59750a34edf739c1ae1bc1b820012ca0eeb8a",
+      "path": "experiment-4/context-audit",
+      "tree": "e1b4dc46a23e52ca7de41bb56864fbe9a6bca85d"
+    }
+  },
+  "context_audit_conclusion": "No observable local baked-in project context was found in the frozen subject image or clean rebuild. This does not rule out every possible upstream or account-level context."
+}

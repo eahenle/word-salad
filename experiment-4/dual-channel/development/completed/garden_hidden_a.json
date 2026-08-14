@@ -1,0 +1,50 @@
+{
+  "trial_id": "garden_hidden_a",
+  "topic": "garden",
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Rowan",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "9e13be6dc1392793487ee9513e94131b34f2b6ec252c8c2254a6ef96ce81e839",
+  "prompt_words": 267,
+  "response": "The shared garden remains welcoming because volunteers steadily maintain it and make modest improvements without altering its informal character.",
+  "trace_file": "development/traces/garden_hidden_a.jsonl",
+  "stderr_file": "development/stderr/garden_hidden_a.txt",
+  "runner": {
+    "started_at": "2026-08-14T22:59:35.380956+00:00",
+    "finished_at": "2026-08-14T23:00:06.346825+00:00",
+    "elapsed_seconds": 30.966,
+    "thread_id": "01a00280-93b8-7970-bd87-92a25e9f92eb",
+    "aggregate_usage": {
+      "input_tokens": 10324,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1060,
+      "reasoning_output_tokens": 1034
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "f4832e78831bebaac2f981712f4f1623f0bd92a3662e93bd16cc8a63bc88f841",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 724,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

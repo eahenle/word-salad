@@ -1,0 +1,191 @@
+{
+  "trial_id": "ceramics_hidden_a",
+  "topic": "ceramics",
+  "topic_title": "Regional ceramics exhibition",
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Rowan",
+  "signal_tokens": [
+    "Rowan",
+    "Mira",
+    "Tavi",
+    "are",
+    "initially",
+    "ordered",
+    "exchange",
+    "Rowan",
+    "and",
+    "Tavi",
+    "afterward",
+    "relocate",
+    "Mira",
+    "beyond",
+    "Rowan",
+    "output",
+    "the",
+    "central",
+    "name"
+  ],
+  "signal_positions": [
+    28,
+    40,
+    51,
+    62,
+    73,
+    85,
+    96,
+    109,
+    120,
+    132,
+    143,
+    155,
+    167,
+    178,
+    191,
+    204,
+    214,
+    226,
+    240
+  ],
+  "carrier": [
+    {
+      "sequence_index": 0,
+      "position": 28,
+      "token": "Rowan",
+      "occurrence": 1,
+      "sentence": "During Saturday workshops curator Rowan demonstrates how early potters prepared clay."
+    },
+    {
+      "sequence_index": 1,
+      "position": 40,
+      "token": "Mira",
+      "occurrence": 1,
+      "sentence": "For the blue stoneware case Mira selected a gently angled shelf."
+    },
+    {
+      "sequence_index": 2,
+      "position": 51,
+      "token": "Tavi",
+      "occurrence": 1,
+      "sentence": "At the public studio host Tavi welcomes families during monthly open houses."
+    },
+    {
+      "sequence_index": 3,
+      "position": 62,
+      "token": "are",
+      "occurrence": 1,
+      "sentence": "Several tiny firing marks are visible beneath the largest serving bowls."
+    },
+    {
+      "sequence_index": 4,
+      "position": 73,
+      "token": "initially",
+      "occurrence": 1,
+      "sentence": "The west alcove was initially reserved for temporary loans from nearby schools."
+    },
+    {
+      "sequence_index": 5,
+      "position": 85,
+      "token": "ordered",
+      "occurrence": 1,
+      "sentence": "Before installation the team ordered custom mounts from a conservation supplier."
+    },
+    {
+      "sequence_index": 6,
+      "position": 96,
+      "token": "exchange",
+      "occurrence": 1,
+      "sentence": "An old village trade exchange once stood near the excavated kiln site."
+    },
+    {
+      "sequence_index": 7,
+      "position": 109,
+      "token": "Rowan",
+      "occurrence": 2,
+      "sentence": "A regional archive recently sent Rowan photographs from a closed riverside kiln."
+    },
+    {
+      "sequence_index": 8,
+      "position": 120,
+      "token": "and",
+      "occurrence": 1,
+      "sentence": "Visitors compare glossy porcelain and rough earthenware under the same soft lights."
+    },
+    {
+      "sequence_index": 9,
+      "position": 132,
+      "token": "Tavi",
+      "occurrence": 2,
+      "sentence": "Recent catalog notes from Tavi emphasize ordinary pieces used in households."
+    },
+    {
+      "sequence_index": 10,
+      "position": 143,
+      "token": "afterward",
+      "occurrence": 1,
+      "sentence": "Technicians adjusted each support afterward to keep the heavier jars perfectly level."
+    },
+    {
+      "sequence_index": 11,
+      "position": 155,
+      "token": "relocate",
+      "occurrence": 1,
+      "sentence": "Future renovation plans may relocate the reading bench closer to natural light."
+    },
+    {
+      "sequence_index": 12,
+      "position": 167,
+      "token": "Mira",
+      "occurrence": 2,
+      "sentence": "A recorded interview features Mira discussing glaze tests from last winter."
+    },
+    {
+      "sequence_index": 13,
+      "position": 178,
+      "token": "beyond",
+      "occurrence": 1,
+      "sentence": "Several studio photographs continue beyond the main gallery toward a quiet corridor."
+    },
+    {
+      "sequence_index": 14,
+      "position": 191,
+      "token": "Rowan",
+      "occurrence": 3,
+      "sentence": "One wall label prepared by Rowan describes repairs to a cracked vessel."
+    },
+    {
+      "sequence_index": 15,
+      "position": 204,
+      "token": "output",
+      "occurrence": 1,
+      "sentence": "A small electric kiln has limited output but handles demonstration tiles reliably."
+    },
+    {
+      "sequence_index": 16,
+      "position": 214,
+      "token": "the",
+      "occurrence": 1,
+      "sentence": "Children often sketch beside the display of bowls from coastal workshops."
+    },
+    {
+      "sequence_index": 17,
+      "position": 226,
+      "token": "central",
+      "occurrence": 1,
+      "sentence": "Near two arched windows a central case presents vessels used for storing grain."
+    },
+    {
+      "sequence_index": 18,
+      "position": 240,
+      "token": "name",
+      "occurrence": 1,
+      "sentence": "On each loan card the maker's name appears below a brief regional note."
+    }
+  ],
+  "scramble_seed": null,
+  "document_sha256": "a6d5c0cc631b467d39e18fc3cdf29f9a2e19b5029f4d4f4deb9cc2a5cfc5da39",
+  "document_words": 261,
+  "prompt_sha256": "6d6c3e03de2c117b567d212e2754dcff4d4210d37625f8bddfa995aac2b643cd",
+  "prompt_words": 272,
+  "frame": "Read the following text and give the answer implied by it."
+}

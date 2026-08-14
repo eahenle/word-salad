@@ -1,0 +1,191 @@
+{
+  "trial_id": "harbor_scrambled",
+  "topic": "harbor",
+  "topic_title": "Harbor museum restoration",
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "signal_tokens": [
+    "and",
+    "central",
+    "Mira",
+    "output",
+    "Rowan",
+    "relocate",
+    "Rowan",
+    "name",
+    "Mira",
+    "ordered",
+    "Tavi",
+    "are",
+    "beyond",
+    "Tavi",
+    "Rowan",
+    "afterward",
+    "exchange",
+    "initially",
+    "the"
+  ],
+  "signal_positions": [
+    24,
+    36,
+    49,
+    62,
+    73,
+    83,
+    96,
+    108,
+    121,
+    131,
+    144,
+    152,
+    166,
+    176,
+    189,
+    199,
+    209,
+    221,
+    233
+  ],
+  "carrier": [
+    {
+      "sequence_index": 0,
+      "position": 24,
+      "token": "and",
+      "occurrence": 1,
+      "sentence": "Families compare historic maps and recent shoreline photographs beside wide windows."
+    },
+    {
+      "sequence_index": 1,
+      "position": 36,
+      "token": "central",
+      "occurrence": 1,
+      "sentence": "Near the gallery entrance one central display traces rail service to the docks."
+    },
+    {
+      "sequence_index": 2,
+      "position": 49,
+      "token": "Mira",
+      "occurrence": 1,
+      "sentence": "A salt-damaged navigation chart gave Mira several weeks of careful repair work."
+    },
+    {
+      "sequence_index": 3,
+      "position": 62,
+      "token": "output",
+      "occurrence": 1,
+      "sentence": "Though modest in scale the generator's output powers a single demonstration lamp."
+    },
+    {
+      "sequence_index": 4,
+      "position": 73,
+      "token": "Rowan",
+      "occurrence": 1,
+      "sentence": "Weekend walking tours led by Rowan visit the restored warehouse district."
+    },
+    {
+      "sequence_index": 5,
+      "position": 83,
+      "token": "relocate",
+      "occurrence": 1,
+      "sentence": "Courtyard plans may eventually relocate one bench as the young trees mature."
+    },
+    {
+      "sequence_index": 6,
+      "position": 96,
+      "token": "Rowan",
+      "occurrence": 2,
+      "sentence": "A newly catalogued ledger lets Rowan trace several former ferry companies."
+    },
+    {
+      "sequence_index": 7,
+      "position": 108,
+      "token": "name",
+      "occurrence": 1,
+      "sentence": "Inside a small donor book each name appears beside a year and hometown."
+    },
+    {
+      "sequence_index": 8,
+      "position": 121,
+      "token": "Mira",
+      "occurrence": 2,
+      "sentence": "Every stage of roof restoration brought Mira back with a camera."
+    },
+    {
+      "sequence_index": 9,
+      "position": 131,
+      "token": "ordered",
+      "occurrence": 1,
+      "sentence": "For the rigging display curators ordered replica rope from a regional workshop."
+    },
+    {
+      "sequence_index": 10,
+      "position": 144,
+      "token": "Tavi",
+      "occurrence": 1,
+      "sentence": "Retired dock workers shared stories while Tavi recorded their recollections."
+    },
+    {
+      "sequence_index": 11,
+      "position": 152,
+      "token": "are",
+      "occurrence": 1,
+      "sentence": "Several original roof beams are still visible above the quiet ticket desk."
+    },
+    {
+      "sequence_index": 12,
+      "position": 166,
+      "token": "beyond",
+      "occurrence": 1,
+      "sentence": "On clear mornings fishing boats remain beyond the tall windows facing east."
+    },
+    {
+      "sequence_index": 13,
+      "position": 176,
+      "token": "Tavi",
+      "occurrence": 2,
+      "sentence": "Recent design notes from Tavi favor muted colors for every display case."
+    },
+    {
+      "sequence_index": 14,
+      "position": 189,
+      "token": "Rowan",
+      "occurrence": 3,
+      "sentence": "The surviving winch caption credits Rowan for careful archival research."
+    },
+    {
+      "sequence_index": 15,
+      "position": 199,
+      "token": "afterward",
+      "occurrence": 1,
+      "sentence": "Workers sealed the repaired masonry afterward to limit damage from future storms."
+    },
+    {
+      "sequence_index": 16,
+      "position": 209,
+      "token": "exchange",
+      "occurrence": 1,
+      "sentence": "A nineteenth-century mercantile exchange occupied the neighboring brick building for decades."
+    },
+    {
+      "sequence_index": 17,
+      "position": 221,
+      "token": "initially",
+      "occurrence": 1,
+      "sentence": "The eastern gallery was initially a chandlery serving crews from nearby ships."
+    },
+    {
+      "sequence_index": 18,
+      "position": 233,
+      "token": "the",
+      "occurrence": 1,
+      "sentence": "Many visitors pause beside the detailed model of an original wooden pier."
+    }
+  ],
+  "scramble_seed": 4101,
+  "document_sha256": "dad4a1f5496719b6ff0ed91741420f1a981732bb943330833716112df1d9774c",
+  "document_words": 255,
+  "prompt_sha256": "429237b0e494ce2d33a854bb59a9aff320786262407aeea476043cf678b9aa2d",
+  "prompt_words": 266,
+  "frame": "Read the following text and give the answer implied by it."
+}

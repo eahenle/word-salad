@@ -1,0 +1,50 @@
+{
+  "trial_id": "garden_scrambled",
+  "topic": "garden",
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "aeca27a322e7046cfc0b254b35edad5d4912f143c0176a167b1dc9839b8c9819",
+  "prompt_words": 267,
+  "response": "No specific question is included. What would you like identified—for example, who prepared the compost signs, what grew in the eastern plot, or where visitors gather?",
+  "trace_file": "development/traces/garden_scrambled.jsonl",
+  "stderr_file": "development/stderr/garden_scrambled.txt",
+  "runner": {
+    "started_at": "2026-08-14T22:59:46.654753+00:00",
+    "finished_at": "2026-08-14T23:00:09.303386+00:00",
+    "elapsed_seconds": 22.649,
+    "thread_id": "01a00280-bff2-7011-9d67-3b2e6e7805ec",
+    "aggregate_usage": {
+      "input_tokens": 10324,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 535,
+      "reasoning_output_tokens": 497
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "664b14e87076a8267455dcc1862ff89948103155c18f9807d44dfa5f8e754be6",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 745,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

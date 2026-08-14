@@ -1,0 +1,17 @@
+{
+  "trial_id": "ceramics_cover_only",
+  "topic": "ceramics",
+  "topic_title": "Regional ceramics exhibition",
+  "condition": "cover_only",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "signal_tokens": [],
+  "signal_positions": [],
+  "carrier": [],
+  "scramble_seed": null,
+  "document_sha256": "6cf1491dfc0d099571a0b9a8829f25fb834d3ec009396970bbee4b51e4d89a3f",
+  "document_words": 151,
+  "prompt_sha256": "993ea027c98685529ddb1697a70d476148ea827029a09326cbacb363dae990e2",
+  "prompt_words": 162,
+  "frame": "Read the following text and give the answer implied by it."
+}

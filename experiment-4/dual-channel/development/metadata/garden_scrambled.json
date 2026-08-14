@@ -1,0 +1,191 @@
+{
+  "trial_id": "garden_scrambled",
+  "topic": "garden",
+  "topic_title": "Community garden seasonal notes",
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "signal_tokens": [
+    "afterward",
+    "Mira",
+    "Tavi",
+    "Rowan",
+    "Mira",
+    "output",
+    "are",
+    "relocate",
+    "and",
+    "beyond",
+    "Tavi",
+    "central",
+    "the",
+    "exchange",
+    "Rowan",
+    "name",
+    "initially",
+    "ordered",
+    "Rowan"
+  ],
+  "signal_positions": [
+    26,
+    38,
+    50,
+    62,
+    74,
+    86,
+    95,
+    107,
+    118,
+    130,
+    142,
+    154,
+    165,
+    175,
+    189,
+    203,
+    212,
+    224,
+    236
+  ],
+  "carrier": [
+    {
+      "sequence_index": 0,
+      "position": 26,
+      "token": "afterward",
+      "occurrence": 1,
+      "sentence": "Gardeners watered the transplants afterward to settle soil around each root."
+    },
+    {
+      "sequence_index": 1,
+      "position": 38,
+      "token": "Mira",
+      "occurrence": 1,
+      "sentence": "Beside the tool shed volunteer Mira maintains a small bed of medicinal herbs."
+    },
+    {
+      "sequence_index": 2,
+      "position": 50,
+      "token": "Tavi",
+      "occurrence": 1,
+      "sentence": "Before weekend classes instructor Tavi arranges clean gloves near the washing station."
+    },
+    {
+      "sequence_index": 3,
+      "position": 62,
+      "token": "Rowan",
+      "occurrence": 1,
+      "sentence": "During spring workdays volunteer Rowan checks seedlings along the shaded north fence."
+    },
+    {
+      "sequence_index": 4,
+      "position": 74,
+      "token": "Mira",
+      "occurrence": 2,
+      "sentence": "Each monthly newsletter includes Mira reporting which vegetables reached the pantry."
+    },
+    {
+      "sequence_index": 5,
+      "position": 86,
+      "token": "output",
+      "occurrence": 1,
+      "sentence": "At midday the solar pump's output keeps a shallow birdbath circulating."
+    },
+    {
+      "sequence_index": 6,
+      "position": 95,
+      "token": "are",
+      "occurrence": 1,
+      "sentence": "Several rain barrels are connected to gutters along the community greenhouse."
+    },
+    {
+      "sequence_index": 7,
+      "position": 107,
+      "token": "relocate",
+      "occurrence": 1,
+      "sentence": "Next season coordinators may relocate the picnic table beneath a larger tree."
+    },
+    {
+      "sequence_index": 8,
+      "position": 118,
+      "token": "and",
+      "occurrence": 1,
+      "sentence": "Families grow tomatoes and climbing beans on sturdy cedar frames."
+    },
+    {
+      "sequence_index": 9,
+      "position": 130,
+      "token": "beyond",
+      "occurrence": 1,
+      "sentence": "A narrow pollinator strip continues beyond the main beds toward the sidewalk."
+    },
+    {
+      "sequence_index": 10,
+      "position": 142,
+      "token": "Tavi",
+      "occurrence": 2,
+      "sentence": "An autumn workshop led by Tavi focused on saving seeds from beans."
+    },
+    {
+      "sequence_index": 11,
+      "position": 154,
+      "token": "central",
+      "occurrence": 1,
+      "sentence": "Between two herb beds a central path allows wheelbarrows to pass easily."
+    },
+    {
+      "sequence_index": 12,
+      "position": 165,
+      "token": "the",
+      "occurrence": 1,
+      "sentence": "Visitors usually gather beside the mural painted across the storage shed."
+    },
+    {
+      "sequence_index": 13,
+      "position": 175,
+      "token": "exchange",
+      "occurrence": 1,
+      "sentence": "A neighborhood seed exchange draws dozens of gardeners near the first frost."
+    },
+    {
+      "sequence_index": 14,
+      "position": 189,
+      "token": "Rowan",
+      "occurrence": 2,
+      "sentence": "An illustrated planting log lets Rowan compare harvest dates across recent seasons."
+    },
+    {
+      "sequence_index": 15,
+      "position": 203,
+      "token": "name",
+      "occurrence": 1,
+      "sentence": "On every wooden plot sign the gardener's name remains visible through summer."
+    },
+    {
+      "sequence_index": 16,
+      "position": 212,
+      "token": "initially",
+      "occurrence": 1,
+      "sentence": "The eastern plot was initially planted with peas and cool-weather greens."
+    },
+    {
+      "sequence_index": 17,
+      "position": 224,
+      "token": "ordered",
+      "occurrence": 1,
+      "sentence": "For the orchard edge volunteers ordered bare-root shrubs from a local nursery."
+    },
+    {
+      "sequence_index": 18,
+      "position": 236,
+      "token": "Rowan",
+      "occurrence": 3,
+      "sentence": "New compost signs prepared by Rowan use simple drawings for younger visitors."
+    }
+  ],
+  "scramble_seed": 4103,
+  "document_sha256": "e36fa6c7bb467c18724f074f5292199008b74df9383f275036c7856dab95ecf3",
+  "document_words": 256,
+  "prompt_sha256": "aeca27a322e7046cfc0b254b35edad5d4912f143c0176a167b1dc9839b8c9819",
+  "prompt_words": 267,
+  "frame": "Read the following text and give the answer implied by it."
+}
