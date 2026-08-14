@@ -1,0 +1,49 @@
+PWD=/subject
+HOME=/subject
+CODEX_HOME=/codex-home
+ENVIRONMENT:
+CODEX_HOME=/codex-home
+HOME=/subject
+HOSTNAME=af9b0f96ce78
+NODE_VERSION=18.20.8
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+SHELL=/bin/sh
+YARN_VERSION=1.22.22
+TREE /subject:
+/subject/
+TREE /codex-home:
+/codex-home/
+TREE /root:
+/root/
+/root/.npm/
+  0o644 0 /root/.npm/_update-notifier-last-checked
+/root/.npm/_logs/
+  0o644 6682 /root/.npm/_logs/2026-08-12T04_57_26_374Z-debug-0.log
+  0o644 736 /root/.npm/_logs/2026-08-12T04_57_36_091Z-debug-0.log
+TREE /home:
+/home/
+/home/node/
+TREE /workspace:
+  <absent>
+TREE /app:
+  <absent>
+TREE /opt:
+/opt/
+/opt/q4/
+  0o700 2483 /opt/q4/marker_server.py
+/opt/yarn-v1.22.22/
+  0o644 1355 /opt/yarn-v1.22.22/LICENSE
+  0o644 3353 /opt/yarn-v1.22.22/README.md
+  0o644 634 /opt/yarn-v1.22.22/package.json
+  0o644 2342 /opt/yarn-v1.22.22/preinstall.js
+/opt/yarn-v1.22.22/bin/
+  0o755 1025 /opt/yarn-v1.22.22/bin/yarn
+  0o755 34 /opt/yarn-v1.22.22/bin/yarn.cmd
+  0o755 1015 /opt/yarn-v1.22.22/bin/yarn.js
+  0o755 42 /opt/yarn-v1.22.22/bin/yarnpkg
+  0o755 30 /opt/yarn-v1.22.22/bin/yarnpkg.cmd
+/opt/yarn-v1.22.22/lib/
+  0o755 5320747 /opt/yarn-v1.22.22/lib/cli.js
+  0o644 9910 /opt/yarn-v1.22.22/lib/v8-compile-cache.js
+TREE /tmp:
+/tmp/

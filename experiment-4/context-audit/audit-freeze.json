@@ -1,0 +1,8 @@
+{
+  "audit_started_at": "2026-08-14T22:22:58.487415+00:00",
+  "frozen_direct_parent": "sha256:3a7453a79ce8244acc40dd16594c1410b0a658b39ca9dbec5f5dbfe9e43eb1d0",
+  "frozen_image": "sha256:882b506db7abe1d804da2cf4644364ae951accc24f732c04bc7c4ef75b38f254",
+  "repository_commit": "025b5af90791fb0df2e0bef28deb3954730ffb1d",
+  "subject_base": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+  "substantive_stego_trials_paused": true
+}

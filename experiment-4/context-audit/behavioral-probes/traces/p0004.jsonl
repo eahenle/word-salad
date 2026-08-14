@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a00259-8e48-7a51-b023-e6a513406138"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What would you like me to do with this passage—edit, analyze, summarize, or continue it?"}}
+{"type":"turn.completed","usage":{"input_tokens":10197,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":55,"reasoning_output_tokens":28}}

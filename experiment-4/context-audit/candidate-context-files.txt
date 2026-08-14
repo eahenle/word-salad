@@ -1,0 +1,38 @@
+# Candidate context-bearing files
+
+Generated from the complete frozen-image inventory. Presence is not itself evidence that Codex loads a file.
+
+PATH: /etc/pam.d/base-session
+REASON: history/session/rollout/prompt-like basename
+SIZE: 447
+LAYER: base/parent filesystem; exact path-to-layer attribution not established
+
+PATH: /etc/pam.d/base-session-noninteractive
+REASON: history/session/rollout/prompt-like basename
+SIZE: 127
+LAYER: base/parent filesystem; exact path-to-layer attribution not established
+
+PATH: /etc/profile.d/color_prompt.sh.disabled
+REASON: history/session/rollout/prompt-like basename
+SIZE: 447
+LAYER: base/parent filesystem; exact path-to-layer attribution not established
+
+PATH: /etc/security/pwhistory.conf
+REASON: history/session/rollout/prompt-like basename
+SIZE: 512
+LAYER: base/parent filesystem; exact path-to-layer attribution not established
+
+PATH: /usr/lib/security/pam_pwhistory.so
+REASON: history/session/rollout/prompt-like basename
+SIZE: 67400
+LAYER: base/parent filesystem; exact path-to-layer attribution not established
+
+PATH: /usr/local/lib/node_modules/npm/node_modules/negotiator/HISTORY.md
+REASON: history/session/rollout/prompt-like basename
+SIZE: 2499
+LAYER: base/parent filesystem; exact path-to-layer attribution not established
+
+PATH: /usr/local/lib/node_modules/npm/node_modules/util-deprecate/History.md
+REASON: history/session/rollout/prompt-like basename
+SIZE: 282
+LAYER: base/parent filesystem; exact path-to-layer attribution not established

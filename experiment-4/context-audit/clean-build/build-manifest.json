@@ -1,0 +1,156 @@
+{
+  "base": {
+    "command": [
+      "docker",
+      "build",
+      "--no-cache",
+      "--tag",
+      "word-salad-subject-audit:codex-0.147.0-clean-v1",
+      "/var/folders/n6/wnzyxjys2jz47zxk4gynpx1c0000gn/T/word-salad-context-audit-base-9lfes4a2"
+    ],
+    "context_files": [
+      {
+        "change": "FROM pinned from node:18-alpine to node@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e",
+        "destination": "Dockerfile",
+        "rendered_sha256": "20470024d5d5482f2a03282d9a94317c00c3d0c760553a70353bcf1423527e33",
+        "source": "experiment-1b/isolation/Dockerfile",
+        "source_sha256": "b91c1f72e570b01cf7bf689c24e6b001d1694571b059f7dd5d7d720f23e0c7da"
+      },
+      {
+        "destination": "cisco-secure-access-root.crt",
+        "sha256": "3a6763b9ad9dd9e8f23f6d90d3877cb7fb4789522a363d9494d16f1322e9ef09",
+        "size": 1229,
+        "source": "experiment-1b/isolation/cisco-secure-access-root.crt"
+      },
+      {
+        "destination": "credential-gate.sh",
+        "sha256": "e2d983e5024b85fbf0da1811568af48c55e7ff149a8b64b9a99187b17ce0a5a6",
+        "size": 1337,
+        "source": "experiment-1b/isolation/credential-gate.sh"
+      },
+      {
+        "destination": "subject-shell.sh",
+        "sha256": "eb1f5df5016394a29f1e386c5d39adb713e7d799e73d043dce3c057b36b80c55",
+        "size": 383,
+        "source": "experiment-1b/isolation/subject-shell.sh"
+      }
+    ],
+    "created": "2026-08-14T22:10:55.518299512Z",
+    "docker_buildkit_limitation": "A local-only repo@sha256 reference triggered a registry pull; the derived tag embeds the full ID and was checked immediately before use.",
+    "exit_status": 0,
+    "image_id": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+    "pinned_ref_for_child": "word-salad-subject-audit:content-e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+    "pinned_ref_mode": "local content-address-named tag verified against exact image ID before build",
+    "repo_digests": [
+      "word-salad-subject-audit@sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da"
+    ],
+    "size": 180485110,
+    "tag": "word-salad-subject-audit:codex-0.147.0-clean-v1"
+  },
+  "built_at": "2026-08-14T22:11:37.816416+00:00",
+  "candidate_context_files": [
+    {
+      "path": "/etc/pam.d/base-session",
+      "reasons": [
+        "history/session/rollout/prompt-like basename"
+      ]
+    },
+    {
+      "path": "/etc/pam.d/base-session-noninteractive",
+      "reasons": [
+        "history/session/rollout/prompt-like basename"
+      ]
+    },
+    {
+      "path": "/etc/profile.d/color_prompt.sh.disabled",
+      "reasons": [
+        "history/session/rollout/prompt-like basename"
+      ]
+    },
+    {
+      "path": "/etc/security/pwhistory.conf",
+      "reasons": [
+        "history/session/rollout/prompt-like basename"
+      ]
+    },
+    {
+      "path": "/usr/lib/security/pam_pwhistory.so",
+      "reasons": [
+        "history/session/rollout/prompt-like basename"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/node_modules/npm/node_modules/negotiator/HISTORY.md",
+      "reasons": [
+        "history/session/rollout/prompt-like basename"
+      ]
+    },
+    {
+      "path": "/usr/local/lib/node_modules/npm/node_modules/util-deprecate/History.md",
+      "reasons": [
+        "history/session/rollout/prompt-like basename"
+      ]
+    }
+  ],
+  "clean_filesystem_entries": 5672,
+  "codex_subject_launched": false,
+  "direct_api_used": false,
+  "docker_build_no_cache": true,
+  "node_parent": {
+    "image_id": "sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e",
+    "pinned_ref": "node@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e",
+    "repo_digests": [
+      "node@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e"
+    ],
+    "requested_tag": "node:18-alpine"
+  },
+  "poc": {
+    "command": [
+      "docker",
+      "build",
+      "--no-cache",
+      "--tag",
+      "word-salad-canary-audit:codex-0.147.0-clean-v1",
+      "/var/folders/n6/wnzyxjys2jz47zxk4gynpx1c0000gn/T/word-salad-context-audit-poc-t5huyv50"
+    ],
+    "context_files": [
+      {
+        "change": "FROM pinned to clean base word-salad-subject-audit:content-e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+        "destination": "Dockerfile",
+        "rendered_sha256": "3e2ad84a8924d1c502122a58dc2f85a1f5cadd48070c9612fd36f0e9457de9d7",
+        "source": "experiment-4/stego-poc/container/Dockerfile",
+        "source_sha256": "5eebf85e3f900a183eeb065ce9208e617de74bf7b897a57ea5460bf1aa296fad"
+      },
+      {
+        "destination": "marker_server.py",
+        "sha256": "4526cda76e212191a1270163b50a75de61fa75372dccb45009636d8095682dc0",
+        "size": 2483,
+        "source": "experiment-4/stego-poc/framing-ablation/container/marker_server.py"
+      },
+      {
+        "destination": "credential-gate-q4",
+        "sha256": "820be4fd8a58c10d012a87809d2fbf065b49aabd0b83cc39f26e6f7958c39d92",
+        "size": 833,
+        "source": "experiment-4/stego-poc/container/credential-gate-q4"
+      },
+      {
+        "destination": "disabled-subject-shell",
+        "sha256": "b3b4939b1d7b03885b623e6525af3a1257f057ede6f3246fe67f688886df8125",
+        "size": 99,
+        "source": "experiment-4/stego-poc/container/disabled-subject-shell"
+      }
+    ],
+    "created": "2026-08-14T22:11:02.148982584Z",
+    "exit_status": 0,
+    "image_id": "sha256:bf7dfa417f238e6e0576a9d68ebd1dd16d6246eda4a3ae86015c90d0291b3709",
+    "repo_digests": [
+      "word-salad-canary-audit@sha256:bf7dfa417f238e6e0576a9d68ebd1dd16d6246eda4a3ae86015c90d0291b3709"
+    ],
+    "size": 180489230,
+    "tag": "word-salad-canary-audit:codex-0.147.0-clean-v1"
+  },
+  "project_string_hit_files": 48,
+  "repository_commit": "025b5af90791fb0df2e0bef28deb3954730ffb1d",
+  "source_context_is_repository_root": false,
+  "temporary_contexts_destroyed_after_build": true
+}

@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a00259-72fe-78c3-a5c0-f07139dd586d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What would you like me to do with this passage—revise it, analyze it, continue the scene, or extract key events?"}}
+{"type":"turn.completed","usage":{"input_tokens":10193,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":67,"reasoning_output_tokens":34}}

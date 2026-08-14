@@ -1,0 +1,250 @@
+{
+  "clean_base_layers_are_exact_prefix_of_clean_poc": true,
+  "clean_effective_runtime_config": {
+    "Cmd": null,
+    "Entrypoint": [
+      "credential-gate-q4"
+    ],
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "NODE_VERSION=18.20.8",
+      "YARN_VERSION=1.22.22",
+      "HOME=/subject",
+      "CODEX_HOME=/codex-home",
+      "SHELL=/bin/sh"
+    ],
+    "Labels": null,
+    "OnBuild": null,
+    "User": "root",
+    "Volumes": null,
+    "WorkingDir": "/subject"
+  },
+  "clean_entries": 5672,
+  "clean_image": "sha256:bf7dfa417f238e6e0576a9d68ebd1dd16d6246eda4a3ae86015c90d0291b3709",
+  "clean_project_string_hits": {
+    "/bin/busybox": "interleave",
+    "/etc/services": "multiplex",
+    "/etc/terminfo/t/tmux": "multiplex",
+    "/opt/q4/marker_server.py": "amber, violet",
+    "/opt/yarn-v1.22.22/lib/cli.js": "multiplex, interleave, interleaved, shuffled, stride, amber, violet",
+    "/sbin/fdisk": "interleave",
+    "/usr/bin/rg": "stride",
+    "/usr/bin/taskset": "stride",
+    "/usr/lib/libcrypto.so.3": "interleave",
+    "/usr/lib/libfdisk.so.1.1.0": "interleave",
+    "/usr/lib/libpython3.12.so.1.0": "interleave, interleaved, stride",
+    "/usr/lib/python3.12/__pycache__/ast.cpython-312.pyc": "interleave",
+    "/usr/lib/python3.12/__pycache__/inspect.cpython-312.pyc": "stride",
+    "/usr/lib/python3.12/__pycache__/pydoc.cpython-312.pyc": "amber",
+    "/usr/lib/python3.12/__pycache__/selectors.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/__pycache__/turtle.cpython-312.pyc": "violet",
+    "/usr/lib/python3.12/ast.py": "interleave",
+    "/usr/lib/python3.12/asyncio/__pycache__/base_events.cpython-312.pyc": "multiplex, interleave",
+    "/usr/lib/python3.12/asyncio/__pycache__/events.cpython-312.pyc": "interleave",
+    "/usr/lib/python3.12/asyncio/__pycache__/proactor_events.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/asyncio/__pycache__/selector_events.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/asyncio/base_events.py": "multiplex, interleave",
+    "/usr/lib/python3.12/asyncio/events.py": "interleave",
+    "/usr/lib/python3.12/asyncio/proactor_events.py": "multiplex",
+    "/usr/lib/python3.12/asyncio/selector_events.py": "multiplex",
+    "/usr/lib/python3.12/importlib/__pycache__/readers.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/importlib/_bootstrap_external.py": "interleave",
+    "/usr/lib/python3.12/importlib/readers.py": "multiplex",
+    "/usr/lib/python3.12/importlib/resources/__pycache__/readers.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/importlib/resources/readers.py": "multiplex",
+    "/usr/lib/python3.12/inspect.py": "stride",
+    "/usr/lib/python3.12/lib-dynload/_testbuffer.cpython-312-aarch64-linux-musl.so": "stride",
+    "/usr/lib/python3.12/lib-dynload/unicodedata.cpython-312-aarch64-linux-musl.so": "stride",
+    "/usr/lib/python3.12/pydoc.py": "amber",
+    "/usr/lib/python3.12/pydoc_data/__pycache__/topics.cpython-312.pyc": "stride",
+    "/usr/lib/python3.12/pydoc_data/topics.py": "stride",
+    "/usr/lib/python3.12/random.py": "amber",
+    "/usr/lib/python3.12/selectors.py": "multiplex",
+    "/usr/lib/python3.12/turtle.py": "violet",
+    "/usr/local/bin/node": "multiplex, interleave, interleaved, shuffled, stride, amber",
+    "/usr/local/include/node/openssl/core_names.h": "interleave",
+    "/usr/local/include/node/openssl/evp.h": "interleave",
+    "/usr/local/include/node/v8-platform.h": "interleave, interleaved",
+    "/usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/bin/codex": "multiplex, interleave, interleaved, stride, amber, prompt injection",
+    "/usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/bin/codex-code-mode-host": "multiplex, interleave, interleaved",
+    "/usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/codex-path/rg": "stride",
+    "/usr/local/lib/node_modules/npm/node_modules/ci-info/vendors.json": "stride",
+    "/usr/local/lib/node_modules/npm/node_modules/color-name/index.js": "violet"
+  },
+  "content_or_metadata_differences": [
+    {
+      "changes": {
+        "sha256": {
+          "clean": "cbd9d4cba8e93641858e63e7453dd79a3b24b451e1b194fcde8e69a8ccdb5b4a",
+          "historical": "b24811f2bb798684d6bac92a67eceaec9fcf405daf81448cbf29d91443ce3760"
+        }
+      },
+      "path": "/etc/hostname"
+    },
+    {
+      "changes": {
+        "sha256": {
+          "clean": "0bac2ebda9bf9a00fc47a585880d138f5c2acbae1d4f2b3ae16d48da027d6527",
+          "historical": "6185ddffe4005df76fe0956510c1363bfcb22570731aa493f870ef42ee882b48"
+        }
+      },
+      "path": "/etc/shadow"
+    }
+  ],
+  "effective_runtime_config_equal": true,
+  "expected_difference_explanations": {
+    "/etc/hostname": "Docker injects a per-container hostname at runtime; this is not immutable image context.",
+    "/etc/shadow": "The adduser build step creates a fresh password-lock representation; no subject or project prose is present."
+  },
+  "historical_effective_runtime_config": {
+    "Cmd": null,
+    "Entrypoint": [
+      "credential-gate-q4"
+    ],
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "NODE_VERSION=18.20.8",
+      "YARN_VERSION=1.22.22",
+      "HOME=/subject",
+      "CODEX_HOME=/codex-home",
+      "SHELL=/bin/sh"
+    ],
+    "Labels": null,
+    "OnBuild": null,
+    "User": "root",
+    "Volumes": null,
+    "WorkingDir": "/subject"
+  },
+  "historical_entries": 5672,
+  "historical_image": "sha256:882b506db7abe1d804da2cf4644364ae951accc24f732c04bc7c4ef75b38f254",
+  "historical_project_string_hits": {
+    "/bin/busybox": "interleave",
+    "/etc/services": "multiplex",
+    "/etc/terminfo/t/tmux": "multiplex",
+    "/opt/q4/marker_server.py": "amber, violet",
+    "/opt/yarn-v1.22.22/lib/cli.js": "multiplex, interleave, interleaved, shuffled, stride, amber, violet",
+    "/sbin/fdisk": "interleave",
+    "/usr/bin/rg": "stride",
+    "/usr/bin/taskset": "stride",
+    "/usr/lib/libcrypto.so.3": "interleave",
+    "/usr/lib/libfdisk.so.1.1.0": "interleave",
+    "/usr/lib/libpython3.12.so.1.0": "interleave, interleaved, stride",
+    "/usr/lib/python3.12/__pycache__/ast.cpython-312.pyc": "interleave",
+    "/usr/lib/python3.12/__pycache__/inspect.cpython-312.pyc": "stride",
+    "/usr/lib/python3.12/__pycache__/pydoc.cpython-312.pyc": "amber",
+    "/usr/lib/python3.12/__pycache__/selectors.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/__pycache__/turtle.cpython-312.pyc": "violet",
+    "/usr/lib/python3.12/ast.py": "interleave",
+    "/usr/lib/python3.12/asyncio/__pycache__/base_events.cpython-312.pyc": "multiplex, interleave",
+    "/usr/lib/python3.12/asyncio/__pycache__/events.cpython-312.pyc": "interleave",
+    "/usr/lib/python3.12/asyncio/__pycache__/proactor_events.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/asyncio/__pycache__/selector_events.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/asyncio/base_events.py": "multiplex, interleave",
+    "/usr/lib/python3.12/asyncio/events.py": "interleave",
+    "/usr/lib/python3.12/asyncio/proactor_events.py": "multiplex",
+    "/usr/lib/python3.12/asyncio/selector_events.py": "multiplex",
+    "/usr/lib/python3.12/importlib/__pycache__/readers.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/importlib/_bootstrap_external.py": "interleave",
+    "/usr/lib/python3.12/importlib/readers.py": "multiplex",
+    "/usr/lib/python3.12/importlib/resources/__pycache__/readers.cpython-312.pyc": "multiplex",
+    "/usr/lib/python3.12/importlib/resources/readers.py": "multiplex",
+    "/usr/lib/python3.12/inspect.py": "stride",
+    "/usr/lib/python3.12/lib-dynload/_testbuffer.cpython-312-aarch64-linux-musl.so": "stride",
+    "/usr/lib/python3.12/lib-dynload/unicodedata.cpython-312-aarch64-linux-musl.so": "stride",
+    "/usr/lib/python3.12/pydoc.py": "amber",
+    "/usr/lib/python3.12/pydoc_data/__pycache__/topics.cpython-312.pyc": "stride",
+    "/usr/lib/python3.12/pydoc_data/topics.py": "stride",
+    "/usr/lib/python3.12/random.py": "amber",
+    "/usr/lib/python3.12/selectors.py": "multiplex",
+    "/usr/lib/python3.12/turtle.py": "violet",
+    "/usr/local/bin/node": "multiplex, interleave, interleaved, shuffled, stride, amber",
+    "/usr/local/include/node/openssl/core_names.h": "interleave",
+    "/usr/local/include/node/openssl/evp.h": "interleave",
+    "/usr/local/include/node/v8-platform.h": "interleave, interleaved",
+    "/usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/bin/codex": "multiplex, interleave, interleaved, stride, amber, prompt injection",
+    "/usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/bin/codex-code-mode-host": "multiplex, interleave, interleaved",
+    "/usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/codex-path/rg": "stride",
+    "/usr/local/lib/node_modules/npm/node_modules/ci-info/vendors.json": "stride",
+    "/usr/local/lib/node_modules/npm/node_modules/color-name/index.js": "violet"
+  },
+  "key_file_hashes": {
+    "/opt/q4/marker_server.py": {
+      "clean": "4526cda76e212191a1270163b50a75de61fa75372dccb45009636d8095682dc0",
+      "equal": true,
+      "historical": "4526cda76e212191a1270163b50a75de61fa75372dccb45009636d8095682dc0"
+    },
+    "/usr/local/bin/credential-gate": {
+      "clean": "e2d983e5024b85fbf0da1811568af48c55e7ff149a8b64b9a99187b17ce0a5a6",
+      "equal": true,
+      "historical": "e2d983e5024b85fbf0da1811568af48c55e7ff149a8b64b9a99187b17ce0a5a6"
+    },
+    "/usr/local/bin/credential-gate-q4": {
+      "clean": "820be4fd8a58c10d012a87809d2fbf065b49aabd0b83cc39f26e6f7958c39d92",
+      "equal": true,
+      "historical": "820be4fd8a58c10d012a87809d2fbf065b49aabd0b83cc39f26e6f7958c39d92"
+    },
+    "/usr/local/lib/node_modules/@openai/codex/node_modules/@openai/codex-linux-arm64/vendor/aarch64-unknown-linux-musl/bin/codex": {
+      "clean": "e23d0be344d2496986c985cd3db61e6f649b1ddd900e6afc1b5aaabbffcbb4e2",
+      "equal": true,
+      "historical": "e23d0be344d2496986c985cd3db61e6f649b1ddd900e6afc1b5aaabbffcbb4e2"
+    },
+    "/usr/local/libexec/subject-shell": {
+      "clean": "b3b4939b1d7b03885b623e6525af3a1257f057ede6f3246fe67f688886df8125",
+      "equal": true,
+      "historical": "b3b4939b1d7b03885b623e6525af3a1257f057ede6f3246fe67f688886df8125"
+    },
+    "/usr/local/share/ca-certificates/cisco-secure-access-root.crt": {
+      "clean": "3a6763b9ad9dd9e8f23f6d90d3877cb7fb4789522a363d9494d16f1322e9ef09",
+      "equal": true,
+      "historical": "3a6763b9ad9dd9e8f23f6d90d3877cb7fb4789522a363d9494d16f1322e9ef09"
+    }
+  },
+  "logical_filesystem_equivalent_for_context_audit": true,
+  "only_clean": [
+    "/root/.npm/_logs/2026-08-14T22_10_47_651Z-debug-0.log",
+    "/root/.npm/_logs/2026-08-14T22_10_55_157Z-debug-0.log"
+  ],
+  "only_historical": [
+    "/root/.npm/_logs/2026-08-12T04_57_26_374Z-debug-0.log",
+    "/root/.npm/_logs/2026-08-12T04_57_36_091Z-debug-0.log"
+  ],
+  "project_string_hit_maps_identical": true,
+  "raw_config_difference_explanation": "The clean OCI manifest omits legacy false/empty attach, TTY, hostname, domain, and image fields; effective runtime fields match.",
+  "raw_config_json_equal": false,
+  "shared_paths": 5670,
+  "shared_regular_files": 4236,
+  "shared_regular_files_with_identical_hash": 4234,
+  "source_file_equivalence": {
+    "/opt/q4/marker_server.py": {
+      "historical_sha256": "4526cda76e212191a1270163b50a75de61fa75372dccb45009636d8095682dc0",
+      "matches_source": true,
+      "source_path": "experiment-4/stego-poc/framing-ablation/container/marker_server.py",
+      "source_sha256": "4526cda76e212191a1270163b50a75de61fa75372dccb45009636d8095682dc0"
+    },
+    "/usr/local/bin/credential-gate": {
+      "historical_sha256": "e2d983e5024b85fbf0da1811568af48c55e7ff149a8b64b9a99187b17ce0a5a6",
+      "matches_source": true,
+      "source_path": "experiment-1b/isolation/credential-gate.sh",
+      "source_sha256": "e2d983e5024b85fbf0da1811568af48c55e7ff149a8b64b9a99187b17ce0a5a6"
+    },
+    "/usr/local/bin/credential-gate-q4": {
+      "historical_sha256": "820be4fd8a58c10d012a87809d2fbf065b49aabd0b83cc39f26e6f7958c39d92",
+      "matches_source": true,
+      "source_path": "experiment-4/stego-poc/container/credential-gate-q4",
+      "source_sha256": "820be4fd8a58c10d012a87809d2fbf065b49aabd0b83cc39f26e6f7958c39d92"
+    },
+    "/usr/local/libexec/subject-shell": {
+      "historical_sha256": "b3b4939b1d7b03885b623e6525af3a1257f057ede6f3246fe67f688886df8125",
+      "matches_source": true,
+      "source_path": "experiment-4/stego-poc/container/disabled-subject-shell",
+      "source_sha256": "b3b4939b1d7b03885b623e6525af3a1257f057ede6f3246fe67f688886df8125"
+    },
+    "/usr/local/share/ca-certificates/cisco-secure-access-root.crt": {
+      "historical_sha256": "3a6763b9ad9dd9e8f23f6d90d3877cb7fb4789522a363d9494d16f1322e9ef09",
+      "matches_source": true,
+      "source_path": "experiment-1b/isolation/cisco-secure-access-root.crt",
+      "source_sha256": "3a6763b9ad9dd9e8f23f6d90d3877cb7fb4789522a363d9494d16f1322e9ef09"
+    }
+  },
+  "unexplained_differences": []
+}

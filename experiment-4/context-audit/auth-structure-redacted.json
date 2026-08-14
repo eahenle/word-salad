@@ -1,0 +1,376 @@
+{
+  "assessment_scope": "JSON key names, value types, and lengths only; no credential value was persisted.",
+  "project_term_matches_in_unredacted_values": [],
+  "source_path_not_persisted": true,
+  "structure": {
+    "OPENAI_API_KEY": {
+      "type": "null"
+    },
+    "auth_mode": {
+      "length": 7,
+      "redacted": true,
+      "type": "string"
+    },
+    "last_refresh": {
+      "length": 27,
+      "redacted": true,
+      "type": "string"
+    },
+    "tokens": {
+      "access_token": {
+        "decoded_payload_structure": {
+          "aud": {
+            "items": [
+              {
+                "length": 25,
+                "redacted": true,
+                "type": "string"
+              }
+            ],
+            "length": 1,
+            "type": "array"
+          },
+          "client_id": {
+            "length": 28,
+            "redacted": true,
+            "type": "string"
+          },
+          "exp": {
+            "redacted": true,
+            "type": "integer"
+          },
+          "https://api.openai.com/auth": {
+            "amr": {
+              "items": [
+                {
+                  "length": 21,
+                  "redacted": true,
+                  "type": "string"
+                }
+              ],
+              "length": 1,
+              "type": "array"
+            },
+            "chatgpt_account_id": {
+              "length": 36,
+              "redacted": true,
+              "type": "string"
+            },
+            "chatgpt_account_user_id": {
+              "length": 67,
+              "redacted": true,
+              "type": "string"
+            },
+            "chatgpt_compute_residency": {
+              "length": 13,
+              "redacted": true,
+              "type": "string"
+            },
+            "chatgpt_plan_type": {
+              "length": 7,
+              "redacted": true,
+              "type": "string"
+            },
+            "chatgpt_user_id": {
+              "length": 29,
+              "redacted": true,
+              "type": "string"
+            },
+            "poid": {
+              "length": 28,
+              "redacted": true,
+              "type": "string"
+            },
+            "user_id": {
+              "length": 29,
+              "redacted": true,
+              "type": "string"
+            }
+          },
+          "https://api.openai.com/profile": {
+            "email": {
+              "length": 17,
+              "redacted": true,
+              "type": "string"
+            },
+            "email_verified": {
+              "redacted": true,
+              "type": "boolean"
+            },
+            "name": {
+              "length": 12,
+              "redacted": true,
+              "type": "string"
+            }
+          },
+          "iat": {
+            "redacted": true,
+            "type": "integer"
+          },
+          "iss": {
+            "length": 23,
+            "redacted": true,
+            "type": "string"
+          },
+          "jti": {
+            "length": 32,
+            "redacted": true,
+            "type": "string"
+          },
+          "nbf": {
+            "redacted": true,
+            "type": "integer"
+          },
+          "pwd_auth_time": {
+            "redacted": true,
+            "type": "integer"
+          },
+          "scp": {
+            "items": [
+              {
+                "length": 6,
+                "redacted": true,
+                "type": "string"
+              },
+              {
+                "length": 7,
+                "redacted": true,
+                "type": "string"
+              },
+              {
+                "length": 5,
+                "redacted": true,
+                "type": "string"
+              },
+              {
+                "length": 14,
+                "redacted": true,
+                "type": "string"
+              }
+            ],
+            "length": 4,
+            "type": "array"
+          },
+          "session_id": {
+            "length": 33,
+            "redacted": true,
+            "type": "string"
+          },
+          "sl": {
+            "redacted": true,
+            "type": "boolean"
+          },
+          "sub": {
+            "length": 35,
+            "redacted": true,
+            "type": "string"
+          }
+        },
+        "length": 1677,
+        "redacted": true,
+        "type": "jwt"
+      },
+      "account_id": {
+        "length": 36,
+        "redacted": true,
+        "type": "string"
+      },
+      "id_token": {
+        "decoded_payload_structure": {
+          "amr": {
+            "items": [
+              {
+                "length": 21,
+                "redacted": true,
+                "type": "string"
+              }
+            ],
+            "length": 1,
+            "type": "array"
+          },
+          "at_hash": {
+            "length": 22,
+            "redacted": true,
+            "type": "string"
+          },
+          "aud": {
+            "items": [
+              {
+                "length": 28,
+                "redacted": true,
+                "type": "string"
+              }
+            ],
+            "length": 1,
+            "type": "array"
+          },
+          "auth_provider": {
+            "length": 6,
+            "redacted": true,
+            "type": "string"
+          },
+          "auth_time": {
+            "redacted": true,
+            "type": "integer"
+          },
+          "email": {
+            "length": 17,
+            "redacted": true,
+            "type": "string"
+          },
+          "email_verified": {
+            "redacted": true,
+            "type": "boolean"
+          },
+          "exp": {
+            "redacted": true,
+            "type": "integer"
+          },
+          "https://api.openai.com/auth": {
+            "chatgpt_account_id": {
+              "length": 36,
+              "redacted": true,
+              "type": "string"
+            },
+            "chatgpt_plan_type": {
+              "length": 7,
+              "redacted": true,
+              "type": "string"
+            },
+            "chatgpt_subscription_active_start": {
+              "length": 25,
+              "redacted": true,
+              "type": "string"
+            },
+            "chatgpt_subscription_active_until": {
+              "length": 25,
+              "redacted": true,
+              "type": "string"
+            },
+            "chatgpt_subscription_last_checked": {
+              "length": 32,
+              "redacted": true,
+              "type": "string"
+            },
+            "chatgpt_user_id": {
+              "length": 29,
+              "redacted": true,
+              "type": "string"
+            },
+            "groups": {
+              "items": [
+                {
+                  "length": 4,
+                  "redacted": true,
+                  "type": "string"
+                },
+                {
+                  "length": 35,
+                  "redacted": true,
+                  "type": "string"
+                }
+              ],
+              "length": 2,
+              "type": "array"
+            },
+            "organizations": {
+              "items": [
+                {
+                  "id": {
+                    "length": 28,
+                    "redacted": true,
+                    "type": "string"
+                  },
+                  "is_default": {
+                    "redacted": true,
+                    "type": "boolean"
+                  },
+                  "role": {
+                    "length": 5,
+                    "redacted": true,
+                    "type": "string"
+                  },
+                  "title": {
+                    "length": 20,
+                    "redacted": true,
+                    "type": "string"
+                  }
+                },
+                {
+                  "id": {
+                    "length": 28,
+                    "redacted": true,
+                    "type": "string"
+                  },
+                  "is_default": {
+                    "redacted": true,
+                    "type": "boolean"
+                  },
+                  "role": {
+                    "length": 5,
+                    "redacted": true,
+                    "type": "string"
+                  },
+                  "title": {
+                    "length": 8,
+                    "redacted": true,
+                    "type": "string"
+                  }
+                }
+              ],
+              "length": 2,
+              "type": "array"
+            },
+            "user_id": {
+              "length": 29,
+              "redacted": true,
+              "type": "string"
+            }
+          },
+          "iat": {
+            "redacted": true,
+            "type": "integer"
+          },
+          "iss": {
+            "length": 23,
+            "redacted": true,
+            "type": "string"
+          },
+          "jti": {
+            "length": 32,
+            "redacted": true,
+            "type": "string"
+          },
+          "name": {
+            "length": 12,
+            "redacted": true,
+            "type": "string"
+          },
+          "rat": {
+            "redacted": true,
+            "type": "integer"
+          },
+          "sid": {
+            "length": 36,
+            "redacted": true,
+            "type": "string"
+          },
+          "sub": {
+            "length": 35,
+            "redacted": true,
+            "type": "string"
+          }
+        },
+        "length": 1944,
+        "redacted": true,
+        "type": "jwt"
+      },
+      "refresh_token": {
+        "length": 196,
+        "redacted": true,
+        "type": "string"
+      }
+    }
+  },
+  "values_redacted": true
+}

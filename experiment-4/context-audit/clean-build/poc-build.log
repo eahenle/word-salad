@@ -1,0 +1,43 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 728B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/word-salad-subject-audit:content-e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 3.56kB done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/word-salad-subject-audit:content-e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da@sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da
+#5 resolve docker.io/library/word-salad-subject-audit:content-e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da@sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da 0.0s done
+#5 DONE 0.0s
+
+#6 [2/5] COPY --chmod=700 marker_server.py /opt/q4/marker_server.py
+#6 DONE 0.2s
+
+#7 [3/5] COPY --chmod=700 credential-gate-q4 /usr/local/bin/credential-gate-q4
+#7 DONE 0.0s
+
+#8 [4/5] COPY --chmod=755 disabled-subject-shell /usr/local/libexec/subject-shell
+#8 DONE 0.0s
+
+#9 [5/5] COPY --chmod=755 disabled-subject-shell /bin/sh
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers 0.1s done
+#10 exporting manifest sha256:a2a15be64c0fa565875a83f2ecd8328475610bfc38cad917a7fcb06891e7febd
+#10 exporting manifest sha256:a2a15be64c0fa565875a83f2ecd8328475610bfc38cad917a7fcb06891e7febd 0.0s done
+#10 exporting config sha256:b58db1f9c6a647609076408b651f06231b06e3846a6b569ef8f040459aecb5f2 done
+#10 exporting attestation manifest sha256:f2f4ff03a16677f7e358437c224e6ece8a6d5016aab9da23e2cb10df30c2265c done
+#10 exporting manifest list sha256:bf7dfa417f238e6e0576a9d68ebd1dd16d6246eda4a3ae86015c90d0291b3709 done
+#10 naming to docker.io/library/word-salad-canary-audit:codex-0.147.0-clean-v1 done
+#10 unpacking to docker.io/library/word-salad-canary-audit:codex-0.147.0-clean-v1 0.0s done
+#10 DONE 0.2s

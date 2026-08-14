@@ -1,0 +1,63 @@
+{
+  "Architecture": "arm64",
+  "Comment": "buildkit.dockerfile.v0",
+  "Config": {
+    "Entrypoint": [
+      "credential-gate-q4"
+    ],
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "NODE_VERSION=18.20.8",
+      "YARN_VERSION=1.22.22",
+      "HOME=/subject",
+      "CODEX_HOME=/codex-home",
+      "SHELL=/bin/sh"
+    ],
+    "User": "root",
+    "WorkingDir": "/subject"
+  },
+  "Created": "2026-08-14T22:11:02.148982584Z",
+  "Descriptor": {
+    "digest": "sha256:bf7dfa417f238e6e0576a9d68ebd1dd16d6246eda4a3ae86015c90d0291b3709",
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "size": 856
+  },
+  "Id": "sha256:bf7dfa417f238e6e0576a9d68ebd1dd16d6246eda4a3ae86015c90d0291b3709",
+  "Identity": {
+    "Build": [
+      {
+        "CreatedAt": "2026-08-14T22:11:02.307612167Z",
+        "Ref": "i9s7i76te1vivedlqt1qpgvs3"
+      }
+    ]
+  },
+  "Metadata": {
+    "LastTagTime": "2026-08-14T22:11:02.275584126Z"
+  },
+  "Os": "linux",
+  "RepoDigests": [
+    "word-salad-canary-audit@sha256:bf7dfa417f238e6e0576a9d68ebd1dd16d6246eda4a3ae86015c90d0291b3709"
+  ],
+  "RepoTags": [
+    "word-salad-canary-audit:codex-0.147.0-clean-v1"
+  ],
+  "RootFS": {
+    "Layers": [
+      "sha256:a16e98724c05975ee8c40d8fe389c3481373d34ab20a1cf52ea2accc43f71f4c",
+      "sha256:105c493da35328733d40e72efbcc0ffe5f0327b8b82cfdbccd09b3566cfc183b",
+      "sha256:37e456418fa3099dd00770b2625178407e25b249a0f8824eaa638b57299504bb",
+      "sha256:50cd4dbd375f3c5d5718dba08ddddc68b06fde0764acf25af13efc4e3318ef96",
+      "sha256:a283b4fc205330e00eb68a3b8ebeb91d0889b78a435dfa91232bd72e6779115f",
+      "sha256:e0970ff112a0d40d4cfca7ab3f0a131bf34f8e7d7014c7570789bcd15c24d5d8",
+      "sha256:7fb44f06048726acd1e79504890cffe264f74e93b0c134e271c9153b63b84c4c",
+      "sha256:7c2474091c5e6e73e769cdd3d62005f8cb1c78f77ff9ad7b40dd299478685ccf",
+      "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+      "sha256:918080132c8fd46be05840e3712ad3f085e5d7e88fed1d77aa8d721232f0a815",
+      "sha256:bf09995f68ff1ec7a199d8c81f9b0afbdf937115c967c6647b8cb87bf88136c0",
+      "sha256:b1618cb52d3846609a3cb16220dec5d78e25cdb7d6570ee4225052ae153ef8b6",
+      "sha256:e6d3adbadf1fb09f030f1498488623d82bb215cfa8d7756998e0edfc5379e543"
+    ],
+    "Type": "layers"
+  },
+  "Size": 180489230
+}

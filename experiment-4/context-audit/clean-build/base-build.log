@@ -1,0 +1,125 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.35kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/node@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e
+#4 resolve docker.io/library/node@sha256:8d6421d663b4c28fd3ebc498332f249011d118945588d0a35cb9bc4b8ca09d9e done
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 3.10kB done
+#5 DONE 0.0s
+
+#6 [2/6] COPY cisco-secure-access-root.crt /usr/local/share/ca-certificates/cisco-secure-access-root.crt
+#6 DONE 0.0s
+
+#7 [3/6] COPY subject-shell.sh /usr/local/libexec/subject-shell
+#7 DONE 0.0s
+
+#8 [4/6] RUN apk add --no-cache         bash         ca-certificates         coreutils         findutils         inotify-tools         python3         ripgrep         util-linux     && update-ca-certificates     && npm install --global "@openai/codex@0.147.0"     && npm cache clean --force     && addgroup -S subject     && adduser -S -G subject -h /subject subject     && mkdir -p /subject /codex-home     && chown subject:subject /subject     && chown root:root /codex-home     && chmod 0700 /codex-home     && chmod 0755 /usr/local/libexec/subject-shell     && rm -f /bin/sh /bin/ash /bin/bash     && cp /usr/local/libexec/subject-shell /bin/sh     && ln /bin/sh /bin/ash     && ln /bin/sh /bin/bash     && sed -i 's#^root:\([^:]*:\)0:0:\([^:]*:\)[^:]*:[^:]*$#root:\10:0:\2/subject:/bin/sh#' /etc/passwd
+#8 0.081 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/aarch64/APKINDEX.tar.gz
+#8 0.534 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/aarch64/APKINDEX.tar.gz
+#8 0.852 (1/63) Installing ncurses-terminfo-base (6.5_p20241006-r3)
+#8 0.884 (2/63) Installing libncursesw (6.5_p20241006-r3)
+#8 0.932 (3/63) Installing readline (8.2.13-r0)
+#8 1.009 (4/63) Installing bash (5.2.37-r0)
+#8 1.091 Executing bash-5.2.37-r0.post-install
+#8 1.093 (5/63) Installing ca-certificates (20260413-r0)
+#8 1.135 (6/63) Installing coreutils-env (9.5-r2)
+#8 1.215 (7/63) Installing coreutils-fmt (9.5-r2)
+#8 1.293 (8/63) Installing coreutils-sha512sum (9.5-r2)
+#8 1.371 (9/63) Installing acl-libs (2.3.2-r1)
+#8 1.448 (10/63) Installing libattr (2.5.2-r2)
+#8 1.484 (11/63) Installing skalibs-libs (2.14.3.0-r0)
+#8 1.523 (12/63) Installing utmps-libs (0.1.2.3-r2)
+#8 1.600 (13/63) Installing coreutils (9.5-r2)
+#8 1.685 (14/63) Installing findutils (4.10.0-r0)
+#8 1.762 (15/63) Installing inotify-tools-libs (4.23.9.0-r0)
+#8 1.841 (16/63) Installing inotify-tools (4.23.9.0-r0)
+#8 1.918 (17/63) Installing libbz2 (1.0.8-r6)
+#8 2.000 (18/63) Installing libexpat (2.8.2-r0)
+#8 2.078 (19/63) Installing libffi (3.4.7-r0)
+#8 2.155 (20/63) Installing gdbm (1.24-r0)
+#8 2.237 (21/63) Installing xz-libs (5.8.3-r0)
+#8 2.321 (22/63) Installing mpdecimal (4.0.0-r0)
+#8 2.413 (23/63) Installing libpanelw (6.5_p20241006-r3)
+#8 2.447 (24/63) Installing sqlite-libs (3.48.0-r4)
+#8 2.518 (25/63) Installing python3 (3.12.13-r0)
+#8 2.960 (26/63) Installing python3-pycache-pyc0 (3.12.13-r0)
+#8 3.174 (27/63) Installing pyc (3.12.13-r0)
+#8 3.174 (28/63) Installing python3-pyc (3.12.13-r0)
+#8 3.174 (29/63) Installing pcre2 (10.43-r0)
+#8 3.217 (30/63) Installing ripgrep (14.1.1-r0)
+#8 3.312 (31/63) Installing util-linux (2.40.4-r1)
+#8 3.388 (32/63) Installing dmesg (2.40.4-r1)
+#8 3.477 (33/63) Installing setarch (2.40.4-r1)
+#8 3.554 (34/63) Installing libeconf (0.6.3-r0)
+#8 3.639 (35/63) Installing libblkid (2.40.4-r1)
+#8 3.678 (36/63) Installing libuuid (2.40.4-r1)
+#8 3.752 (37/63) Installing libfdisk (2.40.4-r1)
+#8 3.842 (38/63) Installing liblastlog2 (2.40.4-r1)
+#8 3.917 (39/63) Installing libmount (2.40.4-r1)
+#8 3.999 (40/63) Installing libsmartcols (2.40.4-r1)
+#8 4.078 (41/63) Installing util-linux-misc (2.40.4-r1)
+#8 4.161 (42/63) Installing linux-pam (1.6.1-r1)
+#8 4.251 (43/63) Installing runuser (2.40.4-r1)
+#8 4.328 (44/63) Installing mount (2.40.4-r1)
+#8 4.408 (45/63) Installing losetup (2.40.4-r1)
+#8 4.485 (46/63) Installing hexdump (2.40.4-r1)
+#8 4.560 (47/63) Installing uuidgen (2.40.4-r1)
+#8 4.595 (48/63) Installing blkid (2.40.4-r1)
+#8 4.676 (49/63) Installing sfdisk (2.40.4-r1)
+#8 4.754 (50/63) Installing mcookie (2.40.4-r1)
+#8 4.831 (51/63) Installing agetty (2.40.4-r1)
+#8 4.911 (52/63) Installing wipefs (2.40.4-r1)
+#8 4.988 (53/63) Installing cfdisk (2.40.4-r1)
+#8 5.066 (54/63) Installing umount (2.40.4-r1)
+#8 5.144 (55/63) Installing flock (2.40.4-r1)
+#8 5.228 (56/63) Installing lsblk (2.40.4-r1)
+#8 5.308 (57/63) Installing libcap-ng (0.8.5-r0)
+#8 5.391 (58/63) Installing setpriv (2.40.4-r1)
+#8 5.432 (59/63) Installing lscpu (2.40.4-r1)
+#8 5.508 (60/63) Installing logger (2.40.4-r1)
+#8 5.585 (61/63) Installing partx (2.40.4-r1)
+#8 5.665 (62/63) Installing fstrim (2.40.4-r1)
+#8 5.743 (63/63) Installing findmnt (2.40.4-r1)
+#8 5.820 Executing busybox-1.37.0-r12.trigger
+#8 5.823 Executing ca-certificates-20260413-r0.trigger
+#8 5.849 OK: 70 MiB in 80 packages
+#8 13.39
+#8 13.39 added 2 packages in 7s
+#8 13.39 npm notice
+#8 13.39 npm notice New major version of npm available! 10.8.2 -> 12.0.2
+#8 13.39 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.2
+#8 13.39 npm notice To update run: npm install -g npm@12.0.2
+#8 13.39 npm notice
+#8 13.44 npm warn using --force Recommended protections disabled.
+#8 DONE 13.7s
+
+#9 [5/6] COPY --chmod=0755 credential-gate.sh /usr/local/bin/credential-gate
+#9 DONE 0.0s
+
+#10 [6/6] WORKDIR /subject
+#10 DONE 0.0s
+
+#11 exporting to image
+#11 exporting layers
+#11 exporting layers 4.9s done
+#11 exporting manifest sha256:7d1afc63018e775a31af27ae6e583749424541693c46eb31d7cf29b32410b60f
+#11 exporting manifest sha256:7d1afc63018e775a31af27ae6e583749424541693c46eb31d7cf29b32410b60f done
+#11 exporting config sha256:407b33f8a878d373c2ce5d081eee2d3c94b3a1219f41c2271ce257ab6bb5df12 done
+#11 exporting attestation manifest sha256:9e7662543a7f4fc362b5c0762a6c4d41cbd2b13176a91632204fa40c26c9ee38 0.0s done
+#11 exporting manifest list sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da done
+#11 naming to docker.io/library/word-salad-subject-audit:codex-0.147.0-clean-v1 done
+#11 unpacking to docker.io/library/word-salad-subject-audit:codex-0.147.0-clean-v1
+#11 unpacking to docker.io/library/word-salad-subject-audit:codex-0.147.0-clean-v1 1.0s done
+#11 DONE 6.0s

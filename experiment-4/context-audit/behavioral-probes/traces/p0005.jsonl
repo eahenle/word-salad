@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a00259-a18a-7f31-92ce-59fe2946145c"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"This illustrates that maps are selective representations. The elevation map emphasizes the valley’s physical terrain, while the roads-and-farms map highlights human land use. Each feels different because its purpose determines which features are included and emphasized."}}
+{"type":"turn.completed","usage":{"input_tokens":10197,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":103,"reasoning_output_tokens":53}}
