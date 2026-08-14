@@ -19,7 +19,7 @@ def main() -> None:
     root_default = Path(__file__).resolve().parent
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=root_default)
-    parser.add_argument("--cohort", required=True, choices=("anchor", "screening"))
+    parser.add_argument("--cohort", required=True, choices=("anchor", "screening", "confirmation"))
     args = parser.parse_args()
     root = args.root
     if args.cohort == "anchor":
@@ -56,7 +56,7 @@ def main() -> None:
             "trace_content_inspected_before_freeze": False,
             "direct_api_calls": 0,
         }
-    else:
+    elif args.cohort == "screening":
         capability = json.loads((root / "results" / "capability-probe.json").read_text())
         supported = [cell for cell in capability["cells"] if cell["status"] == "supported"]
         expected_ids = {
@@ -84,6 +84,39 @@ def main() -> None:
             "fresh_cells": cells,
             "trials_per_fresh_cell": len(expected_ids),
             "sol_xhigh_source": "anchor plus reused fixed reference",
+            "response_text_inspected_before_freeze": False,
+            "trace_content_inspected_before_freeze": False,
+            "direct_api_calls": 0,
+        }
+    else:
+        plan_path = root / "results" / "confirmation-plan.json"
+        plan = json.loads(plan_path.read_text())
+        expected_ids = {
+            *(f"q{number:04d}" for number in range(11, 21)),
+            *(f"q{number:04d}" for number in range(31, 41)),
+            *(f"q{number:04d}" for number in range(51, 61)),
+            *(f"q{number:04d}" for number in range(71, 81)),
+        }
+        cells = {}
+        for selected in plan["selected_cells"]:
+            slug = cell_slug(selected["model"], selected["reasoning"])
+            files = [root / "completed" / slug / f"{trial_id}.json" for trial_id in sorted(expected_ids)]
+            missing = [path.stem for path in files if not path.exists()]
+            if missing:
+                raise RuntimeError(f"{slug}: missing confirmation IDs {missing}")
+            cells[slug] = {
+                path.stem: json.loads(path.read_text())["runner"]["trace_sha256"] for path in files
+            }
+        if len(cells) != 3:
+            raise RuntimeError("confirmation plan must contain exactly three cells")
+        record = {
+            "cohort": "targeted_boundary_confirmation",
+            "status": "frozen_before_confirmation_scoring_and_trace_analysis",
+            "cells": cells,
+            "trial_ids_per_cell": sorted(expected_ids),
+            "trials_per_cell": len(expected_ids),
+            "total_fresh_trials": len(expected_ids) * len(cells),
+            "confirmation_plan_sha256": digest(plan_path),
             "response_text_inspected_before_freeze": False,
             "trace_content_inspected_before_freeze": False,
             "direct_api_calls": 0,

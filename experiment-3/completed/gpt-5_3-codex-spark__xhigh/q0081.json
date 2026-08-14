@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0081",
+  "neutral_id": "q0081",
+  "carrier": "all-shuffled",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 1,
+  "signal_phase": null,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "37310a3ca726f510b00acd2803d4af0f3a06f04fdd9409a6735d1a70916a52a6",
+  "prompt_file": "prompts/all-shuffled/q0081.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0081.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0081.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "The request is too garbled to interpret safely (it looks scrambled), so I can’t produce a reliable answer yet.\n\nPlease send it in a clear format, for example:\n\n- Initial state: list of boxes (label/color/content)\n- Target state: what each label/color should contain\n- Operations allowed (e.g., `Move`, `Swap`, `Replace`)\n- Any required output format\n\nIf you want, paste a compact sentence like:\n\n`Box 1 (blue): silver coin in line A` etc., then I’ll return the exact operation sequence.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:08:05.566314+00:00",
+    "finished_at": "2026-08-14T05:08:12.227604+00:00",
+    "thread_id": "019ffeab-9852-7f22-9172-60b46c03960d",
+    "aggregate_usage": {
+      "input_tokens": 10553,
+      "cached_input_tokens": 10112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2048,
+      "reasoning_output_tokens": 1928
+    },
+    "elapsed_seconds": 6.661,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 850,
+    "trace_sha256": "f198eeeeab2e6778c92509041e02dc3e815d379b2247d3d3f40a170349680255",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

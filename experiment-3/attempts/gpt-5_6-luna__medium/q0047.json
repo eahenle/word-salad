@@ -1,0 +1,11 @@
+{
+  "neutral_id": "q0047",
+  "model": "gpt-5.6-luna",
+  "reasoning": "medium",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "A",
+  "seed": 7,
+  "prompt_sha256": "ca844d24377356a4a700586b8ce131c4db8d25dee639da85ba4df4918b9caf38",
+  "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402"
+}

@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0083",
+  "neutral_id": "q0083",
+  "carrier": "all-shuffled",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 3,
+  "signal_phase": null,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "8b764b862be5f246d41cb30de9602f17a2e5c4d4621f92282ca7e76ce8078dee",
+  "prompt_file": "prompts/all-shuffled/q0083.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0083.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0083.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably execute that as written—it appears garbled and ambiguous.  \nPlease send it in a clear format, for example:\n\n1. Initial state: boxes, contents, and colors  \n2. Allowed operations (`Swap`, `Move`, `Replace`)  \n3. Target final state  \n4. Any constraints (e.g., “exactly 6 boxes”, “do not use blue in this step”, etc.)\n\nIf useful, you can use this template:\n\n- Objects: `box1...boxN`, `key`, `coin`, `marble`, `contents`\n- Colors: `red`, `blue`, `green`, `silver`, `brass`\n- Format of each action: `Swap A with B`, `Move X into Y`, `Replace X with Y`\n\nOnce you send that, I’ll produce the exact operation sequence and final arrangement.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:08:12.230001+00:00",
+    "finished_at": "2026-08-14T05:08:22.589055+00:00",
+    "thread_id": "019ffeab-b226-73a2-b236-b88c3f63a244",
+    "aggregate_usage": {
+      "input_tokens": 10553,
+      "cached_input_tokens": 10112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1590,
+      "reasoning_output_tokens": 1408
+    },
+    "elapsed_seconds": 10.359,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1026,
+    "trace_sha256": "c8be43c0f7f7a52c987a66d6249e2f3a174e70a89381e2eae794f566f7c19208",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

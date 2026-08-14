@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0083",
+  "neutral_id": "q0083",
+  "carrier": "all-shuffled",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 3,
+  "signal_phase": null,
+  "model": "gpt-5.6-terra",
+  "reasoning": "medium",
+  "prompt_words": 322,
+  "prompt_sha256": "8b764b862be5f246d41cb30de9602f17a2e5c4d4621f92282ca7e76ce8078dee",
+  "prompt_file": "prompts/all-shuffled/q0083.txt",
+  "trace_file": "traces/gpt-5_6-terra__medium/q0083.jsonl",
+  "stderr_file": "stderr/gpt-5_6-terra__medium/q0083.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably reconstruct the initial box contents or the ordered operations from the scrambled text. Please resend it as:\n\n```text\nInitial:\nBox 1 (color): contents\n...\nOperations:\n1. ...\n2. ...\n```\n\nI’ll then return the final contents of all six boxes exactly in the requested format.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T02:19:09.254021+00:00",
+    "finished_at": "2026-08-14T02:19:25.377490+00:00",
+    "thread_id": "019ffe10-ee72-79f2-9d38-2fc3cb7479d0",
+    "aggregate_usage": {
+      "input_tokens": 13276,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 352,
+      "reasoning_output_tokens": 282
+    },
+    "elapsed_seconds": 16.123,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 649,
+    "trace_sha256": "a405587f33dce62719ff53b4faaeb3152332991b2f3fce3a7fd39efcb949c9f7",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0069",
+  "neutral_id": "q0069",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 2,
+  "seed": 9,
+  "signal_phase": 1,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "d45ca6402dfa7443ec6857d1703629da15df6987d907c30b26d88730d709db1a",
+  "prompt_file": "prompts/jitter/q0069.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0069.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0069.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably compute this from the current text because the instructions are too garbled (box contents/operations are ambiguous).  \nPlease resend in a clean format:\n\n1. Initial state (each box label + contents)  \n2. The 6 operations exactly in numbered order  \n3. Whether final output should be one line per label (`red = ...`, `blue = ...`, `green = ...`)\n\nOnce you send that, I’ll return the final lines only.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:07:50.846760+00:00",
+    "finished_at": "2026-08-14T05:08:15.701589+00:00",
+    "thread_id": "019ffeab-5e92-7f53-a1b3-6e2e4c9a3ce8",
+    "aggregate_usage": {
+      "input_tokens": 10553,
+      "cached_input_tokens": 3712,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8684,
+      "reasoning_output_tokens": 8582
+    },
+    "elapsed_seconds": 24.855,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 774,
+    "trace_sha256": "c564263d0eece14189ba39e3cf1eb0660f51db55f76e17c3df3dc478c7eb2bcc",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

@@ -85,6 +85,24 @@ timeout. These screening data reject a jitter-collapse stopping rule and justify
 running the common matrix, but the apparent 20-point paired jitter advantage is
 too imprecise to interpret as a real improvement.
 
+The common screening matrix is frozen in `results/screening-freeze.json` and
+contains 473 new trials plus the 43-result Sol-xhigh reference cell. Across all
+12 configurations, fixed carriers produced 69/240 expected individual answers
+and 17/120 complete A/B pairs; balanced jitter produced 95/240 and 31/120.
+The matched discordances favored jitter at both the individual and paired
+levels. No all-shuffled control produced answer A or B.
+
+This rules out a necessary constant period-2 clock for this construction. It
+does not yet establish robustness to arbitrary placement: the balanced 1/3
+interval mask creates adjacent signal-word bursts. The frozen confirmation plan
+therefore expands only Sol-medium, Terra-xhigh, and Spark-xhigh on seeds 11–20.
+It does not expand controls or the remaining nine matrix cells.
+
+Post-freeze semantic scoring accepts both the requested object-to-color format
+and an unambiguous inverse box-to-contents format. Contradictory duplicate
+placements are not normalized into a success. Observable trace strategy is a
+separate endpoint and never claims access to private chain of thought.
+
 The requested matrix is:
 
 | model | medium | high | xhigh |

@@ -1,0 +1,13 @@
+model,reasoning,fixed_individual,fixed_individual_trials,fixed_paired,fixed_pairs,jitter_individual,jitter_individual_trials,jitter_paired,jitter_pairs,individual_jitter_penalty,paired_jitter_penalty,signal_tool_use_rate,signal_timeouts,control_target_answers,control_timeouts
+gpt-5.6-sol,medium,11,20,4,10,16,20,6,10,-0.25,-0.19999999999999996,0.0,0,0,0
+gpt-5.6-sol,high,8,20,3,10,16,20,6,10,-0.4,-0.3,0.0,0,0,0
+gpt-5.6-sol,xhigh,13,20,5,10,17,20,7,10,-0.19999999999999996,-0.19999999999999996,0.025,0,0,1
+gpt-5.6-terra,medium,3,20,0,10,9,20,3,10,-0.30000000000000004,-0.3,0.0,0,0,0
+gpt-5.6-terra,high,7,20,1,10,5,20,1,10,0.09999999999999998,0.0,0.025,0,0,0
+gpt-5.6-terra,xhigh,6,20,0,10,10,20,3,10,-0.2,-0.3,0.0,0,0,0
+gpt-5.6-luna,medium,5,20,1,10,6,20,0,10,-0.04999999999999999,0.1,0.0,0,0,1
+gpt-5.6-luna,high,8,20,1,10,5,20,2,10,0.15000000000000002,-0.1,0.0,1,0,1
+gpt-5.6-luna,xhigh,8,20,2,10,10,20,3,10,-0.09999999999999998,-0.09999999999999998,0.025,0,0,1
+gpt-5.3-codex-spark,medium,0,20,0,10,0,20,0,10,0.0,0.0,0.225,0,0,0
+gpt-5.3-codex-spark,high,0,20,0,10,0,20,0,10,0.0,0.0,0.3,0,0,0
+gpt-5.3-codex-spark,xhigh,0,20,0,10,1,20,0,10,-0.05,0.0,0.375,0,0,0

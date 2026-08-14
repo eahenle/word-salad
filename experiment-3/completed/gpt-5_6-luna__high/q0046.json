@@ -1,0 +1,47 @@
+{
+  "trial_id": "q0046",
+  "neutral_id": "q0046",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 2,
+  "seed": 6,
+  "signal_phase": 0,
+  "model": "gpt-5.6-luna",
+  "reasoning": "high",
+  "prompt_words": 322,
+  "prompt_sha256": "495b52fe902a59384e59c8adda138f1175a412e48990acfbcb08ff96037faea7",
+  "prompt_file": "prompts/jitter/q0046.txt",
+  "trace_file": "traces/gpt-5_6-luna__high/q0046.jsonl",
+  "stderr_file": "stderr/gpt-5_6-luna__high/q0046.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T04:09:55.238423+00:00",
+    "finished_at": "2026-08-14T04:24:55.369361+00:00",
+    "thread_id": "019ffe76-55f7-77a3-9401-0b2c5c1ae23c",
+    "aggregate_usage": null,
+    "elapsed_seconds": 900.133,
+    "exit_status": -9,
+    "timed_out": true,
+    "error": {
+      "type": "timeout",
+      "timeout_seconds": 900.0
+    },
+    "trace_bytes": 101,
+    "trace_sha256": "b51ed0f27e36ebff44ace445218cde2b0285f0d491b6ee72d65a759e90cd1619",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 2,
+    "event_type_counts": {
+      "thread.started": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {},
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

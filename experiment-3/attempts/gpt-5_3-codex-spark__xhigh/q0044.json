@@ -1,0 +1,11 @@
+{
+  "neutral_id": "q0044",
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "A",
+  "seed": 4,
+  "prompt_sha256": "fd471f73aa84b0d38ebd353637333ba237cde72757e2e3689c6b195e8ae620d6",
+  "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402"
+}

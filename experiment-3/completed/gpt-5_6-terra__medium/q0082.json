@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0082",
+  "neutral_id": "q0082",
+  "carrier": "all-shuffled",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.6-terra",
+  "reasoning": "medium",
+  "prompt_words": 322,
+  "prompt_sha256": "3f8bbd8636ba70cb2909aabb6523d7b2e084eb7308c7f010432bd67f127d79fd",
+  "prompt_file": "prompts/all-shuffled/q0082.txt",
+  "trace_file": "traces/gpt-5_6-terra__medium/q0082.jsonl",
+  "stderr_file": "stderr/gpt-5_6-terra__medium/q0082.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t determine a unique final configuration from this word-scrambled prompt. Please resend the initial box contents and numbered operations in order.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T02:19:08.049518+00:00",
+    "finished_at": "2026-08-14T02:19:32.879349+00:00",
+    "thread_id": "019ffe10-e8ad-7030-b225-a5203dbdbd67",
+    "aggregate_usage": {
+      "input_tokens": 13276,
+      "cached_input_tokens": 12032,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1068,
+      "reasoning_output_tokens": 1034
+    },
+    "elapsed_seconds": 24.83,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 503,
+    "trace_sha256": "9b6d4b57d68d040e1149a54cd99bb1d8f3cbe8d4956149f88c4c96ab21a63864",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

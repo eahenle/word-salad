@@ -1,0 +1,11 @@
+{
+  "neutral_id": "q0081",
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "carrier": "all-shuffled",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "seed": 1,
+  "prompt_sha256": "37310a3ca726f510b00acd2803d4af0f3a06f04fdd9409a6735d1a70916a52a6",
+  "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402"
+}

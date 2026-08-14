@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0082",
+  "neutral_id": "q0082",
+  "carrier": "all-shuffled",
+  "condition": "all_shuffled",
+  "payload_identity": null,
+  "answer_identity": null,
+  "lanes": 2,
+  "seed": 2,
+  "signal_phase": null,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "medium",
+  "prompt_words": 322,
+  "prompt_sha256": "3f8bbd8636ba70cb2909aabb6523d7b2e084eb7308c7f010432bd67f127d79fd",
+  "prompt_file": "prompts/all-shuffled/q0082.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__medium/q0082.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__medium/q0082.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably execute this as written—the instructions are too garbled (many repeated/missing words), so I can’t determine an unambiguous initial state or operation order.\n\nPlease resend in a structured format like:\n\n1. Initial boxes (1–6): object + label\n2. Allowed objects/colors (e.g., blue box, green coin, brass key, etc.)\n3. Moves, one per line (e.g., `Move coin from box 2 to box 5`, `Swap box 3 and box 6`)\n4. Required final report format (e.g., `box # -> label: contents`)\n\nIf you want, I can also convert your current text into that structure for you before solving.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:00:17.429073+00:00",
+    "finished_at": "2026-08-14T05:00:24.176311+00:00",
+    "thread_id": "019ffea4-736e-7870-9953-bcce3b37b9c7",
+    "aggregate_usage": {
+      "input_tokens": 10553,
+      "cached_input_tokens": 10112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1839,
+      "reasoning_output_tokens": 1685
+    },
+    "elapsed_seconds": 6.747,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 945,
+    "trace_sha256": "a005774b699a910acb710f39c5e20a37d767d413f9da2ce2a0c0e74284399c1e",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

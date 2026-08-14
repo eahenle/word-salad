@@ -1,0 +1,16 @@
+{
+  "individual": {
+    "comparisons": 240,
+    "fixed_only_success": 24,
+    "jitter_only_success": 50,
+    "discordant": 74,
+    "two_sided_exact_mcnemar_p": 0.0033722333341480717
+  },
+  "paired": {
+    "comparisons": 120,
+    "fixed_only_success": 8,
+    "jitter_only_success": 22,
+    "discordant": 30,
+    "two_sided_exact_mcnemar_p": 0.016124801710247993
+  }
+}

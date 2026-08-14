@@ -35,13 +35,49 @@ def extract_assignments(response: str) -> dict[str, str]:
     colors = "|".join(COLORS)
     assignments = {}
     for obj in OBJECTS:
-        match = re.search(
+        matches = list(re.finditer(
             rf"\b{re.escape(obj)}\b\s*(?:=|:|is(?:\s+in)?|[-–—]>?|→)\s*"
             rf"(?:the\s+)?(?:labeled\s+)?\b({colors})\b",
             text,
-        )
-        if match:
-            assignments[obj] = match.group(1)
+        ))
+        if matches:
+            assignments[obj] = matches[-1].group(1)
+
+    # Some subjects invert the requested representation and report the final
+    # contents of each visible box.  A few also report physical-box -> visible-
+    # label followed by the contents (for example, ``blue = green; contains
+    # brass key``).  Parse both forms deterministically, taking later final-state
+    # statements over earlier reasoning snapshots.
+    box_pattern = re.compile(
+        rf"(?:^|[;\n])\s*(?:[-+]\s*)?\b({colors})\b(?:\s+box)?\s*(?:=|:)\s*"
+        rf"(.*?)(?=(?:[;\n]\s*(?:[-+]\s*)?\b(?:{colors})\b(?:\s+box)?\s*(?:=|:))|\Z)",
+        re.I | re.M | re.S,
+    )
+    box_candidates = {obj: set() for obj in OBJECTS}
+    for match in box_pattern.finditer(text):
+        visible = match.group(1).lower()
+        contents = match.group(2).strip()
+        relabel = re.match(rf"^\b({colors})\b\s*;", contents, re.I)
+        if relabel:
+            visible = relabel.group(1).lower()
+            contents = contents[relabel.end():]
+        for obj in OBJECTS:
+            if re.search(rf"\b{re.escape(obj)}\b", contents):
+                box_candidates[obj].add(visible)
+    for obj, candidates in box_candidates.items():
+        if obj not in assignments and len(candidates) == 1:
+            assignments[obj] = next(iter(candidates))
+
+    # Accept terse object/color lists such as ``brass key green``.  This is
+    # only a surface-form normalization; it does not use trial metadata.
+    for obj in OBJECTS:
+        matches = list(re.finditer(
+            rf"\b{re.escape(obj)}\b[ \t]+(?:is[ \t]+)?(?:in[ \t]+)?"
+            rf"(?:the[ \t]+)?\b({colors})\b",
+            text,
+        ))
+        if matches and obj not in assignments:
+            assignments[obj] = matches[-1].group(1)
     return assignments
 
 
