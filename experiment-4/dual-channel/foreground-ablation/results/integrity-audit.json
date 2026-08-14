@@ -1,0 +1,88 @@
+{
+  "audited_at_utc": "2026-08-14T23:42:09.055018+00:00",
+  "passed": true,
+  "checks": {
+    "source_tag_commit_matches": true,
+    "source_tree_matches_reference": true,
+    "mechanical_invariants_pass": true,
+    "isolation_passes": true,
+    "runtime_hash_matches": true,
+    "nine_unique_manifest_trials": true,
+    "execution_complete": true,
+    "no_runner_errors_or_timeouts": true,
+    "nine_unscored_and_scored": true,
+    "source_hashes_match": true,
+    "prompt_hashes_match": true,
+    "document_hashes_match": true,
+    "trace_hashes_match": true,
+    "scoring_preserves_frozen_responses": true,
+    "prompt_bytes_equal_frame_plus_document": true,
+    "primary_result_is_null": true,
+    "no_direct_api": true,
+    "no_observable_tool_invocations": true,
+    "fail_closed_code_mode_item_in_every_trace": true
+  },
+  "failures": [],
+  "trace_item_types": {
+    "ceramics_hidden_a_decohered_r01": [
+      "error",
+      "agent_message",
+      "agent_message"
+    ],
+    "ceramics_hidden_b_decohered_r01": [
+      "error",
+      "agent_message"
+    ],
+    "ceramics_scrambled_decohered_r01": [
+      "error",
+      "agent_message",
+      "agent_message"
+    ],
+    "garden_hidden_a_decohered_r01": [
+      "error",
+      "agent_message"
+    ],
+    "garden_hidden_b_decohered_r01": [
+      "error",
+      "agent_message",
+      "agent_message"
+    ],
+    "garden_scrambled_decohered_r01": [
+      "error",
+      "agent_message",
+      "agent_message"
+    ],
+    "harbor_hidden_a_decohered_r01": [
+      "error",
+      "agent_message",
+      "agent_message"
+    ],
+    "harbor_hidden_b_decohered_r01": [
+      "error",
+      "agent_message"
+    ],
+    "harbor_scrambled_decohered_r01": [
+      "error",
+      "agent_message"
+    ]
+  },
+  "observable_tool_item_types": [],
+  "code_mode_warning": {
+    "retained_for_exact_runtime_matching": true,
+    "substantive_model_behavior": false,
+    "trials_retried": 0
+  },
+  "result_hashes": {
+    "results/development-gate.json": "6c07d8b0a43bc3d885d6f045f34ab84b7c53ccc9de2fdb72af975ece5b40f05d",
+    "results/trials.jsonl": "e57c165cf57d265a6f384473f4656ead751f58300f0221d6f6949e8ccd0502c9",
+    "results/answer-identity.csv": "5c8932bbb8019e80ce1446dcb96a8773f89cea1c7f3f4209791903233f4a220d",
+    "results/analysis.md": "4194b9d5741c06a0c22d8f19187258c089ee57c9a43f3dc1410c29d620dac5b2",
+    "results/strategy-summary.json": "581b04dbca650d15626e8c0d04783d1fc2139a208d16d51b06631bea279c3f62",
+    "results/trace-strategy-audit.json": "d8b897b00e17cd2768f5c2749fb3d43fb79a57fbea939f2d21a41067063779ef",
+    "results/trace-analysis.md": "032217519445e2685a5b28ef249d3dcad833450fd407f6a961af992bf9b19243",
+    "development/results/execution-freeze.json": "4cb699710cac738022a20084c9ddccd89ca9e2d0b8c11106854d66c336e1a0c3",
+    "development/results/trials-unscored.jsonl": "4b27a17f56132273c5cb96a68a3c37c52819952c1b7411e025ce75812147ab67"
+  },
+  "source_4c_modified": false,
+  "additional_permutation_replicates_run": false
+}

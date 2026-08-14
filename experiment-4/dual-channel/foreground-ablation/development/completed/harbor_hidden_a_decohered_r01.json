@@ -1,0 +1,51 @@
+{
+  "trial_id": "harbor_hidden_a_decohered_r01",
+  "source_trial_id": "harbor_hidden_a",
+  "topic": "harbor",
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Rowan",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "37ebe2cbbbb273acde2d0eaa62b119b0249a89ee142afc87c3fa3a4c6d5a0cfb",
+  "prompt_words": 266,
+  "response": "The text implies that a community-supported restoration converted a damaged nineteenth-century waterfront warehouse/chandlery into a maritime-history museum while preserving its original character.",
+  "trace_file": "development/traces/harbor_hidden_a_decohered_r01.jsonl",
+  "stderr_file": "development/stderr/harbor_hidden_a_decohered_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:38:01.108924+00:00",
+    "finished_at": "2026-08-14T23:39:19.001385+00:00",
+    "elapsed_seconds": 77.893,
+    "thread_id": "01a002a3-c2f9-75c0-8259-cbd0d3390338",
+    "aggregate_usage": {
+      "input_tokens": 33749,
+      "cached_input_tokens": 19968,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3132,
+      "reasoning_output_tokens": 2296
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "8540ae4f31ae65933e851ffc58748a7b4a596599ac227cc814f9e078c07a4ba3",
+    "stderr_sha256": "32586e837fdef7a86b1f2a77f7bf0fc3717112d7572657a68561d331a517e1d1",
+    "trace_bytes": 944,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "trial_id": "garden_scrambled_decohered_r01",
+  "source_trial_id": "garden_scrambled",
+  "topic": "garden",
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "07bef4e6e1ccf0fccc3af56b4ad2efb031ee28ca1867c866cf1d7e2f41aff72a",
+  "prompt_words": 267,
+  "response": "It describes a volunteer-run neighborhood community garden.",
+  "trace_file": "development/traces/garden_scrambled_decohered_r01.jsonl",
+  "stderr_file": "development/stderr/garden_scrambled_decohered_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:37:29.604082+00:00",
+    "finished_at": "2026-08-14T23:39:05.931692+00:00",
+    "elapsed_seconds": 96.328,
+    "thread_id": "01a002a3-4824-7c22-ac16-5aa3038a11f4",
+    "aggregate_usage": {
+      "input_tokens": 22348,
+      "cached_input_tokens": 17920,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2663,
+      "reasoning_output_tokens": 2178
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "dab60e1ca74a196a064fbd9a06523941029befd422250251dfef1ba71b868217",
+    "stderr_sha256": "78d93f3f620fbde773b00f24aa6cf231eb0ba3f8810c7a05623317ae117a20d4",
+    "trace_bytes": 816,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

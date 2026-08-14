@@ -1,0 +1,51 @@
+{
+  "trial_id": "garden_hidden_b_decohered_r01",
+  "source_trial_id": "garden_hidden_b",
+  "topic": "garden",
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Mira",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "8468818e38da4c47eecc2f28f80d8c80d028f49b26d3565667fc62ce07821fe7",
+  "prompt_words": 267,
+  "response": "The text implies that the neighborhood garden thrives through shared volunteer work, sustainable practices, and community education, providing food and a welcoming gathering place across the seasons.",
+  "trace_file": "development/traces/garden_hidden_b_decohered_r01.jsonl",
+  "stderr_file": "development/stderr/garden_hidden_b_decohered_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:37:04.355218+00:00",
+    "finished_at": "2026-08-14T23:38:51.847918+00:00",
+    "elapsed_seconds": 107.493,
+    "thread_id": "01a002a2-e543-7643-a3a6-218317739db1",
+    "aggregate_usage": {
+      "input_tokens": 21663,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4882,
+      "reasoning_output_tokens": 4459
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "e118f1f1775d7e2ea1ab7fdab925034b2911952764a16f8ae644353d0844577d",
+    "stderr_sha256": "6779717cc24df5e3feca0b34588ad0fa5bf020c96aad9ef0b535932404ab7de7",
+    "trace_bytes": 975,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

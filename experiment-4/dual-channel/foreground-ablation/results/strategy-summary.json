@@ -1,0 +1,11 @@
+{
+  "trials": 9,
+  "classification_counts": {
+    "both_target_names": 2,
+    "neither_target": 7
+  },
+  "explicit_structure_trial_ids": [],
+  "explicit_hidden_or_encoded_trial_ids": [],
+  "clarification_request_trial_ids": [],
+  "private_chain_of_thought_claimed": false
+}

@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "outcome": "outcome_2_no_recovery_after_decoherence",
+  "expected_hidden_answers": 0,
+  "hidden_signal_trials": 6,
+  "complete_ab_pairs": 0,
+  "complete_ab_pair_topics": [],
+  "required_complete_ab_pairs": 2,
+  "scrambled_control_target_selections": 0,
+  "scrambled_control_target_trial_ids": [],
+  "required_scrambled_control_target_selections": 0,
+  "counterpart_errors": 0,
+  "additional_permutation_replication_preregistered": false,
+  "decision": "freeze_initial_cohort_before_any_replication"
+}

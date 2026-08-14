@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-08-14T23:31:12.916017+00:00",
+  "experiment_4c": {
+    "commit": "d5dc2a837086a06b85361130c7e56ea957c9a650",
+    "tag": "experiment-4c-dual-channel-negative-gate",
+    "tree": "ad3ddabafca88b2bad9136f87fffe9e8cf9add7a",
+    "path": "experiment-4/dual-channel"
+  },
+  "source_experiment_freeze_sha256": "dac593024b2f3018a3f1d152c5919cafd39637d73932fe43d82c6c0d4a45e843",
+  "source_development_gate_sha256": "6c0d27b031c992c3279aaa6f426338c53dac245dc3ab486d9b4f326e7edc98f3",
+  "source_integrity_audit_sha256": "f6489f06cbd4d0623939d1c23d42d01fcc8a05d74c97b5baf5c0ea49c3f7fd07"
+}

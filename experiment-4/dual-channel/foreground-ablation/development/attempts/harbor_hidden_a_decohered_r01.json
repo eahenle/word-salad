@@ -1,0 +1,7 @@
+{
+  "trial_id": "harbor_hidden_a_decohered_r01",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "37ebe2cbbbb273acde2d0eaa62b119b0249a89ee142afc87c3fa3a4c6d5a0cfb"
+}

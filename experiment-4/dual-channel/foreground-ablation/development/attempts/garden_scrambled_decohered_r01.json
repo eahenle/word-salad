@@ -1,0 +1,7 @@
+{
+  "trial_id": "garden_scrambled_decohered_r01",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "07bef4e6e1ccf0fccc3af56b4ad2efb031ee28ca1867c866cf1d7e2f41aff72a"
+}

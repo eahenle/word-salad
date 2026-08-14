@@ -1,0 +1,51 @@
+{
+  "trial_id": "ceramics_hidden_b_decohered_r01",
+  "source_trial_id": "ceramics_hidden_b",
+  "topic": "ceramics",
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Mira",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "ef4b2c35db8eebb0a23719831fd6c88acbe98b9c0168d1865f8441eb5a8357ca",
+  "prompt_words": 272,
+  "response": "The text implies that a regional museum is opening a public ceramics exhibition featuring locally made and excavated household pottery, curated by Mira, Rowan, and Tavi.",
+  "trace_file": "development/traces/ceramics_hidden_b_decohered_r01.jsonl",
+  "stderr_file": "development/stderr/ceramics_hidden_b_decohered_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:36:41.848180+00:00",
+    "finished_at": "2026-08-14T23:36:51.953253+00:00",
+    "elapsed_seconds": 10.105,
+    "thread_id": "01a002a2-93c9-7573-bd97-db901febf94a",
+    "aggregate_usage": {
+      "input_tokens": 10328,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 125,
+      "reasoning_output_tokens": 87
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "f2d9953c93f756b21c57ac4428c14c662ba2b7147b3da8f077ad69ed0262180f",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 745,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

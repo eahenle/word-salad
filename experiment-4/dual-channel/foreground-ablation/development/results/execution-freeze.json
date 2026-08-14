@@ -1,0 +1,19 @@
+{
+  "scheduled": 9,
+  "completed": 9,
+  "responses_not_inspected_before_freeze": true,
+  "trace_hashes": {
+    "ceramics_hidden_a_decohered_r01": "91fa0280e30ae2a0aa8bf9010b739bb34f6b3604b9b00bc112b7ab53c9ec49e7",
+    "ceramics_hidden_b_decohered_r01": "f2d9953c93f756b21c57ac4428c14c662ba2b7147b3da8f077ad69ed0262180f",
+    "ceramics_scrambled_decohered_r01": "970b6ba626259dc1e302b3862015f506a575307dcdff43088b2ee20403907d23",
+    "garden_hidden_a_decohered_r01": "ccda84139fee55a3913be37cfb5d7cd1fcfb25bbef35f2f35b88b1613bc75b97",
+    "garden_hidden_b_decohered_r01": "e118f1f1775d7e2ea1ab7fdab925034b2911952764a16f8ae644353d0844577d",
+    "garden_scrambled_decohered_r01": "dab60e1ca74a196a064fbd9a06523941029befd422250251dfef1ba71b868217",
+    "harbor_hidden_a_decohered_r01": "8540ae4f31ae65933e851ffc58748a7b4a596599ac227cc814f9e078c07a4ba3",
+    "harbor_hidden_b_decohered_r01": "e4a65e9e33ef801a9a852531b86519abf952894e1abdc25b5b7d31b336b2ceb8",
+    "harbor_scrambled_decohered_r01": "7dbc2371515e21737330fd9d4b32753964cdee405f654c8e6e4fcf4738f3cf39"
+  },
+  "runner_errors": 0,
+  "timeouts": 0,
+  "direct_api_used": false
+}

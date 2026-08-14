@@ -1,0 +1,51 @@
+{
+  "trial_id": "ceramics_hidden_a_decohered_r01",
+  "source_trial_id": "ceramics_hidden_a",
+  "topic": "ceramics",
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Rowan",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "04bf8d8ba45cbb38e4d52129af0773d56b42494a8ba437ffca87f9b0dc2aa29c",
+  "prompt_words": 272,
+  "response": "It implies that a regional museum has opened a gallery about local ceramics and pottery traditions, featuring historic vessels, kiln artifacts, conservation work, and public demonstrations.",
+  "trace_file": "development/traces/ceramics_hidden_a_decohered_r01.jsonl",
+  "stderr_file": "development/stderr/ceramics_hidden_a_decohered_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:36:41.847930+00:00",
+    "finished_at": "2026-08-14T23:37:29.599167+00:00",
+    "elapsed_seconds": 47.751,
+    "thread_id": "01a002a2-93cb-7c60-b2ac-cc1a9c80d6aa",
+    "aggregate_usage": {
+      "input_tokens": 21485,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1762,
+      "reasoning_output_tokens": 1285
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "91fa0280e30ae2a0aa8bf9010b739bb34f6b3604b9b00bc112b7ab53c9ec49e7",
+    "stderr_sha256": "4c16149e1c0752562a3e3ba7bc43f2342acfb2058517eafca54cb20839c5b1ff",
+    "trace_bytes": 1039,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

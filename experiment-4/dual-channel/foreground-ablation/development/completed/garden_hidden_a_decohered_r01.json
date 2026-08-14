@@ -1,0 +1,51 @@
+{
+  "trial_id": "garden_hidden_a_decohered_r01",
+  "source_trial_id": "garden_hidden_a",
+  "topic": "garden",
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Rowan",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "ef19d1704a94e449dd3d5612c142143fdf892e936fe8a026dd9a6a1cf03ae0e4",
+  "prompt_words": 267,
+  "response": "The text describes a well-organized community garden where volunteers—including Mira, Rowan, and Tavi—maintain plots, teach classes, share produce and seeds, support a local pantry, and make the garden welcoming to visitors.",
+  "trace_file": "development/traces/garden_hidden_a_decohered_r01.jsonl",
+  "stderr_file": "development/stderr/garden_hidden_a_decohered_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:36:51.957455+00:00",
+    "finished_at": "2026-08-14T23:37:04.351229+00:00",
+    "elapsed_seconds": 12.394,
+    "thread_id": "01a002a2-b527-7051-97bb-524b6c62c8b8",
+    "aggregate_usage": {
+      "input_tokens": 10325,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 152,
+      "reasoning_output_tokens": 101
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "ccda84139fee55a3913be37cfb5d7cd1fcfb25bbef35f2f35b88b1613bc75b97",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 805,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

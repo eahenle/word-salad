@@ -1,0 +1,51 @@
+{
+  "trial_id": "harbor_scrambled_decohered_r01",
+  "source_trial_id": "harbor_scrambled",
+  "topic": "harbor",
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "b109833874f0ba1fa2f698c2036bd7dd6cb1c9ced3f877eb87136c27cc81d63f",
+  "prompt_words": 266,
+  "response": "The text implies that a historic waterfront warehouse was carefully restored and reopened as a modest regional museum, using archival records, photographs, and local recollections to preserve the harbor’s maritime history.",
+  "trace_file": "development/traces/harbor_scrambled_decohered_r01.jsonl",
+  "stderr_file": "development/stderr/harbor_scrambled_decohered_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:38:59.630131+00:00",
+    "finished_at": "2026-08-14T23:39:08.938870+00:00",
+    "elapsed_seconds": 9.309,
+    "thread_id": "01a002a4-a733-7993-9272-c0143f7d5df5",
+    "aggregate_usage": {
+      "input_tokens": 10325,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 202,
+      "reasoning_output_tokens": 159
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "7dbc2371515e21737330fd9d4b32753964cdee405f654c8e6e4fcf4738f3cf39",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 801,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "trial_id": "ceramics_scrambled_decohered_r01",
+  "source_trial_id": "ceramics_scrambled",
+  "topic": "ceramics",
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "dffde7dc791b848b0021f0ed2dbb25f36a81fdd1d5b60e1404f0f51138b72808",
+  "prompt_words": 272,
+  "response": "A regional museum is reopening a ceramics gallery focused on everyday household pottery, supported by loans, conservation work, demonstrations, and workshops with local makers.",
+  "trace_file": "development/traces/ceramics_scrambled_decohered_r01.jsonl",
+  "stderr_file": "development/stderr/ceramics_scrambled_decohered_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:36:41.848084+00:00",
+    "finished_at": "2026-08-14T23:38:01.103906+00:00",
+    "elapsed_seconds": 79.256,
+    "thread_id": "01a002a2-9412-7860-a608-3d3913836d94",
+    "aggregate_usage": {
+      "input_tokens": 10329,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1911,
+      "reasoning_output_tokens": 1845
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "970b6ba626259dc1e302b3862015f506a575307dcdff43088b2ee20403907d23",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 981,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}
