@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "image": "sha256:e1b846aae1610e6075a93751f375f450155ee9672c86374c650274ff8fa4a8fe",
+  "image_id": "sha256:e1b846aae1610e6075a93751f375f450155ee9672c86374c650274ff8fa4a8fe",
+  "entrypoint": [
+    "credential-gate-q4"
+  ],
+  "image_repo_digests": [
+    "word-salad-canary@sha256:e1b846aae1610e6075a93751f375f450155ee9672c86374c650274ff8fa4a8fe"
+  ],
+  "filesystem_probe_exit": 0,
+  "filesystem_probe_output": "700 /opt/q4/marker_server.py\n700 /usr/local/bin/credential-gate-q4\n755 /usr/local/libexec/subject-shell\nHOST_REPO_ABSENT\nAUTH_ABSENT_BEFORE_GATE\nSHELL_WRAPPER_PINNED\n",
+  "filesystem_probe_stderr": "",
+  "model_probe_exit": 0,
+  "model_probe_error": null,
+  "model_probe_response": "Exact result: `code-mode host is disabled`\n\nThe shell command could not execute.",
+  "model_probe_command_outputs": [],
+  "shell_tool_exposed_to_subject": false,
+  "model_probe_markers": [],
+  "model_probe_trace_sha256": "ae7bb240e4a78bd49a13026753d22c64b582b98d6104e4e758730ebd726a9674",
+  "model_probe_stderr_sha256": "11da76f2b4b0b22a4811c011437843b56f0456ec02dd25fb4c2619b3e3f6d1f3",
+  "model_generated_native_shell": "hard-disabled by pinned wrapper",
+  "model_transport_network": "required for Codex service; not exposed as an experimental tool",
+  "host_paths_mounted": false,
+  "same_host_container_isolation": "audited practical boundary, not a cryptographic multi-host guarantee"
+}

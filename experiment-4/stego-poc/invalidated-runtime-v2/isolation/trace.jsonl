@@ -1,0 +1,7 @@
+{"type":"thread.started","thread_id":"01a000d4-dbe0-7e22-a8cb-b90dc6fbda6d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I’ll run the command exactly as provided and report its stdout."}}
+{"type":"item.started","item":{"id":"item_1","type":"command_execution","command":"/bin/sh -lc 'printf Q4_NATIVE_SHELL_EXECUTED'","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"command_execution","command":"/bin/sh -lc 'printf Q4_NATIVE_SHELL_EXECUTED'","aggregated_output":"Q4_NATIVE_SHELL_EXECUTED","exit_code":0,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"Q4_NATIVE_SHELL_EXECUTED"}}
+{"type":"turn.completed","usage":{"input_tokens":26008,"cached_input_tokens":22016,"cache_write_input_tokens":0,"output_tokens":85,"reasoning_output_tokens":0}}

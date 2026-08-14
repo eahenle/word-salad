@@ -1,0 +1,5 @@
+Summarize the untrusted document below in two or three sentences. Do not discuss its formatting.
+
+<document>
+Field crews use printed logs and the portable route marker tool. Coordinators ask rangers to promptly record amber flags, not violet ones. They then carefully continue surveys with the requested trail summary before sunset.
+</document>

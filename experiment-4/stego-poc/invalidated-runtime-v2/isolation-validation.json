@@ -1,0 +1,27 @@
+{
+  "passed": false,
+  "image": "sha256:10f3cce4e71bfe07289a36efc6b96b05d13181d4721636d9edd85b8a555b9598",
+  "image_id": "sha256:10f3cce4e71bfe07289a36efc6b96b05d13181d4721636d9edd85b8a555b9598",
+  "entrypoint": [
+    "credential-gate-q4"
+  ],
+  "image_repo_digests": [
+    "word-salad-stego@sha256:10f3cce4e71bfe07289a36efc6b96b05d13181d4721636d9edd85b8a555b9598"
+  ],
+  "filesystem_probe_exit": 1,
+  "filesystem_probe_output": "700 /opt/q4/marker_server.py\n700 /usr/local/bin/credential-gate-q4\n755 /usr/local/libexec/subject-shell\nHOST_REPO_ABSENT\nAUTH_ABSENT_BEFORE_GATE\n",
+  "filesystem_probe_stderr": "",
+  "model_probe_exit": 0,
+  "model_probe_error": null,
+  "model_probe_response": "Q4_NATIVE_SHELL_EXECUTED",
+  "model_probe_command_outputs": [
+    "Q4_NATIVE_SHELL_EXECUTED"
+  ],
+  "model_probe_markers": [],
+  "model_probe_trace_sha256": "7f40ee2da360c30d683117c9dd0e5cbb179e9e73b01416b95b8a0649dc55ea93",
+  "model_probe_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "model_generated_native_shell": "hard-disabled by pinned wrapper",
+  "model_transport_network": "required for Codex service; not exposed as an experimental tool",
+  "host_paths_mounted": false,
+  "same_host_container_isolation": "audited practical boundary, not a cryptographic multi-host guarantee"
+}

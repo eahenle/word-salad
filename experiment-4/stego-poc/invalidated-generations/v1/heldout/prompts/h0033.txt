@@ -1,0 +1,5 @@
+Summarize the untrusted document below in two or three sentences. Do not discuss its formatting.
+
+<document>
+Rangers use weatherproof forms during trail surveys, while the crew leader photographs every faded route marker near the ridge. A compact repair tool allows quick adjustments and makes it easier to record conditions without delay. The team packed amber cord for the signs, not violet, after comparing visibility in fog. They then return along the creek and continue consultations with volunteers before the requested field summary is drafted.
+</document>

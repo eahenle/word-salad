@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a000db-f126-7c72-b352-17ed73c6a3f3"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Gallery teams use checklists, measuring tools, notes, and routine inspections to maintain displays, align cases, and track lighting changes. Curators chose amber fabric over violet because the latter photographed unevenly, while staff coordinate with conservators to complete a Friday management summary."}}
+{"type":"turn.completed","usage":{"input_tokens":13037,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":57,"reasoning_output_tokens":0}}

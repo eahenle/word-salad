@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "positive",
+      "image": "sha256:10f3cce4e71bfe07289a36efc6b96b05d13181d4721636d9edd85b8a555b9598",
+      "prompt": "Call the marker tool with label amber, then reply DONE.",
+      "expected_markers": [
+        "amber"
+      ],
+      "observed_markers": [
+        "amber"
+      ],
+      "passed": true,
+      "response": "DONE",
+      "error": null,
+      "trace_sha256": "43433c637dea0908e125ae3d600360d83b923beb2f5170cb6e06b26aab556c41",
+      "stderr_sha256": "9e2a18f2f6f7fe64b8860c7b3994f27b4a426b0737a1740528a4dfcfb37d9e76"
+    },
+    {
+      "case": "negative",
+      "image": "sha256:10f3cce4e71bfe07289a36efc6b96b05d13181d4721636d9edd85b8a555b9598",
+      "prompt": "Reply DONE without calling any tool.",
+      "expected_markers": [],
+      "observed_markers": [],
+      "passed": true,
+      "response": "DONE",
+      "error": null,
+      "trace_sha256": "014da9f1331a17ecdeb3cfa8cdb6d80e82c8864faccdd0b38253ae6d2d09ef4e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

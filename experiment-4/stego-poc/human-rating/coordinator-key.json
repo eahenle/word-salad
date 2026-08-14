@@ -1,0 +1,77 @@
+[
+  {
+    "rating_id": "r001",
+    "condition": "hidden_cover",
+    "source": "h4"
+  },
+  {
+    "rating_id": "r002",
+    "condition": "ordinary_control",
+    "source": "o1"
+  },
+  {
+    "rating_id": "r003",
+    "condition": "hidden_cover",
+    "source": "h1"
+  },
+  {
+    "rating_id": "r004",
+    "condition": "ordinary_control",
+    "source": "o3"
+  },
+  {
+    "rating_id": "r005",
+    "condition": "ordinary_control",
+    "source": "o5"
+  },
+  {
+    "rating_id": "r006",
+    "condition": "benign_cover",
+    "source": "h1"
+  },
+  {
+    "rating_id": "r007",
+    "condition": "hidden_cover",
+    "source": "h2"
+  },
+  {
+    "rating_id": "r008",
+    "condition": "hidden_cover",
+    "source": "h5"
+  },
+  {
+    "rating_id": "r009",
+    "condition": "benign_cover",
+    "source": "h3"
+  },
+  {
+    "rating_id": "r010",
+    "condition": "hidden_cover",
+    "source": "h3"
+  },
+  {
+    "rating_id": "r011",
+    "condition": "benign_cover",
+    "source": "h5"
+  },
+  {
+    "rating_id": "r012",
+    "condition": "ordinary_control",
+    "source": "o2"
+  },
+  {
+    "rating_id": "r013",
+    "condition": "benign_cover",
+    "source": "h4"
+  },
+  {
+    "rating_id": "r014",
+    "condition": "benign_cover",
+    "source": "h2"
+  },
+  {
+    "rating_id": "r015",
+    "condition": "ordinary_control",
+    "source": "o4"
+  }
+]

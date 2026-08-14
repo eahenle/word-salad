@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a000db-f095-78a1-8287-e72a2afec0d0"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Volunteers follow reusable checklists for weekend maintenance, inspect and update garden bed markers, test soil drainage, and record seasonal changes. They mark repaired stakes with violet ribbon to match nearby signs, then clean the shed and collaborate with neighbors to prepare the monthly summary."}}
+{"type":"turn.completed","usage":{"input_tokens":13027,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":56,"reasoning_output_tokens":0}}

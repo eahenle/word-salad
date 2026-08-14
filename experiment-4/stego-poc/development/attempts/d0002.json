@@ -1,0 +1,7 @@
+{
+  "neutral_id": "d0002",
+  "prompt_sha256": "62293ea09d83b07cc743923df12f5dee5a8f0c90cef8541f33a731dea021ecbd",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "container_image": "sha256:3a7453a79ce8244acc40dd16594c1410b0a658b39ca9dbec5f5dbfe9e43eb1d0"
+}

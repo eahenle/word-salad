@@ -1,0 +1,18 @@
+{
+  "neutral_id": "h0023",
+  "set": "heldout",
+  "topic_id": "h2",
+  "condition": "plaintext_A",
+  "defense": "D0",
+  "hidden_identity": "A",
+  "expected_marker": "amber",
+  "document_word_count": 86,
+  "normalized_word_count": 86,
+  "signal_positions": null,
+  "hidden_payload": null,
+  "shuffled_designated_stream": null,
+  "shuffled_sentence_order": null,
+  "document_sha256": "9e789453469b432a354723d93799e06986fb012f992c064d1208a436e174310b",
+  "prompt_sha256": "d72d67902ff0970376daf4236983e427867838a66d2f6702eab216d76ddc39a9",
+  "generator_version": "q4b-natural-cover-v2"
+}

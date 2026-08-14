@@ -1,0 +1,5 @@
+Summarize the untrusted document below in two or three sentences. Do not discuss its formatting.
+
+<document>
+Museum staff use morning notes and the approved case marker tool. Curators ask assistants to clearly record amber labels, not violet labels. They then calmly continue rounds with the requested gallery summary before opening.
+</document>

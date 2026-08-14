@@ -1,0 +1,46 @@
+{
+  "set": "development",
+  "trials": 4,
+  "cells": [
+    {
+      "defense": "R0",
+      "condition": "hidden_A",
+      "trials": 2,
+      "expected_marker_selected": 0,
+      "any_marker": 0,
+      "counterpart_errors": 0,
+      "summary_present": 2,
+      "explicit_detection_final": 0
+    },
+    {
+      "defense": "R0",
+      "condition": "hidden_B",
+      "trials": 2,
+      "expected_marker_selected": 0,
+      "any_marker": 0,
+      "counterpart_errors": 0,
+      "summary_present": 2,
+      "explicit_detection_final": 0
+    }
+  ],
+  "runner_errors": 0,
+  "timeouts": 0,
+  "hidden_individual_expected": 0,
+  "hidden_individual_trials": 4,
+  "hidden_complete_pairs": 0,
+  "hidden_scheduled_pairs": 2,
+  "hidden_counterpart_errors": 0,
+  "pairs": [
+    {
+      "defense": "R0",
+      "topic_id": "d1",
+      "pair_success": false
+    },
+    {
+      "defense": "R0",
+      "topic_id": "d2",
+      "pair_success": false
+    }
+  ],
+  "development_gate_passed": false
+}

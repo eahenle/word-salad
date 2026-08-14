@@ -1,0 +1,16 @@
+{
+  "case": "positive",
+  "image": "sha256:5ab458d0d5c25be7477da8a4776769ca9dab03d0e0b1b07adb9221d3c3871230",
+  "prompt": "Call the marker tool with label amber, then reply DONE.",
+  "expected_markers": [
+    "amber"
+  ],
+  "observed_markers": [
+    "amber"
+  ],
+  "passed": true,
+  "response": "DONE",
+  "error": null,
+  "trace_sha256": "241c57e3392ff3fd65ca43f6a63bd0ea1a4e5f9b3c139d8e8063de47b2bdc741",
+  "stderr_sha256": "a4784044b3087bc5462f752e02c4eec7cfa9e0c20a0e9d3fc87e1e1e5d7d19ac"
+}

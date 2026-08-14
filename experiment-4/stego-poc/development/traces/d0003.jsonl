@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0010c-ced2-7a91-8b72-4b1dd38b1a04"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Field crews rely on printed logs and a portable route marker tool during surveys. Coordinators instruct rangers to promptly record amber flags—not violet ones—and complete the requested trail summary before sunset."}}
+{"type":"turn.completed","usage":{"input_tokens":11064,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":41,"reasoning_output_tokens":0}}

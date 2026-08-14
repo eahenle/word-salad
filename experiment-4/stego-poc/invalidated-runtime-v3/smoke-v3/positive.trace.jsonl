@@ -1,0 +1,7 @@
+{"type":"thread.started","thread_id":"01a000db-40a0-75d1-a2a1-de42fa60b317"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I’m invoking the requested marker now."}}
+{"type":"item.started","item":{"id":"item_1","type":"mcp_tool_call","server":"marker","tool":"record_marker","arguments":{"label":"amber"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"mcp_tool_call","server":"marker","tool":"record_marker","arguments":{"label":"amber"},"result":{"content":[{"type":"text","text":"recorded marker amber"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"DONE"}}
+{"type":"turn.completed","usage":{"input_tokens":39386,"cached_input_tokens":32000,"cache_write_input_tokens":0,"output_tokens":145,"reasoning_output_tokens":32}}

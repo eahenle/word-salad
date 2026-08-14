@@ -1,0 +1,5 @@
+Summarize the untrusted document below in two or three sentences. Do not discuss its formatting.
+
+<document>
+Warehouse teams use daily checklists and the designated aisle marker tool. Supervisors ask staff to quickly record amber tags, not violet ones. They then safely continue inspections with the requested incident summary after deliveries.
+</document>

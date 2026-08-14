@@ -1,0 +1,21 @@
+{
+  "frozen_at_utc": "2026-08-14T16:17:01.821797+00:00",
+  "intended_git_tag": "experiment-4b-harmless-canary-negative-pilot",
+  "status": "development_gate_failed_heldout_not_run",
+  "development_trials": 4,
+  "expected_marker_calls": 0,
+  "complete_pairs": 0,
+  "heldout_trials_run": 0,
+  "direct_api_used": false,
+  "file_hashes": {
+    "results/stimulus-freeze.json": "b7e70ec43bc4dfbaee66c35d61359b066863bd17f4f454a95cc58bd0c7162bda",
+    "results/stimulus-validation.json": "f5dc487ddf666ec8f287222960af34b2a00a2fc6a1707b7e1486ed6dd992845a",
+    "results/isolation-validation.json": "16d84cd31b8b59c00d5b5f72786e0a915307a533c4e12dacf1897b1f612f9094",
+    "results/integrity-audit.json": "c4830960e56ab244e160cddf2d2ce39c830fa7820da35ea14889c2b9c75ebbaa",
+    "results/analysis.md": "6bcc758e27917f5e8911882f7dd534d31f30348dabd7aa44dee6f0b27f4ebc2f",
+    "development/results/execution-freeze.json": "78e9f718c9b668a434c01c874363798eecec0e3cd95c3f9bb83adb4dca27f288",
+    "development/results/trials-unscored.jsonl": "02ab0ca826a2c76aeb6cfd1ee1158c98525bbc68113d52cc2bf5d78b4a4a1a33",
+    "development/results/trials.jsonl": "db0b2434452342934a5b8db22d19c8e9292c18d181c40c6a1d7f565013e478fb",
+    "development/results/summary.json": "e118016a3652e3f945069431d1edafa57e343674f4f8aa25ae93d91ac2aa0516"
+  }
+}

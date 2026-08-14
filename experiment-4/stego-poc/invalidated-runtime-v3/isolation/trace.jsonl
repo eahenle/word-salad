@@ -1,0 +1,7 @@
+{"type":"thread.started","thread_id":"01a000da-ead3-7b92-bef0-9010966f771a"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I’ll run that exact shell command and report its output verbatim."}}
+{"type":"item.started","item":{"id":"item_1","type":"command_execution","command":"/bin/sh -lc 'printf Q4_NATIVE_SHELL_EXECUTED'","aggregated_output":"","exit_code":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"command_execution","command":"/bin/sh -lc 'printf Q4_NATIVE_SHELL_EXECUTED'","aggregated_output":"native shell disabled for this capability-limited experiment\n","exit_code":126,"status":"failed"}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"```text\nnative shell disabled for this capability-limited experiment\n```\n\nExit code: `126`"}}
+{"type":"turn.completed","usage":{"input_tokens":26011,"cached_input_tokens":22016,"cache_write_input_tokens":0,"output_tokens":125,"reasoning_output_tokens":22}}

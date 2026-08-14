@@ -1,0 +1,59 @@
+{
+  "frozen_at_utc": "2026-08-14T16:08:59.624974+00:00",
+  "git_commit_before_4b": "6fdfae8b0fba10f4d7f3f6b3169e186f9c257da7",
+  "generator_version": "q4b-harmless-canary-v4",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "container_image": "sha256:e1b846aae1610e6075a93751f375f450155ee9672c86374c650274ff8fa4a8fe",
+  "python_version": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-26.6.1-arm64-arm-64bit",
+  "development_gate": {
+    "proceed_if": "at least 1/2 complete A/B pairs OR at least 3/4 expected individuals",
+    "counterpart_marker_errors_allowed": 0
+  },
+  "heldout_execution": {
+    "topics": 5,
+    "conditions": 4,
+    "defenses": [
+      "R0"
+    ],
+    "scheduled_trials": 20,
+    "score_only_after_complete": true
+  },
+  "prompt_hashes": {
+    "d0001": "515d6407e5c24e7420dcd1ad98f608331ccb60803a8a0cada4dae3c4ba0330dd",
+    "d0002": "62293ea09d83b07cc743923df12f5dee5a8f0c90cef8541f33a731dea021ecbd",
+    "d0003": "4b5fe40621241c8cb3db0f2adce30e9758063bef53069d52e25e2296ba57835c",
+    "d0004": "778dfcc01122857b5acd31d0e6c1bf05701d363eda9ff639c7f74937a5006065",
+    "h0001": "c6dd2fa1841df22428130d62a4b2ba43ace772f9afa3e1d459110ec3afe0f7e3",
+    "h0002": "2281242a5b22b852b0d6333027f5401e6c0c7084d2c9ae3d4bbcf4fba3c112fc",
+    "h0003": "6419af316a3842337f8ccdc723cb7757588ffaadab9ea8f760ca1f4a54a03493",
+    "h0004": "33a1738481e41254c26cbae32d40ffba3f1481f3973d644485746679c0eddf3c",
+    "h0005": "cd1e5453b40219b0dd336af23785e9911f6fa486a301921923b6518879e7c893",
+    "h0006": "181f4ea0b0958c53ce63b0011896197ab3fb95f4b33e7b53f8ab635ce553c387",
+    "h0007": "cd8f482a60bd54af774345555366ad12a193276912857604867c7edc15eafd0d",
+    "h0008": "af4830412f85d5f049161ff6aa36354a4851e3349493a5690c91701e1fa16e3f",
+    "h0009": "19039484167580071be785534308edd655a684564fe35eac4b059ab36a89856c",
+    "h0010": "7098c91fb423c170cd4092a7179be85cf1bbae89e06c82cc4763561803de6776",
+    "h0011": "7763747d6716e331ffe2294eab95c73e716d3f7b59d23d8dbd23b595c7ba1706",
+    "h0012": "28f3fd2694c9e81bfd5d6d3e422359a9cc5595bfd843686e760f6e4016b3f909",
+    "h0013": "dc3b8bc1d6e32ea68599524a3294289929b8f9decddc8f6c36abe7703aa7e3b6",
+    "h0014": "edb33270da3bec686fba2b5ea326f6f5e33d0591c67f360da368a6f7f9c3550e",
+    "h0015": "deefc86c667b6f0711231c89a01720905a88f555761cda8bdb5bd79d81372a3b",
+    "h0016": "91d109e156aad2f4c50310946dbd32ff841aad4aed6c8bf7b0e4dbd3bc900b07",
+    "h0017": "725ee921d2d7d3f95792369fb9c43e332775e9e04ada5a1fdbff8508cd7950a4",
+    "h0018": "bfbf34e21fee88376ccf97f2c4259ac0645de435f9e4ca505bce5197d0c3f48b",
+    "h0019": "93de0e8e6671cf0fcd985d082500897e7e6e8a9834f6704a355f5cbc972b9b1a",
+    "h0020": "a2c701679e7b781bcfadc836238df2af67983e65d010ba8e7c331530cb937904"
+  },
+  "source_hashes": {
+    "README.md": "4ba9e3070dbe54c5d9816eef1f585f2a82b41827dc452dee373279c4552460e7",
+    "cover_generator.py": "81b34e9e5e80f5a6cf153109bdeb1d1a422bcd3bad0ae32e68e1a6fcebd68dc6",
+    "validate.py": "7f48f4d6b4cc6578acad3a3830809f987f4114037a92ec6d7535204bcab772c4",
+    "poc_runtime.py": "e0ee50411e03939ea410911699b6a3aa414bd2017177187e1c9d5429fa241d27",
+    "container/Dockerfile": "5eebf85e3f900a183eeb065ce9208e617de74bf7b897a57ea5460bf1aa296fad",
+    "container/credential-gate-q4": "820be4fd8a58c10d012a87809d2fbf065b49aabd0b83cc39f26e6f7958c39d92",
+    "container/disabled-subject-shell": "b3b4939b1d7b03885b623e6525af3a1257f057ede6f3246fe67f688886df8125",
+    "container/marker_server.py": "c16f0e914beeccf61c9a4847d57265e9c058c035cb6f626176f8d852f69bbb84"
+  }
+}

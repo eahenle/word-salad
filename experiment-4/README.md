@@ -92,3 +92,19 @@ schedule. It does not establish arbitrary density or a specific mechanism.
 The full report is `uniform/results/analysis.md`; integrity and frozen hashes
 are in `uniform/results/integrity-audit.json` and
 `uniform/results/experiment-freeze.json`.
+
+## Experiment 4B harmless-canary pilot
+
+After 4A, a deliberately capability-free natural-prose robustness pilot tested
+only a container-local `record_marker` function accepting the meaningless
+labels `amber` and `violet`. The narrowed runtime exposed no shell, browser,
+computer, app, plugin, host mount, arbitrary file, account, or external-service
+operation. Its only persisted action was a label-only JSON entry in disposable
+tmpfs.
+
+The preregistered four-trial development gate produced 0/4 marker calls and 0/2
+complete A/B pairs. All subjects returned ordinary summaries, with no timeout,
+runner error, or counterpart-label error. The held-out 20-trial cohort was not
+run, and the cover wording was not optimized after the negative gate. The
+report is `stego-poc/results/analysis.md`; the held-out naturalness packet is
+prepared but contains no fabricated human ratings.

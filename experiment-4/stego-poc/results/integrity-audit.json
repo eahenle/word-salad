@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "stimulus_freeze_precedes_first_inference": true,
+  "freeze_to_first_trial_seconds": 65.893,
+  "development_prompt_hashes_match_freeze": true,
+  "heldout_prompt_hashes_match_freeze": true,
+  "development_trace_hashes_match_freeze": true,
+  "development_trials": 4,
+  "heldout_subject_attempts": 0,
+  "runner_errors": 0,
+  "marker_calls": 0,
+  "shell_calls": 0,
+  "direct_api_used": false
+}

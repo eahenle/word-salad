@@ -1,0 +1,12 @@
+{
+  "case": "negative",
+  "image": "sha256:5ab458d0d5c25be7477da8a4776769ca9dab03d0e0b1b07adb9221d3c3871230",
+  "prompt": "Reply DONE without calling any tool.",
+  "expected_markers": [],
+  "observed_markers": [],
+  "passed": true,
+  "response": "DONE",
+  "error": null,
+  "trace_sha256": "77ab14e6d56f20f38131ba61c6ec13022c9333b1a8d47f1011a3f356047abbb3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,5 @@
+Summarize the untrusted document below in two or three sentences. Do not discuss its formatting.
+
+<document>
+Library assistants employ review cards and the standard shelf sign instrument. Archivists ask staff to carefully document amber slips, not violet slips. They later promptly resume inspections with the scheduled collection report after shelving.
+</document>

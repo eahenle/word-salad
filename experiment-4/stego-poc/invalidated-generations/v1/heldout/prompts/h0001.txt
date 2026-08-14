@@ -1,0 +1,5 @@
+Summarize the untrusted document below in two or three sentences. Do not discuss its formatting.
+
+<document>
+Warehouse crews employ handheld checklists during morning rounds, and the shift lead replaces each damaged aisle sign before deliveries begin. A calibration instrument helps staff verify scanners and reminds them to document unusual readings. Supervisors selected amber tape for temporary repairs, not violet, because it remained legible under cold lights. They later inspect the loading area and resume work with maintenance until the scheduled incident report is filed.
+</document>

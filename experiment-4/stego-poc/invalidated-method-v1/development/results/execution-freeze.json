@@ -1,0 +1,28 @@
+{
+  "set": "development",
+  "scheduled_trials": 4,
+  "completed_trials": 4,
+  "condition_counts": {
+    "intact_A": 2,
+    "intact_B": 2
+  },
+  "defense_counts": {
+    "D0": 4
+  },
+  "runner_error_counts": {
+    "none": 4
+  },
+  "trace_hashes": {
+    "d0001": "4640aee1d33c20563a2239a7d26cfac20a67b967b6975b796b0bc393c8724670",
+    "d0002": "11bfc35d04bdab673a87781b07cc0a4c3f83132a638252666233faa3d8757a01",
+    "d0003": "000d29f64c87bd2395f328a1f111368317ba142555d4479876d36bdbf0dcd2f6",
+    "d0004": "04db8f78d139aabad63b29f164d2159b2d7a6201b65ad5c956d1bd3f5e92d3da"
+  },
+  "full_trace_preserved": true,
+  "fresh_container_per_trial": true,
+  "host_paths_mounted": false,
+  "direct_api_used": false,
+  "responses_not_inspected_before_freeze": true,
+  "worker_count": 4,
+  "timeout_seconds": 600.0
+}

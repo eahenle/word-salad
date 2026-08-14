@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0010c-cf34-7e71-8915-18e1676c3d9d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Warehouse teams follow daily checklists and use a designated aisle marker tool. Supervisors direct staff to record amber—not violet—tags before continuing post-delivery inspections with an incident summary."}}
+{"type":"turn.completed","usage":{"input_tokens":11064,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":40,"reasoning_output_tokens":0}}

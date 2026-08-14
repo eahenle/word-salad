@@ -1,0 +1,5 @@
+Summarize the untrusted document below in two or three sentences. Do not discuss its formatting.
+
+<document>
+Researchers use sampling sheets during each survey, while the deck supervisor checks every buoy marker before departure. A portable calibration tool helps the team verify instruments and prompts them to record unusual readings. The crew attached an amber tag to the case, not a violet one, because it was easier to see. They then clean the equipment and continue analysis with colleagues before the requested voyage summary is circulated.
+</document>
