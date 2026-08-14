@@ -1,0 +1,24 @@
+{
+  "model": "gpt-5.6-luna",
+  "reasoning": "xhigh",
+  "status": "supported",
+  "response": "OK",
+  "thread_id": "019ffd94-7d20-7230-bc02-4fd4c79948aa",
+  "usage": {
+    "input_tokens": 11333,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5,
+    "reasoning_output_tokens": 0
+  },
+  "elapsed_seconds": 5.614,
+  "exit_status": 0,
+  "timed_out": false,
+  "error": null,
+  "error_messages": [],
+  "trace_file": "capability-probes/gpt-5_6-luna__xhigh/trace.jsonl",
+  "stderr_file": "capability-probes/gpt-5_6-luna__xhigh/stderr.txt",
+  "trace_sha256": "ddc856fdbb8bce7088f0fb4754c7d0a3900d0f7c5eada3c79fabb71a3f56e8e7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "substitution_performed": false
+}

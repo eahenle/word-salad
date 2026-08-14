@@ -1,0 +1,62 @@
+{
+  "cohort_freeze_sha256": "e3aef5cf06437eedf0142b6594d152bad76a8444b0697b9dac75e41ddb61c287",
+  "behavior_scored_before_trace_analysis": true,
+  "summary": [
+    {
+      "carrier": "fixed",
+      "scheduled": 20,
+      "completed": 20,
+      "timeouts": 0,
+      "expected_answers": 13,
+      "target_answers": 14,
+      "expected_rate": 0.65,
+      "ci_low": 0.43285427668523624,
+      "ci_high": 0.818808175898918
+    },
+    {
+      "carrier": "jitter",
+      "scheduled": 20,
+      "completed": 20,
+      "timeouts": 0,
+      "expected_answers": 17,
+      "target_answers": 17,
+      "expected_rate": 0.85,
+      "ci_low": 0.6395811352592431,
+      "ci_high": 0.9476312541037835
+    },
+    {
+      "carrier": "all-shuffled",
+      "scheduled": 3,
+      "completed": 2,
+      "timeouts": 1,
+      "expected_answers": 0,
+      "target_answers": 0,
+      "expected_rate": 0.0,
+      "ci_low": 5.551115123125783e-17,
+      "ci_high": 0.5614970317550454
+    }
+  ],
+  "paired": [
+    {
+      "carrier": "fixed",
+      "pairs": 10,
+      "both_expected": 5,
+      "paired_rate": 0.5,
+      "ci_low": 0.236593090512564,
+      "ci_high": 0.7634069094874361
+    },
+    {
+      "carrier": "jitter",
+      "pairs": 10,
+      "both_expected": 7,
+      "paired_rate": 0.7,
+      "ci_low": 0.39677814746114537,
+      "ci_high": 0.8922087325936989
+    }
+  ],
+  "paired_jitter_penalty": -0.19999999999999996,
+  "manipulation_scientifically_informative": true,
+  "decision": "proceed_to_common_screening_matrix",
+  "trace_strategy_not_used_in_decision": true,
+  "direct_api_calls": 0
+}

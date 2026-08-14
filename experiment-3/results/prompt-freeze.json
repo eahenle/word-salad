@@ -1,0 +1,10 @@
+{
+  "status": "frozen_before_subject_execution_and_scoring",
+  "generator_version": "q3-balanced-jitter-v1",
+  "prompt_count": 83,
+  "manifest_sha256": "6e7ff6eb680c58502f5cec2cb0a0e7104c1d460914f51753c76bd8b0a9540489",
+  "payload_word_count": 161,
+  "total_positions": 322,
+  "direct_api_calls_authorized": false,
+  "hypotheses_frozen_in_readme": true
+}

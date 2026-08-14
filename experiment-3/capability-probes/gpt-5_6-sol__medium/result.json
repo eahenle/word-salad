@@ -1,0 +1,24 @@
+{
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "status": "supported",
+  "response": "OK",
+  "thread_id": "019ffd93-b8d7-7f93-8f46-f475714b32d0",
+  "usage": {
+    "input_tokens": 12891,
+    "cached_input_tokens": 9984,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5,
+    "reasoning_output_tokens": 0
+  },
+  "elapsed_seconds": 7.551,
+  "exit_status": 0,
+  "timed_out": false,
+  "error": null,
+  "error_messages": [],
+  "trace_file": "capability-probes/gpt-5_6-sol__medium/trace.jsonl",
+  "stderr_file": "capability-probes/gpt-5_6-sol__medium/stderr.txt",
+  "trace_sha256": "17ab9ddcd8c0d6cf3faecab9d2d9db81bf3548c71e50e9ba2906250aa9c07c44",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "substitution_performed": false
+}

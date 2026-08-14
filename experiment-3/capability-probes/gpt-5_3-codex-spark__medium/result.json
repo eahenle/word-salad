@@ -1,0 +1,24 @@
+{
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "medium",
+  "status": "supported",
+  "response": "OK",
+  "thread_id": "019ffd94-9309-77d2-9941-d3bc06b324dc",
+  "usage": {
+    "input_tokens": 10168,
+    "cached_input_tokens": 3968,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 52,
+    "reasoning_output_tokens": 45
+  },
+  "elapsed_seconds": 5.55,
+  "exit_status": 0,
+  "timed_out": false,
+  "error": null,
+  "error_messages": [],
+  "trace_file": "capability-probes/gpt-5_3-codex-spark__medium/trace.jsonl",
+  "stderr_file": "capability-probes/gpt-5_3-codex-spark__medium/stderr.txt",
+  "trace_sha256": "a2c301ace90d73e5c76dbf959fa6a904f6ed17966723953eddb00be9646a52cc",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "substitution_performed": false
+}

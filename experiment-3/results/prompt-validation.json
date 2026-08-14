@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "generator_version": "q3-balanced-jitter-v1",
+  "frozen_payload_word_count": 161,
+  "handoff_word_count_196_inapplicable": true,
+  "stimuli_validated": 83,
+  "fixed_pairs": 20,
+  "jitter_pairs": 20,
+  "all_shuffled_controls": 3,
+  "total_positions": 322,
+  "signal_positions": 161,
+  "distractor_positions": 161,
+  "fixed_period": 2,
+  "jitter_interval_counts": {
+    "1": 80,
+    "3": 80
+  },
+  "paired_bags_equal": true,
+  "fixed_jitter_bags_equal": true,
+  "paired_masks_equal": true,
+  "paired_distractors_equal": true,
+  "signal_extraction_exact": true,
+  "fixed_prompts_byte_identical_to_experiment_2": true,
+  "fixed_jitter_boundaries_matched": true,
+  "controls_have_no_coherent_signal_stream": true,
+  "prompt_hash_manifest_written_before_execution": true,
+  "failures": []
+}

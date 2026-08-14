@@ -1,0 +1,20 @@
+{
+  "experiment_1c": {
+    "tag": "experiment-1c-hardened-normalization",
+    "commit": "389970d43bc8a490d699322afcfa31a41775f975",
+    "trials_sha256": "8a6072325be449954720d56b5e38b1509edc952899cc16c875516a222a093190"
+  },
+  "experiment_2": {
+    "tag": "experiment-2-toolless-cost-truncated-pilot",
+    "commit": "802619e47ab60d6b06162a582416cfa867457ffa",
+    "payload_a_sha256": "73bdc92d16b10f7093dfcccb1f49bf43b0f32e7f28f75dc4e6a629ae3b792dbb",
+    "payload_b_sha256": "7ce6324b1e3661703fa3cd762df0a3628070771b8459eeae9975732c69029ce0",
+    "trials_sha256": "5cbd60a11d4575969954235b8bab9433e5ac0155a3b7868f6ca1c456a13bb47d",
+    "trace_metrics_sha256": "5f6fbeea8cd167f244a508a26bea920ce36f6a2329d045310e03e0da405823e8",
+    "constrained_word_count": 161,
+    "fixed_signal_a_ids": ["r0041", "r0060"],
+    "fixed_signal_b_ids": ["r0061", "r0080"]
+  },
+  "pinned_container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+  "codex_cli_version": "0.147.0"
+}

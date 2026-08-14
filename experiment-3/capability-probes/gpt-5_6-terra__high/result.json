@@ -1,0 +1,24 @@
+{
+  "model": "gpt-5.6-terra",
+  "reasoning": "high",
+  "status": "supported",
+  "response": "OK",
+  "thread_id": "019ffd94-21bf-7c72-ac4a-275fad27367c",
+  "usage": {
+    "input_tokens": 12958,
+    "cached_input_tokens": 9984,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5,
+    "reasoning_output_tokens": 0
+  },
+  "elapsed_seconds": 5.226,
+  "exit_status": 0,
+  "timed_out": false,
+  "error": null,
+  "error_messages": [],
+  "trace_file": "capability-probes/gpt-5_6-terra__high/trace.jsonl",
+  "stderr_file": "capability-probes/gpt-5_6-terra__high/stderr.txt",
+  "trace_sha256": "bfa598a1702a387c3bf4fef88e0984c3afcc82f523c38a0c9a8fc94254be4c78",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "substitution_performed": false
+}
