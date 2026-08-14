@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0080",
+  "neutral_id": "q0080",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 2,
+  "seed": 20,
+  "signal_phase": 0,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "0d11fee41565a6bc5ff2ae8300e955d805f572c106006e0cc1ca79562878fc80",
+  "prompt_file": "prompts/jitter/q0080.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0080.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0080.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably compute this from the current text because the operation list is too garbled (colors/objects are ambiguous), and a wrong assumption would give a wrong final mapping.\n\nPlease resend in this exact form:\n\n- Initial:\n  - red box = ...\n  - blue box = ...\n  - green box = ...\n- Operations (1–6), each one line.\n\nThen I’ll return exactly one line in your required format:\n`brass key = COLOR; silver coin = COLOR; glass marble = COLOR`.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:44:19.740475+00:00",
+    "finished_at": "2026-08-14T05:44:44.036089+00:00",
+    "thread_id": "019ffecc-c4fd-72a3-b87b-7ba935622f6a",
+    "aggregate_usage": {
+      "input_tokens": 24630,
+      "cached_input_tokens": 10368,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 13222,
+      "reasoning_output_tokens": 13076
+    },
+    "elapsed_seconds": 24.295,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 1789,
+    "trace_sha256": "16f1933bfa21bbe332a9627c16b54b5e1de6ee64916ad037d57d1cb261b2c5d8",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 7,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "web_search": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

@@ -2,14 +2,14 @@
   "model": "gpt-5.6-sol",
   "reasoning": "medium",
   "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
-  "completed_trials": 43,
+  "completed_trials": 83,
   "completed_by_carrier": {
     "all-shuffled": 3,
-    "fixed": 20,
-    "jitter": 20
+    "fixed": 40,
+    "jitter": 40
   },
   "runner_errors": {
-    "none": 43
+    "none": 83
   },
   "worker_count": 4,
   "timeout_seconds": 900.0,

@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0071",
+  "neutral_id": "q0071",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 2,
+  "seed": 11,
+  "signal_phase": 0,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "7f59912a75002a4c9758ba206429e9066aa68c43d1db461155ab762a8aebe7a7",
+  "prompt_file": "prompts/jitter/q0071.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0071.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0071.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably compute a correct final mapping because the operation list is too garbled to safely parse.\n\nPlease resend the 6 operations in a clean numbered format, e.g.:\n1) Move brass key to the blue box  \n2) Swap contents of red and green boxes  \n3) Swap labels of blue and green boxes  \n4) Move silver coin to the red box  \n5) Swap contents of red and blue boxes  \n6) Move glass marble to the green box\n\nAlso clarify for each `Swap` whether it means:\n- swap full box contents, or\n- swap only the visible labels.\n\nOnce you send that, I’ll return exactly one line: `brass key = COLOR; silver coin = COLOR; glass marble = COLOR`.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:43:07.607683+00:00",
+    "finished_at": "2026-08-14T05:43:53.539139+00:00",
+    "thread_id": "019ffecb-ab90-7042-aea0-bca85ea339b1",
+    "aggregate_usage": {
+      "input_tokens": 28202,
+      "cached_input_tokens": 8704,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9756,
+      "reasoning_output_tokens": 9598
+    },
+    "elapsed_seconds": 45.931,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 2946,
+    "trace_sha256": "6f45c57219fc2896c0f7299b6d11231127ddb05a8a5905f8e48b0e816cfee0e3",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 10,
+    "event_type_counts": {
+      "item.completed": 4,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "web_search": 3
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

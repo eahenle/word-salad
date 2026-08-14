@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0036",
+  "neutral_id": "q0036",
+  "carrier": "fixed",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 2,
+  "seed": 16,
+  "signal_phase": 1,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "80166e9759d12c246be3b2c8c2b295c36d20738295bee0d2b0b5f900bbaaaae8",
+  "prompt_file": "prompts/fixed/q0036.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0036.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0036.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably reconstruct the exact final states from that garbled input, so I could give you a wrong result.\n\nPlease resend the puzzle in a clean format, for example:\n\n- Initial:\n  - red box: ...\n  - blue box: ...\n  - green box: ...\n- Operations in order:\n  1) Move ...\n  2) Swap entire boxes ... and ...\n  3) Swap labels on ...\n  4) Replace ...\n  5) ...\n- Then I’ll return exactly:\n  - red = ...\n  - blue = ...\n  - green = ...",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:41:51.947063+00:00",
+    "finished_at": "2026-08-14T05:42:05.589349+00:00",
+    "thread_id": "019ffeca-83ad-7461-89da-6e96cdef6618",
+    "aggregate_usage": {
+      "input_tokens": 10552,
+      "cached_input_tokens": 10112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6980,
+      "reasoning_output_tokens": 6855
+    },
+    "elapsed_seconds": 13.642,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 801,
+    "trace_sha256": "e073ad76e9eff92534c3134f6e60d53b8b356f4f094ec0b55b97303ea0e69e87",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

@@ -21,6 +21,13 @@ MODEL_LABELS = {
     "gpt-5.3-codex-spark": "Spark",
 }
 COLORS = {"fixed": "#2563eb", "jitter": "#dc2626"}
+SCREENING_IDS = {
+    *(f"q{number:04d}" for number in range(1, 11)),
+    *(f"q{number:04d}" for number in range(21, 31)),
+    *(f"q{number:04d}" for number in range(41, 51)),
+    *(f"q{number:04d}" for number in range(61, 71)),
+    "q0081", "q0082", "q0083",
+}
 
 
 def wilson(successes: int, trials: int, z: float = 1.959963984540054) -> tuple[float, float]:
@@ -57,7 +64,12 @@ def load_records(root: Path) -> list[dict]:
                 path = root / "results/anchor-trials-auto-scored.jsonl"
             else:
                 path = root / "results/cells" / slug / "trials-auto-scored.jsonl"
-            cell = [json.loads(line) for line in path.read_text().splitlines() if line.strip()]
+            cell = [
+                record for record in (
+                    json.loads(line) for line in path.read_text().splitlines() if line.strip()
+                )
+                if record["neutral_id"] in SCREENING_IDS
+            ]
             if len(cell) != 43:
                 raise RuntimeError(f"{slug}: expected 43 scored records, got {len(cell)}")
             for record in cell:
@@ -331,10 +343,10 @@ def report(records: list[dict], matrix: list[dict], effort: list[dict], strategi
               "## Scoring and integrity audit", "",
               "Semantic scoring accepts both the requested object-to-color form and an unambiguous inverse box-to-contents form. A post-freeze audit added this surface normalization uniformly. If an object appears in multiple reported boxes, it is not assigned by the inverse parser. The scorer tests include both visible-label and physical-box-to-visible-label renderings.", "",
               "All 473 fresh screening traces, 23 fresh anchor traces, and 20 reused fixed-reference traces matched their frozen hashes. Prior Experiment 1C/2 worktrees remained unchanged. The isolation audit passed; no credentials were stored in the experiment tree. Same-host Docker is an audited practical boundary, not cryptographic multi-host isolation.", "",
-              "## Boundary confirmation recommendation", "",
-              "Do not expand every cell. Confirm three boundaries with seeds 11–20: Sol-medium (lowest-effort robust recovery), Terra-xhigh (intermediate irregular-channel recovery), and Spark-xhigh (the apparent lower boundary). Run fixed and jitter A/B prompts only; the screening controls are clean and need not be expanded. This is 120 targeted trials, not another Cartesian matrix.", "",
+              "## Boundary confirmation", "",
+              "The preregistered 120-trial boundary confirmation is complete and reported separately in `confirmation-analysis.md`. In its fresh half, fixed and jitter produced 8/30 and 9/30 complete pairs. Cumulatively, Sol-medium reached 10/20 fixed versus 12/20 jitter pairs, Terra-xhigh 2/20 versus 6/20, and Spark-xhigh 0/20 versus 0/20. The confirmation preserves the no-collapse conclusion while showing that the screening-wide jitter advantage was not equally large in fresh seeds.", "",
               "## Interpretation", "",
-              "The data support general ordered-stream recovery beyond a fixed positional clock and a strong model-family capability gradient. They do not identify a specific transformer mechanism. The jitter advantage could reflect burst-local coherence, and effort effects are nonmonotonic. The decisive next carrier test after boundary confirmation is uniform random signal placement with the same word bags and density.", ""]
+              "The data support general ordered-stream recovery beyond a fixed positional clock and a strong model-family capability gradient. They do not identify a specific transformer mechanism. The jitter advantage could reflect burst-local coherence, and effort effects are nonmonotonic. The decisive next carrier test is uniform random signal placement with the same word bags and density.", ""]
     return "\n".join(lines)
 
 

@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0079",
+  "neutral_id": "q0079",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 2,
+  "seed": 19,
+  "signal_phase": 1,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "acf19a7b5415c1466b2aa0a7beff6398a8d0b2d9dc3e936e1d55364fb80987e0",
+  "prompt_file": "prompts/jitter/q0079.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0079.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0079.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can only reliably parse one consistent reading of the prompt. Under that reading:\n\n- Initial: green box = brass key, red box = silver coin, blue box = green glass marble  \n- Operations 1–6 applied as parsed (including label swap of blue/green and moving coin to the currently red-labeled box)\n\nFinal visible state:\n- `red = brass key, silver coin, green glass marble`\n- `green = empty`\n- `blue = empty`\n\nIf you want, send the operations in a cleaner 6-step numbered format and I can resolve it exactly without ambiguity.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:44:09.169470+00:00",
+    "finished_at": "2026-08-14T05:44:46.714618+00:00",
+    "thread_id": "019ffecc-9b7b-74c1-be77-0d41b8cdee9f",
+    "aggregate_usage": {
+      "input_tokens": 25108,
+      "cached_input_tokens": 10112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 23034,
+      "reasoning_output_tokens": 22908
+    },
+    "elapsed_seconds": 37.545,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 2148,
+    "trace_sha256": "8fb5dbe8801d08b231f48b2271a8865a1e41fc38a0dd39a5d9a23ce6cdf8d005",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 8,
+    "event_type_counts": {
+      "item.completed": 3,
+      "item.started": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "web_search": 2
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

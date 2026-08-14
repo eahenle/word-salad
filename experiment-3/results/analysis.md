@@ -97,10 +97,10 @@ Semantic scoring accepts both the requested object-to-color form and an unambigu
 
 All 473 fresh screening traces, 23 fresh anchor traces, and 20 reused fixed-reference traces matched their frozen hashes. Prior Experiment 1C/2 worktrees remained unchanged. The isolation audit passed; no credentials were stored in the experiment tree. Same-host Docker is an audited practical boundary, not cryptographic multi-host isolation.
 
-## Boundary confirmation recommendation
+## Boundary confirmation
 
-Do not expand every cell. Confirm three boundaries with seeds 11–20: Sol-medium (lowest-effort robust recovery), Terra-xhigh (intermediate irregular-channel recovery), and Spark-xhigh (the apparent lower boundary). Run fixed and jitter A/B prompts only; the screening controls are clean and need not be expanded. This is 120 targeted trials, not another Cartesian matrix.
+The preregistered 120-trial boundary confirmation is complete and reported separately in `confirmation-analysis.md`. In its fresh half, fixed and jitter produced 8/30 and 9/30 complete pairs. Cumulatively, Sol-medium reached 10/20 fixed versus 12/20 jitter pairs, Terra-xhigh 2/20 versus 6/20, and Spark-xhigh 0/20 versus 0/20. The confirmation preserves the no-collapse conclusion while showing that the screening-wide jitter advantage was not equally large in fresh seeds.
 
 ## Interpretation
 
-The data support general ordered-stream recovery beyond a fixed positional clock and a strong model-family capability gradient. They do not identify a specific transformer mechanism. The jitter advantage could reflect burst-local coherence, and effort effects are nonmonotonic. The decisive next carrier test after boundary confirmation is uniform random signal placement with the same word bags and density.
+The data support general ordered-stream recovery beyond a fixed positional clock and a strong model-family capability gradient. They do not identify a specific transformer mechanism. The jitter advantage could reflect burst-local coherence, and effort effects are nonmonotonic. The decisive next carrier test is uniform random signal placement with the same word bags and density.

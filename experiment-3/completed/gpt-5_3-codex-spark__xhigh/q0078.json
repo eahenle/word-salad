@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0078",
+  "neutral_id": "q0078",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 2,
+  "seed": 18,
+  "signal_phase": 1,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "bcc7fb12708e91d644c02288eacb6c2f2684476605ea35e4e239bf734db81696",
+  "prompt_file": "prompts/jitter/q0078.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0078.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0078.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably execute this as written because the operations and initial box contents are too garbled to parse unambiguously (objects/boxes/labeled colors are mixed together).  \nPlease resend in this exact form and I’ll return the final six lines immediately:\n\n- Initial contents by visible label  \n`Red: ...`  \n`Blue: ...`  \n`Green: ...`  \n`Silver: ...`\n\n- Operations in order  \n`1) ...`  \n`2) ...`  \n`3) ...`  \n`4) ...`  \n`5) ...`  \n`6) ...`\n\nThen I’ll output exactly:  \n`object = COLOR;`  \nfor all objects.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:44:03.285645+00:00",
+    "finished_at": "2026-08-14T05:44:19.737521+00:00",
+    "thread_id": "019ffecc-84ee-7753-84df-023b66b6e273",
+    "aggregate_usage": {
+      "input_tokens": 10553,
+      "cached_input_tokens": 10240,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8801,
+      "reasoning_output_tokens": 8655
+    },
+    "elapsed_seconds": 16.452,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 886,
+    "trace_sha256": "780b280cf24190bd1dce358127cd29a21618432b900aff1015166c3de356d275",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

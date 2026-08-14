@@ -1,0 +1,11 @@
+{
+  "neutral_id": "q0017",
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "carrier": "fixed",
+  "condition": "signal",
+  "payload_identity": "A",
+  "seed": 17,
+  "prompt_sha256": "5a4798575af94b1e0581e2d493087130db31edf79be1c6a4a01ae4555a4805d5",
+  "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402"
+}

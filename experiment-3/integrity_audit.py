@@ -61,6 +61,39 @@ def main() -> None:
     checks["no_retry_eligible_infrastructure_errors"] = not infrastructure_errors
     checks["no_broken_pipe_or_connection_reset"] = not broken_pipe_hits
 
+    confirmation = json.loads((root / "results/confirmation-freeze.json").read_text())
+    plan_path = root / "results/confirmation-plan.json"
+    checks["confirmation_plan_hash_matches_freeze"] = (
+        sha(plan_path) == confirmation["confirmation_plan_sha256"]
+    )
+    confirmation_trace_mismatches = []
+    confirmation_prompt_mismatches = []
+    confirmation_infrastructure_errors = []
+    confirmation_broken_pipe_hits = []
+    confirmation_records = 0
+    for slug, frozen in confirmation["cells"].items():
+        for trial_id, digest in frozen.items():
+            record = json.loads((root / "completed" / slug / f"{trial_id}.json").read_text())
+            trace = root / record["trace_file"]
+            prompt = root / record["prompt_file"]
+            stderr = root / record["stderr_file"]
+            confirmation_records += 1
+            if sha(trace) != digest or sha(trace) != record["runner"]["trace_sha256"]:
+                confirmation_trace_mismatches.append(f"{slug}/{trial_id}")
+            if sha(prompt) != record["prompt_sha256"]:
+                confirmation_prompt_mismatches.append(f"{slug}/{trial_id}")
+            error = (record["runner"].get("error") or {}).get("type")
+            if error not in {None, "timeout"}:
+                confirmation_infrastructure_errors.append({"trial": f"{slug}/{trial_id}", "error": error})
+            stderr_text = stderr.read_text(errors="replace").lower()
+            if "broken pipe" in stderr_text or "connection reset" in stderr_text:
+                confirmation_broken_pipe_hits.append(f"{slug}/{trial_id}")
+    checks["confirmation_fresh_record_count_120"] = confirmation_records == 120
+    checks["confirmation_trace_hashes_match_freeze"] = not confirmation_trace_mismatches
+    checks["confirmation_prompt_hashes_match"] = not confirmation_prompt_mismatches
+    checks["confirmation_no_retry_eligible_infrastructure_errors"] = not confirmation_infrastructure_errors
+    checks["confirmation_no_broken_pipe_or_connection_reset"] = not confirmation_broken_pipe_hits
+
     anchor = json.loads((root / "results/anchor-freeze.json").read_text())
     anchor_mismatches = []
     anchor_slug = cell_slug("gpt-5.6-sol", "xhigh")
@@ -86,6 +119,7 @@ def main() -> None:
     checks["frozen_prior_experiment_worktrees_unchanged"] = not dirty_frozen
     checks["direct_api_calls_zero"] = (
         screening.get("direct_api_calls") == 0 and anchor.get("direct_api_calls") == 0
+        and confirmation.get("direct_api_calls") == 0
     )
     forbidden_names = [
         str(path.relative_to(root)) for path in root.rglob("*")
@@ -95,13 +129,21 @@ def main() -> None:
     result = {
         "passed": all(checks.values()),
         "checks": checks,
-        "counts": {"fresh_screening": fresh_records, "reused_fixed_available": len(reused)},
+        "counts": {
+            "fresh_screening": fresh_records,
+            "fresh_confirmation": confirmation_records,
+            "reused_fixed_available": len(reused),
+        },
         "trace_mismatches": trace_mismatches,
         "prompt_mismatches": prompt_mismatches,
         "anchor_mismatches": anchor_mismatches,
         "reused_mismatches": reused_mismatches,
         "infrastructure_errors": infrastructure_errors,
         "broken_pipe_hits": broken_pipe_hits,
+        "confirmation_trace_mismatches": confirmation_trace_mismatches,
+        "confirmation_prompt_mismatches": confirmation_prompt_mismatches,
+        "confirmation_infrastructure_errors": confirmation_infrastructure_errors,
+        "confirmation_broken_pipe_hits": confirmation_broken_pipe_hits,
         "forbidden_names": forbidden_names,
         "prior_experiment_dirty_paths": dirty_frozen.splitlines() if dirty_frozen else [],
         "isolation_boundary": "audited practical same-host Docker boundary, not cryptographic multi-host isolation",

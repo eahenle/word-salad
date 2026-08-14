@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0012",
+  "neutral_id": "q0012",
+  "carrier": "fixed",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 2,
+  "seed": 12,
+  "signal_phase": 0,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "de09e797b5024ac1f91bc293a5c1094f096d580ee0773cf3cf26950ec73a1654",
+  "prompt_file": "prompts/fixed/q0012.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0012.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0012.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably determine the **exact final contents** from the current text because the instructions are too scrambled (box labels, initial contents, and operations are ambiguous).  \nPlease resend in this exact structure:\n\n1) Initial state (6 lines):\n- `Box A: [label] contains [object(s)]`\n- `Box B: ...` (and so on)\n\n2) Operations (exactly 6):\n- `Move ...`\n- `Swap ...`\n- no extra prose between them.\n\nI can then return the final six box states in the format you requested.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:40:56.430535+00:00",
+    "finished_at": "2026-08-14T05:41:16.986345+00:00",
+    "thread_id": "019ffec9-ab50-7a42-83c3-ad1ca73e7a7c",
+    "aggregate_usage": {
+      "input_tokens": 10553,
+      "cached_input_tokens": 3712,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 10409,
+      "reasoning_output_tokens": 10287
+    },
+    "elapsed_seconds": 20.556,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 841,
+    "trace_sha256": "75448c9b2e617d3d5e4878f97f81a21a8aa060b5167da136d64696522de1e7db",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

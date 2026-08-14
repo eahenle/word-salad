@@ -9,6 +9,12 @@
     "fresh_prompt_hashes_match": true,
     "no_retry_eligible_infrastructure_errors": true,
     "no_broken_pipe_or_connection_reset": true,
+    "confirmation_plan_hash_matches_freeze": true,
+    "confirmation_fresh_record_count_120": true,
+    "confirmation_trace_hashes_match_freeze": true,
+    "confirmation_prompt_hashes_match": true,
+    "confirmation_no_retry_eligible_infrastructure_errors": true,
+    "confirmation_no_broken_pipe_or_connection_reset": true,
     "anchor_trace_hashes_match_freeze": true,
     "reused_fixed_record_count_40": true,
     "reused_fixed_hashes_match": true,
@@ -18,6 +24,7 @@
   },
   "counts": {
     "fresh_screening": 473,
+    "fresh_confirmation": 120,
     "reused_fixed_available": 40
   },
   "trace_mismatches": [],
@@ -26,6 +33,10 @@
   "reused_mismatches": [],
   "infrastructure_errors": [],
   "broken_pipe_hits": [],
+  "confirmation_trace_mismatches": [],
+  "confirmation_prompt_mismatches": [],
+  "confirmation_infrastructure_errors": [],
+  "confirmation_broken_pipe_hits": [],
   "forbidden_names": [],
   "prior_experiment_dirty_paths": [],
   "isolation_boundary": "audited practical same-host Docker boundary, not cryptographic multi-host isolation"

@@ -1,0 +1,54 @@
+{
+  "trial_id": "q0074",
+  "neutral_id": "q0074",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 2,
+  "seed": 14,
+  "signal_phase": 0,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "b1dea2cb2ae96ffda0bab16e2982f9702be9782d873c9bd8598899f4306a20a2",
+  "prompt_file": "prompts/jitter/q0074.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0074.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0074.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably reconstruct the starting state or each of the 6 steps from the garbled text (objects/labels/operations are mixed together), so I can’t give a trustworthy final box report yet.\n\nPlease resend the puzzle in this exact format:\n1. Three labels: `red`, `blue`, `green` (or whatever labels you want).\n2. Initial contents for each box.\n3. Steps 1–6, one per line.\n\nExample format:\n- `Initial: red = [brass key, ...], blue = [...], green = [...]`\n- `1) Move ...`\n- `2) Swap ...`\n- ...\n- `6) Move ...`\n\nOnce you send that, I’ll return only the final report lines in the required format.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:43:44.656476+00:00",
+    "finished_at": "2026-08-14T05:43:58.465128+00:00",
+    "thread_id": "019ffecc-3c7d-74f3-91ca-bd094734b2a0",
+    "aggregate_usage": {
+      "input_tokens": 10553,
+      "cached_input_tokens": 10112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9680,
+      "reasoning_output_tokens": 9517
+    },
+    "elapsed_seconds": 13.808,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 965,
+    "trace_sha256": "ab71c8defe7b0a97379c8508b8b55e125b867970d649bf35557be82e94b62947",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 4,
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

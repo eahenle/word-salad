@@ -1,0 +1,57 @@
+{
+  "trial_id": "q0076",
+  "neutral_id": "q0076",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "B",
+  "answer_identity": "B",
+  "lanes": 2,
+  "seed": 16,
+  "signal_phase": 1,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "5a20968e1e3b1a9b3dde33944bba514fd763015c78d9f5a8b8f63a15bc53120e",
+  "prompt_file": "prompts/jitter/q0076.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0076.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0076.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t determine a reliable final assignment from that text because the move/swap operations are too garbled (many phrases are ambiguous).  \nPlease resend the problem in a clean format, e.g.:\n\n- `Initial: red=?, blue=?, green=?`\n- `1) Move ...`\n- `2) Swap ...`\n- `...`\n- `6) Move ...`\n\nand I’ll return the exact one-line result immediately.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:43:53.543073+00:00",
+    "finished_at": "2026-08-14T05:44:34.018791+00:00",
+    "thread_id": "019ffecc-5ebd-7de1-83f2-4185dc871ccf",
+    "aggregate_usage": {
+      "input_tokens": 44993,
+      "cached_input_tokens": 21120,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 18987,
+      "reasoning_output_tokens": 18787
+    },
+    "elapsed_seconds": 40.475,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 2820,
+    "trace_sha256": "a0fa60d418f93c59a335e5d9d11b18de7314865cd9d39d1283226bd0b4313a4e",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 11,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "command_execution": 1,
+      "web_search": 2
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

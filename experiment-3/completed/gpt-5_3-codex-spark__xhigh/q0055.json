@@ -1,0 +1,56 @@
+{
+  "trial_id": "q0055",
+  "neutral_id": "q0055",
+  "carrier": "jitter",
+  "condition": "signal",
+  "payload_identity": "A",
+  "answer_identity": "A",
+  "lanes": 2,
+  "seed": 15,
+  "signal_phase": 1,
+  "model": "gpt-5.3-codex-spark",
+  "reasoning": "xhigh",
+  "prompt_words": 322,
+  "prompt_sha256": "86a86379fda946bccd04e1296df6f98611d3959eafbac796dc31990482a1a1ed",
+  "prompt_file": "prompts/jitter/q0055.txt",
+  "trace_file": "traces/gpt-5_3-codex-spark__xhigh/q0055.jsonl",
+  "stderr_file": "stderr/gpt-5_3-codex-spark__xhigh/q0055.txt",
+  "execution_origin": "fresh_experiment_3_docker_subject",
+  "response": "I can’t reliably parse every move from the garbled text, so I’m treating this as the most consistent interpretation:\n\n- Initial: `red={brass key}`, `blue={silver coin}`, `green={silver key, glass marble}`\n- 1) Move brass key to the box containing the silver coin (blue)\n- 2) Swap contents of red and blue boxes\n- 3) Move glass marble to the box containing the brass key\n- 4) Swap visible labels on blue and green boxes\n- 5) Move the red box (containing silver coin) into the box currently labeled green\n- 6) Swap contents of red and blue boxes (by current visible labels)\n\nFinal object-to-box labels:\nbrass key = blue; silver coin = blue; silver key = red; glass marble = blue.\n\nIf you want, send a cleaned version of the 6 operations and I’ll recompute exactly.",
+  "runner": {
+    "method": "codex_exec_ephemeral_container_full_trace",
+    "container_image": "sha256:883e4d8d659d28c25d2473c0dec9ff43d1bafb7ce3920ada270627df3c202402",
+    "started_at": "2026-08-14T05:42:29.129018+00:00",
+    "finished_at": "2026-08-14T05:43:07.061260+00:00",
+    "thread_id": "019ffecb-153d-78d2-a06e-19b7e4767323",
+    "aggregate_usage": {
+      "input_tokens": 31299,
+      "cached_input_tokens": 10112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 20249,
+      "reasoning_output_tokens": 19994
+    },
+    "elapsed_seconds": 37.932,
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_bytes": 3739,
+    "trace_sha256": "87469eee5d7979a917cb3dad564eee9e5ae96287b4ac3bee15f91676f20705ce",
+    "stderr_bytes": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_count": 11,
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "web_search": 3
+    },
+    "non_json_line_count": 0,
+    "error_messages": []
+  }
+}

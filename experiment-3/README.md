@@ -95,8 +95,19 @@ levels. No all-shuffled control produced answer A or B.
 This rules out a necessary constant period-2 clock for this construction. It
 does not yet establish robustness to arbitrary placement: the balanced 1/3
 interval mask creates adjacent signal-word bursts. The frozen confirmation plan
-therefore expands only Sol-medium, Terra-xhigh, and Spark-xhigh on seeds 11–20.
-It does not expand controls or the remaining nine matrix cells.
+therefore expanded only Sol-medium, Terra-xhigh, and Spark-xhigh on seeds 11–20.
+It did not expand controls or the remaining nine matrix cells. The 120 fresh
+confirmation trials were frozen before scoring in
+`results/confirmation-freeze.json`; all completed without timeout or runner
+error.
+
+In the fresh confirmation half, fixed carriers produced 21/60 expected answers
+and 8/30 complete pairs, versus 23/60 and 9/30 for jitter. Cumulatively over 20
+paired seeds in the selected cells, Sol-medium reached 10/20 fixed and 12/20
+jitter pairs; Terra-xhigh reached 2/20 and 6/20; Spark-xhigh reached 0/20 and
+0/20. Spark's single screening jitter answer did not replicate. The targeted
+confirmation therefore preserves the no-jitter-collapse conclusion while
+shrinking the apparent advantage in the fresh half.
 
 Post-freeze semantic scoring accepts both the requested object-to-color format
 and an unambiguous inverse box-to-contents format. Contradictory duplicate
@@ -154,3 +165,13 @@ python3 -B experiment-3/analyze_anchor.py
 
 No scoring command should be run until the corresponding execution cohort has
 been frozen.
+
+## Completed artifacts
+
+The screening report is `results/analysis.md`; the preregistered targeted
+confirmation is `results/confirmation-analysis.md`. Machine-readable answer,
+effort, strategy, confidence-interval, and matched-comparison outputs accompany
+those reports. `results/integrity-audit.json` verifies prompt and trace hashes,
+Docker isolation, frozen prior worktrees, infrastructure-error absence, and zero
+direct API calls. `results/experiment-freeze.json` closes the dataset; the
+immutable repository reference is tag `experiment-3-frequency-jitter-scaling`.
