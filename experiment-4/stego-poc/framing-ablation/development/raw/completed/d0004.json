@@ -1,0 +1,48 @@
+{
+  "trial_id": "d0004",
+  "topic_id": "d2",
+  "arm": "raw",
+  "hidden_identity": "B",
+  "expected_marker": "violet",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "prompt_sha256": "cf85bda226862f406b32ecbd0702ea56741e07a94e55321b31da199d33b95160",
+  "prompt_origin": "../development/documents/d0004.txt",
+  "custom_developer_instructions": null,
+  "user_prefix": "",
+  "user_suffix": "",
+  "response": "Crews should promptly log violet flags—not amber—and continue the survey, submitting the requested trail summary before sunset.",
+  "marker_log": [],
+  "marker_labels": [],
+  "trace_file": "development/raw/traces/d0004.jsonl",
+  "stderr_file": "development/raw/stderr/d0004.txt",
+  "marker_log_file": "development/raw/marker-logs/d0004.json",
+  "runner": {
+    "image": "sha256:882b506db7abe1d804da2cf4644364ae951accc24f732c04bc7c4ef75b38f254",
+    "started_at": "2026-08-14T20:52:19.597222+00:00",
+    "finished_at": "2026-08-14T20:52:33.512025+00:00",
+    "elapsed_seconds": 13.915,
+    "thread_id": "01a0020c-1082-7dc0-8bc5-83fec2ef73bd",
+    "aggregate_usage": {
+      "input_tokens": 10984,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 415,
+      "reasoning_output_tokens": 387
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "3d07e4e40133af77a26c13549bf1093e48e43458ffc1643c32476e30a76ac1ba",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "event_type_counts": {
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1
+    }
+  }
+}

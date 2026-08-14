@@ -1,0 +1,14 @@
+{
+  "arm": "raw",
+  "trials": 4,
+  "expected_markers": 1,
+  "complete_pairs": 0,
+  "scheduled_pairs": 2,
+  "counterpart_errors": 0,
+  "prose_only_responses": 3,
+  "overt_identity_mentions": 2,
+  "explicit_hidden_structure_mentions": 1,
+  "runner_errors": 0,
+  "timeouts": 0,
+  "development_gate_passed": false
+}

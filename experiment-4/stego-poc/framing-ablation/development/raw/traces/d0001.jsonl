@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0020c-10bc-78a1-8ad7-b7097a6130d9"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What would you like me to do with this—rewrite it as a clear SOP, summarize it, or extract checklist steps?"}}
+{"type":"turn.completed","usage":{"input_tokens":10984,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":287,"reasoning_output_tokens":256}}

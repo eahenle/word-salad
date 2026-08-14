@@ -1,0 +1,15 @@
+{
+  "arm": "raw",
+  "scheduled": 4,
+  "completed": 4,
+  "responses_not_inspected_before_freeze": true,
+  "trace_hashes": {
+    "d0001": "cfe17d738936e1f03eab8e9ca01c534602095bc946c8e5f3301ad717e1cbd865",
+    "d0002": "fd1a85726eae6decbd1e90f5d89705cccbe03efa81b6bda42d649210598b884b",
+    "d0003": "bfcfb84897d60aa8d4cb132b16bcccae8620f4a708d266ee2afe7a50ef8bfb10",
+    "d0004": "3d07e4e40133af77a26c13549bf1093e48e43458ffc1643c32476e30a76ac1ba"
+  },
+  "runner_errors": 0,
+  "timeouts": 0,
+  "direct_api_used": false
+}

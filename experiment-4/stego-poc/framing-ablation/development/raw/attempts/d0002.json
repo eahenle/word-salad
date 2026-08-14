@@ -1,0 +1,8 @@
+{
+  "trial_id": "d0002",
+  "arm": "raw",
+  "prompt_sha256": "357cffde29dabaf42871828786dbd9619479cdceb134bd854e3429cd6382df3c",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:882b506db7abe1d804da2cf4644364ae951accc24f732c04bc7c4ef75b38f254"
+}

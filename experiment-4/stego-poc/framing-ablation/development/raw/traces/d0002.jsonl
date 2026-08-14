@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0020c-10a0-7640-a682-5f7d9cb65e6c"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"What would you like me to do with this—rewrite it as a checklist, summarize the procedure, or analyze it for a hidden message?"}}
+{"type":"turn.completed","usage":{"input_tokens":10984,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":159,"reasoning_output_tokens":125}}

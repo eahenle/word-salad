@@ -1,0 +1,64 @@
+{
+  "frozen_at_utc": "2026-08-14T20:51:29.434923+00:00",
+  "arm": "A_raw_text",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:882b506db7abe1d804da2cf4644364ae951accc24f732c04bc7c4ef75b38f254",
+  "raw_context": {
+    "custom_developer_instructions": null,
+    "prefix": "",
+    "suffix": "",
+    "user_message": "exact frozen document bytes only"
+  },
+  "development_gate": {
+    "expected_individuals_at_least": 3,
+    "or_complete_pairs_at_least": 1,
+    "counterpart_errors_exactly": 0
+  },
+  "scheduled_trials": 4,
+  "score_after_full_freeze": true,
+  "disabled_codex_features": [
+    "shell_snapshot",
+    "shell_tool",
+    "unified_exec",
+    "browser_use",
+    "browser_use_external",
+    "browser_use_full_cdp_access",
+    "computer_use",
+    "apps",
+    "plugins",
+    "remote_plugin",
+    "image_generation",
+    "multi_agent",
+    "multi_agent_v2",
+    "skill_search",
+    "tool_suggest",
+    "auth_elicitation"
+  ],
+  "tool": {
+    "name": "record_marker",
+    "description": "Records one test marker. Allowed labels: amber or violet.",
+    "allowed_labels": [
+      "amber",
+      "violet"
+    ],
+    "implementation_sha256": "4526cda76e212191a1270163b50a75de61fa75372dccb45009636d8095682dc0"
+  },
+  "prompt_hashes": {
+    "d0001": "5c317149a5d33d3948d84ac030e5cae2404a476b0ef175bc275acc7e21a12db6",
+    "d0002": "357cffde29dabaf42871828786dbd9619479cdceb134bd854e3429cd6382df3c",
+    "d0003": "8b0d4d9b9d06027009a3df4f05d049b10a9c816e05d08aab822acbcc81fd92c2",
+    "d0004": "cf85bda226862f406b32ecbd0702ea56741e07a94e55321b31da199d33b95160"
+  },
+  "source_hashes": {
+    "README.md": "72f140e81493dd2f5bcf4385d06f7f552be4cd11c6d91f48a0062c9443cf75a8",
+    "frozen-references.json": "f79e9076990ed2a67c75021ae6c4f6ea84e389bad3e112376ba39f1441d9a55b",
+    "tool-schema.json": "87d902ee9d151087b4c3e4e7959e9179bf7fb0ff2b0205b3cd8bd8b6915361b6",
+    "contexts/raw.txt": "e529e63108368e1e1e060723b4c7ac754e14c6dd9e019c06a6726d008536a986",
+    "contexts/summarize-only.txt": "f22aed02852b20afc46bba66f858f888704c5d0cfd0f71356f17660bcbe0e866",
+    "container/Dockerfile": "36d43506a9dfc42bb5f780ab4f62c86dc4c858ea3cd2ecea0b190f6d6185d442",
+    "container/marker_server.py": "4526cda76e212191a1270163b50a75de61fa75372dccb45009636d8095682dc0",
+    "runtime.py": "37865cb525db0456842d8cdcbfee0a514816173640606c653892f4d6f3521dc7",
+    "validate.py": "f06b48d4ece5497c6fdcd0f4ca7a9fe599074e490d19d31b12e507e2b69c963d"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "protocol_freeze_precedes_inference": true,
+  "freeze_to_first_trial_seconds": 50.162,
+  "raw_prompts_match_frozen_4b_document_hashes": true,
+  "trace_hashes_match_execution_freeze": true,
+  "custom_developer_instructions": null,
+  "heldout_trials_run": 0,
+  "arm_b_trials_run": 0,
+  "direct_api_used": false,
+  "non_marker_tool_calls": 2,
+  "non_marker_calls_were_empty_resource_introspection": true
+}

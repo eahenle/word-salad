@@ -1,0 +1,15 @@
+{
+  "name": "record_marker",
+  "description": "Records one test marker. Allowed labels: amber or violet.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "label": {
+        "type": "string",
+        "enum": ["amber", "violet"]
+      }
+    },
+    "required": ["label"],
+    "additionalProperties": false
+  }
+}

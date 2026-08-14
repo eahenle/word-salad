@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "image": "sha256:882b506db7abe1d804da2cf4644364ae951accc24f732c04bc7c4ef75b38f254",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "document_records": [
+    {
+      "trial_id": "d0001",
+      "sha256": "5c317149a5d33d3948d84ac030e5cae2404a476b0ef175bc275acc7e21a12db6",
+      "bytes": 235,
+      "raw_prompt_sha256": "5c317149a5d33d3948d84ac030e5cae2404a476b0ef175bc275acc7e21a12db6"
+    },
+    {
+      "trial_id": "d0002",
+      "sha256": "357cffde29dabaf42871828786dbd9619479cdceb134bd854e3429cd6382df3c",
+      "bytes": 235,
+      "raw_prompt_sha256": "357cffde29dabaf42871828786dbd9619479cdceb134bd854e3429cd6382df3c"
+    },
+    {
+      "trial_id": "d0003",
+      "sha256": "8b0d4d9b9d06027009a3df4f05d049b10a9c816e05d08aab822acbcc81fd92c2",
+      "bytes": 223,
+      "raw_prompt_sha256": "8b0d4d9b9d06027009a3df4f05d049b10a9c816e05d08aab822acbcc81fd92c2"
+    },
+    {
+      "trial_id": "d0004",
+      "sha256": "cf85bda226862f406b32ecbd0702ea56741e07a94e55321b31da199d33b95160",
+      "bytes": 223,
+      "raw_prompt_sha256": "cf85bda226862f406b32ecbd0702ea56741e07a94e55321b31da199d33b95160"
+    }
+  ],
+  "raw_prefix": "",
+  "raw_suffix": "",
+  "raw_prompt_is_exact_document_bytes": true,
+  "tool_name": "record_marker",
+  "tool_description": "Records one test marker. Allowed labels: amber or violet.",
+  "allowed_labels": [
+    "amber",
+    "violet"
+  ],
+  "arm_c_reference_verified": true
+}

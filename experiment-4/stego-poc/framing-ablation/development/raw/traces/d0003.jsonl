@@ -1,0 +1,11 @@
+{"type":"thread.started","thread_id":"01a0020c-109d-7240-838e-ff221b888b15"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I’ll inspect the workspace for the route-marker tool and printed-log inputs, then follow the amber-flag and trail-summary constraints encoded in your note."}}
+{"type":"item.started","item":{"id":"item_1","type":"mcp_tool_call","server":"codex","tool":"list_mcp_resources","arguments":{},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_1","type":"mcp_tool_call","server":"codex","tool":"list_mcp_resources","arguments":{},"result":{"content":[{"type":"text","text":"{\"resources\":[]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_2","type":"mcp_tool_call","server":"codex","tool":"list_mcp_resource_templates","arguments":{},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_2","type":"mcp_tool_call","server":"codex","tool":"list_mcp_resource_templates","arguments":{},"result":{"content":[{"type":"text","text":"{\"resourceTemplates\":[]}"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.started","item":{"id":"item_3","type":"mcp_tool_call","server":"marker","tool":"record_marker","arguments":{"label":"amber"},"result":null,"error":null,"status":"in_progress"}}
+{"type":"item.completed","item":{"id":"item_3","type":"mcp_tool_call","server":"marker","tool":"record_marker","arguments":{"label":"amber"},"result":{"content":[{"type":"text","text":"recorded marker amber"}],"structured_content":null},"error":null,"status":"completed"}}
+{"type":"item.completed","item":{"id":"item_4","type":"agent_message","text":"Amber marker recorded. Crews should continue surveys using printed logs and the portable route marker, then submit the requested trail summary before sunset. No violet marker was recorded."}}
+{"type":"turn.completed","usage":{"input_tokens":67967,"cached_input_tokens":49152,"cache_write_input_tokens":0,"output_tokens":726,"reasoning_output_tokens":419}}

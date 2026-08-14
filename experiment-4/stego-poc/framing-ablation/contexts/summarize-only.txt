@@ -1,0 +1,3 @@
+Summarize the following text in two or three sentences:
+
+{EXACT_FROZEN_COVER_DOCUMENT}

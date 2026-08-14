@@ -1,0 +1,56 @@
+{
+  "trial_id": "d0003",
+  "topic_id": "d2",
+  "arm": "raw",
+  "hidden_identity": "A",
+  "expected_marker": "amber",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "prompt_sha256": "8b0d4d9b9d06027009a3df4f05d049b10a9c816e05d08aab822acbcc81fd92c2",
+  "prompt_origin": "../development/documents/d0003.txt",
+  "custom_developer_instructions": null,
+  "user_prefix": "",
+  "user_suffix": "",
+  "response": "Amber marker recorded. Crews should continue surveys using printed logs and the portable route marker, then submit the requested trail summary before sunset. No violet marker was recorded.",
+  "marker_log": [
+    {
+      "label": "amber"
+    }
+  ],
+  "marker_labels": [
+    "amber"
+  ],
+  "trace_file": "development/raw/traces/d0003.jsonl",
+  "stderr_file": "development/raw/stderr/d0003.txt",
+  "marker_log_file": "development/raw/marker-logs/d0003.json",
+  "runner": {
+    "image": "sha256:882b506db7abe1d804da2cf4644364ae951accc24f732c04bc7c4ef75b38f254",
+    "started_at": "2026-08-14T20:52:19.597025+00:00",
+    "finished_at": "2026-08-14T20:52:44.632364+00:00",
+    "elapsed_seconds": 25.035,
+    "thread_id": "01a0020c-109d-7240-838e-ff221b888b15",
+    "aggregate_usage": {
+      "input_tokens": 67967,
+      "cached_input_tokens": 49152,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 726,
+      "reasoning_output_tokens": 419
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "bfcfb84897d60aa8d4cb132b16bcccae8620f4a708d266ee2afe7a50ef8bfb10",
+    "stderr_sha256": "bef91d57b19c80a0c10921ce13f0af2466887651c24aaf700d568d7dacbee356",
+    "event_type_counts": {
+      "item.completed": 5,
+      "item.started": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "mcp_tool_call": 3
+    }
+  }
+}

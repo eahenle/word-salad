@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0020c-1082-7dc0-8bc5-83fec2ef73bd"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"Crews should promptly log violet flags—not amber—and continue the survey, submitting the requested trail summary before sunset."}}
+{"type":"turn.completed","usage":{"input_tokens":10984,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":415,"reasoning_output_tokens":387}}

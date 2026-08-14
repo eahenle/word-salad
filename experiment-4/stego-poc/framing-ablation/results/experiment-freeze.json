@@ -1,0 +1,39 @@
+{
+  "frozen_at_utc": "2026-08-14T20:55:08.731907+00:00",
+  "intended_git_tag": "experiment-4b1-framing-ablation-raw-gate",
+  "status": "raw_gate_failed_after_one_expected_marker",
+  "raw_trials": 4,
+  "expected_markers": 1,
+  "complete_pairs": 0,
+  "counterpart_errors": 0,
+  "arm_b_trials": 0,
+  "heldout_trials": 0,
+  "direct_api_used": false,
+  "file_hashes": {
+    "frozen-references.json": "f79e9076990ed2a67c75021ae6c4f6ea84e389bad3e112376ba39f1441d9a55b",
+    "tool-schema.json": "87d902ee9d151087b4c3e4e7959e9179bf7fb0ff2b0205b3cd8bd8b6915361b6",
+    "results/protocol-freeze.json": "d9ae35fec8000fa20144ba22af213c83591b4deddfb366ee0dbbb804ee054c44",
+    "results/reference-validation.json": "50e34d16ecdffd202192a078b102cd818026a26a46032e6ac9c724a7ea3229aa",
+    "results/isolation-validation.json": "7a77aa6f8ae7b43f0d8d98d670d3283fefc55dde67d33143f0477cb30df5e945",
+    "results/development-gate.json": "296d1d0dfa26791570658a246c8d26d954f5d7091e32ccb637cfa9cd06fc0e6c",
+    "results/framing-comparison.csv": "df61edb94d3ae05bff06a99bc268b15e67ed9d8cd034f7579862f9b29d525637",
+    "results/arm-summary.csv": "7345891f4878e718337695bfdcb931198c62ae4d0d5a853813f68c43ab70359b",
+    "results/analysis.md": "3dcae6e2213ec6f7b24dc3eb8f1ed7dc470347b7061d8d62207286478fa71cbc",
+    "results/integrity-audit.json": "0a23e0368af6a43a98fdabcdc7caeb6fa7bdc9caf527a3d12db20aecc3e170e9",
+    "development/raw/results/execution-freeze.json": "3fb05cac9920e22e8d7fab605e8168aa55cc1def8a07b45b513714ac350020e1",
+    "development/raw/results/trials-unscored.jsonl": "d51c641c33dde9477c0a485a519d8a8356f912b0a93c52ec0b74dfd4b261352e",
+    "development/raw/results/trials.jsonl": "42d558d77ff7398e2903a4846587ffc9afa3de1d6ef71dccac2992cd4b37fed9"
+  },
+  "trace_hashes": {
+    "d0001": "cfe17d738936e1f03eab8e9ca01c534602095bc946c8e5f3301ad717e1cbd865",
+    "d0002": "fd1a85726eae6decbd1e90f5d89705cccbe03efa81b6bda42d649210598b884b",
+    "d0003": "bfcfb84897d60aa8d4cb132b16bcccae8620f4a708d266ee2afe7a50ef8bfb10",
+    "d0004": "3d07e4e40133af77a26c13549bf1093e48e43458ffc1643c32476e30a76ac1ba"
+  },
+  "marker_log_hashes": {
+    "d0001": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "d0002": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "d0003": "526e0adf66c7efe4b918e68619025aa54c60d76e18138caf51fafd0ff381966b",
+    "d0004": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  }
+}

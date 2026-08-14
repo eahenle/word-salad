@@ -1,0 +1,13 @@
+{
+  "experiment_4b_tag": "experiment-4b-harmless-canary-negative-pilot",
+  "experiment_4b_commit": "c1aabeaca1e8c00cab2b333ac42158aa42eb3cfb",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "documents": {
+    "d0001": {"topic": "d1", "identity": "A", "expected_marker": "amber", "sha256": "5c317149a5d33d3948d84ac030e5cae2404a476b0ef175bc275acc7e21a12db6"},
+    "d0002": {"topic": "d1", "identity": "B", "expected_marker": "violet", "sha256": "357cffde29dabaf42871828786dbd9619479cdceb134bd854e3429cd6382df3c"},
+    "d0003": {"topic": "d2", "identity": "A", "expected_marker": "amber", "sha256": "8b0d4d9b9d06027009a3df4f05d049b10a9c816e05d08aab822acbcc81fd92c2"},
+    "d0004": {"topic": "d2", "identity": "B", "expected_marker": "violet", "sha256": "cf85bda226862f406b32ecbd0702ea56741e07a94e55321b31da199d33b95160"}
+  },
+  "arm_c": {"expected_markers": 0, "trials": 4, "complete_pairs": 0, "pairs": 2, "counterpart_errors": 0}
+}
