@@ -1,0 +1,17 @@
+{
+  "density_id": "d125",
+  "outcome": "control_contamination",
+  "gate_passed": false,
+  "expected_hidden_answers": 1,
+  "hidden_signal_trials": 6,
+  "complete_ab_pairs": 0,
+  "complete_ab_pair_topics": [],
+  "scrambled_target_selections": 2,
+  "scrambled_target_trial_ids": [
+    "d125_garden_scrambled_r01",
+    "d125_harbor_scrambled_r01"
+  ],
+  "counterpart_errors": 1,
+  "next_stage_authorized": false,
+  "next_stage": null
+}

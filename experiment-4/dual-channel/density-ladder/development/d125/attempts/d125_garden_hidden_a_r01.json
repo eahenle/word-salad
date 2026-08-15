@@ -1,0 +1,7 @@
+{
+  "trial_id": "d125_garden_hidden_a_r01",
+  "prompt_sha256": "785c33310173d28d3f5d9511a3d8548294b0551e6ad597283c7f8f247ec3e8bc",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da"
+}

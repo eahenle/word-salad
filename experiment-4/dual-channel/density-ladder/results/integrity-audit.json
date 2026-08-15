@@ -1,0 +1,27 @@
+{
+  "audited_at_utc": "2026-08-15T00:29:10.257066+00:00",
+  "passed": true,
+  "checks": {
+    "4c_tag_frozen": true,
+    "4c1_tag_frozen": true,
+    "runtime_hash_frozen": true,
+    "protocol_source_hashes_match": true,
+    "isolation_passed": true,
+    "d125_invariants": true,
+    "d125_complete": true,
+    "d125_no_errors_timeouts": true,
+    "d125_prompt_hashes": true,
+    "d125_trace_hashes": true,
+    "d125_responses_preserved": true,
+    "stage_progression_obeyed": true,
+    "no_observable_tool_items": true
+  },
+  "failures": [],
+  "executed_stages": [
+    "d125"
+  ],
+  "observable_tool_item_types": [],
+  "direct_api_used": false,
+  "code_mode_warning_retained": true,
+  "source_experiments_modified": false
+}

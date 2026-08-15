@@ -1,0 +1,10 @@
+topic,condition,expected_answer,selected_target,semantic_success,counterpart_error,control_target_selection,classification,elapsed_seconds,input_tokens,output_tokens,reasoning_output_tokens
+ceramics,hidden_a,Rowan,,False,False,False,neither_target,34.987,10205,966,927
+ceramics,hidden_b,Mira,,False,False,False,neither_target,67.17,31828,2619,2214
+ceramics,scrambled,,,False,False,False,neither_target,110.621,20622,2834,2698
+garden,hidden_a,Rowan,,False,False,False,both_target_names,103.217,20958,3008,2635
+garden,hidden_b,Mira,,False,False,False,both_target_names,13.699,10205,115,75
+garden,scrambled,,Rowan,False,False,True,neither_target,127.405,36286,5512,4933
+harbor,hidden_a,Rowan,Rowan,True,False,False,expected_answer,68.059,20646,1783,1687
+harbor,hidden_b,Mira,Rowan,False,True,False,counterpart_answer,94.085,20821,3400,3115
+harbor,scrambled,,Rowan,False,False,True,neither_target,58.647,31927,1727,1164

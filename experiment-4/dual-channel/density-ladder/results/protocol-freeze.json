@@ -1,0 +1,115 @@
+{
+  "frozen_at_utc": "2026-08-14T23:52:56.126527+00:00",
+  "experiment": "4C.2",
+  "design": "staged incoherent-interference density ladder",
+  "repository_commit_before_changes": "6c9e1bdf1d7c31a6dcb702391a5673e7e2636475",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "frame": "Read the following text and give the answer implied by it.",
+  "topics": [
+    "ceramics",
+    "garden",
+    "harbor"
+  ],
+  "conditions": [
+    "hidden_a",
+    "hidden_b",
+    "scrambled"
+  ],
+  "trials_per_stage": 9,
+  "densities": {
+    "d125": {
+      "signal_words": 19,
+      "noise_words": 133,
+      "total_words": 152,
+      "density": 0.125
+    },
+    "d250": {
+      "signal_words": 19,
+      "noise_words": 57,
+      "total_words": 76,
+      "density": 0.25
+    },
+    "d500": {
+      "signal_words": 19,
+      "noise_words": 19,
+      "total_words": 38,
+      "density": 0.5
+    }
+  },
+  "seed_version": "sha256-python-random-v1",
+  "stage_order": [
+    "d125",
+    "d250"
+  ],
+  "d500_not_authorized_in_initial_ladder": true,
+  "decision_rules": {
+    "d125": {
+      "clean_gate_pass": "stop and confirm 12.5% with fresh seeds",
+      "clean_complete_null": "advance to d250",
+      "partial_recovery": "stop and consider independent d125 replication",
+      "control_target_selection": "stop for control audit"
+    },
+    "d250": {
+      "clean_gate_pass": "stop; boundary lies above d125 and at or below d250",
+      "clean_complete_null": "stop; consider d500 only as a later frozen experiment",
+      "partial_recovery": "stop and consider independent d250 replication",
+      "control_target_selection": "stop for control audit"
+    }
+  },
+  "gate": {
+    "complete_ab_pairs_at_least": 2,
+    "scrambled_target_selections_exactly": 0
+  },
+  "uniform_carrier_masks": true,
+  "condition_masks_matched_within_topic": true,
+  "nested_nonsignal_samples_across_densities": true,
+  "source_4c_commit": "d5dc2a837086a06b85361130c7e56ea957c9a650",
+  "source_4c1_commit": "6c9e1bdf1d7c31a6dcb702391a5673e7e2636475",
+  "frozen_runtime_sha256": "786e93d560a80b0984b7ed5b555ff4d1861b09a58cf4e02ee6bd093ee1096a0c",
+  "source_hashes": {
+    "README.md": "00b2dc486cbb584b8920e84927b0486d7e6b5a0df4d1727ad5047f62ae10a484",
+    "runtime.py": "9ba7225c30ccf2c154108d9933c616da6ae1746fb58e6f0becc5b0cd251a65d3",
+    "generate.py": "f9a7d607297ae78d1e1629ab4121604ad6ce00c73d0ebe14c0b1ea9482069fd4",
+    "validate.py": "57356741969821bfa952643ec120ce83d46d7afbcc634c269b359d6921a98656",
+    "validate_isolation.py": "278cf05f16d17de64052b48c59c26eb8a087339f154f54fec6f0fb408d9885bf",
+    "freeze_protocol.py": "99cc02bacc6bc45cfa3ccef8ed1670a944c2b1ab55211685fa52ea4d4b8cad3c",
+    "freeze_stage.py": "ee97437b0b69a23dec8bc4cc552b7b175f59860e4c2efc3c88f16062eac00a3a",
+    "run_stage.py": "5fe95355e1d207cee7af1484b71a0b8ece9ec4f5768c0208e546fdc78142b321",
+    "score_stage.py": "cd0975c05d3c272af4230e77c7f5c42eb21e4862cfd429ae8ca98d4a7e04cfcb",
+    "trace_audit.py": "f2b15639c28809bb43c61a080f727744538a99b2cd69106f454167f647a6cff8",
+    "analyze.py": "5b2a734633adcebf654396022925093e4ec73f1fb902b76847f18ef7e3264751",
+    "integrity_audit.py": "47d434d3f7e4bb9f836f3bac87750b55aa1d4fc235a87f168ef9ecd82628a085"
+  },
+  "disabled_codex_features": [
+    "shell_snapshot",
+    "shell_tool",
+    "unified_exec",
+    "browser_use",
+    "browser_use_external",
+    "browser_use_full_cdp_access",
+    "computer_use",
+    "apps",
+    "plugins",
+    "remote_plugin",
+    "image_generation",
+    "multi_agent",
+    "multi_agent_v2",
+    "skill_search",
+    "tool_suggest",
+    "auth_elicitation",
+    "view_image",
+    "goals",
+    "hooks",
+    "artifact",
+    "code_mode",
+    "code_mode_host"
+  ],
+  "tools_exposed": false,
+  "mcp_servers_configured": false,
+  "direct_api_used": false,
+  "code_mode_warning_suppressed": false,
+  "python_version": "3.10.11",
+  "platform": "macOS-26.6.1-arm64-arm-64bit"
+}

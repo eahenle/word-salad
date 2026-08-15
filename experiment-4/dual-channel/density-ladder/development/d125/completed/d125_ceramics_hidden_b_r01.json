@@ -1,0 +1,38 @@
+{
+  "trial_id": "d125_ceramics_hidden_b_r01",
+  "density_id": "d125",
+  "topic": "ceramics",
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Mira",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "1415ba3c481b4bbdb02f5cde67c8aecc50e644ee97fc126d5e3c4ea95d99f1d8",
+  "prompt_words": 163,
+  "response": "The text implies that the museum’s renovated gallery features a pottery exhibition about the regional riverside craft tradition, using archive pieces and household loans. It includes maker information, kiln demonstrations, conservation work, and Saturday workshops for families and schools.",
+  "trace_file": "development/d125/traces/d125_ceramics_hidden_b_r01.jsonl",
+  "stderr_file": "development/d125/stderr/d125_ceramics_hidden_b_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:56:39.653918+00:00",
+    "finished_at": "2026-08-14T23:57:46.823590+00:00",
+    "elapsed_seconds": 67.17,
+    "thread_id": "01a002b4-dbf8-7023-a61e-e8320ee672e0",
+    "aggregate_usage": {
+      "input_tokens": 31828,
+      "cached_input_tokens": 27904,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2619,
+      "reasoning_output_tokens": 2214
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "d83b1d4418eae96c93e6587add34e651af50ffdfd6ab320abf0862f23141d59b",
+    "stderr_sha256": "71e46055b0894fb2f7d3e41ce4f458153660aeace987b73d9464a5681207ffc2",
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "density_id": "d125",
+  "scheduled": 9,
+  "completed": 9,
+  "responses_not_inspected_before_freeze": true,
+  "trace_hashes": {
+    "d125_ceramics_hidden_a_r01": "9db80de7b72305415a18c43314a54ac9381647686dd8c7d4c8888ae84f97e300",
+    "d125_ceramics_hidden_b_r01": "d83b1d4418eae96c93e6587add34e651af50ffdfd6ab320abf0862f23141d59b",
+    "d125_ceramics_scrambled_r01": "4a9a84ffbfe38c516d085a2c4864a82442f22bb35d4707f632770bab40cd88dc",
+    "d125_garden_hidden_a_r01": "0a1fe3e91abe4e45ecf89d9671844bf4abedfa1a337f947ccf971a4eefa6203b",
+    "d125_garden_hidden_b_r01": "e3fc5803237810ebf45ca35cb0c90dfb74bf3684a43c6753f57337c226833a69",
+    "d125_garden_scrambled_r01": "8673fac117fcb106564ebc0c3b0774f99f170cfb3a35ffc0abd200b9778105cf",
+    "d125_harbor_hidden_a_r01": "0923236964c6d83e629140defaa4e344dd53d978a75fc0cd0328f7cf2865e39d",
+    "d125_harbor_hidden_b_r01": "f6cbc357d28fc9b7f97a1dd8993ef6e8a82367d911a5b929a36ac2e775dea06f",
+    "d125_harbor_scrambled_r01": "78ae12c8caff51f0784412137706eed369ddaeb7b60e5d7896aa508bfce83385"
+  },
+  "runner_errors": 0,
+  "timeouts": 0,
+  "direct_api_used": false
+}

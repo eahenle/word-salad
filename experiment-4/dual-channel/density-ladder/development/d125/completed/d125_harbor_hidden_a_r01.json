@@ -1,0 +1,38 @@
+{
+  "trial_id": "d125_harbor_hidden_a_r01",
+  "density_id": "d125",
+  "topic": "harbor",
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Rowan",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "279ca7fc12ad84630c55dd325d3173726fb024f7471a87f445174695327d6310",
+  "prompt_words": 163,
+  "response": "The answer is **Rowan**, who led the restoration.",
+  "trace_file": "development/d125/traces/d125_harbor_hidden_a_r01.jsonl",
+  "stderr_file": "development/d125/stderr/d125_harbor_hidden_a_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:58:30.279371+00:00",
+    "finished_at": "2026-08-14T23:59:38.338522+00:00",
+    "elapsed_seconds": 68.059,
+    "thread_id": "01a002b6-83e4-7761-9bd6-708a0d97aa24",
+    "aggregate_usage": {
+      "input_tokens": 20646,
+      "cached_input_tokens": 17920,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1783,
+      "reasoning_output_tokens": 1687
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "0923236964c6d83e629140defaa4e344dd53d978a75fc0cd0328f7cf2865e39d",
+    "stderr_sha256": "47fb2169381fdc6bf86505b8183a5ad3b12667b1045e7de9bc87b9c51c719880",
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    }
+  }
+}

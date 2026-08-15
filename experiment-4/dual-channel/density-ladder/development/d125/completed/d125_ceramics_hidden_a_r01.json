@@ -1,0 +1,38 @@
+{
+  "trial_id": "d125_ceramics_hidden_a_r01",
+  "density_id": "d125",
+  "topic": "ceramics",
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Rowan",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "97170aac2a279d6a511ed20e0fedcd827b5e61894c6bc28c3df505b5510f6303",
+  "prompt_words": 163,
+  "response": "The text describes a new museum exhibition about regional household pottery, featuring archived and borrowed vessels, information about their makers, conservation work, and live kiln demonstrations and workshops.",
+  "trace_file": "development/d125/traces/d125_ceramics_hidden_a_r01.jsonl",
+  "stderr_file": "development/d125/stderr/d125_ceramics_hidden_a_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:56:39.651598+00:00",
+    "finished_at": "2026-08-14T23:57:14.638497+00:00",
+    "elapsed_seconds": 34.987,
+    "thread_id": "01a002b4-db38-7e12-afcc-838edb64f445",
+    "aggregate_usage": {
+      "input_tokens": 10205,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 966,
+      "reasoning_output_tokens": 927
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "9db80de7b72305415a18c43314a54ac9381647686dd8c7d4c8888ae84f97e300",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    }
+  }
+}

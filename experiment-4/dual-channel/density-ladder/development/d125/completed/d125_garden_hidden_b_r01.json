@@ -1,0 +1,38 @@
+{
+  "trial_id": "d125_garden_hidden_b_r01",
+  "density_id": "d125",
+  "topic": "garden",
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Mira",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "d015132f895fa84c08ec49f3f65417fcffb938d5b099381719df0ef696a2e374",
+  "prompt_words": 163,
+  "response": "The text implies that **Rowan, Mira, and Tavi coordinate a welcoming neighborhood community garden**, organizing seasonal planting, workshops, seed exchanges, and upkeep with volunteers.",
+  "trace_file": "development/d125/traces/d125_garden_hidden_b_r01.jsonl",
+  "stderr_file": "development/d125/stderr/d125_garden_hidden_b_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:57:46.830825+00:00",
+    "finished_at": "2026-08-14T23:58:00.529659+00:00",
+    "elapsed_seconds": 13.699,
+    "thread_id": "01a002b5-db1a-76b3-9db1-f57d8164d7d7",
+    "aggregate_usage": {
+      "input_tokens": 10205,
+      "cached_input_tokens": 7936,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 115,
+      "reasoning_output_tokens": 75
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "e3fc5803237810ebf45ca35cb0c90dfb74bf3684a43c6753f57337c226833a69",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    }
+  }
+}

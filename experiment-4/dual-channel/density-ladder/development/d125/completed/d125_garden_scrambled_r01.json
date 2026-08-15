@@ -1,0 +1,38 @@
+{
+  "trial_id": "d125_garden_scrambled_r01",
+  "density_id": "d125",
+  "topic": "garden",
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "61c5b10acc1a22ccb64a12d75158b37b3d65b50edafa429f3c0f75eb5feacc2d",
+  "prompt_words": 163,
+  "response": "Rowan arranges the monthly workshop for new gardeners.",
+  "trace_file": "development/d125/traces/d125_garden_scrambled_r01.jsonl",
+  "stderr_file": "development/d125/stderr/d125_garden_scrambled_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:58:00.533029+00:00",
+    "finished_at": "2026-08-15T00:00:07.937468+00:00",
+    "elapsed_seconds": 127.405,
+    "thread_id": "01a002b6-0fa1-7073-a39d-92d01f51d7e5",
+    "aggregate_usage": {
+      "input_tokens": 36286,
+      "cached_input_tokens": 27904,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5512,
+      "reasoning_output_tokens": 4933
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "8673fac117fcb106564ebc0c3b0774f99f170cfb3a35ffc0abd200b9778105cf",
+    "stderr_sha256": "cc9f55a533ed7d781efc9751b81860cf800dd13918706693aa251b8e6596a3d9",
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    }
+  }
+}

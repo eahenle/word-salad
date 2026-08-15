@@ -1,0 +1,7 @@
+{
+  "trial_id": "d125_harbor_hidden_a_r01",
+  "prompt_sha256": "279ca7fc12ad84630c55dd325d3173726fb024f7471a87f445174695327d6310",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da"
+}

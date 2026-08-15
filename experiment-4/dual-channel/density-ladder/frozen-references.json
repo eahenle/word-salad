@@ -1,0 +1,11 @@
+{
+  "experiment_4c": {
+    "tag": "experiment-4c-dual-channel-negative-gate",
+    "commit": "d5dc2a837086a06b85361130c7e56ea957c9a650"
+  },
+  "experiment_4c1": {
+    "tag": "experiment-4c1-foreground-coherence-null",
+    "commit": "6c9e1bdf1d7c31a6dcb702391a5673e7e2636475"
+  },
+  "source_4c_tree": "ad3ddabafca88b2bad9136f87fffe9e8cf9add7a"
+}

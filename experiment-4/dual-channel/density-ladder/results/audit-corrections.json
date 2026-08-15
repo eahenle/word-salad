@@ -1,0 +1,139 @@
+{
+  "performed_after_primary_scores_froze": true,
+  "primary_scores_changed": false,
+  "corrections": [
+    {
+      "field": "classification",
+      "scope": "two scrambled controls selecting Rowan",
+      "original": "neither_target",
+      "audited": "control_target_answer",
+      "primary_control_target_selection_boolean_was_already_true": true,
+      "gate_impact": "none"
+    },
+    {
+      "field": "explicit_stride_testing",
+      "scope": "two traces mentioning interleaving without testing it",
+      "original_automatic_count": 2,
+      "audited_concrete_test_count": 0,
+      "gate_impact": "none"
+    }
+  ],
+  "audited_classification_counts": {
+    "both_target_names": 2,
+    "control_target_answer": 2,
+    "counterpart_answer": 1,
+    "expected_answer": 1,
+    "neither_target": 3
+  },
+  "explicit_structure_or_reconstruction_attempts": 7,
+  "explicit_interleaving_hypotheses": 2,
+  "concrete_stride_or_residue_tests": 0,
+  "strategy_records": [
+    {
+      "trial_id": "d125_ceramics_hidden_a_r01",
+      "observable_messages": [
+        "The text describes a new museum exhibition about regional household pottery, featuring archived and borrowed vessels, information about their makers, conservation work, and live kiln demonstrations and workshops."
+      ],
+      "explicit_structure_or_reconstruction_attempt": false,
+      "explicit_interleaving_hypothesis": false,
+      "concrete_stride_or_residue_test": false,
+      "semantic_success": false,
+      "audited_classification": "neither_target"
+    },
+    {
+      "trial_id": "d125_ceramics_hidden_b_r01",
+      "observable_messages": [
+        "I’ll trace the word ordering and look for an embedded question or a consistently interleaved passage.",
+        "The text implies that the museum’s renovated gallery features a pottery exhibition about the regional riverside craft tradition, using archive pieces and household loans. It includes maker information, kiln demonstrations, conservation work, and Saturday workshops for families and schools."
+      ],
+      "explicit_structure_or_reconstruction_attempt": true,
+      "explicit_interleaving_hypothesis": true,
+      "concrete_stride_or_residue_test": false,
+      "semantic_success": false,
+      "audited_classification": "neither_target"
+    },
+    {
+      "trial_id": "d125_ceramics_scrambled_r01",
+      "observable_messages": [
+        "I’ll reconstruct the scrambled passage by looking for sentence-level links, names, chronology, and repeated museum/studio references, then extract its implied conclusion.",
+        "The text implies that a new regional craft museum opened in a former riverside pottery studio. It displays locally loaned vessels and offers kiln demonstrations, but the kiln may later be moved to protect the collection during conservation."
+      ],
+      "explicit_structure_or_reconstruction_attempt": true,
+      "explicit_interleaving_hypothesis": false,
+      "concrete_stride_or_residue_test": false,
+      "semantic_success": false,
+      "audited_classification": "neither_target"
+    },
+    {
+      "trial_id": "d125_garden_hidden_a_r01",
+      "observable_messages": [
+        "I’m untangling the word-order pattern first, then I’ll extract the concrete conclusion the passage supports.",
+        "The text describes a **neighborhood community garden**, coordinated by Rowan, Mira, and Tavi through seasonal planting and volunteer activities."
+      ],
+      "explicit_structure_or_reconstruction_attempt": true,
+      "explicit_interleaving_hypothesis": false,
+      "concrete_stride_or_residue_test": false,
+      "semantic_success": false,
+      "audited_classification": "both_target_names"
+    },
+    {
+      "trial_id": "d125_garden_hidden_b_r01",
+      "observable_messages": [
+        "The text implies that **Rowan, Mira, and Tavi coordinate a welcoming neighborhood community garden**, organizing seasonal planting, workshops, seed exchanges, and upkeep with volunteers."
+      ],
+      "explicit_structure_or_reconstruction_attempt": false,
+      "explicit_interleaving_hypothesis": false,
+      "concrete_stride_or_residue_test": false,
+      "semantic_success": false,
+      "audited_classification": "both_target_names"
+    },
+    {
+      "trial_id": "d125_garden_scrambled_r01",
+      "observable_messages": [
+        "I’ll untangle the word order first, then identify the conclusion the reconstructed passage supports.",
+        "Rowan arranges the monthly workshop for new gardeners."
+      ],
+      "explicit_structure_or_reconstruction_attempt": true,
+      "explicit_interleaving_hypothesis": false,
+      "concrete_stride_or_residue_test": false,
+      "semantic_success": false,
+      "audited_classification": "control_target_answer"
+    },
+    {
+      "trial_id": "d125_harbor_hidden_a_r01",
+      "observable_messages": [
+        "I’m untangling the interleaved sentences and looking for the concluding detail the passage points to.",
+        "The answer is **Rowan**, who led the restoration."
+      ],
+      "explicit_structure_or_reconstruction_attempt": true,
+      "explicit_interleaving_hypothesis": true,
+      "concrete_stride_or_residue_test": false,
+      "semantic_success": true,
+      "audited_classification": "expected_answer"
+    },
+    {
+      "trial_id": "d125_harbor_hidden_b_r01",
+      "observable_messages": [
+        "I’ll untangle the word order and identify the concrete fact the passage is pointing to.",
+        "Rowan"
+      ],
+      "explicit_structure_or_reconstruction_attempt": true,
+      "explicit_interleaving_hypothesis": false,
+      "concrete_stride_or_residue_test": false,
+      "semantic_success": false,
+      "audited_classification": "counterpart_answer"
+    },
+    {
+      "trial_id": "d125_harbor_scrambled_r01",
+      "observable_messages": [
+        "I’ll untangle the word order and identify the concrete fact the passage is pointing to.",
+        "Rowan led the restoration."
+      ],
+      "explicit_structure_or_reconstruction_attempt": true,
+      "explicit_interleaving_hypothesis": false,
+      "concrete_stride_or_residue_test": false,
+      "semantic_success": false,
+      "audited_classification": "control_target_answer"
+    }
+  ]
+}

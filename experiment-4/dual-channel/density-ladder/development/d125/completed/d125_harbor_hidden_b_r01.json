@@ -1,0 +1,38 @@
+{
+  "trial_id": "d125_harbor_hidden_b_r01",
+  "density_id": "d125",
+  "topic": "harbor",
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Mira",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "bf36547f443a0530ed1b3c085ce6f0977b77c823875b3652da1db5e5de5d20e2",
+  "prompt_words": 163,
+  "response": "Rowan",
+  "trace_file": "development/d125/traces/d125_harbor_hidden_b_r01.jsonl",
+  "stderr_file": "development/d125/stderr/d125_harbor_hidden_b_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:58:57.867861+00:00",
+    "finished_at": "2026-08-15T00:00:31.952953+00:00",
+    "elapsed_seconds": 94.085,
+    "thread_id": "01a002b6-f02c-7b10-ba3d-ac2577cc3b91",
+    "aggregate_usage": {
+      "input_tokens": 20821,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3400,
+      "reasoning_output_tokens": 3115
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "f6cbc357d28fc9b7f97a1dd8993ef6e8a82367d911a5b929a36ac2e775dea06f",
+    "stderr_sha256": "56c1f449ec7ac17d0bfb94ff831f4ab4ecf595396f6ec0c7cabf8849cb993f5f",
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    }
+  }
+}

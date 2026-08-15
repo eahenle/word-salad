@@ -1,0 +1,38 @@
+{
+  "trial_id": "d125_ceramics_scrambled_r01",
+  "density_id": "d125",
+  "topic": "ceramics",
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "92ac0244062e0041b71fe9bcdb4e9e104590505972364c2d32c5fb2a5db9bce8",
+  "prompt_words": 163,
+  "response": "The text implies that a new regional craft museum opened in a former riverside pottery studio. It displays locally loaned vessels and offers kiln demonstrations, but the kiln may later be moved to protect the collection during conservation.",
+  "trace_file": "development/d125/traces/d125_ceramics_scrambled_r01.jsonl",
+  "stderr_file": "development/d125/stderr/d125_ceramics_scrambled_r01.txt",
+  "runner": {
+    "started_at": "2026-08-14T23:56:39.652700+00:00",
+    "finished_at": "2026-08-14T23:58:30.273843+00:00",
+    "elapsed_seconds": 110.621,
+    "thread_id": "01a002b4-db34-7b50-9cf5-e5395d7354a9",
+    "aggregate_usage": {
+      "input_tokens": 20622,
+      "cached_input_tokens": 17920,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2834,
+      "reasoning_output_tokens": 2698
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "4a9a84ffbfe38c516d085a2c4864a82442f22bb35d4707f632770bab40cd88dc",
+    "stderr_sha256": "8b16a5ed87bb399938a47150d8d3e5ea0b5de260cd55d5bd23ab363d553def8f",
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    }
+  }
+}
