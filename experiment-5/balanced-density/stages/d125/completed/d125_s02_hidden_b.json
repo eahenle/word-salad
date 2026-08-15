@@ -1,0 +1,52 @@
+{
+  "trial_id": "d125_s02_hidden_b",
+  "stage": "d125",
+  "seed": 2,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.125,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "282e28fdf17cabe216ce1df3a5e1ad251ecee2602ceb36743780a956f8f37ae8",
+  "prompt_words": 187,
+  "response": "The objects date from the nineteenth century.",
+  "trace_file": "stages/d125/traces/d125_s02_hidden_b.jsonl",
+  "stderr_file": "stages/d125/stderr/d125_s02_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:38:05.678240+00:00",
+    "finished_at": "2026-08-15T02:40:03.122839+00:00",
+    "elapsed_seconds": 117.445,
+    "thread_id": "01a00348-a441-7583-8dca-0e897b6da37e",
+    "aggregate_usage": {
+      "input_tokens": 20916,
+      "cached_input_tokens": 7936,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4376,
+      "reasoning_output_tokens": 4044
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "16cbc56b5d48c8da247475978dca7194715b2f75ee4c1c5ae6f0db028bfb40bd",
+    "stderr_sha256": "909f2c4e3339600bd669bba9b10062222c06ff20be02bdff234cbb9caa7c25b5",
+    "trace_bytes": 816,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

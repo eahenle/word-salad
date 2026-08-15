@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"01a00343-bca7-7ce3-991f-d8c3c1adc05a"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"I’m untangling the passage as interleaved sentences; the repeated museum, greenhouse, ceramics, and waterfront themes look like separate strands woven together."}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"Juniper is first, and Orchid is second."}}
+{"type":"turn.completed","usage":{"input_tokens":20752,"cached_input_tokens":9984,"cache_write_input_tokens":0,"output_tokens":4767,"reasoning_output_tokens":4672}}

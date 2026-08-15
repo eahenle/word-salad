@@ -1,0 +1,52 @@
+{
+  "trial_id": "d125_s03_hidden_b",
+  "stage": "d125",
+  "seed": 3,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.125,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "684717c8525a839a3490474cba4ece9dd07139a30fd4385b2f36bcc6a00f9067",
+  "prompt_words": 187,
+  "response": "The text implies that an old coastal building was restored as a community heritage gallery, hosting exhibitions, workshops, markets, and family activities while using rainwater collection and solar power.",
+  "trace_file": "stages/d125/traces/d125_s03_hidden_b.jsonl",
+  "stderr_file": "stages/d125/stderr/d125_s03_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:31:08.515454+00:00",
+    "finished_at": "2026-08-15T02:35:07.331833+00:00",
+    "elapsed_seconds": 238.817,
+    "thread_id": "01a00342-474e-79a0-9df9-89366cd43124",
+    "aggregate_usage": {
+      "input_tokens": 20645,
+      "cached_input_tokens": 15872,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6715,
+      "reasoning_output_tokens": 6599
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "9fccf0ef104fb155f7dc3f85d2d68bfd8cad6c5411d9b092f34d9c637bb482e9",
+    "stderr_sha256": "0fc9787283f7b53089cf7c32d5c8e3765c3730f22bdb7c9f4ef04e17d828307e",
+    "trace_bytes": 1015,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

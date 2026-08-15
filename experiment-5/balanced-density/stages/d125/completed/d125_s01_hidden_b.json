@@ -1,0 +1,52 @@
+{
+  "trial_id": "d125_s01_hidden_b",
+  "stage": "d125",
+  "seed": 1,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.125,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "50e06b480a30c5dfa66ec46f171f95c977b23afab9b183f711ee463e5a75dcfe",
+  "prompt_words": 187,
+  "response": "The old riverside warehouse was recently reopened as a community ceramics studio and museum, offering workshops and demonstrations for families.",
+  "trace_file": "stages/d125/traces/d125_s01_hidden_b.jsonl",
+  "stderr_file": "stages/d125/stderr/d125_s01_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:36:52.853619+00:00",
+    "finished_at": "2026-08-15T02:38:05.676976+00:00",
+    "elapsed_seconds": 72.823,
+    "thread_id": "01a00347-86fc-7350-a223-e3f184f109f2",
+    "aggregate_usage": {
+      "input_tokens": 20693,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2644,
+      "reasoning_output_tokens": 2540
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "8bf7979193b27608e89541ce522d8c3cde6d576aa229c3487c0b3392976bac99",
+    "stderr_sha256": "0693bd2e81cbcbdbdb0a988f148303e76179bd47e8d0cfc79a736bc13a5295fa",
+    "trace_bytes": 950,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"01a00342-46f8-7222-8a97-b57c5d175e88"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"I’m tracing the word order and capitalization; the passage appears to interleave several coherent descriptions rather than read as ordinary prose."}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"The text describes a small coastal local-history museum, featuring harbor and ferry exhibits, a pollinator garden, and community workshops."}}
+{"type":"turn.completed","usage":{"input_tokens":31764,"cached_input_tokens":28928,"cache_write_input_tokens":0,"output_tokens":6183,"reasoning_output_tokens":5775}}

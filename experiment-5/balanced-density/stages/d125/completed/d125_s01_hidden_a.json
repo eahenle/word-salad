@@ -1,0 +1,52 @@
+{
+  "trial_id": "d125_s01_hidden_a",
+  "stage": "d125",
+  "seed": 1,
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Kestrel Orchid Juniper",
+  "actual_density": 0.125,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "41d546690139915073c573dac1965403539a714e169b40b06d56921a1e419cbe",
+  "prompt_words": 187,
+  "response": "The text implies that an old riverside warehouse has recently reopened as a community museum celebrating regional harbor life, ceramics, and local agriculture.",
+  "trace_file": "stages/d125/traces/d125_s01_hidden_a.jsonl",
+  "stderr_file": "stages/d125/stderr/d125_s01_hidden_a.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:31:08.515222+00:00",
+    "finished_at": "2026-08-15T02:32:44.302063+00:00",
+    "elapsed_seconds": 95.787,
+    "thread_id": "01a00342-4693-7a60-8ec6-f1406f99d2ff",
+    "aggregate_usage": {
+      "input_tokens": 31557,
+      "cached_input_tokens": 19968,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 3625,
+      "reasoning_output_tokens": 3258
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "0f046a56eb69c3be30caa62c872e9cdb5f0472a3265f7e4f258ac10f80828cfa",
+    "stderr_sha256": "9234b58dd64b4ea5f8f8f50cb48baa68dac8542aa97ceb6984ce87f6da109cba",
+    "trace_bytes": 967,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

@@ -12,6 +12,19 @@
       "scrambled_controls": 3,
       "counterpart_errors": 0,
       "recovery_gate_passed": false
+    },
+    {
+      "stage": "d125",
+      "document_words": 176,
+      "density": 0.125,
+      "expected_individuals": 0,
+      "signal_trials": 6,
+      "complete_ab_pairs": 0,
+      "total_pairs": 3,
+      "scrambled_target_selections": 0,
+      "scrambled_controls": 3,
+      "counterpart_errors": 0,
+      "recovery_gate_passed": false
     }
   ]
 }

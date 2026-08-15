@@ -1,0 +1,52 @@
+{
+  "trial_id": "d125_s01_scrambled",
+  "stage": "d125",
+  "seed": 1,
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "actual_density": 0.125,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "adac12490916902f41b8a18a8e35e5039caaf731dca2483da4cf1ba6f0cc2e68",
+  "prompt_words": 187,
+  "response": "The text implies that a historic 19th-century riverside warehouse was converted into a community ceramics museum and studio, offering exhibits, demonstrations, and family workshops.",
+  "trace_file": "stages/d125/traces/d125_s01_scrambled.jsonl",
+  "stderr_file": "stages/d125/stderr/d125_s01_scrambled.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:35:07.333324+00:00",
+    "finished_at": "2026-08-15T02:38:09.178683+00:00",
+    "elapsed_seconds": 181.845,
+    "thread_id": "01a00345-ec36-7162-b8a6-1780c337e50b",
+    "aggregate_usage": {
+      "input_tokens": 31715,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6519,
+      "reasoning_output_tokens": 6091
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "e94a9ff4eb6f6c63e1e98ef078d6a237612c7507e5ff0356cdeedd66d98263ea",
+    "stderr_sha256": "11eb5c34910788c4c1be1bf21678e300722fa0177825893f9f39fbff453af537",
+    "trace_bytes": 977,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}
