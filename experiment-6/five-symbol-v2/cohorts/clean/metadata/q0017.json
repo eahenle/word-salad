@@ -1,0 +1,10 @@
+{
+  "trial_id": "q0017",
+  "cohort": "clean",
+  "payload_identity": "A",
+  "replicate": 17,
+  "expected_answer": "Birch Dune Cobalt Aster Ember",
+  "prompt_words": 64,
+  "prompt_sha256": "7f079b6bba26518f75dd455a839bf8978b5b8e431a3194c979e16a7a65c978e9",
+  "prompt_file": "cohorts/clean/prompts/q0017.txt"
+}

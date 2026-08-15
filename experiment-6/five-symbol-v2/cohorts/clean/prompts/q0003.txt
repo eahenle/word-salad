@@ -1,0 +1,1 @@
+Aster Birch Cobalt Dune Ember begin in this left-to-right order. Position one is the leftmost position. After each swap, count positions again from the left. Perform these swaps in the stated order: First, swap the items at positions one and four. Then, swap the items at positions one and two. Reply with exactly the five names in final left-to-right order and no other words.
