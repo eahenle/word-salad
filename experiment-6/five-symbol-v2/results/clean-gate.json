@@ -1,0 +1,12 @@
+{
+  "cohort": "clean-v2",
+  "A_normalized_exact": 20,
+  "A_trials": 20,
+  "B_normalized_exact": 20,
+  "B_trials": 20,
+  "aggregate_normalized_exact": 40,
+  "aggregate_trials": 40,
+  "gate_passed": true,
+  "advance_scrambled_authorized": true,
+  "failure_action": null
+}
