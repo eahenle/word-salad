@@ -1,0 +1,52 @@
+{
+  "trial_id": "d075_s02_hidden_b",
+  "stage": "d075",
+  "seed": 2,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.07508532423208192,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "b1adf7d37011a2a0a9031dca885060bb8760902a52eb28f5394e863f4a5573a8",
+  "prompt_words": 304,
+  "response": "The implied answer is **Bare-root** — it is the nineteenth capitalized word in the text.",
+  "trace_file": "stages/d075/traces/d075_s02_hidden_b.jsonl",
+  "stderr_file": "stages/d075/stderr/d075_s02_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:25:02.000404+00:00",
+    "finished_at": "2026-08-15T02:27:03.147877+00:00",
+    "elapsed_seconds": 121.147,
+    "thread_id": "01a0033c-ae34-7ac3-821a-701fb9328262",
+    "aggregate_usage": {
+      "input_tokens": 32714,
+      "cached_input_tokens": 13824,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4068,
+      "reasoning_output_tokens": 3150
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "e5d8de8815218c2068bd8c57e3b24bfebc0e618c33cf2432cde6b1f3ae64055f",
+    "stderr_sha256": "0c0bf40da7b34c702b84465ec24d9b07d31fa457eaa239486ccfcece9befd9aa",
+    "trace_bytes": 893,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

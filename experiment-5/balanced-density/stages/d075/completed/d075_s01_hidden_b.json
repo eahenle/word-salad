@@ -1,0 +1,52 @@
+{
+  "trial_id": "d075_s01_hidden_b",
+  "stage": "d075",
+  "seed": 1,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.07508532423208192,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "e3392953499ee9e86da9b42a786feb19f6c3873f53c3164fa707e4f2cc85ae36",
+  "prompt_words": 304,
+  "response": "It describes a volunteer-run riverside museum in a restored warehouse, focused on local ceramics and harbor history, with workshops, rotating exhibits, and a rainwater-fed greenhouse.",
+  "trace_file": "stages/d075/traces/d075_s01_hidden_b.jsonl",
+  "stderr_file": "stages/d075/stderr/d075_s01_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:27:03.149433+00:00",
+    "finished_at": "2026-08-15T02:28:13.003582+00:00",
+    "elapsed_seconds": 69.854,
+    "thread_id": "01a0033e-8783-7311-b685-658afdf68f07",
+    "aggregate_usage": {
+      "input_tokens": 32470,
+      "cached_input_tokens": 18944,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2425,
+      "reasoning_output_tokens": 1801
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "709b6762a2c93ecfa5f780735c5d8c03131ce62bfbfc1c9722aaa83beb316e2c",
+    "stderr_sha256": "9b4d26598d6539553c2b6cb00b5dc7006c9baa58ad5e3d7f9917daed77a468fb",
+    "trace_bytes": 985,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

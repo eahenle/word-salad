@@ -1,0 +1,17 @@
+{
+  "completed_stages": [
+    {
+      "stage": "d075",
+      "document_words": 293,
+      "density": 0.07508532423208192,
+      "expected_individuals": 0,
+      "signal_trials": 6,
+      "complete_ab_pairs": 0,
+      "total_pairs": 3,
+      "scrambled_target_selections": 0,
+      "scrambled_controls": 3,
+      "counterpart_errors": 0,
+      "recovery_gate_passed": false
+    }
+  ]
+}

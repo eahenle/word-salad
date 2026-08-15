@@ -1,0 +1,35 @@
+{
+  "stage": "d075",
+  "expected_individuals": 0,
+  "signal_trials": 6,
+  "complete_ab_pairs": 0,
+  "total_pairs": 3,
+  "scrambled_target_selections": 0,
+  "scrambled_controls": 3,
+  "counterpart_errors": 0,
+  "recovery_gate_passed": false,
+  "control_gate_clean": true,
+  "advance_authorized": true,
+  "next_stage": "d125",
+  "stopping_reason": "no recovery at this density; advance to next frozen stage",
+  "pairs": [
+    {
+      "seed": 1,
+      "a_success": false,
+      "b_success": false,
+      "complete_pair": false
+    },
+    {
+      "seed": 2,
+      "a_success": false,
+      "b_success": false,
+      "complete_pair": false
+    },
+    {
+      "seed": 3,
+      "a_success": false,
+      "b_success": false,
+      "complete_pair": false
+    }
+  ]
+}

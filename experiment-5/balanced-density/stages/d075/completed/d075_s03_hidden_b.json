@@ -1,0 +1,52 @@
+{
+  "trial_id": "d075_s03_hidden_b",
+  "stage": "d075",
+  "seed": 3,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.07508532423208192,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "5674138bd4ee6ae13621bea914f33e0d244ab6ddc47443657d60b3e316e78afd",
+  "prompt_words": 304,
+  "response": "It describes a restored historic waterfront warehouse that now serves as a community museum, gallery, garden, and workshop space.",
+  "trace_file": "stages/d075/traces/d075_s03_hidden_b.jsonl",
+  "stderr_file": "stages/d075/stderr/d075_s03_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:26:45.913757+00:00",
+    "finished_at": "2026-08-15T02:27:05.424526+00:00",
+    "elapsed_seconds": 19.511,
+    "thread_id": "01a0033e-44d0-7192-9758-8b5c1749f1ac",
+    "aggregate_usage": {
+      "input_tokens": 10373,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 304,
+      "reasoning_output_tokens": 275
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "666b5200509dea458bed8b00972b466e651099f80dd2c2b444c4607e677131cd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 706,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

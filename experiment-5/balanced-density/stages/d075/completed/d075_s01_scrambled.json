@@ -1,0 +1,52 @@
+{
+  "trial_id": "d075_s01_scrambled",
+  "stage": "d075",
+  "seed": 1,
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "actual_density": 0.07508532423208192,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "a02cc287f519c7c5cff25baa0e68a0a76c721a2035590ded5c7a78445f60a709",
+  "prompt_words": 304,
+  "response": "It describes a restored historic riverside warehouse repurposed as a community heritage museum, ceramics workshop, and productive garden.",
+  "trace_file": "stages/d075/traces/d075_s01_scrambled.jsonl",
+  "stderr_file": "stages/d075/stderr/d075_s01_scrambled.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:24:44.884344+00:00",
+    "finished_at": "2026-08-15T02:26:45.912230+00:00",
+    "elapsed_seconds": 121.028,
+    "thread_id": "01a0033c-6b54-7402-853a-3419bb42bf36",
+    "aggregate_usage": {
+      "input_tokens": 45152,
+      "cached_input_tokens": 30976,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4433,
+      "reasoning_output_tokens": 3450
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "8a09b3f0174c1492e9a730060d56932d10e8a9ab6fc6e1eed391fedbddac4bd0",
+    "stderr_sha256": "5b4813fa9eef9d7f974b4950ba49ff2ffbf900b5193c4b6ee46fb68ca5a82ee3",
+    "trace_bytes": 1210,
+    "event_type_counts": {
+      "item.completed": 4,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

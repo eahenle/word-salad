@@ -1,0 +1,52 @@
+{
+  "trial_id": "d075_s02_scrambled",
+  "stage": "d075",
+  "seed": 2,
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "actual_density": 0.07508532423208192,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "79ad0b72264dac2ea61467f33b411386cd84749b491d50ee6482718bf9cebb64",
+  "prompt_words": 304,
+  "response": "It describes a restored nineteenth-century waterfront museum with ceramics and maritime exhibits, workshops, and a community garden.",
+  "trace_file": "stages/d075/traces/d075_s02_scrambled.jsonl",
+  "stderr_file": "stages/d075/stderr/d075_s02_scrambled.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:23:46.058940+00:00",
+    "finished_at": "2026-08-15T02:27:43.538500+00:00",
+    "elapsed_seconds": 237.48,
+    "thread_id": "01a0033b-8771-7fc1-b5de-a6d81e2a6081",
+    "aggregate_usage": {
+      "input_tokens": 48875,
+      "cached_input_tokens": 37888,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7658,
+      "reasoning_output_tokens": 6535
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "e1429672ac57363903801367ef81416de604b9b2da5186ebf1d12401bf3f0538",
+    "stderr_sha256": "d91d85cdb6b7c0f5e4b32932a5ee0b12dff0ab128c5ee4f2bcafbea24bc1e023",
+    "trace_bytes": 1259,
+    "event_type_counts": {
+      "item.completed": 4,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 3,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "trial_id": "d075_s02_hidden_b",
+  "stage": "d075",
+  "prompt_sha256": "b1adf7d37011a2a0a9031dca885060bb8760902a52eb28f5394e863f4a5573a8",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da"
+}

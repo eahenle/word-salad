@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"01a0033b-8731-7630-8b75-c49583132684"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"I’m checking the text’s sentence structure and conspicuous capitalization for an embedded message."}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"A community ceramics museum housed in a restored riverside warehouse."}}
+{"type":"turn.completed","usage":{"input_tokens":21577,"cached_input_tokens":8960,"cache_write_input_tokens":0,"output_tokens":2867,"reasoning_output_tokens":2366}}

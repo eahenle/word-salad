@@ -1,0 +1,5 @@
+# Balanced-density ladder
+
+| stage | density | expected | pairs | scrambled targets |
+| --- | ---: | ---: | ---: | ---: |
+| d075 | 0.0751 | 0/6 | 0/3 | 0/3 |

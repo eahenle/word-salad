@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a0033e-44d0-7192-9758-8b5c1749f1ac"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"It describes a restored historic waterfront warehouse that now serves as a community museum, gallery, garden, and workshop space."}}
+{"type":"turn.completed","usage":{"input_tokens":10373,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":304,"reasoning_output_tokens":275}}

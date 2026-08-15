@@ -1,0 +1,52 @@
+{
+  "trial_id": "d075_s01_hidden_a",
+  "stage": "d075",
+  "seed": 1,
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Kestrel Orchid Juniper",
+  "actual_density": 0.07508532423208192,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "1f535069bd25dff49dd2dc6f20459e994518d05be4772a3f51577280633d5e25",
+  "prompt_words": 304,
+  "response": "A community ceramics museum housed in a restored riverside warehouse.",
+  "trace_file": "stages/d075/traces/d075_s01_hidden_a.jsonl",
+  "stderr_file": "stages/d075/stderr/d075_s01_hidden_a.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:23:46.058912+00:00",
+    "finished_at": "2026-08-15T02:25:01.996758+00:00",
+    "elapsed_seconds": 75.938,
+    "thread_id": "01a0033b-8731-7630-8b75-c49583132684",
+    "aggregate_usage": {
+      "input_tokens": 21577,
+      "cached_input_tokens": 8960,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2867,
+      "reasoning_output_tokens": 2366
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "d4adef35bf154e5f1e1be2e8fd751838b05c9400e78253c00e2e5572aeb42635",
+    "stderr_sha256": "a0d2a0e8503b177eb31d949073c03990526aa21d98479c7beb121b6eb8f22684",
+    "trace_bytes": 835,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}
