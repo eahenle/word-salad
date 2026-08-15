@@ -1,0 +1,52 @@
+{
+  "trial_id": "d500_s03_hidden_b",
+  "stage": "d500",
+  "seed": 3,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.5,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "db89766ea851ffb97d82788228a8302b387cf9189c47d45928cdf5a54472608d",
+  "prompt_words": 55,
+  "response": "Kestrel, Orchid, Juniper",
+  "trace_file": "stages/d500/traces/d500_s03_hidden_b.jsonl",
+  "stderr_file": "stages/d500/stderr/d500_s03_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:56:09.883437+00:00",
+    "finished_at": "2026-08-15T02:56:23.227138+00:00",
+    "elapsed_seconds": 13.344,
+    "thread_id": "01a00359-2b88-7eb3-af24-a52ac53063fe",
+    "aggregate_usage": {
+      "input_tokens": 10083,
+      "cached_input_tokens": 7936,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 314,
+      "reasoning_output_tokens": 300
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "06686f52aa54cb10bbad48ef5f4da344782f6c0aba3c834cefe187dac1527894",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 604,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

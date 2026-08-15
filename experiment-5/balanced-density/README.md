@@ -101,3 +101,11 @@ python3 score_stage.py d075
 
 Do not run a stage unless every prior stage is frozen and its gate authorizes
 advancement.
+
+## Frozen outcome
+
+The completed ladder produced no complete A/B pair at any density. Expected
+individual answers were 0/6, 0/6, 1/6, and 0/6 from 7.5% through 50%. The 50%
+stage produced one preregistered target from a scrambled control, so its control
+gate failed and execution stopped. See `results/analysis.md` for the frozen
+interpretation, computational-effort audit, and design limitations.

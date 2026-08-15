@@ -1,0 +1,5 @@
+stage,trials,explicit_structure_analysis,direct_or_one_pass,multi_message_without_specific_structure_term,responses_mentioning_all_three_symbols,responses_mentioning_both_operations
+d075,9,5,3,1,0,0
+d125,9,7,0,2,1,0
+d250,9,5,2,2,1,2
+d500,9,4,5,0,7,2

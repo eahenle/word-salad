@@ -1,0 +1,45 @@
+{
+  "trials_audited": 36,
+  "observable_only": true,
+  "private_chain_of_thought_available": false,
+  "tool_calls_exposed": false,
+  "strategy_by_stage": [
+    {
+      "stage": "d075",
+      "trials": 9,
+      "explicit_structure_analysis": 5,
+      "direct_or_one_pass": 3,
+      "multi_message_without_specific_structure_term": 1,
+      "responses_mentioning_all_three_symbols": 0,
+      "responses_mentioning_both_operations": 0
+    },
+    {
+      "stage": "d125",
+      "trials": 9,
+      "explicit_structure_analysis": 7,
+      "direct_or_one_pass": 0,
+      "multi_message_without_specific_structure_term": 2,
+      "responses_mentioning_all_three_symbols": 1,
+      "responses_mentioning_both_operations": 0
+    },
+    {
+      "stage": "d250",
+      "trials": 9,
+      "explicit_structure_analysis": 5,
+      "direct_or_one_pass": 2,
+      "multi_message_without_specific_structure_term": 2,
+      "responses_mentioning_all_three_symbols": 1,
+      "responses_mentioning_both_operations": 2
+    },
+    {
+      "stage": "d500",
+      "trials": 9,
+      "explicit_structure_analysis": 4,
+      "direct_or_one_pass": 5,
+      "multi_message_without_specific_structure_term": 0,
+      "responses_mentioning_all_three_symbols": 7,
+      "responses_mentioning_both_operations": 2
+    }
+  ],
+  "invalidated_auth_attempts_excluded": 2
+}

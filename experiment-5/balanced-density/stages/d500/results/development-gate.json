@@ -1,0 +1,35 @@
+{
+  "stage": "d500",
+  "expected_individuals": 0,
+  "signal_trials": 6,
+  "complete_ab_pairs": 0,
+  "total_pairs": 3,
+  "scrambled_target_selections": 1,
+  "scrambled_controls": 3,
+  "counterpart_errors": 1,
+  "recovery_gate_passed": false,
+  "control_gate_clean": false,
+  "advance_authorized": false,
+  "next_stage": null,
+  "stopping_reason": "scrambled control contamination; audit before proceeding",
+  "pairs": [
+    {
+      "seed": 1,
+      "a_success": false,
+      "b_success": false,
+      "complete_pair": false
+    },
+    {
+      "seed": 2,
+      "a_success": false,
+      "b_success": false,
+      "complete_pair": false
+    },
+    {
+      "seed": 3,
+      "a_success": false,
+      "b_success": false,
+      "complete_pair": false
+    }
+  ]
+}

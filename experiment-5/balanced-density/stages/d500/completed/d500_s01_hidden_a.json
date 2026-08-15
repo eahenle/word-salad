@@ -1,0 +1,52 @@
+{
+  "trial_id": "d500_s01_hidden_a",
+  "stage": "d500",
+  "seed": 1,
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Kestrel Orchid Juniper",
+  "actual_density": 0.5,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "425c6de2df419d5f7f02f362cd905c65983d35eedd44b85fbcfeefd2a2ad3b02",
+  "prompt_words": 55,
+  "response": "**Kestrel Across Orchid Juniper**\n\nStart with `Kestrel Juniper Across Orchid`, swap the first two positions, then rotate the sequence left once.",
+  "trace_file": "stages/d500/traces/d500_s01_hidden_a.jsonl",
+  "stderr_file": "stages/d500/stderr/d500_s01_hidden_a.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:57:11.362436+00:00",
+    "finished_at": "2026-08-15T02:57:50.463999+00:00",
+    "elapsed_seconds": 39.102,
+    "thread_id": "01a0035a-1ba2-7672-aa23-21e28f6f82ea",
+    "aggregate_usage": {
+      "input_tokens": 31189,
+      "cached_input_tokens": 18944,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1472,
+      "reasoning_output_tokens": 1257
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "6a1304d9d1a8524e961d355f39a28a875a4c108d05adad2d5c7478ddc33b0311",
+    "stderr_sha256": "6cede3ddb3bf1144b492bc224f7a5f8a9afbc8c54e075f732639d3e7aed2d826",
+    "trace_bytes": 966,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

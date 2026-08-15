@@ -1,0 +1,8 @@
+{
+  "trial_id": "d500_s02_hidden_b",
+  "stage": "d500",
+  "prompt_sha256": "eccbef56d45064e544ac3dfef752b00e2fef615ea4f8f5dd848fa61cb64d1ac7",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da"
+}

@@ -1,0 +1,8 @@
+{
+  "trial_id": "d500_s02_scrambled",
+  "stage": "d500",
+  "prompt_sha256": "5f392b03c00fce03142b42dc10d8b9f4454f66f658853c5ea6cc959840bd96a0",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da"
+}

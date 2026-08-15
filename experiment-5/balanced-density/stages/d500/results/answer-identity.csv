@@ -1,0 +1,16 @@
+trial_id,seed,condition,hidden_identity,expected_answer,response,selected_answer_identity,semantic_success,counterpart_error,control_target_selection,classification
+d500_s01_hidden_b,1,hidden_b,B,Orchid Juniper Kestrel,The implied answer is **“work out the hidden sequence.”**,,False,False,False,no_target_full_state
+d500_s02_hidden_a,2,hidden_a,A,Kestrel Orchid Juniper,AJOK,,False,False,False,no_target_full_state
+d500_s02_scrambled,2,scrambled,,,"Orchid is the implied winner: Orchid is first, Kestrel second, and Juniper nineteenth.",,False,False,False,no_target_full_state
+d500_s03_hidden_b,3,hidden_b,B,Orchid Juniper Kestrel,"Kestrel, Orchid, Juniper",A,False,True,False,counterpart_full_state
+d500_s01_scrambled,1,scrambled,,,"Kestrel, Orchid, Juniper.",A,False,False,True,control_target_full_state
+d500_s02_hidden_b,2,hidden_b,B,Orchid Juniper Kestrel,juniper kestrel orchid a,,False,False,False,no_target_full_state
+d500_s03_hidden_a,3,hidden_a,A,Kestrel Orchid Juniper,"Capitalized sequence: Kestrel, Juniper, Orchid, A, Small.
+
+Swap first two, then rotate left by two:
+
+**Orchid, A, Small, Juniper, Kestrel**",,False,False,False,no_target_full_state
+d500_s01_hidden_a,1,hidden_a,A,Kestrel Orchid Juniper,"**Kestrel Across Orchid Juniper**
+
+Start with `Kestrel Juniper Across Orchid`, swap the first two positions, then rotate the sequence left once.",,False,False,False,no_target_full_state
+d500_s03_scrambled,3,scrambled,,,Juniper Kestrel Orchid,,False,False,False,no_target_full_state
