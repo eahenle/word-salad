@@ -1,0 +1,92 @@
+{
+  "generator_version": "experiment-5-balanced-density-v1",
+  "task_validation": {
+    "payload_words": 22,
+    "word_bags_equal": true,
+    "symbol_counts": {
+      "A": {
+        "Kestrel": 1,
+        "Juniper": 1,
+        "Orchid": 1
+      },
+      "B": {
+        "Kestrel": 1,
+        "Juniper": 1,
+        "Orchid": 1
+      }
+    },
+    "answers": {
+      "A": "Kestrel Orchid Juniper",
+      "B": "Orchid Juniper Kestrel"
+    },
+    "source_indices": {
+      "A": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "B": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        14,
+        8,
+        16,
+        17,
+        13,
+        7,
+        15,
+        9,
+        10,
+        11,
+        12,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  },
+  "stages": {
+    "d075": 293,
+    "d125": 176,
+    "d250": 88,
+    "d500": 44
+  },
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "scheduled_trials": 36,
+  "noise_source_hashes": {
+    "experiment-4/dual-channel/development/documents/harbor_cover_only.txt": "fdad663da9110a93d646da6fe6f3dcb29b8a0db7e6dd56103f95e9d89f1c2541",
+    "experiment-4/dual-channel/development/documents/ceramics_cover_only.txt": "6cf1491dfc0d099571a0b9a8829f25fb834d3ec009396970bbee4b51e4d89a3f",
+    "experiment-4/dual-channel/development/documents/garden_cover_only.txt": "d0adbb0021eda80c230f8a0cc9e7850870f105a22cc549f5c028094d898f4e98"
+  },
+  "noise_pool_words_after_exclusion": 429,
+  "all_prompts_generated_before_inference": true
+}
