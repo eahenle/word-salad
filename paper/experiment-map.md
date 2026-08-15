@@ -14,8 +14,8 @@
 | Experiment 4C.2 | frozen stopped | unequal target-name salience contaminated endpoint | measurement failure |
 | Experiment 5 cloud audit | frozen negative | 0/5 cloud-history canaries; 5/5 controls UNKNOWN | supporting isolation audit |
 | Experiment 5 balanced density | frozen stopped | no complete pair; 50% scrambled target contamination | measurement limitation |
-| Experiment 6 v1 | frozen task failure | five-symbol rotation task: 0/40 clean exact | failed measurement instrument |
-| Experiment 6 v2 | frozen control stop | 40/40 clean exact; 2/10 shuffled controls emitted target A; no buried-signal trials | failed measurement instrument / stop condition |
+| Experiment 6 v1 | frozen instrument check | five-symbol rotation task: 0/40 clean exact; frozen before controls | preregistered validation success |
+| Experiment 6 v2 | frozen instrument check | 40/40 clean exact; 2/10 shuffled controls emitted target A; no buried-signal trials | preregistered control stop |
 
 ## Core sequence
 

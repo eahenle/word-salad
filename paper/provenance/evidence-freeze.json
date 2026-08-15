@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "status": "evidence_layer_frozen_before_polished_manuscript",
+  "expected_tag": "paper-evidence-freeze-v1",
+  "base_commit_before_evidence_freeze": "c0514457f3e87954e62d34e40d7d1d971db94d63",
+  "artifacts": [
+    {
+      "path": "paper/claims-and-evidence.md",
+      "sha256": "740e68bd476d362018fe63f64e1d5a644c53fe54cbea48a91c28ca74fd43ce1f",
+      "bytes": 5955
+    },
+    {
+      "path": "paper/manuscript-outline.md",
+      "sha256": "96c3893b18d98b7fb479ed1751675a2b3939e3d2892fd167b41a2ab729bee241",
+      "bytes": 2041
+    },
+    {
+      "path": "paper/methods.md",
+      "sha256": "289a0e557e98287469def1c3a805bbf2bca231fbfd11bee72710a0ea5c9468e2",
+      "bytes": 2431
+    },
+    {
+      "path": "paper/publication-readiness.md",
+      "sha256": "ca0dd371f15edf90a305ea7e5ca94f39849ed7d618d52879908a3bcb4a529aff",
+      "bytes": 3300
+    },
+    {
+      "path": "paper/publication-summary.json",
+      "sha256": "20290260bc7a4fd75b28926783b35dd8324dcd68e08a439e2e2bbf466d8ddb5c",
+      "bytes": 5724
+    },
+    {
+      "path": "paper/statistical-analysis/build_paper.py",
+      "sha256": "05a162604e2e78a7296ddd883fc4b6522dc2b4600520402e09883bfcc347553d",
+      "bytes": 23187
+    },
+    {
+      "path": "paper/statistical-analysis/audit_publication_numbers.py",
+      "sha256": "eccebba169cbd1100e1fa39bbd9db93be9fd8aec413c326f5c54816ce408fa4b",
+      "bytes": 17839
+    },
+    {
+      "path": "paper/provenance/publication-number-audit.json",
+      "sha256": "5aff5b72f49908a6e8ae8fe47f77f543ef13bfd36ae2df7fb19a15cc678099d7",
+      "bytes": 16320
+    },
+    {
+      "path": "paper/results-tables/carrier-comparison.csv",
+      "sha256": "1676dad26b6450fb393aaa5bd55f16c31f574e44073645f500ee9b45a0d362a1",
+      "bytes": 917
+    },
+    {
+      "path": "paper/results-tables/core-evidence.csv",
+      "sha256": "915c59185d38d50f5f78d40c535f625e2966e353a931c3e77edfc6fcc7c78793",
+      "bytes": 1425
+    },
+    {
+      "path": "paper/results-tables/experiment-2-effort.csv",
+      "sha256": "ebd28c28ff2cf4f3df733ed8395d3259dba32d40225c2c3425767188c66aaebd",
+      "bytes": 920
+    },
+    {
+      "path": "paper/results-tables/experiment-configurations.csv",
+      "sha256": "852c1e6e8ffeaf2281d8c4321910fe35734f91de5ba02fa0aabf8845fe2fdc7e",
+      "bytes": 1102
+    },
+    {
+      "path": "paper/results-tables/invalidations-and-exclusions.csv",
+      "sha256": "a691187f717cdbe3b337fa713daa0898efe27814efd25a4d1cb6399f86696bf2",
+      "bytes": 1032
+    },
+    {
+      "path": "paper/results-tables/model-reasoning-matrix.csv",
+      "sha256": "b44b38924df14100020eaffe4200f6bc7e5489b55a6eb65673eb1bdfef909c9f",
+      "bytes": 1160
+    },
+    {
+      "path": "paper/figures/figure-1-construction.svg",
+      "sha256": "ee5d5bc87fb4a3358d361e6c85623a8b062c0459e3cf752e0940f604ffb23960",
+      "bytes": 2855
+    },
+    {
+      "path": "paper/figures/figure-1b-real-stimulus.svg",
+      "sha256": "1b129af2f7548f6f0b9de0c607efa0f35394f12538538d875524cc4b25a8608d",
+      "bytes": 9216
+    },
+    {
+      "path": "paper/figures/figure-2-equal-bag-ab.svg",
+      "sha256": "ebb3411eb050fe7aed9d92f88cceac2910068a1e47815d2647eb2aba274dac96",
+      "bytes": 2830
+    },
+    {
+      "path": "paper/figures/figure-3-carrier-geometry.svg",
+      "sha256": "fed1838610f9cc5bd21a9891b5e4fe2afc86dd6b0afbc9a8d523248de4b9b6d6",
+      "bytes": 4455
+    },
+    {
+      "path": "paper/figures/figure-4-model-effort-matrix.svg",
+      "sha256": "c1a4c0ab56a81cf02cd9bf58bdb4bf6d803c130f7a2859e0aa6c0243f83780f5",
+      "bytes": 5699
+    },
+    {
+      "path": "paper/figures/figure-5-computational-effort.svg",
+      "sha256": "5a0d9944206727444c42b875dece8cfe0ef32323b63d4cf9af996a14f3dfa688",
+      "bytes": 2438
+    }
+  ]
+}

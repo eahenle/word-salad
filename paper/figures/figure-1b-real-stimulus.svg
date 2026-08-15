@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#1f2937}.title{font-size:24px;font-weight:700}.axis{font-size:12px;fill:#4b5563}.label{font-size:14px}.value{font-size:13px;font-weight:700}</style>
+<text class="title" x="590.0" y="34" text-anchor="middle">What the subject saw: a frozen Experiment 2 excerpt</text>
+<text class="axis" x="590" y="62" text-anchor="middle">Trial r0041 · N=2 · signal phase 0 · first 48 of 322 words</text>
+<rect x="38" y="82" width="1104" height="350" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="60" y="112" font-size="14" font-weight="700">Raw prompt excerpt</text>
+<rect x="55" y="133" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="60" y="153" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">You</text>
+<text x="196" y="153" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">containing</text>
+<rect x="327" y="133" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="332" y="153" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">have</text>
+<text x="468" y="153" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">2.</text>
+<rect x="599" y="133" width="55" height="27" rx="4" fill="#dbeafe"/>
+<text x="604" y="153" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">three</text>
+<text x="740" y="153" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">the</text>
+<rect x="871" y="133" width="55" height="27" rx="4" fill="#dbeafe"/>
+<text x="876" y="153" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">boxes</text>
+<text x="1012" y="153" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">box</text>
+<rect x="55" y="177" width="73" height="27" rx="4" fill="#dbeafe"/>
+<text x="60" y="197" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">labeled</text>
+<text x="196" y="197" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">into</text>
+<rect x="327" y="177" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="332" y="197" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">red,</text>
+<text x="468" y="197" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">three</text>
+<rect x="599" y="177" width="55" height="27" rx="4" fill="#dbeafe"/>
+<text x="604" y="197" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">blue,</text>
+<text x="740" y="197" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">=</text>
+<rect x="871" y="177" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="876" y="197" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">and</text>
+<text x="1012" y="197" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">Move</text>
+<rect x="55" y="221" width="64" height="27" rx="4" fill="#dbeafe"/>
+<text x="60" y="241" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">green.</text>
+<text x="196" y="241" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">blue</text>
+<rect x="327" y="221" width="100" height="27" rx="4" fill="#dbeafe"/>
+<text x="332" y="241" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">Initially,</text>
+<text x="468" y="241" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">1.</text>
+<rect x="599" y="221" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="604" y="241" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">the</text>
+<text x="740" y="241" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">operations</text>
+<rect x="871" y="221" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="876" y="241" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">red</text>
+<text x="1012" y="241" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">each</text>
+<rect x="55" y="265" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="60" y="285" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">box</text>
+<text x="196" y="285" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">coin</text>
+<rect x="327" y="265" width="82" height="27" rx="4" fill="#dbeafe"/>
+<text x="332" y="285" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">contains</text>
+<text x="468" y="285" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">into</text>
+<rect x="599" y="265" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="604" y="285" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">the</text>
+<text x="740" y="285" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">Initially,</text>
+<rect x="871" y="265" width="55" height="27" rx="4" fill="#dbeafe"/>
+<text x="876" y="285" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">brass</text>
+<text x="1012" y="285" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">on</text>
+<rect x="55" y="309" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="60" y="329" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">key,</text>
+<text x="196" y="329" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">line</text>
+<rect x="327" y="309" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="332" y="329" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">the</text>
+<text x="468" y="329" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">six</text>
+<rect x="599" y="309" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="604" y="329" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">blue</text>
+<text x="740" y="329" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">boxes</text>
+<rect x="871" y="309" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="876" y="329" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">box</text>
+<text x="1012" y="329" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">into</text>
+<rect x="55" y="353" width="82" height="27" rx="4" fill="#dbeafe"/>
+<text x="60" y="373" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">contains</text>
+<text x="196" y="373" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">coin,</text>
+<rect x="327" y="353" width="48" height="27" rx="4" fill="#dbeafe"/>
+<text x="332" y="373" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">the</text>
+<text x="468" y="373" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">marble</text>
+<rect x="599" y="353" width="64" height="27" rx="4" fill="#dbeafe"/>
+<text x="604" y="373" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">silver</text>
+<text x="740" y="373" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">the</text>
+<rect x="871" y="353" width="55" height="27" rx="4" fill="#dbeafe"/>
+<text x="876" y="373" font-family="ui-monospace,monospace" font-size="15" font-weight="700" fill="#1d4ed8">coin,</text>
+<text x="1012" y="373" font-family="ui-monospace,monospace" font-size="15" font-weight="400" fill="#64748b">key</text>
+<rect x="55" y="392" width="18" height="13" rx="2" fill="#dbeafe"/>
+<text class="axis" x="82" y="403">highlight added for explanation; subjects received plain, unmarked text</text>
+<path d="M590 442 L590 476" stroke="#64748b" stroke-width="2" marker-end="url(#arrow-real)"/>
+<defs><marker id="arrow-real" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#64748b"/></marker></defs>
+<rect x="38" y="488" width="1104" height="162" rx="10" fill="#eff6ff" stroke="#93c5fd"/>
+<text x="60" y="520" font-size="14" font-weight="700">Highlighted positions extracted in order</text>
+<text x="60" y="558" font-family="ui-monospace,monospace" font-size="16" fill="#1e3a8a">You have three boxes labeled red, blue, and green. Initially, the red</text>
+<text x="60" y="592" font-family="ui-monospace,monospace" font-size="16" fill="#1e3a8a">box contains the brass key, the blue box contains the silver coin,</text>
+<text class="axis" x="60" y="634">Source SHA-256: 460f02401e1f2ffe65aa4588b291ceb6590c27082370a18feb14c7251c2449ef</text>
+</svg>

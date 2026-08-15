@@ -23,7 +23,7 @@ prompt-injection exploits.
    shell and filesystem tools were unnecessary for that condition.
 4. Experiment 3 preserved recovery under nonconstant balanced jitter and exposed
    a strong tested-model-family boundary.
-5. Experiment 4A preserved recovery under uniformly random 196-of-392 signal
+5. Experiment 4A preserved recovery under uniformly random 161-of-322 signal
    placement: 18/40 complete pairs and 46/80 expected individual answers, with
    0/10 shuffled target answers.
 
@@ -41,9 +41,11 @@ output space. Its preregistered gates worked as safeguards:
 - no v2 25% or 50% carrier prompt was generated or run.
 
 The v2 control result shows that the model's outputs are not uniform over the
-nominal 5! state space and that this wording permits order-independent target
-reconstruction or bias. It is a failed measurement instrument, not a negative
-carrier result. Per the stop rule, the task will not be redesigned again.
+nominal 5! state space. Exact target A appeared without preservation of the
+intended complete A/B ordering, making the wording unsuitable as an
+order-specific measurement instrument. This is a successful preregistered
+instrument check, not a negative carrier result. Per the stop rule, the task
+will not be redesigned again.
 
 ## Remaining limitations, not drafting blockers
 

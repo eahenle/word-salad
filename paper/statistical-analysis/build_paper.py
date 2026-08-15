@@ -101,8 +101,8 @@ def invalidation_rows() -> list[dict]:
         {"study": "Experiment 2 tool-less", "artifact": "r0095 and later", "issue": "credit exhausted", "handling": "r0095 excluded pre-inference; cost-truncated stop frozen"},
         {"study": "Experiment 4B", "artifact": "runtime/method pilots", "issue": "runtime and overt-semantic confounds", "handling": "preserved under invalidated directories; canary claim abandoned"},
         {"study": "Experiment 5 balanced density", "artifact": "2 d250 attempts", "issue": "pre-response expired/reused refresh token", "handling": "archived; only those exact prompts rerun"},
-        {"study": "Experiment 6 v1", "artifact": "five-symbol rotation task", "issue": "0/40 clean execution", "handling": "frozen failed; no controls/interference run"},
-        {"study": "Experiment 6 v2", "artifact": "five-symbol swap task", "issue": "2/10 scrambled controls hit target A", "handling": "frozen control-contaminated; no interference run"},
+        {"study": "Experiment 6 v1", "artifact": "five-symbol rotation task", "issue": "0/40 clean execution", "handling": "preregistered gate stopped instrument; no controls/interference run"},
+        {"study": "Experiment 6 v2", "artifact": "five-symbol swap task", "issue": "2/10 scrambled controls hit target A", "handling": "preregistered gate stopped instrument; no interference run"},
     ]
 
 
@@ -217,6 +217,42 @@ def figure_1() -> None:
     (FIGURES / "figure-1-construction.svg").write_text("\n".join(out) + "\n")
 
 
+def figure_1b() -> None:
+    prompt_path = REPO / "experiment-2/prompts/constrained/r0041.txt"
+    expected_hash = "460f02401e1f2ffe65aa4588b291ceb6590c27082370a18feb14c7251c2449ef"
+    assert hashlib.sha256(prompt_path.read_bytes()).hexdigest() == expected_hash
+    words = prompt_path.read_text().split()
+    assert len(words) == 322
+    excerpt = words[:48]
+    signal = excerpt[0::2]
+    width, height = 1180, 720
+    out = svg_start(width, height, "What the subject saw: a frozen Experiment 2 excerpt")
+    out.append('<text class="axis" x="590" y="62" text-anchor="middle">Trial r0041 · N=2 · signal phase 0 · first 48 of 322 words</text>')
+    out.append('<rect x="38" y="82" width="1104" height="350" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>')
+    out.append('<text x="60" y="112" font-size="14" font-weight="700">Raw prompt excerpt</text>')
+    for index, word in enumerate(excerpt):
+        row, column = divmod(index, 8)
+        x, y = 60 + column * 136, 153 + row * 44
+        signal_word = index % 2 == 0
+        if signal_word:
+            out.append(f'<rect x="{x - 5}" y="{y - 20}" width="{max(48, len(word) * 9 + 10)}" height="27" rx="4" fill="#dbeafe"/>')
+        color = "#1d4ed8" if signal_word else "#64748b"
+        weight = "700" if signal_word else "400"
+        out.append(f'<text x="{x}" y="{y}" font-family="ui-monospace,monospace" font-size="15" font-weight="{weight}" fill="{color}">{esc(word)}</text>')
+    out.append('<rect x="55" y="392" width="18" height="13" rx="2" fill="#dbeafe"/>')
+    out.append('<text class="axis" x="82" y="403">highlight added for explanation; subjects received plain, unmarked text</text>')
+    out.append('<path d="M590 442 L590 476" stroke="#64748b" stroke-width="2" marker-end="url(#arrow-real)"/>')
+    out.append('<defs><marker id="arrow-real" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#64748b"/></marker></defs>')
+    out.append('<rect x="38" y="488" width="1104" height="162" rx="10" fill="#eff6ff" stroke="#93c5fd"/>')
+    out.append('<text x="60" y="520" font-size="14" font-weight="700">Highlighted positions extracted in order</text>')
+    for row in range(2):
+        line = " ".join(signal[row * 12 : (row + 1) * 12])
+        out.append(f'<text x="60" y="{558 + row * 34}" font-family="ui-monospace,monospace" font-size="16" fill="#1e3a8a">{esc(line)}</text>')
+    out.append(f'<text class="axis" x="60" y="634">Source SHA-256: {expected_hash}</text>')
+    out.append('</svg>')
+    (FIGURES / "figure-1b-real-stimulus.svg").write_text("\n".join(out) + "\n")
+
+
 def figure_3(carrier: list[dict[str, str]]) -> None:
     labels, values, notes, colors, intervals = [], [], [], [], []
     palette = {"fixed": "#64748b", "jitter": "#f59e0b", "uniform": "#2563eb"}
@@ -329,6 +365,7 @@ def main() -> None:
         [wilson(19, 40), wilson(8, 40), wilson(0, 80)],
     )
     figure_1()
+    figure_1b()
     figure_3(carrier)
     figure_4(matrix)
     figure_5(effort2)
@@ -346,12 +383,13 @@ def main() -> None:
         "schema_version": 1,
         "source_data_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=REPO, text=True).strip(),
         "central_claim": "behavioral sensitivity to embedded linguistic order under lexically matched interference",
+        "experiment_4a_geometry": {"signal_words": 161, "distractor_words": 161, "total_positions": 322, "density": 0.5},
         "core_metrics": core,
         "experiment_6_stop": "clean task passed 40/40; scrambled control produced 2/10 targets; no buried-signal prompts generated",
         "source_sha256": {str(path.relative_to(REPO)): hashlib.sha256(path.read_bytes()).hexdigest() for path in sources},
     }
     (PAPER / "publication-summary.json").write_text(json.dumps(summary, indent=2) + "\n")
-    print(json.dumps({"tables": 6, "figures": 5, "provenance_manifests": 2, "core_metrics": len(core)}, indent=2))
+    print(json.dumps({"tables": 6, "figures": 6, "provenance_manifests": 2, "core_metrics": len(core)}, indent=2))
 
 
 if __name__ == "__main__":

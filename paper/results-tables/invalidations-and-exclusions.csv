@@ -5,5 +5,5 @@ Experiment 2,9 initial attempts,pre-inference account usage cap,archived and exa
 Experiment 2 tool-less,r0095 and later,credit exhausted,r0095 excluded pre-inference; cost-truncated stop frozen
 Experiment 4B,runtime/method pilots,runtime and overt-semantic confounds,preserved under invalidated directories; canary claim abandoned
 Experiment 5 balanced density,2 d250 attempts,pre-response expired/reused refresh token,archived; only those exact prompts rerun
-Experiment 6 v1,five-symbol rotation task,0/40 clean execution,frozen failed; no controls/interference run
-Experiment 6 v2,five-symbol swap task,2/10 scrambled controls hit target A,frozen control-contaminated; no interference run
+Experiment 6 v1,five-symbol rotation task,0/40 clean execution,preregistered gate stopped instrument; no controls/interference run
+Experiment 6 v2,five-symbol swap task,2/10 scrambled controls hit target A,preregistered gate stopped instrument; no interference run

@@ -1,0 +1,698 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "checks_passed": 43,
+  "checks_total": 43,
+  "failures": [],
+  "checks": [
+    {
+      "name": "1C normalization variants",
+      "passed": true,
+      "observed": [
+        "lower",
+        "lower_nopunct",
+        "nopunct",
+        "original"
+      ],
+      "expected": [
+        "lower",
+        "lower_nopunct",
+        "nopunct",
+        "original"
+      ],
+      "source": "experiment-1c/results/summary.csv"
+    },
+    {
+      "name": "1C scheduled trials",
+      "passed": true,
+      "observed": 320,
+      "expected": 320,
+      "source": "experiment-1c/results/summary.csv"
+    },
+    {
+      "name": "1C signal semantic successes by variant",
+      "passed": true,
+      "observed": {
+        "original": 22,
+        "lower": 18,
+        "nopunct": 22,
+        "lower_nopunct": 18
+      },
+      "expected": {
+        "original": 22,
+        "lower": 18,
+        "nopunct": 22,
+        "lower_nopunct": 18
+      },
+      "source": "experiment-1c/results/summary.csv"
+    },
+    {
+      "name": "1C shuffled semantic successes by variant",
+      "passed": true,
+      "observed": {
+        "original": 0,
+        "lower": 1,
+        "nopunct": 1,
+        "lower_nopunct": 0
+      },
+      "expected": {
+        "original": 0,
+        "lower": 1,
+        "nopunct": 1,
+        "lower_nopunct": 0
+      },
+      "source": "experiment-1c/results/summary.csv"
+    },
+    {
+      "name": "1C timeout/tool totals",
+      "passed": true,
+      "observed": {
+        "signal": {
+          "timeouts": 11,
+          "trials_with_tools": 45
+        },
+        "all_shuffled": {
+          "timeouts": 30,
+          "trials_with_tools": 100
+        }
+      },
+      "expected": {
+        "signal": {
+          "timeouts": 11,
+          "trials_with_tools": 45
+        },
+        "all_shuffled": {
+          "timeouts": 30,
+          "trials_with_tools": 100
+        }
+      },
+      "source": "experiment-1c/results/effort-rollup.csv"
+    },
+    {
+      "name": "Experiment 2 expected individuals",
+      "passed": true,
+      "observed": {
+        "2": 57,
+        "4": 33
+      },
+      "expected": {
+        "2": 57,
+        "4": 33
+      },
+      "source": "experiment-2/results/answer-identity.csv"
+    },
+    {
+      "name": "Experiment 2 clean baseline",
+      "passed": true,
+      "observed": 80,
+      "expected": 80,
+      "source": "experiment-2/results/answer-identity.csv"
+    },
+    {
+      "name": "Experiment 2 shuffled trials",
+      "passed": true,
+      "observed": 80,
+      "expected": 80,
+      "source": "experiment-2/results/answer-identity.csv"
+    },
+    {
+      "name": "Experiment 2 shuffled target answers",
+      "passed": true,
+      "observed": 0,
+      "expected": 0,
+      "source": "experiment-2/results/answer-identity.csv"
+    },
+    {
+      "name": "Experiment 2 complete A/B pairs",
+      "passed": true,
+      "observed": {
+        "2": 19,
+        "4": 8
+      },
+      "expected": {
+        "2": 19,
+        "4": 8
+      },
+      "source": "experiment-2/results/paired-discrimination.csv"
+    },
+    {
+      "name": "Experiment 2 A/B pair denominators",
+      "passed": true,
+      "observed": {
+        "2": 40,
+        "4": 40
+      },
+      "expected": {
+        "2": 40,
+        "4": 40
+      },
+      "source": "experiment-2/results/paired-discrimination.csv"
+    },
+    {
+      "name": "Tool-less N=2 expected individuals",
+      "passed": true,
+      "observed": [
+        35,
+        40
+      ],
+      "expected": [
+        35,
+        40
+      ],
+      "source": "experiment-2/results/raw-model-pilot-cells.csv"
+    },
+    {
+      "name": "Tool-less shuffled target answers",
+      "passed": true,
+      "observed": 0,
+      "expected": 0,
+      "source": "experiment-2/results/raw-model-pilot-cells.csv"
+    },
+    {
+      "name": "Tool-less complete A/B pairs",
+      "passed": true,
+      "observed": [
+        16,
+        20
+      ],
+      "expected": [
+        16,
+        20
+      ],
+      "source": "experiment-2/results/raw-model-pilot-pairs.csv"
+    },
+    {
+      "name": "Experiment 3 screening totals",
+      "passed": true,
+      "observed": {
+        "fixed_individual": 69,
+        "fixed_individual_trials": 240,
+        "fixed_paired": 17,
+        "fixed_pairs": 120,
+        "jitter_individual": 95,
+        "jitter_individual_trials": 240,
+        "jitter_paired": 31,
+        "jitter_pairs": 120,
+        "control_target_answers": 0
+      },
+      "expected": {
+        "fixed_individual": 69,
+        "fixed_individual_trials": 240,
+        "fixed_paired": 17,
+        "fixed_pairs": 120,
+        "jitter_individual": 95,
+        "jitter_individual_trials": 240,
+        "jitter_paired": 31,
+        "jitter_pairs": 120,
+        "control_target_answers": 0
+      },
+      "source": "experiment-3/results/model-reasoning-matrix.csv"
+    },
+    {
+      "name": "Experiment 3 Spark screening boundary",
+      "passed": true,
+      "observed": {
+        "fixed_individual": 0,
+        "jitter_individual": 1,
+        "fixed_paired": 0,
+        "jitter_paired": 0
+      },
+      "expected": {
+        "fixed_individual": 0,
+        "jitter_individual": 1,
+        "fixed_paired": 0,
+        "jitter_paired": 0
+      },
+      "source": "experiment-3/results/model-reasoning-matrix.csv"
+    },
+    {
+      "name": "Experiment 3 selected-cell confirmation",
+      "passed": true,
+      "observed": {
+        "gpt-5.6-sol:medium:fixed": [
+          14,
+          20,
+          6,
+          10
+        ],
+        "gpt-5.6-sol:medium:jitter": [
+          14,
+          20,
+          6,
+          10
+        ],
+        "gpt-5.6-terra:xhigh:fixed": [
+          7,
+          20,
+          2,
+          10
+        ],
+        "gpt-5.6-terra:xhigh:jitter": [
+          9,
+          20,
+          3,
+          10
+        ],
+        "gpt-5.3-codex-spark:xhigh:fixed": [
+          0,
+          20,
+          0,
+          10
+        ],
+        "gpt-5.3-codex-spark:xhigh:jitter": [
+          0,
+          20,
+          0,
+          10
+        ]
+      },
+      "expected": {
+        "gpt-5.6-sol:medium:fixed": [
+          14,
+          20,
+          6,
+          10
+        ],
+        "gpt-5.6-sol:medium:jitter": [
+          14,
+          20,
+          6,
+          10
+        ],
+        "gpt-5.6-terra:xhigh:fixed": [
+          7,
+          20,
+          2,
+          10
+        ],
+        "gpt-5.6-terra:xhigh:jitter": [
+          9,
+          20,
+          3,
+          10
+        ],
+        "gpt-5.3-codex-spark:xhigh:fixed": [
+          0,
+          20,
+          0,
+          10
+        ],
+        "gpt-5.3-codex-spark:xhigh:jitter": [
+          0,
+          20,
+          0,
+          10
+        ]
+      },
+      "source": "experiment-3/results/confirmation-summary.csv"
+    },
+    {
+      "name": "Experiment 3 shuffled controls",
+      "passed": true,
+      "observed": 36,
+      "expected": 36,
+      "source": "experiment-3/results/answer-identity.csv"
+    },
+    {
+      "name": "Experiment 3 shuffled target answers",
+      "passed": true,
+      "observed": 0,
+      "expected": 0,
+      "source": "experiment-3/results/answer-identity.csv"
+    },
+    {
+      "name": "Experiment 4A geometry",
+      "passed": true,
+      "observed": {
+        "frozen_payload_word_count": 161,
+        "total_positions": 322,
+        "signal_positions": 161,
+        "distractor_positions": 161
+      },
+      "expected": {
+        "frozen_payload_word_count": 161,
+        "total_positions": 322,
+        "signal_positions": 161,
+        "distractor_positions": 161
+      },
+      "source": "experiment-4/uniform/results/prompt-validation.json"
+    },
+    {
+      "name": "Experiment 4A uniform sample without replacement",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "source": "experiment-4/uniform/results/prompt-validation.json"
+    },
+    {
+      "name": "Experiment 4A per-cell outcomes",
+      "passed": true,
+      "observed": {
+        "gpt-5.6-sol:medium": [
+          30,
+          40,
+          13,
+          20
+        ],
+        "gpt-5.6-terra:xhigh": [
+          16,
+          40,
+          5,
+          20
+        ]
+      },
+      "expected": {
+        "gpt-5.6-sol:medium": [
+          30,
+          40,
+          13,
+          20
+        ],
+        "gpt-5.6-terra:xhigh": [
+          16,
+          40,
+          5,
+          20
+        ]
+      },
+      "source": "experiment-4/uniform/results/carrier-comparison.csv"
+    },
+    {
+      "name": "Experiment 4A aggregate outcomes",
+      "passed": true,
+      "observed": [
+        46,
+        80,
+        18,
+        40
+      ],
+      "expected": [
+        46,
+        80,
+        18,
+        40
+      ],
+      "source": "experiment-4/uniform/results/carrier-comparison.csv"
+    },
+    {
+      "name": "Experiment 4A shuffled controls",
+      "passed": true,
+      "observed": [
+        10,
+        0
+      ],
+      "expected": [
+        10,
+        0
+      ],
+      "source": "experiment-4/uniform/results/effort-summary.csv"
+    },
+    {
+      "name": "Experiment 4A completed subjects",
+      "passed": true,
+      "observed": 90,
+      "expected": 90,
+      "source": "experiment-4/uniform/results/effort-summary.csv"
+    },
+    {
+      "name": "Experiment 4A timeouts",
+      "passed": true,
+      "observed": 0,
+      "expected": 0,
+      "source": "experiment-4/uniform/results/effort-summary.csv"
+    },
+    {
+      "name": "Cloud-history exact recovery",
+      "passed": true,
+      "observed": 0,
+      "expected": 0,
+      "source": "experiment-5/cloud-context-audit/results/unblinding-audit.json"
+    },
+    {
+      "name": "Cloud-history probes",
+      "passed": true,
+      "observed": 5,
+      "expected": 5,
+      "source": "experiment-5/cloud-context-audit/results/unblinding-audit.json"
+    },
+    {
+      "name": "Cloud negative controls UNKNOWN",
+      "passed": true,
+      "observed": 5,
+      "expected": 5,
+      "source": "experiment-5/cloud-context-audit/results/unblinding-audit.json"
+    },
+    {
+      "name": "Experiment 6 v1 clean exact",
+      "passed": true,
+      "observed": [
+        0,
+        40
+      ],
+      "expected": [
+        0,
+        40
+      ],
+      "source": "experiment-6/five-symbol/results/clean-gate.json"
+    },
+    {
+      "name": "Experiment 6 v2 clean exact",
+      "passed": true,
+      "observed": [
+        40,
+        40
+      ],
+      "expected": [
+        40,
+        40
+      ],
+      "source": "experiment-6/five-symbol-v2/results/clean-gate.json"
+    },
+    {
+      "name": "Experiment 6 v2 shuffled target A count",
+      "passed": true,
+      "observed": [
+        2,
+        10
+      ],
+      "expected": [
+        2,
+        10
+      ],
+      "source": "experiment-6/five-symbol-v2/results/scrambled-gate.json"
+    },
+    {
+      "name": "Experiment 6 v2 buried-signal authorization",
+      "passed": true,
+      "observed": false,
+      "expected": false,
+      "source": "experiment-6/five-symbol-v2/results/scrambled-gate.json"
+    },
+    {
+      "name": "Experiment 6 v2 executed cohort directories",
+      "passed": true,
+      "observed": [
+        "clean",
+        "scrambled"
+      ],
+      "expected": [
+        "clean",
+        "scrambled"
+      ],
+      "source": "experiment-6/five-symbol-v2/cohorts/"
+    },
+    {
+      "name": "No stale legacy signal count in publication markdown",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "source": "paper/**/*.md"
+    },
+    {
+      "name": "No stale legacy total count in publication markdown",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "source": "paper/**/*.md"
+    },
+    {
+      "name": "No overstrong Experiment 6 order-independent wording",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "source": "paper/**/*.md"
+    },
+    {
+      "name": "Correct Experiment 4A exact geometry appears",
+      "passed": true,
+      "observed": true,
+      "expected": true,
+      "source": "paper/**/*.md"
+    },
+    {
+      "name": "Canonical numeric fragments in paper/claims-and-evidence.md",
+      "passed": true,
+      "observed": [],
+      "expected": [],
+      "source": "paper/claims-and-evidence.md"
+    },
+    {
+      "name": "Canonical numeric fragments in paper/publication-readiness.md",
+      "passed": true,
+      "observed": [],
+      "expected": [],
+      "source": "paper/publication-readiness.md"
+    },
+    {
+      "name": "Generated core-evidence table",
+      "passed": true,
+      "observed": {
+        "Experiment 2 | N=2 expected individuals": [
+          57,
+          80
+        ],
+        "Experiment 2 | N=2 complete A/B pairs": [
+          19,
+          40
+        ],
+        "Experiment 2 | N=4 expected individuals": [
+          33,
+          80
+        ],
+        "Experiment 2 | N=4 complete A/B pairs": [
+          8,
+          40
+        ],
+        "Experiment 2 | all-shuffled target answers": [
+          0,
+          80
+        ],
+        "Experiment 2 tool-less pilot | N=2 expected individuals": [
+          35,
+          40
+        ],
+        "Experiment 2 tool-less pilot | N=2 complete A/B pairs": [
+          16,
+          20
+        ],
+        "Experiment 3 | fixed expected individuals": [
+          69,
+          240
+        ],
+        "Experiment 3 | fixed complete A/B pairs": [
+          17,
+          120
+        ],
+        "Experiment 3 | jitter expected individuals": [
+          95,
+          240
+        ],
+        "Experiment 3 | jitter complete A/B pairs": [
+          31,
+          120
+        ],
+        "Experiment 4A | uniform expected individuals": [
+          46,
+          80
+        ],
+        "Experiment 4A | uniform complete A/B pairs": [
+          18,
+          40
+        ],
+        "Experiment 4A | all-shuffled target answers": [
+          0,
+          10
+        ],
+        "Experiment 6 v2 | clean exact execution": [
+          40,
+          40
+        ],
+        "Experiment 6 v2 | scrambled target false positives": [
+          2,
+          10
+        ]
+      },
+      "expected": {
+        "Experiment 2 | N=2 expected individuals": [
+          57,
+          80
+        ],
+        "Experiment 2 | N=2 complete A/B pairs": [
+          19,
+          40
+        ],
+        "Experiment 2 | N=4 expected individuals": [
+          33,
+          80
+        ],
+        "Experiment 2 | N=4 complete A/B pairs": [
+          8,
+          40
+        ],
+        "Experiment 2 | all-shuffled target answers": [
+          0,
+          80
+        ],
+        "Experiment 2 tool-less pilot | N=2 expected individuals": [
+          35,
+          40
+        ],
+        "Experiment 2 tool-less pilot | N=2 complete A/B pairs": [
+          16,
+          20
+        ],
+        "Experiment 3 | fixed expected individuals": [
+          69,
+          240
+        ],
+        "Experiment 3 | fixed complete A/B pairs": [
+          17,
+          120
+        ],
+        "Experiment 3 | jitter expected individuals": [
+          95,
+          240
+        ],
+        "Experiment 3 | jitter complete A/B pairs": [
+          31,
+          120
+        ],
+        "Experiment 4A | uniform expected individuals": [
+          46,
+          80
+        ],
+        "Experiment 4A | uniform complete A/B pairs": [
+          18,
+          40
+        ],
+        "Experiment 4A | all-shuffled target answers": [
+          0,
+          10
+        ],
+        "Experiment 6 v2 | clean exact execution": [
+          40,
+          40
+        ],
+        "Experiment 6 v2 | scrambled target false positives": [
+          2,
+          10
+        ]
+      },
+      "source": "paper/results-tables/core-evidence.csv"
+    },
+    {
+      "name": "Generated carrier comparison is frozen source",
+      "passed": true,
+      "observed": "1676dad26b6450fb393aaa5bd55f16c31f574e44073645f500ee9b45a0d362a1",
+      "expected": "1676dad26b6450fb393aaa5bd55f16c31f574e44073645f500ee9b45a0d362a1",
+      "source": "paper/results-tables/carrier-comparison.csv"
+    },
+    {
+      "name": "Generated model matrix is frozen source",
+      "passed": true,
+      "observed": "b44b38924df14100020eaffe4200f6bc7e5489b55a6eb65673eb1bdfef909c9f",
+      "expected": "b44b38924df14100020eaffe4200f6bc7e5489b55a6eb65673eb1bdfef909c9f",
+      "source": "paper/results-tables/model-reasoning-matrix.csv"
+    }
+  ]
+}

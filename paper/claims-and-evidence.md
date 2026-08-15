@@ -1,5 +1,18 @@
 # Claims and evidence
 
+## Manuscript placement
+
+| Claim | manuscript_location |
+| --- | --- |
+| Aggregate lexical content does not determine the response | Abstract; Results |
+| External agent tools are not required | Abstract; Results |
+| Recovery does not require a fixed positional clock | Abstract; Results |
+| Recovery survives uniformly random signal positions at 50% density | Abstract; Results |
+| Successful signal processing can be computationally cheap | Results; Discussion |
+| The effect is model/configuration specific | Results; Discussion |
+| Low-density naturalistic generalization is not established | Results; Discussion |
+| The five-symbol study does not establish a density boundary | Supplement only |
+
 ## 1. Aggregate lexical content does not determine the response
 
 - **Evidence:** Experiment 2 paired A/B stimuli have mechanically identical
@@ -40,7 +53,8 @@
 - **Evidence:** Experiment 4A: Sol-medium 30/40 individuals and 13/20 pairs;
   Terra-xhigh 16/40 and 5/20; aggregate 46/80 and 18/40.
 - **Controls:** A/B prompts use the same uniformly sampled masks and identical
-  bags; 0/10 all-shuffled controls emitted a target; 90/90 subjects completed.
+  bags; each prompt used 161 signal and 161 distractor words in 322 positions;
+  0/10 all-shuffled controls emitted a target; 90/90 subjects completed.
 - **Remaining alternatives:** 50% is not very sparse; only two model settings
   were tested; masks are random rather than adversarial.
 - **Allowed:** “Recovery survived uniformly sampled placement without a fixed
@@ -85,8 +99,9 @@
   v2 task passed clean execution (40/40) but produced exact target A in 2/10
   independently shuffled N=1 controls.
 - **Consequence:** no 25% or 50% carrier prompt was generated or run.
-- **Allowed:** “A preregistered control gate detected an order-independent
-  target bias and stopped the boundary study.”
+- **Allowed:** “A preregistered control gate detected exact target output
+  without preservation of the intended complete A/B ordering and stopped the
+  boundary study.”
 - **Not allowed:** “The model failed to recover the five-symbol task under
   interference.” No such trial occurred.
 

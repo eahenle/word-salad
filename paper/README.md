@@ -16,9 +16,9 @@ claim.
 Publication-closing Experiment 6 reached its preregistered stop condition before
 any buried-signal trial. Task v1 failed clean execution (0/40). Task v2 passed
 clean execution (40/40), but 2/10 shuffled controls emitted the same target-A
-sequence. No 25% or 50% prompt was generated or run. This measurement failure
-is preserved transparently; it does not replace the clean Experiments 2–4A
-evidence.
+sequence. No 25% or 50% prompt was generated or run. This successful
+preregistered instrument check is preserved transparently; it does not replace
+the clean Experiments 2–4A evidence.
 
 The experimental phase is closed. The next work is manuscript drafting and,
 ideally, independent external replication—not continued task redesign.
@@ -34,6 +34,10 @@ ideally, independent external replication—not continued task redesign.
 - `figures/`: generated publication figures and specifications.
 - `statistical-analysis/`: analysis code and assumptions.
 - `provenance/`: immutable tags, image hashes, and exclusions.
+
+`statistical-analysis/audit_publication_numbers.py` is the fail-closed guard
+against stale or inconsistent publication counts. The current evidence layer
+passes all 43 checks.
 
 Raw data remain in their frozen experiment directories and are not duplicated
 here.

@@ -24,3 +24,10 @@ Experiment directories contain exact image IDs, prompt hashes, runtime hashes,
 execution freezes, isolation audits, and invalidated-attempt records. This index
 is machine-checked into `frozen-tags.csv`; source hashes used for the paper
 summary are stored in `../publication-summary.json`.
+
+The corrected evidence layer adds:
+
+- `publication-number-audit.json`: 43 frozen-source consistency checks;
+- `evidence-freeze.json`: hashes for generated tables, figures, claims,
+  outline, methods skeleton, and analysis scripts;
+- `runtime-images.csv`: pinned subject-image provenance.

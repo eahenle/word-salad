@@ -1,7 +1,13 @@
 {
   "schema_version": 1,
-  "source_data_commit": "e8dca1e99bac934b4e9a209d9f33a56a69a12bfa",
+  "source_data_commit": "c0514457f3e87954e62d34e40d7d1d971db94d63",
   "central_claim": "behavioral sensitivity to embedded linguistic order under lexically matched interference",
+  "experiment_4a_geometry": {
+    "signal_words": 161,
+    "distractor_words": 161,
+    "total_positions": 322,
+    "density": 0.5
+  },
   "core_metrics": [
     {
       "study": "Experiment 2",
