@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-08-15T02:08:28.589683+00:00",
+  "git_commit_before_audit": "10a450140f63f91b3543b450b93f5ced1cf2d70d",
+  "cloud_context_audit_tag": "experiment-5-cloud-context-audit-negative",
+  "input_trace_count": 1709,
+  "ordered_input_path_and_hash_manifest_sha256": "180db0710a30bff5c874488d1864d3d3256189018a45c9dddc8a5e88cf61599e",
+  "output_hashes": {
+    "README.md": "bea35c7396fc095feb220286c035a338531c67f4161277f8735a54f5dc9b5dee",
+    "scan.py": "9648f4c5fad9570dbaaeacf39002bfd54fc4da8b126787473c3fe62e4fb9a9a9",
+    "analysis.md": "fce84d08b04e422d022c0ce9780e2ac9d0e11fc57858c1ec81cce74f301f74f0",
+    "awareness-occurrences.jsonl": "b8e672330d835e04c44ef83f5620320430ff86c24f5a88f0436344e2817fe081",
+    "awareness-timeline.csv": "240692dabddbe52a320ab720a8ca140a59c51456dd40f7cbda14ede6b70384b7",
+    "summary.json": "aeabaa4b236ed0203e16e83f73ef250939a4ca453c77721fb295c2d3f5425c66"
+  },
+  "summary_counts": {
+    "traces_scanned": 1709,
+    "trials_with_awareness_terms": 614,
+    "observable_term_occurrences": 1781
+  },
+  "invalidated_smoke_isolation_and_capability_traces_excluded": true,
+  "private_chain_of_thought_available": false
+}
