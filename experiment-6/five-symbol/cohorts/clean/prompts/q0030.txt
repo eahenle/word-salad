@@ -1,0 +1,1 @@
+Aster Birch Cobalt Dune Ember begin in that order. Positions are renumbered after each operation. Perform these operations in the stated order: First, rotate the entire sequence one position left. Then, swap the first and fourth positions. Reply with exactly the five names in final order and no other words.
