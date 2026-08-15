@@ -1,0 +1,8 @@
+{
+  "trial_id": "q0024",
+  "cohort": "clean",
+  "prompt_sha256": "087075de615fb63b3dea6dd4a61334c09d3ab4cc8ec788e0bc4da7f18a154872",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da"
+}

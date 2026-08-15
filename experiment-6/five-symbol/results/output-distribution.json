@@ -1,0 +1,35 @@
+{
+  "cohort": "clean",
+  "scheduled": 40,
+  "completed": 40,
+  "runner_errors": 0,
+  "timeouts": 0,
+  "median_elapsed_seconds": 5.0565,
+  "reasoning_output_tokens": {
+    "0": 40
+  },
+  "A": {
+    "expected": "Birch Cobalt Aster Ember Dune",
+    "normalized_exact": 0,
+    "responses": {
+      "Ember Aster Dune Cobalt Birch": 13,
+      "Ember Aster Dune Birch Cobalt": 2,
+      "Ember Cobalt Aster Dune Birch": 2,
+      "Ember Cobalt Dune Aster Birch": 2,
+      "Ember Dune Aster Cobalt Birch": 1
+    }
+  },
+  "B": {
+    "expected": "Ember Cobalt Dune Birch Aster",
+    "normalized_exact": 0,
+    "responses": {
+      "Ember Cobalt Dune Aster Birch": 8,
+      "Dune Cobalt Ember Aster Birch": 4,
+      "Ember Dune Aster Cobalt Birch": 3,
+      "Cobalt Dune Ember Aster Birch": 2,
+      "Cobalt Dune Ember Birch Aster": 1,
+      "Dune Ember Aster Cobalt Birch": 1,
+      "Cobalt Dune Aster Ember Birch": 1
+    }
+  }
+}

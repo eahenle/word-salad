@@ -1,0 +1,12 @@
+{
+  "cohort": "clean",
+  "A_normalized_exact": 0,
+  "A_trials": 20,
+  "B_normalized_exact": 0,
+  "B_trials": 20,
+  "aggregate_normalized_exact": 0,
+  "aggregate_trials": 40,
+  "gate_passed": false,
+  "advance_scrambled_authorized": false,
+  "failure_action": "freeze task v1 and redesign before interference"
+}

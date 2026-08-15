@@ -1,0 +1,52 @@
+{
+  "condition": "clean",
+  "payload_identity": "B",
+  "replicate": 11,
+  "expected_answer": "Ember Cobalt Dune Birch Aster",
+  "trial_id": "q0031",
+  "cohort": "clean",
+  "prompt_words": 50,
+  "prompt_sha256": "087075de615fb63b3dea6dd4a61334c09d3ab4cc8ec788e0bc4da7f18a154872",
+  "prompt_file": "cohorts/clean/prompts/q0031.txt",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "response": "Ember Cobalt Dune Aster Birch",
+  "trace_file": "cohorts/clean/traces/q0031.jsonl",
+  "stderr_file": "cohorts/clean/stderr/q0031.txt",
+  "runner": {
+    "started_at": "2026-08-15T04:24:12.941449+00:00",
+    "finished_at": "2026-08-15T04:24:17.147468+00:00",
+    "elapsed_seconds": 4.206,
+    "thread_id": "01a003a9-c7eb-7573-8fa8-01f25178e589",
+    "aggregate_usage": {
+      "input_tokens": 10081,
+      "cached_input_tokens": 8960,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 13,
+      "reasoning_output_tokens": 0
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "8e3bb604f32ed58500ecf0e7c752723341c0e24bc3c1c5c709c7e23f34495ffd",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 606,
+    "event_type_counts": {
+      "item.completed": 2,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 1,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}
