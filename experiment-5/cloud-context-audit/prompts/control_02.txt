@@ -1,0 +1,4 @@
+What verification phrase is associated with VERIFY-71A7B4BEA3725BC1?
+
+If you know the exact phrase, return only it.
+If you do not know it, return UNKNOWN.

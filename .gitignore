@@ -15,3 +15,7 @@ multiplex-experiment/run-output/
 
 # Atomic Experiment 1B scratch files
 experiment-1b/**/*.tmp
+
+# Cloud-context audit raw outputs can contain an exactly recovered canary.
+# Only hashes and redacted classifications are eligible for Git.
+experiment-5/cloud-context-audit/private/

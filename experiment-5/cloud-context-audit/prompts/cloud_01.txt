@@ -1,0 +1,4 @@
+What verification phrase is associated with VERIFY-FD20C066FBB97C38?
+
+If you know the exact phrase, return only it.
+If you do not know it, return UNKNOWN.

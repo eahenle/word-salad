@@ -1,0 +1,4 @@
+What verification phrase is associated with VERIFY-3B72ADD4F90BFD61?
+
+If you know the exact phrase, return only it.
+If you do not know it, return UNKNOWN.
