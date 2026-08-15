@@ -1,0 +1,29 @@
+tag,commit,commit_subject
+experiment-1a-original,395c9c615fe4bf8900b31b73c1071bab805682e6,Add multiplexed-language decoding experiment
+experiment-1b-invalidated-same-host,1ba90001bf4902928437b6f3e134c2352f6e7caa,Preserve invalidated same-host Experiment 1B run
+experiment-1c-hardened-normalization,389970d43bc8a490d699322afcfa31a41775f975,Freeze blind-audited Experiment 1C results
+experiment-2-pilot,d611d8546f48c96a7a8d76bc70ec7e6d3d2de063,Freeze Experiment 2 paired-order pilot
+experiment-2-toolless-cost-truncated-pilot,802619e47ab60d6b06162a582416cfa867457ffa,Record tool-less pilot freeze commit
+experiment-3-frequency-jitter-scaling,b3bd850e3e03c87eb0b7ba6a2d97c3653472eca3,Complete Experiment 3 boundary confirmation
+experiment-4-context-audit,92e59750a34edf739c1ae1bc1b820012ca0eeb8a,Audit frozen Docker subject context
+experiment-4a-uniform-random,6fdfae8b0fba10f4d7f3f6b3169e186f9c257da7,Complete Experiment 4A uniform carrier study
+experiment-4b-harmless-canary-negative-pilot,c1aabeaca1e8c00cab2b333ac42158aa42eb3cfb,Freeze Experiment 4B harmless canary pilot
+experiment-4b1-framing-ablation-raw-gate,025b5af90791fb0df2e0bef28deb3954730ffb1d,Freeze Experiment 4B.1 raw framing gate
+experiment-4c-dual-channel-negative-gate,d5dc2a837086a06b85361130c7e56ea957c9a650,Run Experiment 4C dual-channel gate
+experiment-4c1-foreground-coherence-null,6c9e1bdf1d7c31a6dcb702391a5673e7e2636475,Run Experiment 4C.1 foreground ablation
+experiment-4c2-density-125-control-stop,e81926adc710a7630e8b7c92c1ff71b6433930bc,Run Experiment 4C.2 density boundary stage
+experiment-5-balanced-density-d075,c820764d0ca920730cb3844f07336dc491e6478c,Run balanced density stage d075
+experiment-5-balanced-density-d125,856fa7f5291632b3786bd9473a33731e506e7035,Run balanced density stage d125
+experiment-5-balanced-density-d250,f0e23f428b07fc36c788b7bf7ca15f9e5f1bc5f6,Run balanced density stage d250
+experiment-5-balanced-density-frozen,156a07955bc15d591bda91b2f8e013fbf5689f5b,Freeze balanced density ladder
+experiment-5-balanced-density-protocol,f9c9278c4153f373298cc73cf7c78a93b158d542,Freeze frequency balanced density protocol
+experiment-5-cloud-context-audit-blinded-responses,44e067e4862df08b5a13709a49fa9215f3fc5327,Freeze blinded cloud context probe responses
+experiment-5-cloud-context-audit-negative,10a450140f63f91b3543b450b93f5ced1cf2d70d,Record negative cloud context audit
+experiment-5-cloud-context-audit-protocol,56ab5abe93046f99dda035d2903b60333c4b3d51,Freeze cloud context leakage audit protocol
+experiment-5-trace-awareness-audit,10f5c8cc5917145fc99d95a5e24cad93ece8d26f,Audit experiment-aware language in frozen traces
+experiment-6-five-symbol-protocol,7246ec18344f0c8b5231c793d690eaa76a68190e,Freeze publication scaffold and five-symbol protocol
+experiment-6-five-symbol-v1-clean-failed,1ba161b8354f3ca6949e52b636b3819d6016050c,Freeze failed five-symbol task v1 validation
+experiment-6-five-symbol-v2-clean-protocol,35230e6ac0da745e21f40caaf2af95132ae7f8d4,Freeze five-symbol task v2 clean protocol
+experiment-6-five-symbol-v2-clean-validated,7ba0783df9a81958936e180782e7de791089cc78,Validate five-symbol task v2 clean execution
+experiment-6-five-symbol-v2-control-stop,e8dca1e99bac934b4e9a209d9f33a56a69a12bfa,Freeze five-symbol v2 control contamination
+experiment-6-five-symbol-v2-scrambled-protocol,7843bd4b3807aa0921b16d60d51f6b83d1d80053,Freeze five-symbol v2 scrambled controls

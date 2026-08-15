@@ -1,0 +1,11 @@
+arm,condition,lanes,trials,timeouts,tool_using_trials,median_elapsed_seconds,median_input_tokens,median_output_tokens,median_reasoning_tokens,median_tool_calls,median_trace_bytes
+constrained,all_shuffled,2,20,5,19,724.406,401311.0,30151.0,23413.0,12.5,63481.0
+constrained,all_shuffled,4,20,5,15,617.9114999999999,278183.0,23778.0,19988.0,8.0,6699.5
+constrained,clean,1,40,0,0,12.8845,13081.0,199.0,177.5,0.0,405.0
+constrained,signal,2,40,0,3,28.833,13276.0,1125.0,1100.0,0.0,406.0
+constrained,signal,4,40,7,24,459.491,179551.0,12054.0,12030.0,1.0,1365.0
+explanation,all_shuffled,2,20,1,17,440.023,278065.0,19878.0,15009.0,11.0,51737.5
+explanation,all_shuffled,4,20,4,14,551.256,277257.0,20525.5,15880.5,4.5,5288.0
+explanation,clean,1,40,0,0,12.7915,13059.0,285.0,202.0,0.0,676.5
+explanation,signal,2,40,0,9,35.892,13232.0,1493.0,1311.0,0.0,661.0
+explanation,signal,4,40,4,28,449.7115,161001.0,18305.0,14424.0,3.5,4272.0

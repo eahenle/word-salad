@@ -1,0 +1,10 @@
+study,model,reasoning,new_trials,runtime,primary_conditions,status
+Experiment 1C,gpt-5.6-sol,xhigh,320,Docker Codex,"4 surfaces x signal/shuffled x N=1,2,4,8",frozen validated
+Experiment 2,gpt-5.6-sol,xhigh,320,Docker Codex,"clean/signal/shuffled; constrained/explanation; N=1,2,4",frozen validated
+Experiment 2 tool-less,gpt-5.6-sol,xhigh,94,direct tool-less pilot,cost-truncated matched pilot,frozen cost-truncated
+Experiment 3,Sol/Terra/Luna/Spark,medium/high/xhigh,616,Docker Codex,fixed/jitter + small controls + confirmation,frozen validated
+Experiment 4A,Sol-medium; Terra-xhigh,declared per cell,90,Docker Codex,uniform-random signal + shuffled controls,frozen validated
+Experiment 4C/4C.1,gpt-5.6-sol,medium,21,no-tool Docker,coherent/decohered low-density foreground,frozen negative
+Experiment 5 balanced density,gpt-5.6-sol,medium,36,no-tool Docker,7.5/12.5/25/50% A/B/scrambled,frozen control stop
+Experiment 6 v1,gpt-5.6-sol,medium,40,no-tool Docker,clean task validation,frozen task failure
+Experiment 6 v2,gpt-5.6-sol,medium,50,no-tool Docker,40 clean + 10 scrambled,frozen control stop

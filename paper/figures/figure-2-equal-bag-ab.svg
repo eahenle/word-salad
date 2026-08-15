@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="296" viewBox="0 0 980 296">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#1f2937}.title{font-size:24px;font-weight:700}.axis{font-size:12px;fill:#4b5563}.label{font-size:14px}.value{font-size:13px;font-weight:700}</style>
+<text class="title" x="490.0" y="34" text-anchor="middle">Experiment 2: equal-word-bag paired discrimination</text>
+<line x1="270.0" y1="65" x2="270.0" y2="262" stroke="#e5e7eb"/>
+<text class="axis" x="270.0" y="282" text-anchor="middle">0%</text>
+<line x1="396.0" y1="65" x2="396.0" y2="262" stroke="#e5e7eb"/>
+<text class="axis" x="396.0" y="282" text-anchor="middle">20%</text>
+<line x1="522.0" y1="65" x2="522.0" y2="262" stroke="#e5e7eb"/>
+<text class="axis" x="522.0" y="282" text-anchor="middle">40%</text>
+<line x1="648.0" y1="65" x2="648.0" y2="262" stroke="#e5e7eb"/>
+<text class="axis" x="648.0" y="282" text-anchor="middle">60%</text>
+<line x1="774.0" y1="65" x2="774.0" y2="262" stroke="#e5e7eb"/>
+<text class="axis" x="774.0" y="282" text-anchor="middle">80%</text>
+<line x1="900.0" y1="65" x2="900.0" y2="262" stroke="#e5e7eb"/>
+<text class="axis" x="900.0" y="282" text-anchor="middle">100%</text>
+<text class="label" x="258" y="90" text-anchor="end">signal N=2</text>
+<rect x="270" y="70" width="299.25" height="28" rx="3" fill="#2563eb"/>
+<line x1="477.49346170987707" y1="84" x2="663.7666187278375" y2="84" stroke="#111827" stroke-width="2"/>
+<line x1="477.49346170987707" y1="78" x2="477.49346170987707" y2="90" stroke="#111827" stroke-width="2"/>
+<line x1="663.7666187278375" y1="78" x2="663.7666187278375" y2="90" stroke="#111827" stroke-width="2"/>
+<text class="value" x="671.7666187278375" y="90">19/40 pairs</text>
+<text class="label" x="258" y="152" text-anchor="end">signal N=4</text>
+<rect x="270" y="132" width="126.0" height="28" rx="3" fill="#60a5fa"/>
+<line x1="336.1499352702575" y1="146" x2="488.97102998231685" y2="146" stroke="#111827" stroke-width="2"/>
+<line x1="336.1499352702575" y1="140" x2="336.1499352702575" y2="152" stroke="#111827" stroke-width="2"/>
+<line x1="488.97102998231685" y1="140" x2="488.97102998231685" y2="152" stroke="#111827" stroke-width="2"/>
+<text class="value" x="496.97102998231685" y="152">8/40 pairs</text>
+<text class="label" x="258" y="214" text-anchor="end">all-shuffled target answers</text>
+<rect x="270" y="194" width="0.0" height="28" rx="3" fill="#dc2626"/>
+<line x1="270.0" y1="208" x2="298.8654216073821" y2="208" stroke="#111827" stroke-width="2"/>
+<line x1="270.0" y1="202" x2="270.0" y2="214" stroke="#111827" stroke-width="2"/>
+<line x1="298.8654216073821" y1="202" x2="298.8654216073821" y2="214" stroke="#111827" stroke-width="2"/>
+<text class="value" x="306.8654216073821" y="214">0/80 trials</text>
+</svg>

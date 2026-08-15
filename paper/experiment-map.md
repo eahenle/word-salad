@@ -14,7 +14,8 @@
 | Experiment 4C.2 | frozen stopped | unequal target-name salience contaminated endpoint | measurement failure |
 | Experiment 5 cloud audit | frozen negative | 0/5 cloud-history canaries; 5/5 controls UNKNOWN | supporting isolation audit |
 | Experiment 5 balanced density | frozen stopped | no complete pair; 50% scrambled target contamination | measurement limitation |
-| Experiment 6 | active publication closure | five-symbol clean validation then bounded 25%/50% test | final boundary study |
+| Experiment 6 v1 | frozen task failure | five-symbol rotation task: 0/40 clean exact | failed measurement instrument |
+| Experiment 6 v2 | frozen control stop | 40/40 clean exact; 2/10 shuffled controls emitted target A; no buried-signal trials | failed measurement instrument / stop condition |
 
 ## Core sequence
 
@@ -22,3 +23,7 @@ The main text should present: initial observation → hardened replication →
 equal-bag A/B discrimination → tool-less replication → fixed/jitter comparison
 → uniform-random carrier. Naturalistic and low-density failures belong in a
 boundary section or supplement.
+
+Experiment 6 closes rather than extends the experimental program. Its shuffled
+false positives make the task unsuitable for a density boundary claim, and the
+preregistered stop rule prohibits further redesign.

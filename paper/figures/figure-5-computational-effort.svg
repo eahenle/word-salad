@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="420" viewBox="0 0 980 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Inter,Arial,sans-serif;fill:#1f2937}.title{font-size:24px;font-weight:700}.axis{font-size:12px;fill:#4b5563}.label{font-size:14px}.value{font-size:13px;font-weight:700}</style>
+<text class="title" x="490.0" y="34" text-anchor="middle">Experiment 2 observable reasoning effort (log-scaled bars)</text>
+<line x1="270.0" y1="65" x2="270.0" y2="386" stroke="#e5e7eb"/>
+<text class="axis" x="270.0" y="406" text-anchor="middle">1</text>
+<line x1="396.0" y1="65" x2="396.0" y2="386" stroke="#e5e7eb"/>
+<text class="axis" x="396.0" y="406" text-anchor="middle">10</text>
+<line x1="522.0" y1="65" x2="522.0" y2="386" stroke="#e5e7eb"/>
+<text class="axis" x="522.0" y="406" text-anchor="middle">100</text>
+<line x1="648.0" y1="65" x2="648.0" y2="386" stroke="#e5e7eb"/>
+<text class="axis" x="648.0" y="406" text-anchor="middle">1k</text>
+<line x1="774.0" y1="65" x2="774.0" y2="386" stroke="#e5e7eb"/>
+<text class="axis" x="774.0" y="406" text-anchor="middle">10k</text>
+<line x1="900.0" y1="65" x2="900.0" y2="386" stroke="#e5e7eb"/>
+<text class="axis" x="900.0" y="406" text-anchor="middle">100k tokens</text>
+<text class="label" x="258" y="90" text-anchor="end">clean N=1</text>
+<rect x="270" y="70" width="283.3989930312802" height="28" rx="3" fill="#10b981"/>
+<text class="value" x="561.3989930312803" y="90">178 median tokens</text>
+<text class="label" x="258" y="152" text-anchor="end">signal N=2</text>
+<rect x="270" y="132" width="383.2154783299364" height="28" rx="3" fill="#2563eb"/>
+<text class="value" x="661.2154783299363" y="152">1,100 median tokens</text>
+<text class="label" x="258" y="214" text-anchor="end">signal N=4</text>
+<rect x="270" y="194" width="514.1134690448205" height="28" rx="3" fill="#2563eb"/>
+<text class="value" x="792.1134690448205" y="214">12,030 median tokens</text>
+<text class="label" x="258" y="276" text-anchor="end">shuffled N=2</text>
+<rect x="270" y="256" width="550.5515902059226" height="28" rx="3" fill="#dc2626"/>
+<text class="value" x="828.5515902059226" y="276">23,413 median tokens</text>
+<text class="label" x="258" y="338" text-anchor="end">shuffled N=4</text>
+<rect x="270" y="318" width="541.8969369370892" height="28" rx="3" fill="#dc2626"/>
+<text class="value" x="819.8969369370892" y="338">19,988 median tokens</text>
+</svg>

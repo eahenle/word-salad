@@ -30,7 +30,7 @@ generalization, model-specific boundary, and limits. Avoid mechanistic claims.
 5. Uniform random placement eliminates a designed carrier schedule.
 6. Model-family and observable-effort differences.
 7. Boundary studies: coherent foreground and low-density nulls.
-8. Five-symbol publication-closing result, whether positive or null.
+8. Preregistered five-symbol instrument failure and experimental stop.
 
 ## Discussion
 
@@ -44,3 +44,10 @@ generalization, model-specific boundary, and limits. Avoid mechanistic claims.
 - Frozen tags and hashes.
 - Complete active traces and invalidated-attempt archives.
 - Machine-generated tables and figures.
+
+## Drafting decision
+
+No additional experiment is required to support the central claim. Begin a
+manuscript from the frozen Experiments 1C–4A chain. Treat external replication,
+human readability baselines, and testing open-weight models as valuable future
+work rather than conditions for drafting this model-specific behavioral report.

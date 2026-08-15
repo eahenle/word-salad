@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "source_data_commit": "e8dca1e99bac934b4e9a209d9f33a56a69a12bfa",
+  "central_claim": "behavioral sensitivity to embedded linguistic order under lexically matched interference",
+  "core_metrics": [
+    {
+      "study": "Experiment 2",
+      "endpoint": "N=2 expected individuals",
+      "successes": 57,
+      "trials": 80,
+      "rate": 0.7125,
+      "wilson_95_low": 0.605397,
+      "wilson_95_high": 0.800131,
+      "manuscript_role": "core"
+    },
+    {
+      "study": "Experiment 2",
+      "endpoint": "N=2 complete A/B pairs",
+      "successes": 19,
+      "trials": 40,
+      "rate": 0.475,
+      "wilson_95_low": 0.329355,
+      "wilson_95_high": 0.625026,
+      "manuscript_role": "core"
+    },
+    {
+      "study": "Experiment 2",
+      "endpoint": "N=4 expected individuals",
+      "successes": 33,
+      "trials": 80,
+      "rate": 0.4125,
+      "wilson_95_low": 0.311059,
+      "wilson_95_high": 0.52196,
+      "manuscript_role": "core"
+    },
+    {
+      "study": "Experiment 2",
+      "endpoint": "N=4 complete A/B pairs",
+      "successes": 8,
+      "trials": 40,
+      "rate": 0.2,
+      "wilson_95_low": 0.105,
+      "wilson_95_high": 0.347573,
+      "manuscript_role": "core"
+    },
+    {
+      "study": "Experiment 2",
+      "endpoint": "all-shuffled target answers",
+      "successes": 0,
+      "trials": 80,
+      "rate": 0.0,
+      "wilson_95_low": 0.0,
+      "wilson_95_high": 0.045818,
+      "manuscript_role": "control"
+    },
+    {
+      "study": "Experiment 2 tool-less pilot",
+      "endpoint": "N=2 expected individuals",
+      "successes": 35,
+      "trials": 40,
+      "rate": 0.875,
+      "wilson_95_low": 0.738879,
+      "wilson_95_high": 0.945405,
+      "manuscript_role": "core replication"
+    },
+    {
+      "study": "Experiment 2 tool-less pilot",
+      "endpoint": "N=2 complete A/B pairs",
+      "successes": 16,
+      "trials": 20,
+      "rate": 0.8,
+      "wilson_95_low": 0.583983,
+      "wilson_95_high": 0.919342,
+      "manuscript_role": "core replication"
+    },
+    {
+      "study": "Experiment 3",
+      "endpoint": "fixed expected individuals",
+      "successes": 69,
+      "trials": 240,
+      "rate": 0.2875,
+      "wilson_95_low": 0.233942,
+      "wilson_95_high": 0.347754,
+      "manuscript_role": "carrier characterization"
+    },
+    {
+      "study": "Experiment 3",
+      "endpoint": "fixed complete A/B pairs",
+      "successes": 17,
+      "trials": 120,
+      "rate": 0.141667,
+      "wilson_95_low": 0.090369,
+      "wilson_95_high": 0.215195,
+      "manuscript_role": "carrier characterization"
+    },
+    {
+      "study": "Experiment 3",
+      "endpoint": "jitter expected individuals",
+      "successes": 95,
+      "trials": 240,
+      "rate": 0.395833,
+      "wilson_95_low": 0.336072,
+      "wilson_95_high": 0.458877,
+      "manuscript_role": "carrier characterization"
+    },
+    {
+      "study": "Experiment 3",
+      "endpoint": "jitter complete A/B pairs",
+      "successes": 31,
+      "trials": 120,
+      "rate": 0.258333,
+      "wilson_95_low": 0.188374,
+      "wilson_95_high": 0.343285,
+      "manuscript_role": "carrier characterization"
+    },
+    {
+      "study": "Experiment 4A",
+      "endpoint": "uniform expected individuals",
+      "successes": 46,
+      "trials": 80,
+      "rate": 0.575,
+      "wilson_95_low": 0.465693,
+      "wilson_95_high": 0.677434,
+      "manuscript_role": "core"
+    },
+    {
+      "study": "Experiment 4A",
+      "endpoint": "uniform complete A/B pairs",
+      "successes": 18,
+      "trials": 40,
+      "rate": 0.45,
+      "wilson_95_low": 0.307053,
+      "wilson_95_high": 0.601709,
+      "manuscript_role": "core"
+    },
+    {
+      "study": "Experiment 4A",
+      "endpoint": "all-shuffled target answers",
+      "successes": 0,
+      "trials": 10,
+      "rate": 0.0,
+      "wilson_95_low": 0.0,
+      "wilson_95_high": 0.277533,
+      "manuscript_role": "control"
+    },
+    {
+      "study": "Experiment 6 v2",
+      "endpoint": "clean exact execution",
+      "successes": 40,
+      "trials": 40,
+      "rate": 1.0,
+      "wilson_95_low": 0.912378,
+      "wilson_95_high": 1.0,
+      "manuscript_role": "instrument validation"
+    },
+    {
+      "study": "Experiment 6 v2",
+      "endpoint": "scrambled target false positives",
+      "successes": 2,
+      "trials": 10,
+      "rate": 0.2,
+      "wilson_95_low": 0.056682,
+      "wilson_95_high": 0.509838,
+      "manuscript_role": "failed control"
+    }
+  ],
+  "experiment_6_stop": "clean task passed 40/40; scrambled control produced 2/10 targets; no buried-signal prompts generated",
+  "source_sha256": {
+    "experiment-2/results/answer-identity.csv": "8869d5a9df900463e21f71c284d5db7a4814b261b80b7ab0a5045c1ac071375a",
+    "experiment-2/results/paired-discrimination.csv": "4f887615909f3900f87b29b3c4c45c05ddb666d8b5d30c02eb874f1e5113d4bf",
+    "experiment-2/results/effort-summary.csv": "ebd28c28ff2cf4f3df733ed8395d3259dba32d40225c2c3425767188c66aaebd",
+    "experiment-3/results/model-reasoning-matrix.csv": "b44b38924df14100020eaffe4200f6bc7e5489b55a6eb65673eb1bdfef909c9f",
+    "experiment-4/uniform/results/carrier-comparison.csv": "1676dad26b6450fb393aaa5bd55f16c31f574e44073645f500ee9b45a0d362a1",
+    "experiment-4/uniform/results/effort-summary.csv": "d7daa121f9a9c842fe9501e08681642d8a570845ece07450e8663c11bab1bc9c",
+    "experiment-6/five-symbol-v2/results/clean-gate.json": "73f1cdc0a3a9f521d71e259d90a1ca95f83e6138b77329644956060f14db23a4",
+    "experiment-6/five-symbol-v2/results/scrambled-gate.json": "49ad7fb30a0808b430a22d40a9bf0528accab5dd2df780bdff37cb1818f91cab"
+  }
+}

@@ -13,7 +13,14 @@ Core frozen tags:
 - `experiment-5-cloud-context-audit-negative`
 - `experiment-5-trace-awareness-audit`
 - `experiment-5-balanced-density-frozen`
+- `experiment-6-five-symbol-protocol`
+- `experiment-6-five-symbol-v1-clean-failed`
+- `experiment-6-five-symbol-v2-clean-protocol`
+- `experiment-6-five-symbol-v2-clean-validated`
+- `experiment-6-five-symbol-v2-scrambled-protocol`
+- `experiment-6-five-symbol-v2-control-stop`
 
 Experiment directories contain exact image IDs, prompt hashes, runtime hashes,
 execution freezes, isolation audits, and invalidated-attempt records. This index
-will be machine-checked before manuscript drafting.
+is machine-checked into `frozen-tags.csv`; source hashes used for the paper
+summary are stored in `../publication-summary.json`.

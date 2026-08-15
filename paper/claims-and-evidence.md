@@ -79,6 +79,17 @@
   ~7.4% natural coherent carriers.”
 - **Not allowed:** “Foreground coherence alone suppresses recovery.”
 
+## 8. The five-symbol study does not establish a density boundary
+
+- **Evidence:** Experiment 6 v1 failed clean task execution (0/40). The revised
+  v2 task passed clean execution (40/40) but produced exact target A in 2/10
+  independently shuffled N=1 controls.
+- **Consequence:** no 25% or 50% carrier prompt was generated or run.
+- **Allowed:** “A preregistered control gate detected an order-independent
+  target bias and stopped the boundary study.”
+- **Not allowed:** “The model failed to recover the five-symbol task under
+  interference.” No such trial occurred.
+
 ## Global interpretation boundary
 
 The data establish behavioral sensitivity to embedded linguistic order. They do

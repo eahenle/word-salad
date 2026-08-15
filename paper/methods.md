@@ -39,9 +39,12 @@ confidence intervals, paired discordances where prompts are matched, and control
 target rates. Statistical tests summarize repeatability of one model/runtime and
 are not population inference over models.
 
-## Publication-closing task
+## Publication-closing task and stop rule
 
-Experiment 6 first validates a five-symbol equal-bag state task on 20 fresh A and
-20 fresh B subjects. Each arm must reach at least 18/20 exact normalized outputs.
-Only then are scrambled controls and bounded 25%/50% uniform-carrier cohorts
-eligible to run.
+Experiment 6 first validated a five-symbol equal-bag state task on 20 fresh A
+and 20 fresh B subjects. Each arm had to reach at least 18/20 exact normalized
+outputs before controls. Version 1 failed at this stage (0/20 A, 0/20 B) and was
+frozen. Version 2 passed (20/20 A, 20/20 B), after which ten independently
+shuffled N=1 controls were run. The preregistered control gate required zero
+exact A/B targets. Two controls emitted target A, so the gate failed. No noisy
+carrier prompt was generated and experimental expansion stopped.

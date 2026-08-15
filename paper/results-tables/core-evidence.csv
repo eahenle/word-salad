@@ -1,0 +1,17 @@
+study,endpoint,successes,trials,rate,wilson_95_low,wilson_95_high,manuscript_role
+Experiment 2,N=2 expected individuals,57,80,0.7125,0.605397,0.800131,core
+Experiment 2,N=2 complete A/B pairs,19,40,0.475,0.329355,0.625026,core
+Experiment 2,N=4 expected individuals,33,80,0.4125,0.311059,0.52196,core
+Experiment 2,N=4 complete A/B pairs,8,40,0.2,0.105,0.347573,core
+Experiment 2,all-shuffled target answers,0,80,0.0,0.0,0.045818,control
+Experiment 2 tool-less pilot,N=2 expected individuals,35,40,0.875,0.738879,0.945405,core replication
+Experiment 2 tool-less pilot,N=2 complete A/B pairs,16,20,0.8,0.583983,0.919342,core replication
+Experiment 3,fixed expected individuals,69,240,0.2875,0.233942,0.347754,carrier characterization
+Experiment 3,fixed complete A/B pairs,17,120,0.141667,0.090369,0.215195,carrier characterization
+Experiment 3,jitter expected individuals,95,240,0.395833,0.336072,0.458877,carrier characterization
+Experiment 3,jitter complete A/B pairs,31,120,0.258333,0.188374,0.343285,carrier characterization
+Experiment 4A,uniform expected individuals,46,80,0.575,0.465693,0.677434,core
+Experiment 4A,uniform complete A/B pairs,18,40,0.45,0.307053,0.601709,core
+Experiment 4A,all-shuffled target answers,0,10,0.0,0.0,0.277533,control
+Experiment 6 v2,clean exact execution,40,40,1.0,0.912378,1.0,instrument validation
+Experiment 6 v2,scrambled target false positives,2,10,0.2,0.056682,0.509838,failed control
