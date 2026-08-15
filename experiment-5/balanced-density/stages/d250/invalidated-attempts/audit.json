@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "invalidated_trial_ids": [
+    "d250_s02_scrambled",
+    "d250_s03_scrambled"
+  ],
+  "reason": "authentication transport failure before any subject response",
+  "evidence": {
+    "exit_status": 1,
+    "timed_out": false,
+    "response_bytes": 0,
+    "trace_terminal_event": "turn.failed",
+    "stderr_codes": [
+      "refresh_token_reused",
+      "token_expired"
+    ]
+  },
+  "scientific_classification": "invalid infrastructure attempts, not behavioral outcomes",
+  "action": "preserve all original artifacts and rerun only these two frozen prompts with the current personal-profile auth artifact",
+  "prompt_changed": false,
+  "model_or_reasoning_changed": false,
+  "timeout_changed": false,
+  "other_trials_rerun": false
+}

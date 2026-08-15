@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a00354-b319-7921-bda2-e1417a4ab4dc"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"No definite answer is implied. The words are too disordered to form a coherent passage or an identifiable question."}}
+{"type":"turn.completed","usage":{"input_tokens":10131,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":5040,"reasoning_output_tokens":5012}}

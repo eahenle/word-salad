@@ -1,0 +1,52 @@
+{
+  "trial_id": "d250_s01_scrambled",
+  "stage": "d250",
+  "seed": 1,
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "actual_density": 0.25,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "34e12d08a1703e2f8f7211fe0106e0a53ad5a09915b54682a54be108b5714e3d",
+  "prompt_words": 99,
+  "response": "The implied output is:\n\n`UTVWXYZABCDEFGHIJKLMNOPQRS`\n\nThis comes from rotating the alphabet 19 places left, then swapping the first two letters.",
+  "trace_file": "stages/d250/traces/d250_s01_scrambled.jsonl",
+  "stderr_file": "stages/d250/stderr/d250_s01_scrambled.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:41:03.688667+00:00",
+    "finished_at": "2026-08-15T02:44:51.492596+00:00",
+    "elapsed_seconds": 227.804,
+    "thread_id": "01a0034b-5afd-7422-a310-6649c84feb9d",
+    "aggregate_usage": {
+      "input_tokens": 20446,
+      "cached_input_tokens": 15872,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 7966,
+      "reasoning_output_tokens": 7861
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "3b60e30dc104377e7e097eac6c48966fb6b5b7a033f4f4764ec75b629e505ca2",
+    "stderr_sha256": "638b3f9bf5a39bbc9790ad3d8f19de24d6dcc45d24ce7da85de92e1c82eed8f2",
+    "trace_bytes": 904,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

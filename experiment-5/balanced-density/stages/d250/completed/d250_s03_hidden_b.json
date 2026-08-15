@@ -1,0 +1,52 @@
+{
+  "trial_id": "d250_s03_hidden_b",
+  "stage": "d250",
+  "seed": 3,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.25,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "84747e87a4458416a09056bbf2c1c88ea85311d22d47ff46661b4d8631df6dce",
+  "prompt_words": 99,
+  "response": "The small birdbath visitor is a **kestrel**.",
+  "trace_file": "stages/d250/traces/d250_s03_hidden_b.jsonl",
+  "stderr_file": "stages/d250/stderr/d250_s03_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:44:51.493875+00:00",
+    "finished_at": "2026-08-15T02:49:00.580037+00:00",
+    "elapsed_seconds": 249.086,
+    "thread_id": "01a0034e-d430-7720-8cda-205ee02d7f67",
+    "aggregate_usage": {
+      "input_tokens": 20904,
+      "cached_input_tokens": 17920,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8631,
+      "reasoning_output_tokens": 8540
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "d67f26bbccb7eebacf28108f7e341f11ad7e0a02e75c1b322fb2d3f7aa3e1c44",
+    "stderr_sha256": "d9db4f73f6909def9f761cdc5f618d208177267606a16d85340ff5386f0c3892",
+    "trace_bytes": 845,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "trial_id": "d250_s01_hidden_a",
+  "stage": "d250",
+  "seed": 1,
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Kestrel Orchid Juniper",
+  "actual_density": 0.25,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "e35fc95e8938c763571a198a2ec45c7891145d7005ade4dd34b8fee8906d8ed1",
+  "prompt_words": 99,
+  "response": "No complete sequence can be determined from the text; it does not define an unambiguous sequence or decoding rule.",
+  "trace_file": "stages/d250/traces/d250_s01_hidden_a.jsonl",
+  "stderr_file": "stages/d250/stderr/d250_s01_hidden_a.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:43:13.486743+00:00",
+    "finished_at": "2026-08-15T02:46:24.738641+00:00",
+    "elapsed_seconds": 191.252,
+    "thread_id": "01a0034d-5648-7cc3-a85e-e77308afaf99",
+    "aggregate_usage": {
+      "input_tokens": 21286,
+      "cached_input_tokens": 17920,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6614,
+      "reasoning_output_tokens": 6384
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "a400d1c144fa4f4a123ef1f0902bc60fb705ace7e5decf532cb9da81711edd60",
+    "stderr_sha256": "96b15526ad274fae7026a16c856c0c3d8beaa118c3a65b86371ef6a9331c5790",
+    "trace_bytes": 975,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

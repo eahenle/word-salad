@@ -1,0 +1,52 @@
+{
+  "trial_id": "d250_s01_hidden_b",
+  "stage": "d250",
+  "seed": 1,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.25,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "45fdc71ae7adb7b1fa84cbd78629882d67f27622c35d5521ff1530aa8d12ccda",
+  "prompt_words": 99,
+  "response": "**C, E, H, M, U, A, A, B**\n\nThe first two terms are A, A. Adding alphabet positions gives A, A, B, C, E, H, M, U; rotating this eight-term sequence left by 19 (equivalent to 3) produces the answer.",
+  "trace_file": "stages/d250/traces/d250_s01_hidden_b.jsonl",
+  "stderr_file": "stages/d250/stderr/d250_s01_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:41:03.687666+00:00",
+    "finished_at": "2026-08-15T02:45:19.209331+00:00",
+    "elapsed_seconds": 255.522,
+    "thread_id": "01a0034b-5ade-7481-91d9-b7530089ed1d",
+    "aggregate_usage": {
+      "input_tokens": 36644,
+      "cached_input_tokens": 9984,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9063,
+      "reasoning_output_tokens": 8655
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "625335e744270c518228a17823e610d88765f805dcabfa2e6d3c53f3f46f54d1",
+    "stderr_sha256": "d695f6875c5afc1e191f6a777deb4fde19e1289816ad82c6fb9a37068de98c27",
+    "trace_bytes": 1027,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

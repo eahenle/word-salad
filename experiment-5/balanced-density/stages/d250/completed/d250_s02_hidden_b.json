@@ -1,0 +1,52 @@
+{
+  "trial_id": "d250_s02_hidden_b",
+  "stage": "d250",
+  "seed": 2,
+  "condition": "hidden_b",
+  "hidden_identity": "B",
+  "expected_answer": "Orchid Juniper Kestrel",
+  "actual_density": 0.25,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "7b310b76f5589ae5756174e94f930a15365b26c608300019df5deae4d9b1119b",
+  "prompt_words": 99,
+  "response": "The implied output is **Orchid, Juniper, Kestrel**.\n\nThe selected sequence is “Kestrel, Juniper, Orchid”; rotating it left 19 times (equivalent to once), then swapping the first two positions gives that order.",
+  "trace_file": "stages/d250/traces/d250_s02_hidden_b.jsonl",
+  "stderr_file": "stages/d250/stderr/d250_s02_hidden_b.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:45:19.210619+00:00",
+    "finished_at": "2026-08-15T02:47:36.197338+00:00",
+    "elapsed_seconds": 136.987,
+    "thread_id": "01a0034f-40ff-7631-8de8-fd8cc08055e8",
+    "aggregate_usage": {
+      "input_tokens": 31035,
+      "cached_input_tokens": 19968,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 5127,
+      "reasoning_output_tokens": 4856
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "90455042e523c3f354f231a9a35eba2ac1d9a9a7192b42d541d03fe59cc544c9",
+    "stderr_sha256": "1ce9c092e92d4a5436fca22b51f657a630deee5d8f6fff5d0a3afca625ff9a65",
+    "trace_bytes": 961,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

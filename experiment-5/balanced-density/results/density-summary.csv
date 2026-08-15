@@ -1,3 +1,4 @@
 stage,document_words,density,expected_individuals,signal_trials,complete_ab_pairs,total_pairs,scrambled_target_selections,scrambled_controls,counterpart_errors,recovery_gate_passed
 d075,293,0.07508532423208192,0,6,0,3,0,3,0,False
 d125,176,0.125,0,6,0,3,0,3,0,False
+d250,88,0.25,1,6,0,3,0,3,0,False

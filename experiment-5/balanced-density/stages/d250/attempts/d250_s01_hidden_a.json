@@ -1,0 +1,8 @@
+{
+  "trial_id": "d250_s01_hidden_a",
+  "stage": "d250",
+  "prompt_sha256": "e35fc95e8938c763571a198a2ec45c7891145d7005ade4dd34b8fee8906d8ed1",
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da"
+}

@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"01a00350-4147-7bc3-bb11-7d20f85593c7"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"I’m separating the interleaved sentences and checking the positional clues; the wording appears intentionally transposed rather than simply nonsensical."}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"The museum had restored nineteenth-century earthenware, including cups, jars, and vessels."}}
+{"type":"turn.completed","usage":{"input_tokens":20836,"cached_input_tokens":7936,"cache_write_input_tokens":0,"output_tokens":6473,"reasoning_output_tokens":6266}}

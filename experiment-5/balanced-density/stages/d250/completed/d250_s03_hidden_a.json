@@ -1,0 +1,52 @@
+{
+  "trial_id": "d250_s03_hidden_a",
+  "stage": "d250",
+  "seed": 3,
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Kestrel Orchid Juniper",
+  "actual_density": 0.25,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "abda5ef79a2e83dd819e08afd301697b520c5f8c695d077362a41923faa53580",
+  "prompt_words": 99,
+  "response": "The text is too scrambled to imply a unique answer; it contains no coherent question or reliably recoverable conclusion.",
+  "trace_file": "stages/d250/traces/d250_s03_hidden_a.jsonl",
+  "stderr_file": "stages/d250/stderr/d250_s03_hidden_a.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:41:03.688883+00:00",
+    "finished_at": "2026-08-15T02:43:13.484988+00:00",
+    "elapsed_seconds": 129.796,
+    "thread_id": "01a0034b-5b8c-7f83-bbbf-3d074a6dd655",
+    "aggregate_usage": {
+      "input_tokens": 10136,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4599,
+      "reasoning_output_tokens": 4525
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "dde5079d4d4d18eaf88daaec750ef7d1de733382fd93b149c3102b8505791b67",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "trace_bytes": 981,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

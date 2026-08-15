@@ -1,0 +1,49 @@
+{
+  "trial_id": "d250_s03_scrambled",
+  "stage": "d250",
+  "seed": 3,
+  "condition": "scrambled",
+  "hidden_identity": null,
+  "expected_answer": null,
+  "actual_density": 0.25,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "08a89e478f9c0f02ae6abfc5b603316c5e2b6e044744b8e1f6c203db4ea1026b",
+  "prompt_words": 99,
+  "response": "",
+  "trace_file": "stages/d250/traces/d250_s03_scrambled.jsonl",
+  "stderr_file": "stages/d250/stderr/d250_s03_scrambled.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:47:36.198580+00:00",
+    "finished_at": "2026-08-15T02:47:40.233800+00:00",
+    "elapsed_seconds": 4.035,
+    "thread_id": "01a00351-575b-72d3-9bca-a21196df4cfb",
+    "aggregate_usage": null,
+    "exit_status": 1,
+    "timed_out": false,
+    "error": {
+      "type": "nonzero_exit",
+      "exit_status": 1
+    },
+    "trace_sha256": "d6703753234b2d654f4d970387ccff67c68e868ee78f754bcc977f4256fefa8f",
+    "stderr_sha256": "ec631a6ba57f0caa7c1494d809cb734ceb072a03da963b604e8062372161f458",
+    "trace_bytes": 649,
+    "event_type_counts": {
+      "error": 1,
+      "item.completed": 1,
+      "thread.started": 1,
+      "turn.failed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}

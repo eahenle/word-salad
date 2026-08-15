@@ -1,0 +1,6 @@
+{"type":"thread.started","thread_id":"01a0034b-5b8c-7f83-bbbf-3d074a6dd655"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Code Mode is unavailable because code-mode host is disabled. Code mode will fail closed; enable `features.code_mode_host` and install `codex-code-mode-host`."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"I’m tracing the embedded ordering and extraction cues (“begin,” “first/second positions,” “swap,” “rotate,” “left,” and “output”) rather than treating this as ordinary prose."}}
+{"type":"item.completed","item":{"id":"item_2","type":"agent_message","text":"The text is too scrambled to imply a unique answer; it contains no coherent question or reliably recoverable conclusion."}}
+{"type":"turn.completed","usage":{"input_tokens":10136,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":4599,"reasoning_output_tokens":4525}}

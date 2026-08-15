@@ -1,0 +1,52 @@
+{
+  "trial_id": "d250_s02_hidden_a",
+  "stage": "d250",
+  "seed": 2,
+  "condition": "hidden_a",
+  "hidden_identity": "A",
+  "expected_answer": "Kestrel Orchid Juniper",
+  "actual_density": 0.25,
+  "model": "gpt-5.6-sol",
+  "reasoning": "medium",
+  "image": "sha256:e04e78a7926fc489536fe595073b58888238bc4107a6fd5281047432031627da",
+  "prompt_sha256": "4ec7857d501ebb995acfd624de52270f2d3fdf4255e0462f2b94a6d737f438d2",
+  "prompt_words": 99,
+  "response": "The museum had restored nineteenth-century earthenware, including cups, jars, and vessels.",
+  "trace_file": "stages/d250/traces/d250_s02_hidden_a.jsonl",
+  "stderr_file": "stages/d250/stderr/d250_s02_hidden_a.txt",
+  "runner": {
+    "started_at": "2026-08-15T02:46:24.739933+00:00",
+    "finished_at": "2026-08-15T02:49:24.759158+00:00",
+    "elapsed_seconds": 180.019,
+    "thread_id": "01a00350-4147-7bc3-bb11-7d20f85593c7",
+    "aggregate_usage": {
+      "input_tokens": 20836,
+      "cached_input_tokens": 7936,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6473,
+      "reasoning_output_tokens": 6266
+    },
+    "exit_status": 0,
+    "timed_out": false,
+    "error": null,
+    "trace_sha256": "8b350ab42ded7cfc8edd968c64b74c97e05df22f8c7a2441348ad0f3f1607abc",
+    "stderr_sha256": "1d6ba33df906d56658eeff3c3cd809ca39ffc8dede64c78ff7ebfd7071f9540a",
+    "trace_bytes": 908,
+    "event_type_counts": {
+      "item.completed": 3,
+      "thread.started": 1,
+      "turn.completed": 1,
+      "turn.started": 1
+    },
+    "item_type_counts": {
+      "agent_message": 2,
+      "error": 1
+    },
+    "observable_non_message_items": [
+      {
+        "type": "error",
+        "id": "item_0"
+      }
+    ]
+  }
+}
