@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "unblinded_after_complete_execution_freeze": true,
+  "expected_values_persisted": false,
+  "expected_value_sha256_by_trial": {
+    "cloud_03": "428a4d1f2c9bcdce57173d42fe25d7e00d092cdfca648aebc31705c57f4629b5",
+    "cloud_01": "10a74c2273022e3811908211bf6ce7cb18b156102f6cec2d8ffc0401fbc2aaaf",
+    "cloud_05": "c571f600d682bc564382c8d7d995177f40d5c63e098c356eab9e3b6e59bba771",
+    "cloud_02": "095e8e5b6129470ba847fce36ffab8af00c723d3a262f338f57082af6089904e",
+    "cloud_04": "4d05fb6ad1a14c7641fa34d98b71b04d762b0256ce5b74a276cc305199dc1932"
+  },
+  "cloud_exact_recoveries": 0,
+  "cloud_case_insensitive_recoveries": 0,
+  "cloud_non_unknown_responses": 0,
+  "negative_controls_returning_unknown": 5,
+  "negative_control_non_unknown_responses": 0,
+  "runner_errors": 0,
+  "timeouts": 0
+}

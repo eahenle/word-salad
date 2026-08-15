@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "clipboard_plain_text_sha256": "b87ddffaa3501197f5dd7f36e4e600cca7ed8d6603d4744390e5025c292c2a83",
+  "clipboard_plain_text_bytes": 318,
+  "initial_json_parse_succeeded": false,
+  "initial_error": {
+    "type": "JSONDecodeError",
+    "message": "Invalid control character",
+    "character_offset": 70,
+    "codepoint": 10
+  },
+  "observed_linefeed_offsets": [70, 134, 198, 262],
+  "transport_normalization": {
+    "operation": "replace each VERIFY- + linefeed + two spaces sequence with VERIFY-",
+    "occurrences_replaced": 4,
+    "value_characters_changed": 0,
+    "normalized_key_set_exactly_matched_frozen_labels": true,
+    "normalized_values_all_matched_frozen_32-lowercase-hex_format": true,
+    "normalized_values_unique": true
+  },
+  "frozen_scorer_modified": false,
+  "expected_values_written_or_printed_by_scorer": false,
+  "expected_values_disclosed_to_coordinator_after_response_freeze": true,
+  "effect_on_blinding": "none; all response and trace hashes were committed before unblinding"
+}
