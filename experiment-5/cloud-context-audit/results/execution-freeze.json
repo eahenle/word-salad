@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "scheduled": 10,
+  "completed": 10,
+  "query_order": [
+    "cloud_03",
+    "control_02",
+    "cloud_01",
+    "control_05",
+    "cloud_05",
+    "control_01",
+    "cloud_02",
+    "control_04",
+    "cloud_04",
+    "control_03"
+  ],
+  "responses_not_printed_by_runner": true,
+  "responses_not_inspected_before_freeze": true,
+  "expected_values_supplied_before_freeze": false,
+  "raw_artifacts_location": "Git-ignored private/ tree",
+  "runner_errors": 0,
+  "timeouts": 0,
+  "direct_api_used": false,
+  "trials": [
+    {
+      "trial_id": "cloud_03",
+      "label": "VERIFY-15754148F772ECFB",
+      "allocation": "c1_codex_history",
+      "prompt_sha256": "ad7504e936481ec1604eec51c1beccb229a7356e6eed9525524d373e5e4896f8",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "a458927fe7523b418cf322ebedc79de62f737f425cf1f20a33ebc0d03122cac6",
+      "stderr_sha256": "22b1e3cbaff9c960dd97bd25eaf77e93e142a31be00c38bdf2c446ee42d18e02",
+      "elapsed_seconds": 14.239,
+      "thread_id": "01a0031a-227c-76e2-91c0-883b6880871b",
+      "aggregate_usage": {
+        "input_tokens": 20209,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 152,
+        "reasoning_output_tokens": 96
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 586,
+      "event_type_counts": {
+        "item.completed": 2,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 1,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    },
+    {
+      "trial_id": "control_02",
+      "label": "VERIFY-71A7B4BEA3725BC1",
+      "allocation": "nonexistent_random",
+      "prompt_sha256": "9ff4547444f47a5874e3509f96801faf3623c5c6a74fa0bf2ef0b36e1a307379",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "d1f51c7c90de4d5fb635544cf5917d31f3ea45f12d07ba9381e06aa6af00643c",
+      "stderr_sha256": "fbb1d057f87c3b0cf0c710d5973ce72b61bb882d8e5dcb54b26eb20a917dac88",
+      "elapsed_seconds": 17.041,
+      "thread_id": "01a0031a-5286-7dc2-b539-5b1209930a2e",
+      "aggregate_usage": {
+        "input_tokens": 30686,
+        "cached_input_tokens": 18944,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 305,
+        "reasoning_output_tokens": 158
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 724,
+      "event_type_counts": {
+        "item.completed": 3,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 2,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    },
+    {
+      "trial_id": "cloud_01",
+      "label": "VERIFY-FD20C066FBB97C38",
+      "allocation": "c1_codex_history",
+      "prompt_sha256": "f8365aa55f4e12c4109e8f5a3151e93ab1e042144ff2e27f8361bc41a4e3cd4c",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "e7cf229025f3304e2f51fea0915c2b474b3e276b04ddeebf50e69a92a964c8bd",
+      "stderr_sha256": "5950c60bc3abafacf3b292cf72d41f8ed620c945b527d3815f2db9a26381d375",
+      "elapsed_seconds": 13.353,
+      "thread_id": "01a0031a-94e2-7683-abe8-75921e431e39",
+      "aggregate_usage": {
+        "input_tokens": 30554,
+        "cached_input_tokens": 18944,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 255,
+        "reasoning_output_tokens": 131
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 588,
+      "event_type_counts": {
+        "item.completed": 2,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 1,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    },
+    {
+      "trial_id": "control_05",
+      "label": "PROJECT-COMPASS-8CD0E4A4EB5F4E14",
+      "allocation": "public_looking_synthetic",
+      "prompt_sha256": "23ba0abf0a6bdfa567faf1b5c0d692d90924d0f0ef4a5d88f19f63c7328dc2a4",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "a5aa0ec0f677bf9582e63b243bfe98838c4d7ae4c9704ecc6871c3253a795d2c",
+      "stderr_sha256": "d94767634522dca0310174dedab43dc02cfe47f5e300c6ec5be664705b041cb2",
+      "elapsed_seconds": 12.315,
+      "thread_id": "01a0031a-c9d7-73e1-9125-ec2600215890",
+      "aggregate_usage": {
+        "input_tokens": 20280,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 207,
+        "reasoning_output_tokens": 124
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 731,
+      "event_type_counts": {
+        "item.completed": 3,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 2,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    },
+    {
+      "trial_id": "cloud_05",
+      "label": "VERIFY-277976F025F188B6",
+      "allocation": "c1_codex_history",
+      "prompt_sha256": "29b764eb2df5b91d786b1a713f3cd85d40a52afd9d8cd0e8ae267b3ab0e3edde",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "593226df03176c1c1063fe71d8a82ac6d431a2626a569c4b8107364e20df1cbb",
+      "stderr_sha256": "a0cf16ea22972add8a97ee0da17cb59b23b867a5830be4c716549b775fa47949",
+      "elapsed_seconds": 15.043,
+      "thread_id": "01a0031a-f95d-70a1-8080-2e7505412570",
+      "aggregate_usage": {
+        "input_tokens": 20258,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 289,
+        "reasoning_output_tokens": 232
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 587,
+      "event_type_counts": {
+        "item.completed": 2,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 1,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    },
+    {
+      "trial_id": "control_01",
+      "label": "VERIFY-BA62F5D9DF9AA70C",
+      "allocation": "nonexistent_random",
+      "prompt_sha256": "2d50a25fe2ac9a209f115fd39dcb04d5315cb4fe35352f46f56e344fad06b794",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "7a93b106791d4b67f718bf269bd89f2ce40f3a6c7270555a014ee0a9889fc213",
+      "stderr_sha256": "f9d693bfd0e09d6ef3a378bcdb4d3f234935f6f12ab99d2f84aa7cae82118103",
+      "elapsed_seconds": 10.674,
+      "thread_id": "01a0031b-33a5-7be3-986b-e3e87d9be49b",
+      "aggregate_usage": {
+        "input_tokens": 20260,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 202,
+        "reasoning_output_tokens": 126
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 716,
+      "event_type_counts": {
+        "item.completed": 3,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 2,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    },
+    {
+      "trial_id": "cloud_02",
+      "label": "VERIFY-3B72ADD4F90BFD61",
+      "allocation": "c1_codex_history",
+      "prompt_sha256": "43a340d6e7d8f2bb1c6b0abd373bec3854e6563948c58d3a3dd8a0423d79eabe",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "57ee9c56782659d4e14212701f956718ac0d611dc1b9b5f86fcdaa752465d363",
+      "stderr_sha256": "7b76c9b3e6e89da74b6a5036cb362c860b322aa7d8adb03b8226785e151cee55",
+      "elapsed_seconds": 10.698,
+      "thread_id": "01a0031b-5d7e-70f3-be97-79367beb3e1e",
+      "aggregate_usage": {
+        "input_tokens": 20222,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 168,
+        "reasoning_output_tokens": 109
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 587,
+      "event_type_counts": {
+        "item.completed": 2,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 1,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    },
+    {
+      "trial_id": "control_04",
+      "label": "VERIFY-C265311929286737",
+      "allocation": "withheld_unstored",
+      "prompt_sha256": "7684aded29f58a9f5dedcac67c8864d977eb9031be828324ab39517a56fcae9c",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "73bddb24b78d0c1883c456b7f394214c70cf4869262691d792535f75305fe5ef",
+      "stderr_sha256": "cf5e61af08bec9b548290bc64b340cbe699f38a112973a719b68254496b1fbf9",
+      "elapsed_seconds": 17.599,
+      "thread_id": "01a0031b-87bd-7c72-8475-1024021b6593",
+      "aggregate_usage": {
+        "input_tokens": 20261,
+        "cached_input_tokens": 17920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 236,
+        "reasoning_output_tokens": 165
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 722,
+      "event_type_counts": {
+        "item.completed": 3,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 2,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    },
+    {
+      "trial_id": "cloud_04",
+      "label": "VERIFY-0FBF7A81B9C12D78",
+      "allocation": "c1_codex_history",
+      "prompt_sha256": "c159efe48124577787c80ab057540c360629a4b05e11494b417f34b526057099",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "5260f26bc2f1365ed10dc5f59336fcd9fd09b6f8828288ac37399ea478084d88",
+      "stderr_sha256": "6013f45ba3db2cb2aed99ede6cca2a351cc2d5065576d546861058f5581f7e15",
+      "elapsed_seconds": 13.169,
+      "thread_id": "01a0031b-cc4b-7840-a4b4-c95fa6dba115",
+      "aggregate_usage": {
+        "input_tokens": 20341,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 288,
+        "reasoning_output_tokens": 209
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 729,
+      "event_type_counts": {
+        "item.completed": 3,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 2,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    },
+    {
+      "trial_id": "control_03",
+      "label": "VERIFY-BF20386694832700",
+      "allocation": "withheld_unstored",
+      "prompt_sha256": "b8bb7c14ae98f4b485d51bdc6ec4cd6a74f82841dfde6d527aa5cb38c27c08b4",
+      "response_sha256": "23759997b3c59884dc4c0ff5320d6301b0e7f63bf0f6483a7b54d7d43bc5ccd1",
+      "trace_sha256": "74cd84f222383e5d669d31c747f2fb9c63d6710eeccb22166ece70e4121968a0",
+      "stderr_sha256": "0bda534e7057157cfba37178c31c1f702c9b71a6f2ecfde70c87cd602d3a7f81",
+      "elapsed_seconds": 15.663,
+      "thread_id": "01a0031c-0036-7042-be61-e5855dea34cd",
+      "aggregate_usage": {
+        "input_tokens": 30626,
+        "cached_input_tokens": 18944,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 301,
+        "reasoning_output_tokens": 167
+      },
+      "exit_status": 0,
+      "timed_out": false,
+      "error": null,
+      "trace_bytes": 719,
+      "event_type_counts": {
+        "item.completed": 3,
+        "thread.started": 1,
+        "turn.completed": 1,
+        "turn.started": 1
+      },
+      "item_type_counts": {
+        "agent_message": 2,
+        "error": 1
+      },
+      "observable_non_message_items": [
+        {
+          "type": "error",
+          "id": "item_0"
+        }
+      ]
+    }
+  ]
+}
