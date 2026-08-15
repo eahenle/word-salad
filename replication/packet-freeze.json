@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "packet_version": "word-salad-external-core-v1",
+  "selection_frozen_before_external_execution": true,
+  "paper_evidence_tag": "paper-evidence-freeze-v1",
+  "paper_evidence_commit": "3f08c1200e5f719235b63114c42a2dc5b45d9237",
+  "trials": 55,
+  "prompt_set_sha256": "924b14d7603ebd665a17942e025c759019d6cf73df4f9649ee8135848b700946",
+  "manifest_sha256": {
+    "execution-manifest.json": "31c5ef131979c0dddd60e70b77fc08e50d461e4670db2970804ccaed261d6e1b",
+    "provenance-manifest.json": "7e55f97dd7de59549de7d56b91ad774ccf864d2eada6c58f682b901100a94374",
+    "scoring-key.json": "9b875d4e51a37033a7d6734cb653f6c19c567248ee41c0e247b97bc4a2cb09f8"
+  }
+}

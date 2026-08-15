@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "packet_version": "word-salad-external-core-v1",
+  "trials": [
+    {
+      "trial_id": "p0001",
+      "prompt_file": "frozen-prompts/p0001.txt",
+      "prompt_sha256": "a72656a82daf4f99993bb6fb6441249808f6beef7e31d4af4b26c4c39271ca5a",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0002",
+      "prompt_file": "frozen-prompts/p0002.txt",
+      "prompt_sha256": "d9ba27f7fb62a0cc3205b5c4a5ec88dae61668b34db03315ce388dad73a19041",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0003",
+      "prompt_file": "frozen-prompts/p0003.txt",
+      "prompt_sha256": "1f277531dcb61f69b36b54516110f83d958306cff1523f905fff7eef84b546c8",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0004",
+      "prompt_file": "frozen-prompts/p0004.txt",
+      "prompt_sha256": "532b72e4ad3134bbd04b483a54ba851e7ee14366eafcf50e5d5a6852d04d06fc",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0005",
+      "prompt_file": "frozen-prompts/p0005.txt",
+      "prompt_sha256": "c86a558c44fa5345a2dc482e285abc04e4c55f8da328a9b0908426832761c4ab",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0006",
+      "prompt_file": "frozen-prompts/p0006.txt",
+      "prompt_sha256": "bda3fbd3a46ab93c04de25d6adc8e217c5f48a0a3364a69ac8c275f8d2ca264f",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0007",
+      "prompt_file": "frozen-prompts/p0007.txt",
+      "prompt_sha256": "f802a9476fb0911c75fcd3f272cc03fd2b0fed728a114e2204b07e0aa2ded550",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0008",
+      "prompt_file": "frozen-prompts/p0008.txt",
+      "prompt_sha256": "6883c574eacbfbed7659e76167ae919f0881944745686b251edb41c1980775a3",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0009",
+      "prompt_file": "frozen-prompts/p0009.txt",
+      "prompt_sha256": "5c308a7c85e525ac02ad7370e7d659d190e4213fd1c6babb47f7512be8d20654",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0010",
+      "prompt_file": "frozen-prompts/p0010.txt",
+      "prompt_sha256": "d35674a79c1224afb4cf148a139f7464eabf859d6b007064db93dc7f5dcb6667",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0011",
+      "prompt_file": "frozen-prompts/p0011.txt",
+      "prompt_sha256": "f4d5dd5e1c7b52b65ff1c781c5cf468057f42a0ea1965f2588316611178e7271",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0012",
+      "prompt_file": "frozen-prompts/p0012.txt",
+      "prompt_sha256": "168cdf70778723972f352f2b40cec4131090e869c485e7d61950286402bc0e70",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0013",
+      "prompt_file": "frozen-prompts/p0013.txt",
+      "prompt_sha256": "0faf69beb8f007978c3d4f643448869b2daf492456a93b600ab28bbfc48a6b6a",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0014",
+      "prompt_file": "frozen-prompts/p0014.txt",
+      "prompt_sha256": "da28133c231c9f43e437f6017a732fcc9bc5a3b09377787b79794bfc41600466",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0015",
+      "prompt_file": "frozen-prompts/p0015.txt",
+      "prompt_sha256": "7b518edfacdabe1fecca9f3ae81a24cf425b7e86414d689099499a7ce8421e15",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0016",
+      "prompt_file": "frozen-prompts/p0016.txt",
+      "prompt_sha256": "90b42b4e489c6546ebbf1923bbc9cc1924f201c66b8e864a19aa142bcc541d41",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0017",
+      "prompt_file": "frozen-prompts/p0017.txt",
+      "prompt_sha256": "ad41b7cd9f28b08cf55ec222d56257bedd87adaacc9bf0e2fbc0f5a2cb86c60d",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0018",
+      "prompt_file": "frozen-prompts/p0018.txt",
+      "prompt_sha256": "9295072b19b70e42e0f22f090c282fa434247b942bca4f7dd26a04fd9d6e868b",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0019",
+      "prompt_file": "frozen-prompts/p0019.txt",
+      "prompt_sha256": "0b8f3631cac03a37c4e2ac3285c0c248287d7ab3794d5f078c85d5fb44278063",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0020",
+      "prompt_file": "frozen-prompts/p0020.txt",
+      "prompt_sha256": "2192f48d63cf48a6c68130fe5d21c4754b43b9f6af2f2dca2eec700ffa74eabd",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0021",
+      "prompt_file": "frozen-prompts/p0021.txt",
+      "prompt_sha256": "d5f0de13121e464503ea5393e29c0679b773eb9c5105fa0362541ae90edd44f5",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0022",
+      "prompt_file": "frozen-prompts/p0022.txt",
+      "prompt_sha256": "929f0361c1a59421309279ba4d3b2b9eb899eb7ddba688a2c2cd5011ec3c3829",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0023",
+      "prompt_file": "frozen-prompts/p0023.txt",
+      "prompt_sha256": "67807d0289ff6c97ccd5390d2d46119175b19c1b1a3451234d0669d2c5253f43",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0024",
+      "prompt_file": "frozen-prompts/p0024.txt",
+      "prompt_sha256": "f3d99819d602dddaf55d04aa377135622af832456260d42fbae26f0a8c44b213",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0025",
+      "prompt_file": "frozen-prompts/p0025.txt",
+      "prompt_sha256": "ae7899c2256074005a6747dfe475ec935562507747e382004216a00a694883f5",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0026",
+      "prompt_file": "frozen-prompts/p0026.txt",
+      "prompt_sha256": "89591291cd30db35b35800196c8ac243b7334e2cc5e427f56122b3763be12f27",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0027",
+      "prompt_file": "frozen-prompts/p0027.txt",
+      "prompt_sha256": "01219c4c7621cc25621876c1fb4b10148bc2b4deb20bd471078cd8bed9811e52",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0028",
+      "prompt_file": "frozen-prompts/p0028.txt",
+      "prompt_sha256": "ff70e8dcee9ccbd15d03a6f23d0203aa13140c818ab3c08930d57d91e066a278",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0029",
+      "prompt_file": "frozen-prompts/p0029.txt",
+      "prompt_sha256": "a8de1211f381e51dd06c26ecefc721f8b6a6012b4db23099a218ca9074846121",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0030",
+      "prompt_file": "frozen-prompts/p0030.txt",
+      "prompt_sha256": "992c4d7e92ac615d1340e713a9fb8f868101358d08bce1b58b432851e202fbbc",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0031",
+      "prompt_file": "frozen-prompts/p0031.txt",
+      "prompt_sha256": "268e050643edf2d25692e5bd3f22d68fdd9a803e1877b2739712d58ed69d8508",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0032",
+      "prompt_file": "frozen-prompts/p0032.txt",
+      "prompt_sha256": "c2b64e1d7b95a2d6fa0024dcb8f004b56ab94e71ce50fcdd4b07733a0c013e95",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0033",
+      "prompt_file": "frozen-prompts/p0033.txt",
+      "prompt_sha256": "683e5990699f7a8a0b385dee98c9fd75486dfb4cace5836430f37fd6af1b98ba",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0034",
+      "prompt_file": "frozen-prompts/p0034.txt",
+      "prompt_sha256": "53f6d79df3039515c94e692ac58d163cbea1af1a17b797cdf652794a6bda9792",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0035",
+      "prompt_file": "frozen-prompts/p0035.txt",
+      "prompt_sha256": "90e7027206d0fc56ac427a5856c164e053583ede5d74e0b4da897dff957f5758",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0036",
+      "prompt_file": "frozen-prompts/p0036.txt",
+      "prompt_sha256": "fc093142780ab1371fc9daa022ca687783b65124836740f8a8154a2ff393329c",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0037",
+      "prompt_file": "frozen-prompts/p0037.txt",
+      "prompt_sha256": "932d3cd5c7492d96fd6d5f3f6651a197fa2ecf0c876c2973767b42de6b27a795",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0038",
+      "prompt_file": "frozen-prompts/p0038.txt",
+      "prompt_sha256": "d5734388f2132a275b8498cef6ff699f30c35a306edff013ab02ac45e25c504c",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0039",
+      "prompt_file": "frozen-prompts/p0039.txt",
+      "prompt_sha256": "253f4d1e5826858398f19d7d9305cd2a950d3dd53120d8182d75e281c61a5775",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0040",
+      "prompt_file": "frozen-prompts/p0040.txt",
+      "prompt_sha256": "91a44eaf94b4ae82b17d30e51300d350d50ceed882ee83762ec630514bd9a8c0",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0041",
+      "prompt_file": "frozen-prompts/p0041.txt",
+      "prompt_sha256": "460f02401e1f2ffe65aa4588b291ceb6590c27082370a18feb14c7251c2449ef",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0042",
+      "prompt_file": "frozen-prompts/p0042.txt",
+      "prompt_sha256": "7180861fc007d573d98a679a1c693624676a986ab523a0b8ae06e7cf62065a08",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0043",
+      "prompt_file": "frozen-prompts/p0043.txt",
+      "prompt_sha256": "7089b1d5b6b26d48591215a185a78c0d70618ea680b6fbc0b945da3962098c58",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0044",
+      "prompt_file": "frozen-prompts/p0044.txt",
+      "prompt_sha256": "f78c93a00e4d7d4fd8c90cb7f74c366b0b5a4c0f99593c3cbf2f97374e292dc4",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0045",
+      "prompt_file": "frozen-prompts/p0045.txt",
+      "prompt_sha256": "15a8d1e212bcf4b5345abe37adb89146c9b17feda86333220c44af3299c0accd",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0046",
+      "prompt_file": "frozen-prompts/p0046.txt",
+      "prompt_sha256": "d40b07923beae86e3a0d1d00003f606927bb9b4a98d1befc82191b02b44abe83",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0047",
+      "prompt_file": "frozen-prompts/p0047.txt",
+      "prompt_sha256": "83a2780e77436ed854681c898ff6e4777c5da2b828138636abc676c6606ce185",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0048",
+      "prompt_file": "frozen-prompts/p0048.txt",
+      "prompt_sha256": "5ed0a4799ed6999f57afce4126284b831403727f39daac4002baad249f30225f",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0049",
+      "prompt_file": "frozen-prompts/p0049.txt",
+      "prompt_sha256": "b586876353b18858291d7eab25f9e4bbe0858ab074265c963a1f08cb63348c52",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0050",
+      "prompt_file": "frozen-prompts/p0050.txt",
+      "prompt_sha256": "5a758e19c0716c14fda48161da7b6b048eada2401177635d389a4fb861872e39",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0051",
+      "prompt_file": "frozen-prompts/p0051.txt",
+      "prompt_sha256": "1236714aaf5b2215eacda5a81d5594a0d00cb166875052594df6909f1aa495b8",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0052",
+      "prompt_file": "frozen-prompts/p0052.txt",
+      "prompt_sha256": "0902ae055332f287e2cf63239516449e63c2c03f7b19ca78b5188c0f8e420891",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0053",
+      "prompt_file": "frozen-prompts/p0053.txt",
+      "prompt_sha256": "8a3efd2925331080b27cfd8c25a3eefaa58da222658db61a4eb7c6e5799d1d28",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0054",
+      "prompt_file": "frozen-prompts/p0054.txt",
+      "prompt_sha256": "4d1613cb7a7035da109f0d9b1aecd26dd92521c426a328edf31b40a433c41a3e",
+      "prompt_words": 322
+    },
+    {
+      "trial_id": "p0055",
+      "prompt_file": "frozen-prompts/p0055.txt",
+      "prompt_sha256": "97dae3819431553723aeb5a1e1982865c1fa6f3351cca294b5e92502b49cb34b",
+      "prompt_words": 322
+    }
+  ]
+}

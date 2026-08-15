@@ -30,6 +30,7 @@ ideally, independent external replication—not continued task redesign.
 - `methods.md`: reproducible methods skeleton.
 - `manuscript-outline.md`: evidence-grounded paper structure.
 - `publication-readiness.md`: final stop decision and remaining limitations.
+- `manuscript/`: evidence-audited Methods, Results, captions, and drafting queue.
 - `results-tables/`: machine-generated publication tables.
 - `figures/`: generated publication figures and specifications.
 - `statistical-analysis/`: analysis code and assumptions.
@@ -41,3 +42,7 @@ passes all 43 checks.
 
 Raw data remain in their frozen experiment directories and are not duplicated
 here.
+
+The minimal external packet is at `../replication/`. It contains 55 neutralized,
+byte-identical frozen prompts selected by a seed rule independent of historical
+outcomes, plus runtime-neutral execution and scoring scripts.

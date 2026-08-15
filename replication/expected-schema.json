@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Word-salad external replication runtime record",
+  "type": "object",
+  "required": [
+    "trial_id",
+    "prompt_file",
+    "prompt_sha256",
+    "prompt_words",
+    "command_argv",
+    "response",
+    "stderr",
+    "exit_status",
+    "timed_out",
+    "elapsed_seconds"
+  ],
+  "properties": {
+    "trial_id": {"type": "string", "pattern": "^p[0-9]{4}$"},
+    "prompt_file": {"type": "string"},
+    "prompt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "prompt_words": {"type": "integer", "minimum": 1},
+    "command_argv": {"type": "array", "items": {"type": "string"}},
+    "response": {"type": "string"},
+    "stderr": {"type": "string"},
+    "exit_status": {"type": ["integer", "null"]},
+    "timed_out": {"type": "boolean"},
+    "elapsed_seconds": {"type": "number", "minimum": 0}
+  },
+  "additionalProperties": true
+}

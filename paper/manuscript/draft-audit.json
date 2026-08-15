@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "evidence_tag": "paper-evidence-freeze-v1",
+  "files": [
+    "paper/manuscript/methods.md",
+    "paper/manuscript/results.md",
+    "paper/manuscript/figure-captions.md"
+  ],
+  "checks": 7,
+  "failures": []
+}
