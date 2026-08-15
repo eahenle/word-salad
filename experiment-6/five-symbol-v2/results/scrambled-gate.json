@@ -1,0 +1,9 @@
+{
+  "cohort": "scrambled-v2",
+  "target_sequence_selections": 2,
+  "controls": 10,
+  "gate_passed": false,
+  "instrument_validated": false,
+  "advance_buried_signal_authorized": false,
+  "failure_action": "freeze task as control-contaminated and stop"
+}

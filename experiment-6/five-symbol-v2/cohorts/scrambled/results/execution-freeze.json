@@ -1,0 +1,33 @@
+{
+  "cohort": "scrambled-v2",
+  "scheduled": 10,
+  "completed": 10,
+  "responses_not_inspected_before_freeze": true,
+  "query_order": [
+    "q0046",
+    "q0041",
+    "q0049",
+    "q0048",
+    "q0043",
+    "q0044",
+    "q0042",
+    "q0045",
+    "q0047",
+    "q0050"
+  ],
+  "trace_hashes": {
+    "q0046": "2117008ce71765116c5dda00da17d771a479fc633e15a23dca6204332c3ac95f",
+    "q0041": "c6e2c3d1b272fd16eac901d6267a5106226386aeab1c0c88e31623cd1bf3b269",
+    "q0049": "91db50a2a6750534ee8000a57ce5e41564e8fe86e93e8a8bab16618a883eab6f",
+    "q0048": "565eb00b2d60eb1644c6b45453b51161fc2a7dc1b786e8973d70078b29b73e03",
+    "q0043": "f7e293621a1b7f57fb0b6bd29a2fb657bf11499c59cf5da93a51dcc68fe8d009",
+    "q0044": "c603a3135cd35dc1bb1a05eebedf07522c3d723ea349f9be258b03a0c5a61362",
+    "q0042": "8e69f1049584d3690d0eea8e43b755c9e5e79328bf77074d57f3fc0f221e0bd2",
+    "q0045": "e59741d5345274b44dcff14b98be7fac4fbe6e4797ab13cdf1ee318f2e0bb196",
+    "q0047": "21d0fc2133b61e60b717621962a975053c736ddceab9f617898fb5730b022cd9",
+    "q0050": "71cabc5330d6bf298b3e65ee33fd320685a95376538180d3729a4cb192fbb9cf"
+  },
+  "runner_errors": 0,
+  "timeouts": 0,
+  "direct_api_used": false
+}
